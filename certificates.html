@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates & Achievements (102+) — Sanjay G. L.</title>
+  <meta name="description" content="Explore 102+ technical, government, internship, and skill certifications earned by Sanjay G. L. from HackerRank, Microsoft, AICTE, Oasis Infobyte, Infosys, and IBM.">
+  <meta name="keywords" content="Sanjay G L Certificates, Pravidhi Tech Fest, Oasis Infobyte Internship, HackerRank React, Microsoft Azure, MeitY AI Quiz, NPTEL">
+  <link rel="canonical" href="https://sanjaygl2006.vercel.app/certificates.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- 3D Canvas Background -->
+  <canvas id="canvas-3d"></canvas>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo.svg" alt="Sanjay G. L. Logo">
+        <span>Sanjay<span class="text-gradient">.GL</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="certificates.html" class="nav-link active">Certificates (102+)</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+        <a href="assets/Sanjay_GL_Resume.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="padding:6px 14px">
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggleBtn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== CERTIFICATES HEADER ===================== -->
+  <section class="certs-section">
+    <div class="container">
+      <!-- Quick Navigation Back to Home -->
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:28px;flex-wrap:wrap">
+        <a href="index.html" class="btn btn-outline btn-sm magnetic">
+          <i class="fa-solid fa-arrow-left"></i> Back to Home Page
+        </a>
+        <a href="index.html#certificates" class="btn btn-outline btn-sm magnetic">
+          <i class="fa-solid fa-house"></i> Home Certificates Showcase
+        </a>
+        <a href="projects.html" class="btn btn-outline btn-sm magnetic">
+          <i class="fa-solid fa-rocket"></i> View Projects (23)
+        </a>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:32px">
+        <div>
+          <span class="section-eyebrow">Verified Credentials Repository</span>
+          <h2 class="section-title">Certificates & <span class="text-gradient">Achievements</span></h2>
+          <p style="color:var(--text-muted);font-size:1.05rem;max-width:660px">
+            Verified repository of 102+ certifications covering Software Engineering, AI, Web Development, Cybersecurity, Government Quizzes, and Hackathons.
+          </p>
+        </div>
+
+        <!-- View Mode Toggle Bar -->
+        <div class="view-toggle-bar">
+          <button class="view-toggle-btn active" id="viewGalleryBtn">
+            <i class="fa-solid fa-border-all"></i> Gallery Grid
+          </button>
+          <button class="view-toggle-btn" id="viewTimelineBtn">
+            <i class="fa-solid fa-timeline"></i> Timeline View
+          </button>
+        </div>
+      </div>
+
+      <!-- Controls Bar -->
+      <div class="controls-bar">
+        <div class="search-input-wrap">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" class="search-input" id="certSearch" placeholder="Search 102+ certificates by organization, skill, or title..." autocomplete="off">
+        </div>
+
+        <select class="filter-select" id="certSortSelect" aria-label="Sort Certificates">
+          <option value="newest">Sort by Date (Newest First)</option>
+          <option value="oldest">Sort by Date (Oldest First)</option>
+          <option value="name-asc">Sort by Title (A-Z)</option>
+        </select>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-chips-row" id="certCategories"></div>
+
+      <!-- Counter -->
+      <div style="font-size:0.9rem;color:var(--text-muted);margin-bottom:24px">
+        Showing <strong id="visibleCount" style="color:var(--emerald-primary)">102</strong> certificates
+      </div>
+
+      <!-- Gallery Grid View -->
+      <div class="certs-gallery-grid" id="certsGrid"></div>
+
+      <!-- Timeline View -->
+      <div id="certsTimeline" style="display:none;margin-top:32px"></div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-content-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom:12px">
+            <img src="assets/logo.svg" alt="Logo">
+            <span>Sanjay<span class="text-gradient">.GL</span></span>
+          </a>
+          <p style="color:var(--text-muted);font-size:0.9rem;max-width:380px;margin-top:8px">
+            AI-Powered Portfolio & Operating System created by Sanjay G. L.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="color:var(--text-main);margin-bottom:12px">Pages</h4>
+          <div style="display:flex;flex-direction:column;gap:6px;font-size:0.88rem">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects (23)</a>
+            <a href="certificates.html">Certificates (102+)</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="color:var(--text-main);margin-bottom:12px">Quick Links</h4>
+          <div style="font-size:0.88rem;color:var(--text-muted)">
+            <div><a href="index.html#contact" style="color:var(--emerald-primary)">Contact Sanjay</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>© 2026 Sanjay G. L. All rights reserved.</div>
+        <div style="color:var(--emerald-primary)">Verified Credential Repository</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/projectsData.js"></script>
+  <script src="js/certificatesData.js"></script>
+  <script src="js/toast.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/background3d.js"></script>
+  <script src="js/cmdPalette.js"></script>
+  <script src="js/soundSynth.js"></script>
+  <script src="js/aiAssistant.js"></script>
+  <script src="js/certificatesPage.js"></script>
+</body>
+</html>

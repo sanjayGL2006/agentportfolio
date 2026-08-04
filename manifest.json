@@ -1,0 +1,17 @@
+{
+  "name": "Sanjay G. L. — AI OS Portfolio",
+  "short_name": "Sanjay OS",
+  "description": "AI-Powered Premium Developer Portfolio & Operating System for Sanjay G. L.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#060D17",
+  "theme_color": "#10B981",
+  "icons": [
+    {
+      "src": "assets/logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

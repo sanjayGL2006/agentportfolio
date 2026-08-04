@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Showcase (23) — Sanjay G. L. Portfolio</title>
+  <meta name="description" content="Explore all 23 full stack web, AI agent, finance, e-commerce, and cybersecurity projects built by Sanjay G. L. with live demos and source code.">
+  <meta name="keywords" content="Sanjay G L Projects, AI Agent, React Projects, Python Projects, Expense Tracker, Pure Weaves, E-Commerce, Software Engineering">
+  <link rel="canonical" href="https://sanjaygl2006.vercel.app/projects.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- 3D Canvas Background -->
+  <canvas id="canvas-3d"></canvas>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo.svg" alt="Sanjay G. L. Logo">
+        <span>Sanjay<span class="text-gradient">.GL</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link active">Projects (23)</a>
+        <a href="certificates.html" class="nav-link">Certificates</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+        <a href="assets/Sanjay_GL_Resume.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="padding:6px 14px">
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggleBtn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== PROJECTS HEADER ===================== -->
+  <section class="projects-section">
+    <div class="container">
+      <!-- Quick Navigation Back to Home & Certificates -->
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:28px;flex-wrap:wrap">
+        <a href="index.html" class="btn btn-outline btn-sm magnetic">
+          <i class="fa-solid fa-arrow-left"></i> Back to Home Page
+        </a>
+        <a href="certificates.html" class="btn btn-outline btn-sm magnetic">
+          <i class="fa-solid fa-certificate"></i> View Certificates (102+)
+        </a>
+      </div>
+
+      <span class="section-eyebrow">Interactive Portfolio</span>
+      <h2 class="section-title">Software & <span class="text-gradient">AI Projects</span></h2>
+      <p class="section-sub">Explore all 23 real-world web apps, AI agents, calculators, games, and security utilities. Flip cards to reveal full tech specs and live demos.</p>
+
+      <!-- Controls & Filter Bar -->
+      <div class="controls-bar">
+        <div class="search-input-wrap">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" class="search-input" id="projectSearch" placeholder="Search projects by name, technology, or tag..." autocomplete="off">
+        </div>
+
+        <select class="filter-select" id="techFilter" aria-label="Filter by Technology">
+          <option value="all">All Technologies</option>
+        </select>
+
+        <select class="filter-select" id="sortSelect" aria-label="Sort Projects">
+          <option value="year-desc">Sort by Year (Newest)</option>
+          <option value="year-asc">Sort by Year (Oldest)</option>
+          <option value="name-asc">Sort by Name (A-Z)</option>
+        </select>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-chips-row" id="categoryFilters"></div>
+
+      <!-- Visible Count Counter -->
+      <div style="font-size:0.9rem;color:var(--text-muted);margin-bottom:24px">
+        Showing <strong id="visibleCount" style="color:var(--emerald-primary)">23</strong> projects
+      </div>
+
+      <!-- 3D Flip Cards Grid -->
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-content-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom:12px">
+            <img src="assets/logo.svg" alt="Logo">
+            <span>Sanjay<span class="text-gradient">.GL</span></span>
+          </a>
+          <p style="color:var(--text-muted);font-size:0.9rem;max-width:380px;margin-top:8px">
+            AI-Powered Portfolio & Operating System created by Sanjay G. L.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="color:var(--text-main);margin-bottom:12px">Pages</h4>
+          <div style="display:flex;flex-direction:column;gap:6px;font-size:0.88rem">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects (23)</a>
+            <a href="certificates.html">Certificates (102+)</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="color:var(--text-main);margin-bottom:12px">Quick Links</h4>
+          <div style="font-size:0.88rem;color:var(--text-muted)">
+            <div><a href="index.html#contact" style="color:var(--emerald-primary)">Contact Sanjay</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>© 2026 Sanjay G. L. All rights reserved.</div>
+        <div style="color:var(--emerald-primary)">Engineered for Performance & Aesthetics</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/projectsData.js"></script>
+  <script src="js/certificatesData.js"></script>
+  <script src="js/toast.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/background3d.js"></script>
+  <script src="js/cmdPalette.js"></script>
+  <script src="js/soundSynth.js"></script>
+  <script src="js/aiAssistant.js"></script>
+  <script src="js/projectsPage.js"></script>
+</body>
+</html>
