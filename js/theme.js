@@ -1,7 +1,7 @@
 // Theme Manager, Visitor Counter, PWA, and Easter Eggs
 (function () {
   // Theme Manager
-  const savedTheme = localStorage.getItem('sanjay_portfolio_theme') || 'dark';
+  const savedTheme = localStorage.getItem('sanjay_portfolio_theme') || 'light';
   if (savedTheme === 'light') {
     document.body.classList.add('light-theme');
   }
@@ -51,11 +51,7 @@
     }
 
     // Developer Console Welcome Message
-    console.log(
-      '%c SANJAY G. L. — AI OS PORTFOLIO %c\n🚀 Welcome to the AI-Powered Digital Universe!\n✨ Explore projects, certificates & interactive AI Assistant.',
-      'background: #10b981; color: #000; font-size: 16px; font-weight: bold; padding: 6px 12px; border-radius: 4px;',
-      'color: #8b5cf6; font-size: 13px; font-weight: 500;'
-    );
+    console.log("Welcome to Sanjay G. L. Portfolio Website!");
   });
 
   // Konami Code Easter Egg (↑ ↑ ↓ ↓ ← → ← → B A)
@@ -74,11 +70,11 @@
     }
 
     // Keyboard Shortcuts
-    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+    if ((e.ctrlKey || e.metaKey) && e.key && e.key.toLowerCase() === 'k') {
       e.preventDefault();
       if (window.CommandPalette) window.CommandPalette.toggle();
     }
-    if (e.key.toLowerCase() === 't' && !['input', 'textarea'].includes(document.activeElement.tagName.toLowerCase())) {
+    if (e.key && e.key.toLowerCase() === 't' && document.activeElement && document.activeElement.tagName && !['input', 'textarea'].includes(document.activeElement.tagName.toLowerCase())) {
       window.toggleTheme();
     }
   });

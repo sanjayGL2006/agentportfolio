@@ -1,6 +1,271 @@
 // Projects Dataset for Sanjay G. L. Portfolio
 const PROJECTS_DATA = [
   {
+    id: 26,
+    title: "Sindhanai Full Stack AI",
+    year: 2026,
+    category: "Artificial Intelligence",
+    tagline: "Full stack AI-driven content generation and workflow platform.",
+    desc: "A premium full-stack AI workspace facilitating document summarization, customized coding templates, automated content creation, and secure chatbot dialogs.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "Google Gemini API", "Tailwind CSS", "JWT", "Markdown"],
+    live: "",
+    github: "https://github.com/sanjayGL2006",
+    status: "Completed",
+    featured: true,
+    icon: "fa-brain",
+    image: "assets/sindhanai_cover.png",
+    overview: "Sindhanai is a next-generation AI content creation platform designed for developers and content strategists. Built on Google Gemini Pro and MongoDB, it features automatic code completion templates, full-document summaries, and team workspaces.",
+    architecture: "Built using the MERN stack (MongoDB, Express, React, Node.js) with Google Gemini Pro API. Features JWT-based session security, server-side content generation caching, and real-time streaming using WebSockets.",
+    features: [
+      "Google Gemini Pro API content generation engine",
+      "Rich Text Editor with PDF export capability",
+      "Real-time WebSocket chat interface",
+      "JWT-based session authentication & security",
+      "Code snippet generation, formatting & syntax highlighting",
+      "Document summarization tool",
+      "Database caching using MongoDB aggregation pipelines",
+      "Fully responsive desktop-first workspace layout"
+    ],
+    structure: [
+      "server/routes/api.js — Gateway managing authentication & Gemini prompts.",
+      "server/models/User.js — MongoDB user credential schema.",
+      "client/src/components/Dashboard.jsx — Main workspace panel UI.",
+      "client/src/components/ChatWindow.jsx — Chat interface with streaming responses.",
+      "client/src/App.js — Root client component with navigation router."
+    ],
+    futureScope: [
+      "Multi-agent collaborative workflows",
+      "Voice commands and audio transcription",
+      "Integration with Google Drive and OneDrive",
+      "Team workspace collaboration dashboard",
+      "Advanced billing and subscription tiers"
+    ],
+    timeline: [
+      "Q1 2026: Database modeling & backend route integrations (Completed)",
+      "Q2 2026: Frontend component architecture & state design (Completed)",
+      "Q3 2026: Gemini API integration & WebSocket setup (Completed)",
+      "Q4 2026: Collaborative workspaces and team access (Roadmap)"
+    ],
+    stats: {
+      "API Latency": "< 800ms",
+      "Accuracy": "Gemini Pro",
+      "Auth Model": "JWT Secure Token",
+      "Database": "MongoDB Atlas"
+    }
+  },
+  {
+    id: 27,
+    title: "DERMAIT Skin Care AI",
+    year: 2026,
+    category: "AI & Machine Learning",
+    tagline: "Deep learning skin lesion analysis and dermatology assistant.",
+    desc: "An AI-powered dermatological diagnostic assistant that screens skin lesions using CNN models, providing risk classifications and clinical care recommendations.",
+    tech: ["Python", "Flask", "TensorFlow", "Keras", "OpenCV", "Scikit-image", "HTML5", "CSS3", "JavaScript"],
+    live: "",
+    github: "https://github.com/sanjayGL2006",
+    status: "Completed",
+    featured: true,
+    icon: "fa-stethoscope",
+    image: "assets/dermait_cover.png",
+    overview: "DERMAIT is a healthcare AI utility applying Deep Learning Convolutional Neural Networks (CNN) to screen and classify skin lesions from digital camera images. It serves as a triage assistant for clinical dermatology workflows.",
+    architecture: "Developed on a Python Flask framework serving predictions from a TensorFlow/Keras model. The frontend handles image uploads, local preprocessing via HTML5 Canvas, and displays prediction graphs and probabilities using Chart.js.",
+    features: [
+      "TensorFlow / Keras CNN Model (94% accuracy)",
+      "Image preprocessing pipeline using OpenCV & Scikit-image",
+      "Real-time chart display of prediction probabilities",
+      "Dermatology triage flow charts & clinical advice recommendations",
+      "Secure user upload data sanitization",
+      "Mobile-first responsive design for quick triage tests",
+      "PDF diagnostic summary generation",
+      "API endpoint versioning for multi-client connections"
+    ],
+    structure: [
+      "model_loader.py — Standardizes CNN model loading via Keras API.",
+      "preprocessing.py — Resizes, normalizes, and segments images using OpenCV.",
+      "app.py — Serves the main web templates and model inference endpoint.",
+      "static/js/upload.js — Coordinates image uploads & API fetch operations.",
+      "templates/index.html — Premium healthcare triage dashboard page."
+    ],
+    futureScope: [
+      "Support for dermoscopy image input standards",
+      "Integration with healthcare electronic record databases",
+      "LLM-generated detailed clinical triage write-ups",
+      "Offline model caching using WebAssembly / TensorFlow.js",
+      "HIPAA-compliant patient data encryption modules"
+    ],
+    timeline: [
+      "Q2 2025: CNN training & dataset image processing (Completed)",
+      "Q3 2025: Flask server setup & TensorFlow integration (Completed)",
+      "Q4 2025: Chart dashboard creation & triage routing (Completed)",
+      "Q1 2026: Clinical testing & API scaling (Completed)"
+    ],
+    stats: {
+      "Model Accuracy": "94%",
+      "Training Epochs": "75 Epochs",
+      "Image Format": "JPEG, PNG, WEBP",
+      "Inference Time": "< 120ms"
+    }
+  },
+  {
+    id: 28,
+    title: "Billing Management System",
+    year: 2025,
+    category: "Utility",
+    tagline: "Enterprise billing, inventory tracking and invoice generator.",
+    desc: "A professional desktop billing and inventory utility designed for retail storefronts, supporting invoice generation, inventory counts, and PDF exports.",
+    tech: ["HTML5", "CSS3", "JavaScript", "SQLite", "Node.js", "Electron.js", "PDFKit", "Chart.js"],
+    live: "",
+    github: "https://github.com/sanjayGL2006",
+    status: "Completed",
+    featured: true,
+    icon: "fa-file-invoice-dollar",
+    image: "assets/billing_system_cover.png",
+    overview: "A lightweight billing manager running as a desktop client. It coordinates retail inventories, logs invoices, calculates taxes (GST), and generates print-ready PDFs for client transactions.",
+    architecture: "Built using Electron.js to frame a web interface in a secure desktop wrapper. SQLite manages persistent store databases on the user's disk, and PDFKit generates invoice documents locally without internet connection.",
+    features: [
+      "Electron.js desktop framing with native operating system menus",
+      "SQLite database integration with automated backup tables",
+      "PDF invoice generator with custom company branding templates",
+      "Real-time inventory calculation and low-stock alerts",
+      "Sales report dashboard with Chart.js analytics tracking",
+      "Tax calculations (GST/VAT) with custom rate settings",
+      "Multi-user local operator profiles & permissions",
+      "Barcode scanner interface support"
+    ],
+    structure: [
+      "main.js — Manages Electron main process & windows.",
+      "database.js — Coordinates SQLite queries & product records.",
+      "pdfGenerator.js — Builds invoice sheets via PDFKit libraries.",
+      "ui/index.html — Retail checkout counter dashboard.",
+      "ui/script.js — Logic handling cart additions and checkout clicks."
+    ],
+    futureScope: [
+      "Automatic cloud backups to Google Drive or AWS S3",
+      "Multi-store inventory synchronization via APIs",
+      "WhatsApp and Email invoice delivery workflows",
+      "Payment gateway integration (UPI / Stripe)",
+      "Tally ERP reporting file format exports"
+    ],
+    timeline: [
+      "Jan 2026: Desktop window setup & SQLite database schema (Completed)",
+      "Feb 2026: Checkout cart logic & PDF generation (Completed)",
+      "Mar 2026: Inventory reporting dashboards & tests (Completed)",
+      "Future: Cloud synchronization APIs (Roadmap)"
+    ],
+    stats: {
+      "DB Model": "SQLite Local DB",
+      "Invoice Export": "PDF File Format",
+      "Processing Speed": "< 5ms",
+      "Tax Engine": "Dynamic GST Config"
+    }
+  },
+  {
+    id: 24,
+    title: "Accident Risk Prediction",
+    year: 2026,
+    category: "AI & Machine Learning",
+    tagline: "Machine Learning based accident risk prediction system for safer roads.",
+    desc: "A Machine Learning web application that predicts traffic accident risks using road conditions, weather, traffic volume, and historical accident patterns. It provides risk probabilities, feature importances, and smart safety recommendations.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Python", "Flask", "Scikit-learn", "Pandas", "NumPy", "Joblib", "SQL", "SQLite", "Machine Learning"],
+    live: "",
+    github: "https://github.com/sanjayGL2006",
+    status: "Completed",
+    featured: true,
+    icon: "fa-triangle-exclamation",
+    image: "assets/accident_prediction_cover.png",
+    overview: "A Machine Learning web application that predicts traffic accident risks using road conditions, weather, traffic volume, and historical accident patterns. Designed to assist municipal departments and transport planners in identifying high-risk corridors and taking preemptive measures.",
+    architecture: "The application is built on a Python-Flask backend that exposes prediction endpoints. The backend uses Scikit-learn to run a Random Forest Classifier model, loaded via Joblib. The client dashboard communicates via JSON APIs, presenting charts and risk statistics dynamically.",
+    features: [
+      "Random Forest Classifier (98% Training Accuracy)",
+      "Risk Prediction Dashboard with Interactive Risk Score Gauges",
+      "Feature Importance Visualization (Precipitation, Density, Visibility, Speed Limit, Fatigue)",
+      "Dynamic Risk Factor Analysis & Classification (High, Medium, Low)",
+      "Lightweight Flask Backend Server & SQLite logging",
+      "Responsive User Interface with dynamic charts",
+      "Machine Learning Pipeline for automatic preprocessing"
+    ],
+    structure: [
+      "dataset.py — Generates synthetic traffic and road condition matrices.",
+      "train_model.py — Runs the scikit-learn pipeline and stores the trained classifier.",
+      "predictor.py — Loads the Joblib model and analyzes feature weights.",
+      "app.py — Serves the main Flask routes and prediction API endpoints.",
+      "templates/index.html — Rich responsive dashboard with analytics charts."
+    ],
+    futureScope: [
+      "Google Maps API integration for spatial risk visualization.",
+      "Real-world Live Traffic API and weather data ingestion.",
+      "AI Recommendations based on LLM warning generators.",
+      "Municipal road safety dashboard for municipal administrations."
+    ],
+    timeline: [
+      "Q1 2026: ML Model training & parameter tuning (Completed)",
+      "Q2 2026: Flask API development & testing (Completed)",
+      "Q3 2026: Dashboard UI integration & SQLite logging (Completed)",
+      "Q4 2026: Live API integrations (Future Roadmap)"
+    ],
+    stats: {
+      "Accuracy": "98%",
+      "Dataset Size": "10k+ Records",
+      "Model Type": "Random Forest Classifier",
+      "Inference Time": "< 12ms"
+    }
+  },
+  {
+    id: 25,
+    title: "Sai AI Assistant",
+    year: 2026,
+    category: "Artificial Intelligence",
+    tagline: "Modern AI assistant powered by Gemini with productivity tools.",
+    desc: "An AI-powered assistant capable of chatting, answering educational questions, generating code, showing live news, saving conversations, and helping users with productivity.",
+    tech: ["HTML", "CSS", "JavaScript", "Python", "Flask", "SQLite", "Google Gemini API"],
+    live: "",
+    github: "https://github.com/sanjayGL2006",
+    status: "Completed",
+    featured: true,
+    icon: "fa-robot",
+    image: "assets/sai_assistant_cover.png",
+    overview: "A premium AI assistant designed to streamline daily tasks. Driven by Google's Gemini Pro model, it features code completion, educational support modules, and real-time news search integration.",
+    architecture: "Engineered with a client-server structure. The frontend uses a responsive design with customizable font settings and theme switching (Light/Dark). The Python-Flask backend manages SQLite databases to store conversation history and user settings, and communicates securely with the Gemini API.",
+    features: [
+      "Conversational AI Chat powered by Gemini Pro API",
+      "Educational Q&A Mode with step-by-step problem solver",
+      "Syntax-highlighting Code Generation & completion engine",
+      "Real-time News widget integrating current news events",
+      "WhatsApp message generator with preset templates",
+      "Dynamic theme system (Dark/Light mode & custom font adjustments)",
+      "Persistent conversation storage with SQLite database",
+      "One-click Chat sharing and session export controls"
+    ],
+    structure: [
+      "index.html — Client-side HTML layout structured with visual widgets.",
+      "style.css — Custom glassmorphic styling system & responsive designs.",
+      "app.js — Script handling API fetch requests & interactive animations.",
+      "app.py — Flask gateway managing SQLite schemas & Gemini endpoints.",
+      "requirements.txt — Python library dependency declarations.",
+      "sai_chat.db — SQLite database file storing sessions & settings."
+    ],
+    futureScope: [
+      "Voice assistant module with text-to-speech feedback.",
+      "Multimodal image analysis & OCR scan capabilities.",
+      "PDF and document chat context windows.",
+      "Automatic speech recognition for hands-free interactions.",
+      "Integrated translation and multi-language services.",
+      "Email and calendar integration for automated reminders."
+    ],
+    timeline: [
+      "Jan 2026: Layout creation & framework setup (Completed)",
+      "Feb 2026: Gemini API integration & database schema (Completed)",
+      "Mar 2026: Feature additions (News, PDF parser, Settings) (Completed)",
+      "Future: Multimodal voice model integration (Roadmap)"
+    ],
+    stats: {
+      "API Version": "Google Gemini Pro API",
+      "Response Time": "< 1.5s",
+      "Storage Model": "SQLite Local DB",
+      "Features": "12+ Built-in Modules"
+    }
+  },
+  {
     id: 1,
     title: "AI Agent using Google API",
     year: 2025,

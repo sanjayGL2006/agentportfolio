@@ -1705,11 +1705,728 @@ footer {
   margin-bottom: 40px;
 }
 
-.footer-bottom-row {
+/* ===================================================================
+   PREMIUM PORTFOLIO ENHANCEMENTS — 2026 UPDATE
+=================================================================== */
+
+/* Certificate Card Direct Links Hover Effects */
+.cert-card-anchor {
+  transition: transform 0.3s var(--ease-smooth);
+}
+.cert-card-anchor:hover {
+  transform: translateY(-5px);
+}
+.cert-card-anchor:hover .cert-card {
+  border-color: var(--emerald-primary) !important;
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.15) !important;
+}
+.cert-card-anchor:active {
+  transform: scale(0.98);
+}
+
+/* 1. Page Transition Overlay */
+.page-transition-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-main);
+  z-index: 100000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s var(--ease-smooth);
+}
+.page-transition-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 2. Ripple Click Effect */
+.ripple-btn {
+  position: relative;
+  overflow: hidden;
+}
+.click-ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  transform: scale(0);
+  animation: click-ripple-animation 0.6s linear;
+  pointer-events: none;
+}
+@keyframes click-ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* 3. 3D Tilt Card & Glow */
+.featured-project-card {
+  position: relative;
+  background: var(--bg-glass-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid transparent;
+  background-image: linear-gradient(var(--bg-glass-card), var(--bg-glass-card)), linear-gradient(135deg, var(--emerald-primary) 0%, var(--purple-accent) 50%, var(--golden-yellow) 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  padding: 28px;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) scale3d(1, 1, 1);
+  transition: transform 0.15s ease-out, box-shadow 0.3s ease;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.featured-project-card:hover {
+  box-shadow: 0 20px 45px rgba(16, 185, 129, 0.25), 0 0 30px rgba(139, 92, 246, 0.15);
+  background-image: linear-gradient(var(--bg-glass-card), var(--bg-glass-card)), linear-gradient(135deg, var(--coral-pink) 0%, var(--purple-accent) 30%, var(--golden-yellow) 70%, var(--emerald-primary) 100%);
+}
+
+.featured-project-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(800px circle at var(--mx, 0px) var(--my, 0px), rgba(255,255,255,0.06), transparent 40%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.featured-card-glow {
+  position: absolute;
+  inset: -1px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(90deg, var(--emerald-primary), var(--purple-accent), var(--golden-yellow), var(--emerald-primary));
+  background-size: 300% 100%;
+  z-index: -1;
+  animation: borderGlowFlow 8s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes borderGlowFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+/* 4. Scroll Reveal */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px) scale(0.96);
+  transition: opacity 0.8s var(--ease-smooth), transform 0.8s var(--ease-smooth);
+}
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* 5. Custom Cursor Glow update */
+.cursor-ring.active {
+  width: 52px;
+  height: 52px;
+  border-color: var(--coral-pink);
+  background: rgba(236, 72, 153, 0.15);
+}
+
+/* 6. Timeline Styles for Research & AI Projects */
+.research-timeline-section {
+  padding: 80px 0;
+}
+
+.timeline-horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline-horizontal::before {
+  content: '';
+  position: absolute;
+  left: 35px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--emerald-primary), var(--purple-accent), var(--golden-yellow), transparent);
+  z-index: 1;
+}
+
+.timeline-node-item {
+  display: flex;
+  gap: 28px;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-node-bullet {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  border-radius: 50%;
+  background: var(--bg-surface-elevated);
+  border: 2px solid var(--border-glass);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 24px;
-  border-top: 1px solid var(--border-glass);
-  font-size: 0.85rem;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--emerald-primary);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+  transition: all 0.3s ease;
 }
+
+.timeline-node-item:hover .timeline-node-bullet {
+  color: var(--golden-yellow);
+  border-color: var(--golden-yellow);
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.4);
+  transform: scale(1.1);
+}
+
+.timeline-node-card {
+  flex: 1;
+  padding: 28px;
+  background: var(--bg-glass-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-glass);
+  transition: all 0.3s ease;
+}
+
+.timeline-node-card:hover {
+  transform: translateX(8px);
+  border-color: var(--border-glass-hover);
+  box-shadow: var(--shadow-purple);
+}
+
+/* 7. Premium Project Dialog Overlay & Box */
+.premium-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 13, 23, 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s var(--ease-smooth);
+}
+
+.premium-modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.premium-modal-box {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  max-height: 85vh;
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 40px rgba(16, 185, 129, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transform: scale(0.9) translateY(20px);
+  transition: transform 0.4s var(--ease-smooth);
+}
+
+.premium-modal-overlay.active .premium-modal-box {
+  transform: scale(1) translateY(0);
+}
+
+.premium-modal-header {
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--border-glass);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.premium-modal-close {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-glass);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  transition: all 0.3s ease;
+}
+
+.premium-modal-close:hover {
+  transform: rotate(90deg);
+  color: var(--coral-pink);
+  border-color: var(--coral-pink);
+}
+
+.premium-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 36px;
+}
+
+@media (max-width: 768px) {
+  .premium-modal-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+.premium-modal-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-project-img {
+  width: 100%;
+  height: 220px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  border: 1px solid var(--border-glass);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.modal-project-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.modal-stat-card {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  text-align: center;
+}
+
+.modal-stat-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.modal-stat-val {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--emerald-primary);
+  margin-top: 4px;
+}
+
+/* Modal Tabs Navigation */
+.modal-tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-bottom: 1px solid var(--border-glass);
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+}
+
+.modal-tab-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+  background: var(--bg-main);
+  border: 1px solid var(--border-glass);
+}
+
+.modal-tab-btn.active {
+  color: var(--text-main);
+  background: var(--grad-emerald-purple);
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+.modal-tab-content {
+  display: none;
+  animation: modalFadeIn 0.3s ease;
+  line-height: 1.7;
+}
+
+.modal-tab-content.active {
+  display: block;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-bullets-list {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.modal-bullets-list li {
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}
+
+.modal-bullets-list li strong {
+  color: var(--text-main);
+}
+
+/* 8. Certificate Card Enhancements */
+.cert-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.4s var(--ease-smooth);
+}
+
+.cert-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid var(--border-glass);
+  background: #02060d;
+}
+
+.cert-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-smooth);
+}
+
+.cert-card:hover .cert-image-container img {
+  transform: scale(1.08);
+}
+
+.cert-card-body {
+  padding: 24px;
+  flex: 1;
+}
+
+.cert-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.cert-skill-tag {
+  font-size: 0.72rem;
+  padding: 2px 8px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+}
+
+/* Character animation delays */
+.char-fade {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px) rotate(3deg);
+  animation: charFadeIn 0.5s var(--ease-smooth) forwards;
+}
+
+@keyframes charFadeIn {
+  to { opacity: 1; transform: translateY(0) rotate(0); }
+}
+
+/* ===================================================================
+   EXTENSIONS: CENTERED HERO, SOLAR SYSTEM & PREMIUM ADDITIONS
+   =================================================================== */
+
+/* Theme override: default clean white background with premium gradients in light theme */
+body.light-theme {
+  --bg-main: #ffffff;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #f8fafc;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.04) 0%, transparent 45%),
+    radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.04) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.02) 0%, transparent 50%) !important;
+  background-attachment: fixed;
+}
+
+/* Centered Hero Layout */
+.hero-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-centered .profile-visual-container {
+  margin-bottom: 45px;
+  width: 100%;
+  height: 380px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Circular Profile glass frame */
+.hero-centered .profile-glass-frame {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50% !important;
+  padding: 6px;
+  background: var(--bg-glass-card);
+  border: none;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35), 0 0 35px var(--emerald-glow);
+  transform-style: preserve-3d;
+  transition: transform 0.5s var(--ease-smooth);
+}
+
+.hero-centered .profile-glass-frame::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, var(--emerald-primary), var(--purple-accent), var(--coral-pink), var(--golden-yellow));
+  z-index: -1;
+  animation: borderRotate 8s linear infinite;
+  opacity: 0.9;
+}
+
+@keyframes borderRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hero-centered .profile-glass-frame:hover {
+  transform: scale(1.08) rotateY(-8deg) rotateX(8deg);
+}
+
+.hero-centered .profile-image-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50% !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-centered .profile-image-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.hero-centered .profile-glass-frame:hover .profile-image-inner img {
+  transform: scale(1.08);
+}
+
+/* Solar System Orbiting Icons */
+#solar-system-container {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.solar-icon {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-glass);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
+}
+
+.solar-icon:hover {
+  border-color: var(--emerald-primary);
+  box-shadow: 0 0 15px var(--glow-color);
+  transform: scale(1.3) !important;
+}
+
+/* Circular Progress Indicators (Skills) */
+.skills-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.skill-card-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-glass);
+  transition: transform 0.3s var(--ease-smooth), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-glass-hover);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.15);
+}
+
+.circular-progress-wrap {
+  position: relative;
+  width: 76px;
+  height: 76px;
+  margin-right: 18px;
+  flex-shrink: 0;
+}
+
+.circular-progress {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.circular-progress circle {
+  fill: none;
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+
+.circular-progress .bg-circle {
+  stroke: rgba(255, 255, 255, 0.06);
+}
+body.light-theme .circular-progress .bg-circle {
+  stroke: rgba(0, 0, 0, 0.05);
+}
+
+.circular-progress .fg-circle {
+  stroke-dasharray: 251.2;
+  stroke-dashoffset: 251.2;
+  transition: stroke-dashoffset 1.8s var(--ease-smooth);
+}
+
+.progress-value {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-code);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.skill-detail-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.skill-title-name {
+  font-family: var(--ff-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.skill-level-text {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* Learning & Future Goals split cards */
+.learning-goals-card {
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.learning-item-card {
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.learning-item-card:hover {
+  transform: translateX(5px);
+  border-color: var(--border-glass-hover);
+}
+
+.goal-card {
+  transition: transform 0.3s var(--ease-smooth), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.goal-card:hover {
+  transform: scale(1.06);
+  border-color: var(--golden-yellow);
+  box-shadow: 0 10px 25px rgba(245, 158, 11, 0.15);
+}
+
+/* Modal tab styles override */
+.modal-tabs-nav {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--border-glass);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+}
+
+.modal-tab-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.modal-tab-btn.active {
+  color: var(--emerald-primary);
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.modal-tab-content {
+  display: none;
+}
+
+.modal-tab-content.active {
+  display: block;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.premium-modal-overlay {
+  backdrop-filter: blur(15px) !important;
+  background: rgba(4, 9, 17, 0.7) !important;
+}
+
+body.light-theme .premium-modal-overlay {
+  background: rgba(255, 255, 255, 0.6) !important;
+}
+
+

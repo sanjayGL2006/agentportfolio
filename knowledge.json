@@ -5,7 +5,7 @@
     "location": "Shivamogga, Karnataka, India",
     "email": "sanjaygl2006@gmail.com",
     "phone": "+91 8123981877",
-    "status": "Open to Internships & Software Engineering Opportunities",
+    "status": "Student & Intern at Milano Infotech",
     "bio": "Passionate BCA student from Shivamogga, Karnataka, building scalable, secure, and user-friendly web applications, exploring Artificial Intelligence, Cybersecurity, and Cloud Engineering.",
     "future_goal": "Full Stack AI Engineer building intelligent autonomous systems and cloud-native applications.",
     "github": "https://github.com/sanjayGL2006",
@@ -20,98 +20,84 @@
       "degree": "Bachelor of Computer Applications (BCA)",
       "institution": "PES Institute of Advanced Management Studies (PES IAMS)",
       "location": "Shivamogga, Karnataka",
-      "period": "2024 – 2027",
-      "status": "Current · 5th Semester / 3rd Year"
+      "period": "2023 – Present",
+      "status": "Current · 3rd Year · 5th Semester"
     },
     {
       "degree": "Pre-University Course (PUC)",
       "institution": "PES PU College",
       "location": "Shivamogga, Karnataka",
-      "period": "Completed March 2024",
+      "period": "Completed March 2023",
       "status": "Completed"
     },
     {
       "degree": "SSLC",
       "institution": "Cambridge International Public School",
       "location": "Shivamogga, Karnataka",
-      "period": "Completed April 2022",
+      "period": "Completed April 2021",
       "status": "Completed"
     }
   ],
   "currently_learning": {
-    "topic": "Docker & Containerization",
-    "badge": "Currently Learning Docker",
+    "topic": "Artificial Intelligence & Containerization",
+    "badge": "Currently Learning AI, ML & DevOps",
     "subtopics": [
-      "Docker Images",
-      "Containers",
-      "Docker CLI",
-      "Docker Compose",
-      "Docker Hub",
-      "Volumes",
-      "Networking",
-      "Deployment Basics"
-    ],
-    "other_learning": [
-      "Python Advanced Concepts",
-      "AI Engineering & LLM Orchestration",
-      "Cloud Deployment on AWS & Google Cloud Run",
-      "Cybersecurity Threat Analysis"
+      "Artificial Intelligence (50%)",
+      "Machine Learning (40%)",
+      "Docker (35%)",
+      "Electron.js (25%)",
+      "Kali Linux (30%)",
+      "GitLab (Active)",
+      "Prompt Engineering (Active)"
     ]
   },
   "skills": {
     "frontend": [
-      { "name": "HTML5", "level": "Advanced", "percentage": 95 },
-      { "name": "CSS3", "level": "Advanced", "percentage": 92 },
-      { "name": "JavaScript", "level": "Intermediate", "percentage": 85 },
-      { "name": "React", "level": "Intermediate", "percentage": 80 },
-      { "name": "TypeScript", "level": "Intermediate", "percentage": 78 },
-      { "name": "Tailwind CSS", "level": "Intermediate", "percentage": 82 },
-      { "name": "Responsive Design", "level": "Advanced", "percentage": 90 },
-      { "name": "Bootstrap", "level": "Intermediate", "percentage": 80 }
+      { "name": "HTML", "level": "Advanced", "percentage": 95 },
+      { "name": "CSS", "level": "Advanced", "percentage": 92 },
+      { "name": "JavaScript", "level": "Intermediate", "percentage": 88 },
+      { "name": "React", "level": "Learning", "percentage": 60 }
     ],
     "backend": [
-      { "name": "Python", "level": "Intermediate", "percentage": 85 },
-      { "name": "Flask", "level": "Intermediate", "percentage": 82 },
-      { "name": "Node.js", "level": "Beginner", "percentage": 55 },
-      { "name": "PHP", "level": "Intermediate", "percentage": 70 }
-    ],
-    "programming": [
-      { "name": "Python", "level": "Intermediate", "percentage": 85 },
-      { "name": "C", "level": "Intermediate", "percentage": 78 },
-      { "name": "C++", "level": "Intermediate", "percentage": 75 },
-      { "name": "Java", "level": "Intermediate", "percentage": 72 },
-      { "name": "TypeScript", "level": "Intermediate", "percentage": 78 }
+      { "name": "Python", "level": "Intermediate", "percentage": 82 }
     ],
     "database": [
-      { "name": "MySQL", "level": "Intermediate", "percentage": 82 },
-      { "name": "SQL", "level": "Intermediate", "percentage": 84 },
-      { "name": "PL/SQL", "level": "Intermediate", "percentage": 68 },
-      { "name": "Google Sheets DB", "level": "Intermediate", "percentage": 76 }
+      { "name": "SQL", "level": "Intermediate", "percentage": 85 },
+      { "name": "SQLite", "level": "Intermediate", "percentage": 80 }
     ],
     "ai": [
-      { "name": "Gemini API & Google AI Studio", "level": "Intermediate", "percentage": 82 },
-      { "name": "Prompt Engineering", "level": "Advanced", "percentage": 88 },
-      { "name": "AI Agent Architecture", "level": "Intermediate", "percentage": 80 },
-      { "name": "Machine Learning Fundamentals", "level": "Beginner", "percentage": 62 }
+      { "name": "Artificial Intelligence", "level": "Learning", "percentage": 50 },
+      { "name": "Machine Learning", "level": "Learning", "percentage": 40 }
     ],
-    "cybersecurity": [
-      { "name": "Kali Linux", "level": "Intermediate", "percentage": 68 },
-      { "name": "Networking & Security Principles", "level": "Intermediate", "percentage": 72 },
-      { "name": "Cyber Defense Tools", "level": "Intermediate", "percentage": 70 }
+    "cloud": [
+      { "name": "Google Cloud", "level": "Learning", "percentage": 45 }
     ],
-    "tools_cloud": [
-      { "name": "Git & GitHub", "level": "Advanced", "percentage": 88 },
-      { "name": "VS Code & Cursor AI", "level": "Advanced", "percentage": 90 },
-      { "name": "Vercel & Netlify", "level": "Advanced", "percentage": 85 },
-      { "name": "Google Cloud Run", "level": "Intermediate", "percentage": 72 },
-      { "name": "Docker", "level": "Currently Learning", "percentage": 45 }
+    "tools": [
+      { "name": "Git", "level": "Advanced", "percentage": 90 },
+      { "name": "GitHub", "level": "Advanced", "percentage": 90 },
+      { "name": "VS Code", "level": "Advanced", "percentage": 92 },
+      { "name": "Cursor AI", "level": "Advanced", "percentage": 90 },
+      { "name": "Postman", "level": "Intermediate", "percentage": 80 },
+      { "name": "Docker", "level": "Learning", "percentage": 35 },
+      { "name": "Kali Linux", "level": "Learning", "percentage": 30 },
+      { "name": "Electron.js", "level": "Learning", "percentage": 25 }
     ]
   },
   "projects": {
-    "total_count": 23,
-    "featured_count": 8,
-    "ai_projects_count": 4,
+    "total_count": "29+",
+    "featured_count": 5,
+    "ai_projects_count": "7+",
+    "certificates_count": "86+",
+    "technologies_count": "20+",
+    "live_deployments_count": "8+",
+    "machine_learning_projects_count": "2+",
+    "ai_assistants_count": "2+",
     "list": [
+      { "title": "Sindhanai Full Stack AI", "category": "AI", "year": 2026 },
+      { "title": "DERMAIT Skin Care AI", "category": "AI & ML", "year": 2026 },
+      { "title": "Billing Management System", "category": "Utility", "year": 2025 },
+      { "title": "Accident Risk Prediction", "category": "AI & ML", "year": 2026 },
+      { "title": "Sai AI Assistant", "category": "AI", "year": 2026 },
       { "title": "AI Agent using Google API", "category": "AI", "year": 2025, "live": "https://untitled-138389699449.asia-southeast1.run.app/" },
       { "title": "BMI Calculator", "category": "Utility", "year": 2025 },
       { "title": "Digital Board Duel", "category": "Game", "year": 2025, "live": "https://digital-board-duel.lovable.app/" },
@@ -138,7 +124,7 @@
     ]
   },
   "certificates": {
-    "total_count": 102,
+    "total_count": "86+",
     "named_count": 6,
     "drive_count": 96,
     "highlights": [
@@ -159,10 +145,10 @@
     { "role": "MY Bharat Volunteer", "org": "Government of India (Ministry of Youth Affairs)", "period": "2024 – Present" }
   ],
   "achievements": [
-    "102+ Verified Technical & Government Certificates",
+    "86+ Verified Technical & Government Certificates",
     "35+ Open Source GitHub Repositories",
-    "7+ Production Web Applications Live",
-    "12+ AI-powered Projects & Chatbots",
+    "8+ Production Web Applications Live",
+    "7+ AI-powered Projects & Chatbots",
     "Awarded Star Performer Certificate at Oasis Infobyte AICTE Internship",
     "State Level BCA Tech Fest Coding Contestant at Pravidhi 2026"
   ]
