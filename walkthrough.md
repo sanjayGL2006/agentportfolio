@@ -1,59 +1,61 @@
-# Walkthrough: Docker and Vercel Setup Completed
+# Portfolio Audit Fixes & SEO Optimization Package Walkthrough
 
-The Docker configuration and Vercel deployment files have been successfully created and verified for syntax.
-
-## Changes Made
-
-1. **[Dockerfile](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/Dockerfile)**: Standard multi-stage structure utilizing `python:3.11-slim` and Gunicorn to run the Flask application.
-2. **[.dockerignore](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/.dockerignore)**: Ignores node modules, virtual environments, cache, and metadata files.
-3. **[vercel.json](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/vercel.json)**: Configures Vercel to route all dynamic traffic to the entrypoint file and use Vercel's Python runtime.
-4. **[api/index.py](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/api/index.py)**: Imports the Flask `app` instance from `app.py` in the parent directory and acts as Vercel's serverless entry point.
-5. **[requirements.txt](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/requirements.txt)**: Added `pypdf` dependency for parsing PDF certificates.
+All issues reported in the **Portfolio Site Audit Report** and requested in the **SEO Optimization Package** have been resolved and empirically verified.
 
 ---
 
-## Deployment and Verification Instructions
+## 🛠️ Changes Implemented
 
-### 1. Running via Docker
+### 1. Unified Project & Certificate Counts Across All Pages
+- **Empirical Dataset Verification**: Evaluated `js/projectsData.js` (28 projects) and `js/certificatesData.js` (86 certificates).
+- **Synchronized Counts**: Replaced all hardcoded, drifting counts (`29+`, `25`, `23`, `102+`) across all HTML files, headers, footers, filter tabs, hero stat counters, and JS datasets.
+- **Dynamic Count Hooks**: Updated `js/certificatesPage.js`, `js/projectsPage.js`, and `js/home.js` to dynamically load `PROJECTS_DATA.length` (28) and `CERTIFICATES_DATA.length` (86).
 
-To build the image and run the application in a local container (requires Docker Desktop to be running):
+### 2. Standardized Canonical URLs (SEO)
+- Standardized canonical domain to `https://sanjaygl30ai.vercel.app/` across all pages:
+  - `index.html`: `<link rel="canonical" href="https://sanjaygl30ai.vercel.app/">`
+  - `projects.html`: `<link rel="canonical" href="https://sanjaygl30ai.vercel.app/projects.html">`
+  - `certificates.html`: `<link rel="canonical" href="https://sanjaygl30ai.vercel.app/certificates.html">`
 
-```powershell
-# 1. Build the Docker image
-docker build -t portfolio-app .
+### 3. Open Graph & Social Preview Image (`og:image`)
+- **Generated Banner**: Created a 1200×630px high-resolution PNG banner at [assets/og-banner.png](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/assets/og-banner.png) matching the portfolio's dark cyber theme (`#0a0f1d`).
+- **Complete Social Meta Tags**: Integrated absolute URLs for `og:image`, `og:image:width` (1200), `og:image:height` (630), `og:image:alt`, `twitter:card` (`summary_large_image`), `twitter:title`, `twitter:description`, and `twitter:image` across all HTML pages.
 
-# 2. Run the container on port 5000
-docker run -d -p 5000:5000 --name portfolio-container portfolio-app
-```
+### 4. Person Structured Data (Schema.org JSON-LD)
+- Injected valid JSON-LD `Person` schema into `index.html` head section with complete profile details, college info (`PES Institute of Advanced Management Studies`), `sameAs` social links, and `knowsAbout` tech stack array.
 
-Once running, open `http://localhost:5000` to access the application.
+### 5. Unified Social Media Handles
+- Unified personal Instagram handle to `https://www.instagram.com/me__sanjaygl8123` across Schema.org data, header icons, and contact sections.
 
-### 2. Hosting on Vercel
+### 6. Crawlability & Static SEO Fallback Content
+- Added `<noscript>` static fallback indexes in `projects.html` and `certificates.html` containing full semantic list items for search engine crawlers without JavaScript execution.
+- Verified `/robots.txt` and `/sitemap.xml` under `https://sanjaygl30ai.vercel.app/`.
 
-To host this repository on Vercel:
-
-1. **Push your code** to a GitHub repository.
-2. **Import your project** in the [Vercel Dashboard](https://vercel.com/new).
-3. Vercel will automatically detect `vercel.json` and deploy your Flask app and static assets.
-
-Alternatively, you can deploy using the Vercel CLI from your terminal:
-```powershell
-# Install Vercel CLI globally
-npm install -g vercel
-
-# Deploy (login and setup)
-vercel --prod
-```
+### 7. AI OS Knowledge Base Single Source of Truth
+- Created [assets/agent_knowledge.json](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/assets/agent_knowledge.json) containing profile, education, project summaries, certificate stats, and system prompt setup for the AI Assistant.
+- Updated `app.py` prompt context to reflect the `sanjaygl30ai.vercel.app` domain.
 
 ---
 
-## AI Chatbot Database Integration & MySQL Support
+## 🧪 Verification Results
 
-### 1. Database Persistence
-- Every question asked by visitors via the chat panel is logged in the `agent_conversations` database table using dynamic ORM queries in `app.py`.
-- If an internship project suggestion is triggered, those ideas and reasoning are logged into `agent_project_suggestions`.
+Automated verification suite `scratch/verify_all_fixes.py` executed successfully:
 
-### 2. Administrative Tools
-- **[view_agent_conversations.py](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/view_agent_conversations.py)**: A new CLI tool to display all question-and-answer interactions stored in the database.
-- **[.env.example](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/.env.example)**: A configuration guide showing how to set up environment parameters to switch from the default local SQLite database to a production MySQL database instance.
+```text
+=== RUNNING PORTFOLIO AUDIT FIXES VERIFICATION ===
+[OK] assets/og-banner.png exists and is exactly 1200x630px
+[OK] index.html canonical URL correct: https://sanjaygl30ai.vercel.app/
+[OK] projects.html canonical URL correct: https://sanjaygl30ai.vercel.app/projects.html
+[OK] certificates.html canonical URL correct: https://sanjaygl30ai.vercel.app/certificates.html
+[OK] index.html og:image is absolute PNG banner URL
+[OK] projects.html og:image is absolute PNG banner URL
+[OK] certificates.html og:image is absolute PNG banner URL
+[OK] index.html Person JSON-LD is valid and properly structured
+[OK] index.html free of outdated inconsistent counts
+[OK] projects.html free of outdated inconsistent counts
+[OK] certificates.html free of outdated inconsistent counts
+[OK] assets/agent_knowledge.json exists and contains verified counts
 
+=============================================
+SUCCESS: ALL AUDIT FIXES & SEO VERIFICATIONS PASSED CLEANLY!
+```

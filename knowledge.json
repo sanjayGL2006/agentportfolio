@@ -11,10 +11,16 @@
     "core_philosophy": "Builder mindset: going from 'I have an idea' → 'I built it'. Learning by doing rather than watching passive tutorials.",
     "future_goal": "Full-stack developer & Security Engineer building scalable web products, ethical cybersecurity labs, and AI systems.",
     "personal_life": {
-      "relationship": "Married to his wife",
+      "relationship": "single and i am bca student",
       "family": "Has a brother, grandparents, and Ramu mama (shared car travels & traditional banana leaf meals)",
       "mother_craft": "Mother crafts customized saree border tassels (kuchu) for which Sanjay explored creating a digital storefront",
-      "hobbies": ["Trekking & Hiking (Hulibande falls, Haihole Check Dam)", "Cycling & Electric Cycle Research", "Fish keeping & aquarium care (Platy fish)", "Mobile & PC gaming (Open-world epics, HP Victus laptop)", "Indian Cinema (Tracking releases like Jana Nayagan, With Love, Karuppu)"]
+      "hobbies": [
+        "Trekking & Hiking (Hulibande falls, Haihole Check Dam)",
+        "Cycling & Electric Cycle Research",
+        "Fish keeping & aquarium care (Platy fish)",
+        "Mobile & PC gaming (Open-world epics, HP Victus laptop)",
+        "Indian Cinema (Tracking releases like Jana Nayagan, With Love, Karuppu)"
+      ]
     },
     "github": "https://github.com/sanjayGL2006",
     "linkedin": "https://linkedin.com/in/sanjaygl2006",
@@ -55,61 +61,210 @@
   ],
   "currently_learning": {
     "topic": "Artificial Intelligence, Agentic Systems & Containerization",
-    "badge": "SANJAY AI OS v2.0 · Active AI & DevOps Stack",
+    "badge": "SANJAY AI OS v2.5 · Active AI & DevOps Stack",
     "subtopics": [
+      "Supabase Vector DB & Auth (80%)",
+      "Lovable AI & Base44 Full Stack Engines (80%)",
+      "TryHackMe Cybersecurity Labs (75%)",
+      "Bash Scripting & Automation (75%)",
       "Agentic AI (55%)",
       "JavaScript Core (55%)",
       "Python (55%)",
-      "Java (50%)",
-      "Machine Learning (50%)",
-      "CNN / AI Basics (50%)",
-      "Blockchain Technology (45%)"
+      "Machine Learning (50%)"
     ]
   },
   "skills": {
     "web_development": [
-      { "name": "HTML5 / CSS3", "level": "Advanced", "percentage": 95 },
-      { "name": "Web Page Design", "level": "Intermediate", "percentage": 80 },
-      { "name": "JavaScript (Core)", "level": "Learning", "percentage": 55 },
-      { "name": "XML", "level": "Knowledge", "percentage": 45 },
-      { "name": "E-Commerce Dev", "level": "Knowledge", "percentage": 45 }
+      {
+        "name": "HTML5 / CSS3",
+        "level": "Advanced",
+        "percentage": 95
+      },
+      {
+        "name": "Web Page Design",
+        "level": "Intermediate",
+        "percentage": 80
+      },
+      {
+        "name": "JavaScript (Core)",
+        "level": "Learning",
+        "percentage": 55
+      },
+      {
+        "name": "XML",
+        "level": "Knowledge",
+        "percentage": 45
+      },
+      {
+        "name": "E-Commerce Dev",
+        "level": "Knowledge",
+        "percentage": 45
+      }
     ],
     "programming": [
-      { "name": "C / C++", "level": "Intermediate", "percentage": 75 },
-      { "name": "Java", "level": "Learning", "percentage": 50 },
-      { "name": "Python", "level": "Learning", "percentage": 55 }
+      {
+        "name": "C / C++",
+        "level": "Intermediate",
+        "percentage": 75
+      },
+      {
+        "name": "Java",
+        "level": "Learning",
+        "percentage": 50
+      },
+      {
+        "name": "Python",
+        "level": "Learning",
+        "percentage": 55
+      }
     ],
     "networking": [
-      { "name": "Computer Networking", "level": "Basics", "percentage": 45 }
+      {
+        "name": "Computer Networking",
+        "level": "Basics",
+        "percentage": 45
+      }
     ],
     "database": [
-      { "name": "SQL", "level": "Intermediate", "percentage": 78 },
-      { "name": "PL/SQL", "level": "Intermediate", "percentage": 75 },
-      { "name": "MySQL", "level": "Intermediate", "percentage": 78 },
-      { "name": "Google Sheets as DB", "level": "Intermediate", "percentage": 80 }
+      {
+        "name": "SQL",
+        "level": "Intermediate",
+        "percentage": 78
+      },
+      {
+        "name": "PL/SQL",
+        "level": "Intermediate",
+        "percentage": 75
+      },
+      {
+        "name": "MySQL",
+        "level": "Intermediate",
+        "percentage": 78
+      },
+      {
+        "name": "Google Sheets as DB",
+        "level": "Intermediate",
+        "percentage": 80
+      }
     ],
     "tools_and_productivity": [
-      { "name": "Git & GitHub", "level": "Advanced", "percentage": 92 },
-      { "name": "AI Productivity Tools", "level": "Advanced", "percentage": 90 },
-      { "name": "MS Word", "level": "Advanced", "percentage": 90 },
-      { "name": "MS PowerPoint", "level": "Advanced", "percentage": 90 },
-      { "name": "Visual Studio Code", "level": "Intermediate", "percentage": 82 },
-      { "name": "Cursor IDE", "level": "Intermediate", "percentage": 80 },
-      { "name": "Google AI Studio", "level": "Intermediate", "percentage": 78 },
-      { "name": "MS Excel / Sheets", "level": "Intermediate", "percentage": 80 },
-      { "name": "antigravity", "level": "Intermediate", "percentage": 80 },
-      { "name": "Gamma Presentation", "level": "Intermediate", "percentage": 75 },
-      { "name": "Figma Design", "level": "Intermediate", "percentage": 75 },
-      { "name": "Replit Cloud IDE", "level": "Intermediate", "percentage": 75 },
-      { "name": "Blackbox AI Code", "level": "Intermediate", "percentage": 75 },
-      { "name": "Base44", "level": "Intermediate", "percentage": 75 },
-      { "name": "google stitch", "level": "Intermediate", "percentage": 75 }
+      {
+        "name": "Git & GitHub",
+        "level": "Advanced",
+        "percentage": 92
+      },
+      {
+        "name": "AI Productivity Tools",
+        "level": "Advanced",
+        "percentage": 90
+      },
+      {
+        "name": "MS Word",
+        "level": "Advanced",
+        "percentage": 90
+      },
+      {
+        "name": "MS PowerPoint",
+        "level": "Advanced",
+        "percentage": 90
+      },
+      {
+        "name": "Visual Studio Code",
+        "level": "Intermediate",
+        "percentage": 82
+      },
+      {
+        "name": "Cursor IDE",
+        "level": "Intermediate",
+        "percentage": 80
+      },
+      {
+        "name": "Google AI Studio",
+        "level": "Intermediate",
+        "percentage": 78
+      },
+      {
+        "name": "MS Excel / Sheets",
+        "level": "Intermediate",
+        "percentage": 80
+      },
+      {
+        "name": "antigravity",
+        "level": "Intermediate",
+        "percentage": 80
+      },
+      {
+        "name": "Gamma Presentation",
+        "level": "Intermediate",
+        "percentage": 75
+      },
+      {
+        "name": "Figma Design",
+        "level": "Intermediate",
+        "percentage": 75
+      },
+      {
+        "name": "Replit Cloud IDE",
+        "level": "Intermediate",
+        "percentage": 75
+      },
+      {
+        "name": "Blackbox AI Code",
+        "level": "Intermediate",
+        "percentage": 75
+      },
+      {
+        "name": "Base44",
+        "level": "Intermediate",
+        "percentage": 80
+      },
+      {
+        "name": "Supabase",
+        "level": "Intermediate",
+        "percentage": 80
+      },
+      {
+        "name": "Lovable AI",
+        "level": "Intermediate",
+        "percentage": 80
+      },
+      {
+        "name": "TryHackMe",
+        "level": "Intermediate",
+        "percentage": 75
+      },
+      {
+        "name": "Bash Scripting",
+        "level": "Intermediate",
+        "percentage": 75
+      },
+      {
+        "name": "google stitch",
+        "level": "Intermediate",
+        "percentage": 75
+      }
     ],
     "ai_and_ml": [
-      { "name": "Agentic AI", "level": "Learning", "percentage": 55 },
-      { "name": "Machine Learning", "level": "Learning", "percentage": 50 },
-      { "name": "CNN / AI Basics", "level": "Learning", "percentage": 50 },
-      { "name": "Blockchain Technology", "level": "Learning", "percentage": 45 }
+      {
+        "name": "Agentic AI",
+        "level": "Learning",
+        "percentage": 55
+      },
+      {
+        "name": "Machine Learning",
+        "level": "Learning",
+        "percentage": 50
+      },
+      {
+        "name": "CNN / AI Basics",
+        "level": "Learning",
+        "percentage": 50
+      },
+      {
+        "name": "Blockchain Technology",
+        "level": "Learning",
+        "percentage": 45
+      }
     ]
   },
   "projects": {
@@ -122,34 +277,154 @@
     "machine_learning_projects_count": "2+",
     "ai_assistants_count": "2+",
     "list": [
-      { "title": "Sindhanai Full Stack AI", "category": "AI", "year": 2026 },
-      { "title": "DERMAIT Skin Care AI", "category": "AI & ML", "year": 2026 },
-      { "title": "Billing Management System", "category": "Utility", "year": 2025 },
-      { "title": "Accident Risk Prediction", "category": "AI & ML", "year": 2026 },
-      { "title": "Sai AI Assistant", "category": "AI", "year": 2026 },
-      { "title": "AI Agent using Google API", "category": "AI", "year": 2025, "live": "https://untitled-138389699449.asia-southeast1.run.app/" },
-      { "title": "BMI Calculator", "category": "Utility", "year": 2025 },
-      { "title": "Digital Board Duel", "category": "Game", "year": 2025, "live": "https://digital-board-duel.lovable.app/" },
-      { "title": "RupeeTrack (Expense Tracker)", "category": "Finance", "year": 2025, "live": "https://rupeetrack-app.netlify.app/" },
-      { "title": "Grab Notes", "category": "Productivity", "year": 2025, "live": "https://grab-notes.base44.app" },
-      { "title": "Handcrafted with Love – Pure Weaves", "category": "E-Commerce", "year": 2025 },
-      { "title": "Hyper Rent Local", "category": "Real Estate", "year": 2025 },
-      { "title": "Kai Assistant", "category": "AI", "year": 2025 },
-      { "title": "PES Placement", "category": "Education", "year": 2025 },
-      { "title": "Placement PES IAMS", "category": "Education", "year": 2026 },
-      { "title": "Pizza Shop Website", "category": "Landing Page", "year": 2025 },
-      { "title": "Property Manager Dashboard", "category": "Dashboard", "year": 2025 },
-      { "title": "Pure Weaves E-Commerce", "category": "E-Commerce", "year": 2025, "live": "https://pureweaves.vercel.app/" },
-      { "title": "Registration Form", "category": "Form", "year": 2025 },
-      { "title": "Sanjay GL Portfolio", "category": "Portfolio", "year": 2025, "live": "https://sanjaygl2006.vercel.app/" },
-      { "title": "Sanju Portfolio Pro Hub", "category": "Portfolio", "year": 2025, "live": "https://sanju-portfolio-pro-hub.base44.app" },
-      { "title": "Spy Detect Pro", "category": "Cybersecurity", "year": 2025, "live": "https://spy-detect-pro.base44.app" },
-      { "title": "Surya Chatbot", "category": "AI", "year": 2025 },
-      { "title": "Temperature Converter", "category": "Utility", "year": 2025 },
-      { "title": "Tic-Tac-Toe (Python)", "category": "Game", "year": 2025 },
-      { "title": "Vault Secure Auth", "category": "Authentication", "year": 2025 },
-      { "title": "VPN Landing Page", "category": "Landing Page", "year": 2025 },
-      { "title": "Web Calculator", "category": "Utility", "year": 2025 }
+      {
+        "title": "Sindhanai Full Stack AI",
+        "category": "AI",
+        "year": 2026
+      },
+      {
+        "title": "DERMAIT Skin Care AI",
+        "category": "AI & ML",
+        "year": 2026
+      },
+      {
+        "title": "Billing Management System",
+        "category": "Utility",
+        "year": 2025
+      },
+      {
+        "title": "Accident Risk Prediction",
+        "category": "AI & ML",
+        "year": 2026
+      },
+      {
+        "title": "Sai AI Assistant",
+        "category": "AI",
+        "year": 2026
+      },
+      {
+        "title": "AI Agent using Google API",
+        "category": "AI",
+        "year": 2025,
+        "live": "https://untitled-138389699449.asia-southeast1.run.app/"
+      },
+      {
+        "title": "BMI Calculator",
+        "category": "Utility",
+        "year": 2025
+      },
+      {
+        "title": "Digital Board Duel",
+        "category": "Game",
+        "year": 2025,
+        "live": "https://digital-board-duel.lovable.app/"
+      },
+      {
+        "title": "RupeeTrack (Expense Tracker)",
+        "category": "Finance",
+        "year": 2025,
+        "live": "https://rupeetrack-app.netlify.app/"
+      },
+      {
+        "title": "Grab Notes",
+        "category": "Productivity",
+        "year": 2025,
+        "live": "https://grab-notes.base44.app"
+      },
+      {
+        "title": "Handcrafted with Love – Pure Weaves",
+        "category": "E-Commerce",
+        "year": 2025
+      },
+      {
+        "title": "Hyper Rent Local",
+        "category": "Real Estate",
+        "year": 2025
+      },
+      {
+        "title": "Kai Assistant",
+        "category": "AI",
+        "year": 2025
+      },
+      {
+        "title": "PES Placement",
+        "category": "Education",
+        "year": 2025
+      },
+      {
+        "title": "Placement PES IAMS",
+        "category": "Education",
+        "year": 2026
+      },
+      {
+        "title": "Pizza Shop Website",
+        "category": "Landing Page",
+        "year": 2025
+      },
+      {
+        "title": "Property Manager Dashboard",
+        "category": "Dashboard",
+        "year": 2025
+      },
+      {
+        "title": "Pure Weaves E-Commerce",
+        "category": "E-Commerce",
+        "year": 2025,
+        "live": "https://pureweaves.vercel.app/"
+      },
+      {
+        "title": "Registration Form",
+        "category": "Form",
+        "year": 2025
+      },
+      {
+        "title": "Sanjay GL Portfolio",
+        "category": "Portfolio",
+        "year": 2025,
+        "live": "https://sanjaygl2006.vercel.app/"
+      },
+      {
+        "title": "Sanju Portfolio Pro Hub",
+        "category": "Portfolio",
+        "year": 2025,
+        "live": "https://sanju-portfolio-pro-hub.base44.app"
+      },
+      {
+        "title": "Spy Detect Pro",
+        "category": "Cybersecurity",
+        "year": 2025,
+        "live": "https://spy-detect-pro.base44.app"
+      },
+      {
+        "title": "Surya Chatbot",
+        "category": "AI",
+        "year": 2025
+      },
+      {
+        "title": "Temperature Converter",
+        "category": "Utility",
+        "year": 2025
+      },
+      {
+        "title": "Tic-Tac-Toe (Python)",
+        "category": "Game",
+        "year": 2025
+      },
+      {
+        "title": "Vault Secure Auth",
+        "category": "Authentication",
+        "year": 2025
+      },
+      {
+        "title": "VPN Landing Page",
+        "category": "Landing Page",
+        "year": 2025
+      },
+      {
+        "title": "Web Calculator",
+        "category": "Utility",
+        "year": 2025
+      }
     ]
   },
   "certificates": {
@@ -169,10 +444,26 @@
     ]
   },
   "volunteer": [
-    { "role": "NSS Volunteer", "org": "National Service Scheme (PES IAMS)", "period": "2023 – Present" },
-    { "role": "Youth For Seva (YFS)", "org": "Virupina Koppa Group Tree Planting Drive (2025)", "period": "2024 – Present" },
-    { "role": "MY Bharat Volunteer", "org": "Govt. of India / Viksit Vibrant Village Program Quiz 2026", "period": "2024 – Present" },
-    { "role": "Nasha Mukti Competition", "org": "Creative Anthem Entry for Drug-Free India Initiative", "period": "2026" }
+    {
+      "role": "NSS Volunteer",
+      "org": "National Service Scheme (PES IAMS)",
+      "period": "2023 – Present"
+    },
+    {
+      "role": "Youth For Seva (YFS)",
+      "org": "Virupina Koppa Group Tree Planting Drive (2025)",
+      "period": "2024 – Present"
+    },
+    {
+      "role": "MY Bharat Volunteer",
+      "org": "Govt. of India / Viksit Vibrant Village Program Quiz 2026",
+      "period": "2024 – Present"
+    },
+    {
+      "role": "Nasha Mukti Competition",
+      "org": "Creative Anthem Entry for Drug-Free India Initiative",
+      "period": "2026"
+    }
   ],
   "achievements": [
     "86+ Verified Technical & Government Certificates",

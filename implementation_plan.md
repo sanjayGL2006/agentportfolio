@@ -1,142 +1,101 @@
-# Implementation Plan — Portfolio Update & Premium Enhancement
+# SEO Optimization & Site Audit Fix Plan — sanjaygl30ai.vercel.app
 
-This plan outlines the professional updates and premium enhancements for Sanjay G. L.'s portfolio website. The focus is to transform the site into a state-of-the-art developer platform without removing any existing projects, achievements, certificates, or animations.
-
----
+This implementation plan addresses all critical, medium, and minor issues identified in the portfolio site audit report and implements the SEO Optimization Package.
 
 ## User Review Required
 
 > [!IMPORTANT]
-> - **Theme colors:** Nature-inspired colors (emerald green, purple, yellow, orange, coral-pink) will remain primary. Avoid using blue as the primary accent color.
-> - **No Rebuilding:** Code updates will build directly on existing HTML files (`index.html`, `projects.html`, `certificates.html`), stylesheet (`css/styles.css`), and Javascript engines (`js/home.js`, `js/projectsPage.js`, `js/certificatesPage.js`, `js/background3d.js`, `js/aiAssistant.js`).
-> - **Dockerfile Exclusion:** Docker roadmap will explicitly omit `Dockerfile` and `Deployment Basics`, keeping only requested topics.
-
----
-
-## Open Questions
-
-- *Are there specific mockup image styles you prefer for the new featured projects (Accident Risk Prediction & Sai AI Assistant)?*
-  - **Proposed Approach:** I will generate two high-fidelity dark-themed illustrations for these project backgrounds using our AI image generation engine (`generate_image`) with neon-emerald and purple glows.
-
----
+> - **Unified Instagram Handle**: `https://www.instagram.com/me__sanjaygl8123` will be used as the official personal Instagram handle across all pages, schema tags, and AI Knowledge Base. The secondary `code_catalyst_collective` handle will be explicitly labeled as "Dev Content / Tech Collective".
+> - **Exact Verified Counts**: Based on dataset analysis of `js/projectsData.js` and `js/certificatesData.js`, the exact counts are **28 Projects** and **86 Certificates**. All pages, meta tags, schema data, and JS count update hooks will be synchronized to `28+ Projects` and `86+ Certificates`.
 
 ## Proposed Changes
 
-### Component 1: Core Datasets & Configurations
+---
 
-Modify the local JSON/JS data representations to incorporate the new featured projects, updated statistics, and refined roadmaps.
+### 1. Assets & Social Preview (`og:image`)
 
-#### [MODIFY] [projectsData.js](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/js/projectsData.js)
-- Add two new featured projects to the top of the `PROJECTS_DATA` array:
-  1. **Accident Risk Prediction** (Artificial Intelligence & Machine Learning)
-  2. **Sai AI Assistant** (Artificial Intelligence)
-- Include metadata properties for these projects such as detailed tech stacks, features, structure modules, statistics, and future roadmaps.
-
-#### [MODIFY] [knowledge.json](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/knowledge.json)
-- Update education profile to "3rd Year · 5th Sem" (Bachelor of Computer Applications).
-- Update statistics counter values.
-- Refine the Docker subtopics list to include: `Containers`, `Images`, `Docker CLI`, `Docker Hub`, `Docker Compose`, `Networking Basics`, `Volumes` (ensure no mention of `Dockerfile`).
-- Add the new skills (Machine Learning, Random Forest, Flask, Scikit-learn, Pandas, NumPy, SQLite, SQL, Gemini API, Prompt Engineering, Docker).
-- Add the two new projects to the projects list.
+#### [NEW] [og-banner.png](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/assets/og-banner.png)
+- Generate a high-resolution 1200×630px PNG banner image for Open Graph and Twitter cards featuring:
+  - Dark cyber aesthetic matching portfolio theme (`#0a0f1d`)
+  - Sanjay G. L. title, "Full Stack AI Developer & BCA Student"
+  - Key statistics badge: `28+ Projects | 86+ Certificates`
+  - Clean logo and tech stack highlights
 
 ---
 
-### Component 2: Stylesheet & Animation Systems
-
-Upgrading styling for premium cards, floating overlays, grids, and introducing missing smooth animations.
-
-#### [MODIFY] [styles.css](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/css/styles.css)
-- **Nature Inspired Accents:** Double down on HSL/RGB colors for Emerald Green (`#10b981`), Purple (`#8b5cf6`), Golden-Yellow (`#f59e0b`), Orange (`#f97316`), and Coral-Pink (`#ec4899`). Avoid any blue elements as primary accents.
-- **Premium Cards styling:** Add layout styles for the Featured Projects cards, featuring:
-  - Gradient animated borders (`@keyframes borderRotate`)
-  - Back-glow effect (`box-shadow: 0 0 40px rgba(16,185,129,0.15)`)
-  - Glassmorphic backdrop (`backdrop-filter: blur(16px)`)
-- **Detailed Dialog Popup:** Style a premium dialog modal (`.premium-modal-overlay`) with backdrop-blur, slide-and-scale animations (`@keyframes modalZoomIn`), close buttons with hover rotations, and multiple content tabs (Overview, Architecture, Features, Structure, Future).
-- **New Section Styles:** Add styling for the Research & AI Projects timeline (nodes, links, cards, icons).
-- **Core Animations:** Add support for:
-  - *Character & Word Reveal animations* (using delay variables)
-  - *Ripple Click effect* (`.ripple-effect` with keyframes)
-  - *Smooth Page Transition* overlay (`.page-transition-overlay` fade)
-  - *3D Tilt variables* (`--rx`, `--ry`)
-  - *Certificate card Zoom* and *Glow overlays*.
-
----
-
-### Component 3: Javascript Engines & Interactive Logic
-
-Upgrading script components to enable premium interactions, chatbot intelligence, and constellation backgrounds.
-
-#### [MODIFY] [projectsPage.js](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/js/projectsPage.js)
-- Update card rendering to support the premium featured project layout at the top.
-- Add mousemove-listener for **3D Tilt effect** on the featured cards.
-- Add modal logic to open the **Premium Dialog Box** when clicking "Read More". The modal will render the detailed layout (image, statistics, overview, architecture, feature lists, modules, structure trees, timeline, etc.).
-
-#### [MODIFY] [home.js](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/js/home.js)
-- Call `renderHomeFeaturedCertificates()` inside the `DOMContentLoaded` event listener (fixing the missing render call).
-- Update the home page featured projects render layout to include the two new projects at the beginning.
-
-#### [MODIFY] [certificatesPage.js](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/js/certificatesPage.js)
-- Update gallery grid rendering to show the Certificate Image (`lh3.googleusercontent.com` drive image), course name, organization, completion day, month, year, credential ID, skills learned, and verification link.
-- Enhance the lightbox modal to display the certificate image, using the premium glass-modal design.
-
-#### [MODIFY] [aiAssistant.js](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/js/aiAssistant.js)
-- Update chatbot knowledge triggers.
-- Support detailed response HTML for queries:
-  - *Show Featured Projects*
-  - *Tell me about Sai AI Assistant*
-  - *Tell me about Accident Risk Prediction*
-  - *Show AI Projects*
-  - *Show Machine Learning Projects*
-- Inject quick links or project cards directly in chatbot answers.
-
-#### [MODIFY] [background3d.js](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/js/background3d.js)
-- Update `TECH_OBJECTS` array to contain Python, Flask, Machine Learning, AI Chip, Gemini, Database, SQL, React, JavaScript, Docker, GitHub, Git, Linux, Cloud, and Terminal.
-- Implement a **Constellation Effect** on the background canvas: draw thin, faint lines between particles that are close to each other.
-- Add **Floating Stars** and subtle mouse reactivity (moving coordinates based on mouse position relative to center).
-
----
-
-### Component 4: HTML Page Structures
-
-Adding layouts, placeholders, and structure containers.
+### 2. Main Page (`index.html`)
 
 #### [MODIFY] [index.html](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/index.html)
-- Update biography text and degree labels to "3rd Year · 5th Sem" (lines 188, 248, 272).
-- Update the Stats Grid to show 8 statistics counters instead of 4, matching the new counts exactly:
-  - Projects: 25+
-  - Featured Projects: 2
-  - AI Projects: 5+
-  - Certificates: 70+
-  - Technologies: 20+
-  - Live Deployments: 8+
-  - Machine Learning Projects: 1+
-  - AI Assistants: 2+
-- Add the **Research & AI Projects** section (Timeline & Modern Cards Layout) on the homepage.
-- Add the new skills to the technical skillset section grid.
-- Update the Docker showcase to match the specified topics (Images, Containers, Docker CLI, Docker Hub, Docker Compose, Networking Basics, Volumes) and ensure no mention of `Dockerfile`.
+- Trim meta description to ~155 characters for optimal Google search snippet rendering.
+- Update Open Graph and Twitter Card tags to use absolute image URL (`https://sanjaygl30ai.vercel.app/assets/og-banner.png`), 1200×630 dimensions, alt text, and `summary_large_image` Twitter card.
+- Insert schema.org `Person` JSON-LD structured data before `</head>` with full profile details, alumni info, `sameAs` array, `knowsAbout` skills, and `sanjaygl30ai.vercel.app` canonical domain.
+- Unify project counts (`28+ Projects` / `Projects (28)`) and certificate counts (`86+ Certificates` / `Certificates (86+)`).
+- Unify Instagram links and clarify social badges.
+
+---
+
+### 3. Projects Page (`projects.html`)
 
 #### [MODIFY] [projects.html](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/projects.html)
-- Integrate a premium details modal overlay element (`<div id="premiumProjectModal" class="premium-modal-overlay"></div>`).
-- Ensure the header stats and descriptions reflect "25+ projects".
+- Fix canonical URL to `https://sanjaygl30ai.vercel.app/projects.html`.
+- Add full Open Graph and Twitter card meta tags using `og-banner.png`.
+- Update Title and Meta Description to match unified `28` projects count.
+- Fix header link "View Certificates (102+)" -> "View Certificates (86+)".
+- Unify nav link `Projects (28)` and visible count span `28`.
+- Add static HTML `<noscript>` / fallback structure containing indexable text for projects so search engine crawlers can index project titles, descriptions, and tech stacks.
+
+---
+
+### 4. Certificates Page (`certificates.html`)
 
 #### [MODIFY] [certificates.html](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/certificates.html)
-- Ensure title, stats, and description count match the updated profile details.
-- Add necessary HTML containers for the upgraded certificate gallery.
+- Fix canonical URL to `https://sanjaygl30ai.vercel.app/certificates.html`.
+- Add full Open Graph and Twitter card meta tags using `og-banner.png`.
+- Update Title and Meta Description to match unified `86+` certificates count.
+- Fix top nav link "View Projects (23)" -> "View Projects (28)" and footer "Projects (28)".
+- Add static HTML fallback containing indexable text for certificates.
+
+---
+
+### 5. Dynamic Count Synchronization Scripts
+
+#### [MODIFY] [js/home.js](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/js/home.js)
+#### [MODIFY] [js/projectsPage.js](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/js/projectsPage.js)
+#### [MODIFY] [js/certificatesPage.js](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/js/certificatesPage.js)
+- Implement dynamic count updater logic on DOM load that calculates `PROJECTS_DATA.length` (28) and `CERTIFICATES_DATA.length` (86) and updates DOM text elements automatically to prevent any future count drift.
+
+---
+
+### 6. Crawl & SEO Files (`robots.txt`, `sitemap.xml`)
+
+#### [MODIFY] [robots.txt](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/robots.txt)
+- Ensure clean standard format with `Allow: /` and `Sitemap: https://sanjaygl30ai.vercel.app/sitemap.xml`.
+
+#### [MODIFY] [sitemap.xml](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/sitemap.xml)
+- Ensure clean XML urlset for `/`, `/projects.html`, and `/certificates.html` under `sanjaygl30ai.vercel.app`.
+
+---
+
+### 7. AI Knowledge Base & Backend Data
+
+#### [NEW] [assets/agent_knowledge.json](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/assets/agent_knowledge.json)
+#### [MODIFY] [knowledge.json](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/knowledge.json)
+#### [MODIFY] [app.py](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/app.py)
+- Create `assets/agent_knowledge.json` as single source of truth for the Gemini AI assistant.
+- Synchronize `knowledge.json` and `app.py` prompt context with exact project details, 28 projects, 86 certificates, and consistent social links.
 
 ---
 
 ## Verification Plan
 
 ### Automated Tests
-- Build verification scripts to test Javascript syntax correctness across updated engines.
-- Test endpoint availability and asset loaders.
+- Run Python verification script to check:
+  - Canonical URLs in all HTML files point to `sanjaygl30ai.vercel.app`.
+  - All project count references across HTML/JS match `28` / `28+`.
+  - All certificate count references across HTML/JS match `86` / `86+`.
+  - `og:image` meta tags use absolute `https://sanjaygl30ai.vercel.app/assets/og-banner.png` path.
+  - JSON-LD syntax in HTML files is valid JSON.
+  - `assets/og-banner.png` exists and has dimensions 1200×630.
 
 ### Manual Verification
-- Deploy a local development server using `http-server` or equivalent node tools.
-- Verify on a web browser:
-  - 3D Tilt responsiveness on the featured cards.
-  - Correct opening, tabs navigation, and animations of the Premium Project Modal.
-  - Interactive timeline scrolling in the Research & AI section.
-  - Chatbot reactions to the updated query set.
-  - Constellation background rendering smoothness and mouse interactions.
-  - Search and filter behavior in both projects and certificates pages.
+- View pages in browser (via local web server or file inspect) to confirm visual count alignment, OG preview meta tags, and structured JSON-LD data.

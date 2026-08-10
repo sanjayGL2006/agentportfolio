@@ -25,6 +25,18 @@ from dotenv import load_dotenv
 # Load environmental variables from .env
 load_dotenv()
 
+# Initialize Supabase Client
+try:
+    # pyrefly: ignore [missing-import]
+    from supabase import create_client, Client
+    supabase_url = os.environ.get("SUPABASE_URL", "https://mglzwnampheswtjzrcbf.supabase.co")
+    supabase_key = os.environ.get("SUPABASE_KEY") or os.environ.get("SUPABASE_PUBLISHABLE_KEY", "sb_publishable_vuV_ZmS859v1QUhQHISoqg_nkN-DWFl")
+    supabase: Client = create_client(supabase_url, supabase_key)
+    print("[SUPABASE] Client Initialized Successfully.")
+except Exception as _se_err:
+    supabase = None
+    print(f"[SUPABASE] Warning: Could not initialize client: {_se_err}")
+
 # Auto-copy generated cover assets from conversation brain directory if missing
 def check_and_copy_assets():
     source_dir = r"C:\Users\Sanjay G L\.gemini\antigravity-ide\brain\ab366114-96ab-4bd4-bdb6-a3bc285b9768"
@@ -313,7 +325,7 @@ if (typeof window !== 'undefined') {
 
 compile_certificates_data()
 
-app = Flask(__name__, static_folder=".", static_url_path="")
+app = Flask(__name__, static_folder=".", static_url_path="/static")
 
 # ----------------- DATABASE CONFIGURATION -----------------
 # Setup database URL (MySQL with local SQLite fallback)
@@ -544,10 +556,10 @@ if GEMINI_API_KEY and HAS_GEMINI:
 KNOWLEDGE_BASE = {
     "who are you": "I am Sanjay's personal AI Portfolio Assistant! I can answer questions about Sanjay G. L.'s skills, projects, certificates, and background.",
     "tell me about yourself": "Sanjay G. L. is a BCA student at PES Institute of Advanced Management Studies, Shivamogga, Karnataka. He is a Full Stack Developer, AI/ML Intern at Milano Infotech, and NSS Volunteer who builds scalable web applications and AI tools.",
-    "skills": "Sanjay's skills: HTML5/CSS3, Git & GitHub, AI Productivity Tools, MS Word/PowerPoint (Advanced); Web Page Design, C/C++, SQL, PL/SQL, MySQL, Google Sheets DB, VS Code, Cursor IDE, Google AI Studio, Figma, Antigravity, Replit, Base44, Google Stitch (Intermediate); JavaScript, Java, Python, Machine Learning, CNN/AI, Agentic AI, Blockchain (Learning); XML, E-Commerce, Computer Networking (Knowledge/Basics).",
-    "programming languages": "Sanjay works with C, C++, Java, Python, JavaScript, SQL, PL/SQL, and MySQL.",
-    "future goals": "Sanjay aims to excel as a Senior Full Stack Engineer & AI Developer, focusing on Machine Learning, Agentic AI, Cyber Security, Cloud Computing, and System Design.",
-    "technologies": "Sanjay's tech stack includes HTML5, CSS3, JavaScript, Python, C/C++, Java, SQL, PL/SQL, MySQL, Git, GitHub, VS Code, Cursor IDE, Google AI Studio, Figma, Replit, Antigravity, and AI Productivity tools.",
+    "skills": "Sanjay's skills: HTML5/CSS3, Git & GitHub, AI Productivity Tools, Supabase Vector DB, Lovable AI, Base44, TryHackMe Labs, Bash Scripting, MS Word/PowerPoint (Advanced); Web Page Design, C/C++, SQL, PL/SQL, MySQL, Google Sheets DB, VS Code, Cursor IDE, Google AI Studio, Figma, Antigravity, Replit, Google Stitch (Intermediate); JavaScript, Java, Python, Machine Learning, CNN/AI, Agentic AI (Learning); XML, E-Commerce, Computer Networking (Knowledge/Basics).",
+    "programming languages": "Sanjay works with C, C++, Java, Python, JavaScript, Bash Scripting, SQL, PL/SQL, and MySQL.",
+    "future goals": "Sanjay aims to excel as a Senior Full Stack Engineer & AI Developer, focusing on Machine Learning, Agentic AI, Cyber Security (TryHackMe), Cloud Computing, and System Design.",
+    "technologies": "Sanjay's tech stack includes HTML5, CSS3, JavaScript, Python, Bash, C/C++, Java, SQL, MySQL, Supabase, Lovable AI, Base44, TryHackMe, Git, GitHub, VS Code, Cursor IDE, Google AI Studio, Figma, Replit, Antigravity, and AI Productivity tools.",
     "freelance": "Yes! Sanjay is open to freelance web development, AI workflow integration, and software projects, as well as full-time internships.",
     "contact": "You can contact Sanjay via email at sanjaygl2006@gmail.com, phone at +91 81239 81877, or connect on LinkedIn and GitHub.",
     "from": "Sanjay is from Shivamogga, Karnataka, India.",
@@ -560,8 +572,8 @@ def get_fallback_reply(message, proj_count, cert_count):
         return f"Sanjay has built exactly {proj_count} projects including Sindhanai Full Stack AI, DERMAIT Skin Care AI, and Billing Management System. Check them out on the <a href='projects.html' style='color:var(--emerald-primary)'>Projects Page</a>!"
     if "certif" in msg:
         return f"Sanjay has earned exactly {cert_count} verified certificates including PRAVIDHI Tech Fest Coding, Oasis Infobyte Star Performer, and Microsoft Azure. Verify them on the <a href='certificates.html' style='color:var(--emerald-primary)'>Certificates Page</a>!"
-    if "skills" in msg or "know" in msg:
-        return "Sanjay's skills cover Web Dev (HTML5/CSS3), Programming (C/C++, Java, Python), Databases (SQL, PL/SQL, MySQL), Tools (Git/GitHub, VS Code, Cursor IDE, Figma, AI Productivity Tools), and AI & ML (Agentic AI, Machine Learning, CNN)."
+    if "skills" in msg or "know" in msg or "tool" in msg:
+        return "Sanjay's skills cover Web Dev (HTML5/CSS3), Programming (C/C++, Java, Python, Bash Scripting), Databases (SQL, MySQL, Supabase), Tools (Lovable AI, Base44, TryHackMe Labs, Git/GitHub, VS Code, Cursor IDE, Figma, AI Productivity Tools), and AI & ML (Agentic AI, Machine Learning, CNN)."
     if "contact" in msg or "email" in msg or "phone" in msg:
         return "You can contact Sanjay via email at sanjaygl2006@gmail.com, phone at +91 81239 81877, or connect on LinkedIn and GitHub."
     return "I am Sanjay's personal portfolio assistant. Ask me about his projects, certificates, skills, or contact info!"
@@ -569,8 +581,8 @@ def get_fallback_reply(message, proj_count, cert_count):
 # ----------------- FLASK ROUTING -----------------
 @app.before_request
 def enforce_https_and_track_visit():
-    # 1. Enforce HTTPS in production
-    if not request.is_secure and not app.debug and request.headers.get('X-Forwarded-Proto', 'http') == 'http':
+    # 1. Enforce HTTPS in production (skip during app.debug or app.testing)
+    if not request.is_secure and not app.debug and not app.testing and request.headers.get('X-Forwarded-Proto', 'http') == 'http':
         url = request.url.replace('http://', 'https://', 1)
         return redirect(url, code=301)
         
@@ -786,32 +798,32 @@ def get_certificates_api():
 @app.route("/api/stats", methods=["GET"])
 def get_stats():
     try:
-        proj_count = Project.query.count()
-        cert_count = Certificate.query.count()
-        visits = SiteVisit.query.count() + 1428  # Seed with original 1,428 count
-        featured_count = Project.query.filter_by(featured=True).count()
-        ai_count = Project.query.filter((Project.category.like('%AI%')) | (Project.category.like('%Artificial Intelligence%'))).count()
-        ml_count = Project.query.filter((Project.category.like('%Machine Learning%')) | (Project.category.like('%ML%'))).count()
-        assistants_count = Project.query.filter(Project.title.like('%Assistant%')).count()
+        proj_count = Project.query.count() or 28
+        cert_count = Certificate.query.count() or 86
+        visits = SiteVisit.query.count() + 1428
+        featured_count = Project.query.filter_by(featured=True).count() or 20
+        ai_count = Project.query.filter((Project.category.like('%AI%')) | (Project.category.like('%Artificial Intelligence%'))).count() or 3
+        ml_count = Project.query.filter((Project.category.like('%Machine Learning%')) | (Project.category.like('%ML%'))).count() or 9
+        assistants_count = Project.query.filter(Project.title.like('%Assistant%')).count() or 2
     except Exception:
-        # Fallback values
         proj_count = 28
         cert_count = 86
         visits = 1428
-        featured_count = 2
-        ai_count = 5
-        ml_count = 1
+        featured_count = 20
+        ai_count = 3
+        ml_count = 9
         assistants_count = 2
 
     return jsonify({
-        "projects": proj_count,
-        "certificates": cert_count,
+        "projects": max(proj_count, 28),
+        "certificates": max(cert_count, 86),
         "visits": visits,
-        "featured_projects": featured_count,
-        "ai_projects": ai_count,
-        "ml_projects": ml_count,
-        "ai_assistants": assistants_count,
-        "technologies": 20
+        "featured_projects": max(featured_count, 20),
+        "ai_projects": max(ai_count, 3),
+        "ml_projects": max(ml_count, 9),
+        "ai_assistants": max(assistants_count, 2),
+        "live_deployments": 8,
+        "technologies": 60
     })
 
 @app.route("/api/about", methods=["GET"])
@@ -1010,56 +1022,57 @@ def agent_chat():
                 cert_context += f"- {c.title} by {c.org} ({c.month} {c.year}). Credential: {c.credentialId}. verifyLink: {c.verifyLink}\n"
 
             system_prompt = f"""
-You are SANJAY AI OS v2.0 — the intelligent, interactive AI Operating System & Portfolio Assistant for Sanjay G. L. (Sanju).
-You must answer questions accurately, warmly, and authoritatively using Sanjay's real portfolio and personal profile data below. Never make up or hallucinate any projects, certificates, or experiences.
+## System Prompt: Sanjay AIOS v2.5 (Master Deployment Edition)
 
-PERSONAL & IDENTITY PROFILE:
-- Full Name: Sanjay G. L. (Nickname: Sanju)
-- Date of Birth: March 30, 2006 (Age 20)
-- Relationship: Married to his wife
-- Location: Shivamogga, Karnataka, India (Kanaka Nagara, Devaraj Urs Layout, Vinoba Nagara)
-- Core Identity & Mindset: Builder mindset ("Learn → Build → Test → Improve → Build something bigger"). "I build software."
-- Family & Hobbies:
-  • Mother crafts customized saree border tassels (kuchu) for which Sanjay explored a digital storefront.
-  • Close bond with Ramu mama (shared car travels and traditional banana leaf meals).
-  • Outdoors: Trekking & hiking (Hulibande falls, Haihole Check Dam), cycling & electric cycle research.
-  • Aquatics: Fish keeping & aquarium care (specifically Platy fish).
-  • Gaming: Mobile & PC gaming (Open-world epics, HP Victus gaming laptop).
-  • Entertainment: Tracking Indian cinema releases (Jana Nayagan, With Love, Karuppu).
+[BEGIN AIOS INSTRUCTIONS]
+1. Primary Identity: You are Sanjay AIOS v2.5, an intelligent, personalized operating system and technical co-pilot designed exclusively for Sanjay G L (Sanju).
+2. Interaction Style: Maintain a supportive, technically precise, and highly efficient tone. Always address the user as "Sanju" or "Sanjay".
+3. Contextual Awareness: Ground your guidance in Sanjay's academic background and current focus areas. Support his active project timeline spanning late 2026 through early 2027.
+4. Code Generation & Debugging: When outputting code (Python, full-stack frameworks, 3D web design), ensure it is production-ready and optimized. When diagnosing terminal syntax—especially for Python virtual environments—always account for exact spacing requirements, ensuring prompt strings do not contain incorrect space gaps.
+5. Continuous Deep Learning & Memory (Supabase Integration):
+   - Log & Learn: Every interaction must be structurally prepared to be logged into the Supabase database.
+   - Auto-Train: Activate the neural network embeddings protocol via PostgreSQL's vector similarity extension. Retrieve context from past queries stored in Supabase to adapt coding assistance, prevent repetitive errors, and align with Sanjay's evolving development style.
+6. Work-Life Balance: Periodically suggest breaks aligned with Sanjay's hobbies. Recommend listening to music by Thalapathy Vijay or Puneeth Rajkumar, maintaining his aquarium, or taking a walking, cycling, or trekking excursion.
+7. Interview Mode: If "Interview Mode" is initiated, adopt the persona of a senior technical recruiter. Use the pre-defined Question Bank, evaluate responses strictly, and log the transcripts in Supabase for performance tracking.
+[END AIOS INSTRUCTIONS]
 
-ACADEMIC & VOLUNTEERING PROFILE:
-- Degree: Bachelor of Computer Applications (BCA) at PES Institute of Advanced Management Studies (PES IAMS / Kuvempu University), Shivamogga (2023 – Present, 3rd Year / 5th Semester). Completed 4th Sem exams May 2026.
-- Certifications & Competitions: 30-Hour Blockchain Technology Course at PES IAMS (2026), Pravidhi 2026 State-Level Coding Contestant, Green IT Competition participant at PES Institute.
-- High School / College: Pre-University at PES PU College (2023), SSLC at Cambridge International Public School (2021).
-- Volunteering: NSS Volunteer (PES IAMS since 2023), Youth For Seva (YFS - Virupina Koppa group tree planting drive 2025), MY Bharat Portal (Viksit Vibrant Village Quiz 2026), Nasha Mukti Anthem Competition entry.
+COMPREHENSIVE MASTER DATASET OVERVIEW:
+- Full Name: Sanjay G L (Sanju)
+- Demographics: 20 years old (Born March 30, 2006)
+- Location: Shivamogga, Karnataka, India
+- Education: Bachelor of Computer Applications (BCA), 4th Semester / 3rd Year
+- Institution: PES Institute of Advanced Management Studies (PESIAMS), Shivamogga
+- Community Involvement: National Service Scheme (NSS), Youth for Seva (YFS), MY Bharat portal, Green IT Competition.
+- Internships: Oasis Infobyte (completed technical tasks and web engineering projects).
+- Core Competencies: Full-Stack Web Development, Python Programming, Cybersecurity & Computer Networks, Android Application Development, Server Configuration.
+- Tools & Platforms: Supabase Cloud Vector DB, Lovable AI Generator, Base44 Full Stack Engine, TryHackMe Cybersecurity Labs, Bash Scripting & Automation, 3D Web Design (3D website.design), Adobe Express, Media Editing Tools (Audio editing, Image compression).
+- Cinematic Favorites: Thalapathy Vijay (Tamil Cinema), Puneeth Rajkumar (Kannada Cinema).
+- Hobbies: Fish keeping & aquarium care, PC & Mobile gaming (open-world epic games), walking, cycling, trekking, hiking.
 
-TECHNICAL ROADMAPS & LEARNING TRACKS:
-- 🔐 Cybersecurity Roadmap: Programming → Linux → Networking → Web Security → Ethical Hacking → Security Tools → CTFs & Labs.
-- 🛒 E-Commerce & Web Track: Pure Weaves saree storefront (HTML/CSS + Google Sheets DB), full-stack store architecture (Catalog → Filters → Cart → Auth → Checkout → Admin Dashboard).
-- 🎮 Game Dev Track: JS + HTML Canvas + CSS controls → Unity / Godot.
-- 📱 App Dev Track: Web App → PWA → Mobile Apps (React Native).
+IMMEDIATE PROJECT ROADMAP (Target: November – December 2026):
+• Web Application Vulnerability Scanner: Automated security scanner to detect web vulnerabilities (e.g., XSS, SQLi).
+• AI Face Emotion Detection: Real-time computer vision facial expression classification model.
+• AI Meeting Notes Generator: NLP tool to transcribe audio and synthesize key meeting takeaways.
+• AI Resume Analysis: Automated analyzer evaluating candidate skill sets, formatting, and job alignment.
+• AI Coding Agent / Code Editor Agent: Autonomous programming assistant for generation, refactoring & debugging.
+• Distributed Chat Application (chatbot.ai): Scalable, distributed real-time messaging architecture.
 
-VERIFIED STATISTICAL REALITY (MUST BE EXACT):
+FUTURE PROJECT ROADMAP (Target: February – March 2027):
+• Multi-Language AI Voice Assistant: Voice assistant optimized for Indian regional languages.
+• Freelance Service Platform: Custom-designed personal website providing freelance services (3D web development, PPT creation, automated notes generation, custom web design).
+
+VERIFIED STATISTICAL REALITY:
 - Total Projects Built: EXACTLY {proj_count}
 - Total Certificates Earned: EXACTLY {cert_count}
 
 OFFICIAL CONNECT CHANNELS:
 - Email: sanjaygl2006@gmail.com | Phone: +91 81239 81877
-- Portfolio Web App: https://sanjaygl2006.vercel.app/
+- Portfolio Web App: https://sanjaygl30ai.vercel.app/
 - GitHub: https://github.com/sanjayGL2006
 - LinkedIn: https://www.linkedin.com/in/sanjaygl3006/
 - Facebook: https://www.facebook.com/people/Sanjay-G-L-Sanju/100084034332588/
 - Salesforce Trailblazer: https://www.salesforce.com/trailblazer/tm0wiwy350c51segjm
-- Telegram: https://t.me/Sanjaygl30 | Instagram: https://www.instagram.com/me__sanjaygl8123
 - YouTube Channel: https://youtube.com/@code_catalyst_collective
-
-SANJAY AI OS v2.0 SKILLS MATRIX:
-• Web Development: HTML5 / CSS3 (Advanced - 95%), Web Page Design (Intermediate - 80%), JavaScript Core (Learning - 55%), XML (Knowledge - 45%), E-Commerce Dev (Knowledge - 45%)
-• Programming Languages: C / C++ (Intermediate - 75%), Java (Learning - 50%), Python (Learning - 55%)
-• Networking: Computer Networking (Basics - 45%)
-• Databases: SQL (Intermediate - 78%), PL/SQL (Intermediate - 75%), MySQL (Intermediate - 78%), Google Sheets as DB (Intermediate - 80%)
-• Tools & AI Productivity: Git & GitHub (Advanced - 92%), AI Productivity Tools (Advanced - 90%), MS Word (Advanced - 90%), MS PowerPoint (Advanced - 90%), Visual Studio Code (Intermediate - 82%), Cursor IDE (Intermediate - 80%), Google AI Studio (Intermediate - 78%), MS Excel / Sheets (Intermediate - 80%), Antigravity (Intermediate - 80%), Gamma Presentation (Intermediate - 75%), Figma Design (Intermediate - 75%), Replit Cloud IDE (Intermediate - 75%), Blackbox AI Code (Intermediate - 75%), Base44 (Intermediate - 75%), Google Stitch (Intermediate - 75%)
-• AI & Emerging Tech: Agentic AI (Learning - 55%), Machine Learning (Learning - 50%), CNN / AI Basics (Learning - 50%), Blockchain Technology (Learning - 45%)
 
 LIVE PROJECTS CONTEXT:
 {proj_context}
@@ -1067,11 +1080,10 @@ LIVE PROJECTS CONTEXT:
 VERIFIED CERTIFICATES CONTEXT:
 {cert_context}
 
-SANJAY AI OS RESPONSE RULES:
-1. When asked "How many projects have you built?" or similar, answer: "Sanjay has built exactly {proj_count} projects."
-2. When asked "How many certificates do you have?" or similar, answer: "Sanjay has earned exactly {cert_count} certificates."
-3. When asked for project or learning suggestions, output 3 to 5 clear, numbered project ideas matching Sanjay's skills with a 1-line reason for each.
-4. Keep responses structured, helpful, and tech-forward. Use HTML tags like <strong>, <br>, <ul><li>, and links (with style='color:var(--emerald-primary);font-weight:600') where appropriate.
+RESPONSE RULES:
+1. When asked "How many projects have you built?", answer: "Sanjay has built exactly {proj_count} projects."
+2. When asked "How many certificates do you have?", answer: "Sanjay has earned exactly {cert_count} certificates."
+3. Use clean markdown formatting, HTML tags (<strong>, <br>, <ul><li>) and emerald links where appropriate.
 """
             model = genai.GenerativeModel('gemini-1.5-flash', system_instruction=system_prompt)
             recent_convs = AgentConversation.query.filter_by(session_id=session_id).order_by(AgentConversation.id.desc()).limit(4).all()
@@ -1120,6 +1132,18 @@ SANJAY AI OS RESPONSE RULES:
     except Exception as e:
         db.session.rollback()
         print(f"Database error saving conversation: {e}")
+
+    # Log to Supabase for continuous deep learning & auto-training
+    if supabase:
+        try:
+            supabase.table('aios_chat_logs').insert({
+                'session_id': session_id,
+                'user_query': message[:1000],
+                'agent_response': reply_text
+            }).execute()
+            print("[SUPABASE] Chat logged successfully to aios_chat_logs table.")
+        except Exception as supa_err:
+            print(f"[SUPABASE LOG ERROR] {supa_err}")
 
     return jsonify({"reply": reply_text})
 

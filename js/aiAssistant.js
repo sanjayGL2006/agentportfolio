@@ -31,8 +31,8 @@
           <div class="chat-header-info">
             <i class="fa-solid fa-brain"></i>
             <div>
-              <h4 style="font-size:0.95rem;font-weight:700">SANJAY AI OS v2.0</h4>
-              <span style="font-size:0.75rem;color:var(--emerald-primary)"><i class="fa-solid fa-bolt" style="color:var(--golden-yellow)"></i> Online · Neural Portfolio OS</span>
+              <h4 style="font-size:0.95rem;font-weight:700">SANJAY AI OS v2.5</h4>
+              <span style="font-size:0.75rem;color:var(--emerald-primary)"><i class="fa-solid fa-bolt" style="color:var(--golden-yellow)"></i> Online · Neural Co-Pilot OS</span>
             </div>
           </div>
           <button class="icon-btn" id="aiChatCloseBtn" style="width:30px;height:30px;font-size:0.8rem"><i class="fa-solid fa-xmark"></i></button>
@@ -40,23 +40,23 @@
 
         <div class="chat-body" id="chatBody">
           <div class="chat-msg bot">
-            ⚡ <strong>SANJAY AI OS v2.0 Initialized</strong>.<br>
-            Trained on Sanjay G. L.'s 28+ projects, 86 verified certificates, technical skills, and career background.<br><br>
-            Ask me anything about his projects, skills, certifications, or experience!
+            ⚡ <strong>Sanjay AIOS v2.5 Initialized</strong>.<br>
+            Trained on Sanjay G. L.'s (Sanju) 28+ projects, 86+ verified certificates, immediate roadmaps (Vulnerability Scanner, AI Emotion Detection, Resume Analyzer), and technical interview question bank.<br><br>
+            Ask me anything or type <strong>"Initialize Interview Mode"</strong> to begin!
           </div>
         </div>
 
         <div class="chat-chips-row" style="display:flex; flex-wrap:wrap; gap:6px; padding: 8px 12px; height:auto; overflow-y:visible;">
-          <button class="chip-prompt" data-q="Show Featured Projects">⭐ Featured Projects</button>
+          <button class="chip-prompt" data-q="Show Active Project Roadmap">🚀 Active Roadmap</button>
+          <button class="chip-prompt" data-q="Initialize Interview Mode">🎯 Interview Mode</button>
           <button class="chip-prompt" data-q="What are Sanjay's top skills?">🛠️ Skillset Matrix</button>
           <button class="chip-prompt" data-q="How many certificates does Sanjay have?">🎓 86 Certificates</button>
           <button class="chip-prompt" data-q="Tell me about Sindhanai Full Stack AI">🤖 Sindhanai AI</button>
-          <button class="chip-prompt" data-q="Tell me about DERMAIT Skin Care AI">🩺 DERMAIT AI</button>
           <button class="chip-prompt" data-q="Contact Sanjay">📬 Contact Info</button>
         </div>
 
         <form class="chat-footer" id="chatForm">
-          <input type="text" class="chat-input" id="chatInput" placeholder="Ask SANJAY AI OS v2.0..." autocomplete="off">
+          <input type="text" class="chat-input" id="chatInput" placeholder="Ask Sanjay AIOS v2.5..." autocomplete="off">
           <button type="submit" class="btn btn-primary btn-sm" style="padding:8px 16px"><i class="fa-solid fa-paper-plane"></i></button>
         </form>
       </div>

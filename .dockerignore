@@ -1,18 +1,36 @@
+# Git & IDEs
 .git
 .gitignore
+.agents/
+.gemini/
+.vscode/
+.idea/
+
+# Python cache & environments
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.db
-.agents/
-.gemini/
-venv/
 .venv/
+venv/
 env/
-.env
+ENV/
+
+# Data & Instance files
+*.db
+portfolio.db
+instance/
+*.log
+
+# Build & Deploy artifacts
 .vercel/
+scratch/
+*.tar.gz
+*.zip
+
+# Docker & Configs
 Dockerfile
 .dockerignore
-vercel.json
-api/
+docker-compose.yml
+.env
+.env.local

@@ -15,7 +15,7 @@ const CERTIFICATES_DATA = [
     tags: ["State Level", "Coding", "BCA Tech Fest", "2026", "Mysore"],
     skillsLearned: ["Competitive Coding", "Algorithm Optimization", "Problem Solving Under Pressure"],
     credentialId: "JSS-PRAVIDHI-2026-CODING",
-    verifyLink: "https://drive.google.com/drive/u/0/mobile/folders/1000m9r21U8g_c-w4cW29F1_N138_1Wz6",
+    verifyLink: "https://drive.google.com/file/d/1-L38L9BUDCu4VUJ5EIce_XhSV2v2ye4u/view?usp=sharing",
     emoji: "🏆",
     featured: true
   },
@@ -33,7 +33,7 @@ const CERTIFICATES_DATA = [
     tags: ["Government of India", "Road Safety", "MyGov", "Quiz", "Ministry"],
     skillsLearned: ["Civic Awareness", "Public Safety Regulations", "Government Compliance"],
     credentialId: "MYGOV-MORTH-SAFETY-2026",
-    verifyLink: "https://drive.google.com/drive/u/0/mobile/folders/1000m9r21U8g_c-w4cW29F1_N138_1Wz6",
+    verifyLink: "https://drive.google.com/file/d/10-hk5wBRsMyFM1l-TDbIRDwkkSY95t2q/view?usp=sharing",
     emoji: "🛡️",
     featured: true
   },
@@ -51,7 +51,7 @@ const CERTIFICATES_DATA = [
     tags: ["Government of India", "Artificial Intelligence", "MeitY", "ISEA", "MyGov", "Digital India"],
     skillsLearned: ["AI Ethics", "Data Privacy", "Cyber Hygiene", "Responsible AI Usage"],
     credentialId: "MEITY-AI-ETHICS-2026",
-    verifyLink: "https://drive.google.com/drive/u/0/mobile/folders/1000m9r21U8g_c-w4cW29F1_N138_1Wz6",
+    verifyLink: "https://drive.google.com/file/d/107VX9Fm7p8BC5KqtAgcNzSvjush6jojn/view?usp=sharing",
     emoji: "🤖",
     featured: true
   },
@@ -69,7 +69,7 @@ const CERTIFICATES_DATA = [
     tags: ["Internship", "Web Development", "AICTE", "Oasis Infobyte", "2026", "ISO 9001:2015"],
     skillsLearned: ["Full Stack Web Development", "HTML5/CSS3/JavaScript", "Deployment", "Git Version Control"],
     credentialId: "OIB/F1/IP353",
-    verifyLink: "https://drive.google.com/drive/u/0/mobile/folders/1000m9r21U8g_c-w4cW29F1_N138_1Wz6",
+    verifyLink: "https://drive.google.com/file/d/10_bXPiY61DOfO80JCCVA90HekvacNu8P/view?usp=sharing",
     emoji: "💼",
     featured: true
   },
@@ -87,7 +87,7 @@ const CERTIFICATES_DATA = [
     tags: ["Star Performer", "Appreciation", "AICTE", "Oasis Infobyte", "2026"],
     skillsLearned: ["Leadership", "Excellence in Code Quality", "Timely Delivery"],
     credentialId: "OIB-STAR-PERFORMER-2026",
-    verifyLink: "https://drive.google.com/drive/u/0/mobile/folders/1000m9r21U8g_c-w4cW29F1_N138_1Wz6",
+    verifyLink: "https://drive.google.com/file/d/12ESuKNWaY74SOox4TgXZhqOZ2_dpszg-/view?usp=sharing",
     emoji: "⭐",
     featured: true
   },
@@ -105,7 +105,7 @@ const CERTIFICATES_DATA = [
     tags: ["Python", "Programming", "Certificate", "2026", "Beginner"],
     skillsLearned: ["Python Syntax", "Data Structures", "Control Flow", "Functions"],
     credentialId: "10004012320260325_1",
-    verifyLink: "https://drive.google.com/drive/u/0/mobile/folders/1000m9r21U8g_c-w4cW29F1_N138_1Wz6",
+    verifyLink: "https://drive.google.com/file/d/12FfoBj33hsQ-tXD1rGp0UEIQIC84MGuh/view?usp=sharing",
     emoji: "🐍",
     featured: true
   },

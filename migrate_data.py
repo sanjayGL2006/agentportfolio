@@ -10,14 +10,12 @@ load_dotenv()
 def clean_js_object(js_str):
     # Strip comments
     js_str = re.sub(r'//.*', '', js_str)
-    # Quote keys
-    json_str = re.sub(r'(\w+):', r'"\1":', js_str)
+    # Quote keys before colon, avoiding URLs
+    json_str = re.sub(r'(?<=[{\s,])([a-zA-Z_]\w*)\s*:', r'"\1":', js_str)
     # Replace single quotes with double quotes
     json_str = re.sub(r"'([^'\\]*(?:\\.[^'\\]*)*)'", r'"\1"', json_str)
     # Remove trailing commas
-    json_str = re.sub(r',(\s*[\]\}])', r'\1', json_str)
-    # Normalize true/false/null
-    json_str = json_str.replace("true", "true").replace("false", "false")
+    json_str = re.sub(r',\s*([\]\}])', r'\1', json_str)
     return json_str
 
 def migrate():
