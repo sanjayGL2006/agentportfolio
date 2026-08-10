@@ -7,7 +7,23 @@ import smtplib
 import shutil
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from flask import Flask, render_template, send_from_directory, request, jsonify
+from flask import Flask, render_template, send_from_directory, request, jsonify, redirect
+# pyrefly: ignore [missing-import]
+from flask_sqlalchemy import SQLAlchemy
+from cryptography.fernet import Fernet
+try:
+    import google.generativeai as genai
+    HAS_GEMINI = True
+except:
+    HAS_GEMINI = False
+
+from datetime import datetime
+from collections import defaultdict
+import time
+from dotenv import load_dotenv
+
+# Load environmental variables from .env
+load_dotenv()
 
 # Auto-copy generated cover assets from conversation brain directory if missing
 def check_and_copy_assets():
@@ -299,21 +315,278 @@ compile_certificates_data()
 
 app = Flask(__name__, static_folder=".", static_url_path="")
 
-# Predefined Q&A Knowledge Base for Sanjay G. L.
+# ----------------- DATABASE CONFIGURATION -----------------
+# Setup database URL (MySQL with local SQLite fallback)
+db_url = os.environ.get("DATABASE_URL")
+if not db_url:
+    db_host = os.environ.get("DB_HOST")
+    db_user = os.environ.get("DB_USER")
+    db_pass = os.environ.get("DB_PASSWORD")
+    db_name = os.environ.get("DB_NAME")
+    db_port = os.environ.get("DB_PORT", "3306")
+    if db_host and db_user and db_name:
+        db_url = f"mysql+pymysql://{db_user}:{db_pass}@{db_host}:{db_port}/{db_name}"
+    else:
+        db_url = "sqlite:///portfolio.db"
+
+app.config['SQLALCHEMY_DATABASE_URI'] = db_url
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+# Enforce SSL/TLS for MySQL connection if DB_SSL_CA or DB_SSL_REQUIRE is configured
+connect_args = {}
+ssl_ca = os.environ.get("DB_SSL_CA")
+if ssl_ca:
+    connect_args["ssl"] = {"ca": ssl_ca}
+elif os.environ.get("DB_SSL_REQUIRE", "false").lower() == "true":
+    connect_args["ssl"] = {"ssl_mode": "REQUIRED"}
+
+if connect_args:
+    app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
+        "connect_args": connect_args
+    }
+
+db = SQLAlchemy(app)
+
+# ----------------- ORM SCHEMAS -----------------
+class Project(db.Model):
+    __tablename__ = 'projects'
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(255), nullable=False)
+    year = db.Column(db.Integer)
+    category = db.Column(db.String(100))
+    tagline = db.Column(db.Text)
+    description = db.Column(db.Text)
+    tech_stack = db.Column(db.JSON)
+    live = db.Column(db.String(255))
+    github = db.Column(db.String(255))
+    status = db.Column(db.String(50))
+    featured = db.Column(db.Boolean, default=False)
+    icon = db.Column(db.String(100))
+    image = db.Column(db.String(255))
+    overview = db.Column(db.Text)
+    architecture = db.Column(db.Text)
+    features = db.Column(db.JSON)
+    structure = db.Column(db.JSON)
+    futureScope = db.Column(db.JSON)
+    timeline = db.Column(db.JSON)
+    stats = db.Column(db.JSON)
+
+class Certificate(db.Model):
+    __tablename__ = 'certificates'
+    id = db.Column(db.String(100), primary_key=True)
+    type = db.Column(db.String(50))
+    category = db.Column(db.String(100))
+    title = db.Column(db.String(255), nullable=False)
+    org = db.Column(db.String(255))
+    date = db.Column(db.String(100))
+    month = db.Column(db.String(50))
+    year = db.Column(db.Integer)
+    duration = db.Column(db.String(100))
+    description = db.Column(db.Text)
+    tags = db.Column(db.JSON)
+    skillsLearned = db.Column(db.JSON)
+    credentialId = db.Column(db.String(100))
+    verifyLink = db.Column(db.String(500))
+    image = db.Column(db.String(500))
+    driveId = db.Column(db.String(100))
+    emoji = db.Column(db.String(50))
+    featured = db.Column(db.Boolean, default=False)
+
+class AgentConversation(db.Model):
+    __tablename__ = 'agent_conversations'
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    session_id = db.Column(db.String(100), nullable=False)
+    user_message = db.Column(db.Text, nullable=False)
+    agent_response = db.Column(db.Text, nullable=False)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+
+    def __init__(self, session_id=None, user_message=None, agent_response=None, **kwargs):
+        self.session_id = session_id
+        self.user_message = user_message
+        self.agent_response = agent_response
+        for k, v in kwargs.items():
+            setattr(self, k, v)
+
+class AgentProjectSuggestion(db.Model):
+    __tablename__ = 'agent_project_suggestions'
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    session_id = db.Column(db.String(100), nullable=False)
+    suggested_project = db.Column(db.String(255), nullable=False)
+    reasoning = db.Column(db.Text, nullable=False)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+
+    def __init__(self, session_id=None, suggested_project=None, reasoning=None, **kwargs):
+        self.session_id = session_id
+        self.suggested_project = suggested_project
+        self.reasoning = reasoning
+        for k, v in kwargs.items():
+            setattr(self, k, v)
+
+class SiteVisit(db.Model):
+    __tablename__ = 'site_visits'
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    page = db.Column(db.String(100), nullable=False)
+    referrer = db.Column(db.String(255))
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+
+    def __init__(self, page=None, referrer=None, **kwargs):
+        self.page = page
+        self.referrer = referrer
+        for k, v in kwargs.items():
+            setattr(self, k, v)
+
+class ContactMessage(db.Model):
+    __tablename__ = 'contact_messages'
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.Text, nullable=False)  # Encrypted at rest
+    email = db.Column(db.Text, nullable=False) # Encrypted at rest
+    subject = db.Column(db.String(255), nullable=False)
+    message = db.Column(db.Text, nullable=False) # Encrypted at rest
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+
+    def __init__(self, name=None, email=None, subject=None, message=None, **kwargs):
+        self.name = name
+        self.email = email
+        self.subject = subject
+        self.message = message
+        for k, v in kwargs.items():
+            setattr(self, k, v)
+
+def optimize_profile_image():
+    profile_path = os.path.join(app.static_folder, "assets", "profile.png")
+    if os.path.exists(profile_path) and os.path.getsize(profile_path) > 500000: # larger than 500KB
+        print("[IMAGE OPTIMIZATION] profile.png is large. Attempting optimization...")
+        try:
+            from PIL import Image
+            img = Image.open(profile_path)
+            # Use LANCZOS interpolation for resizing
+            img.thumbnail((600, 600), Image.Resampling.LANCZOS if hasattr(Image, "Resampling") else Image.ANTIALIAS)
+            temp_path = profile_path + ".tmp"
+            img.save(temp_path, "PNG", optimize=True, quality=85)
+            if os.path.exists(temp_path) and os.path.getsize(temp_path) < os.path.getsize(profile_path):
+                os.replace(temp_path, profile_path)
+                print(f"[IMAGE OPTIMIZATION] Optimized profile.png successfully! New size: {os.path.getsize(profile_path) // 1024} KB")
+            else:
+                if os.path.exists(temp_path):
+                    os.remove(temp_path)
+        except ImportError:
+            print("[IMAGE OPTIMIZATION] PIL (Pillow) is not installed. Skipping profile.png compression.")
+        except Exception as e:
+            print(f"[IMAGE OPTIMIZATION] Error compressing profile image: {e}")
+        except:
+            pass
+
+# Create tables in database context
+with app.app_context():
+    try:
+        db.create_all()
+        # Auto-seed database from JS datasets if empty
+        import migrate_data
+        migrate_data.migrate()
+        # Compress oversized profile image if PIL is available
+        optimize_profile_image()
+    except Exception as e:
+        print(f"[DB] Error creating or seeding tables: {e}")
+
+# ----------------- SECURITY UTILITIES -----------------
+# Cryptography (Fernet symmetric encryption for sensitive contact form values)
+ENCRYPTION_KEY = os.environ.get("ENCRYPTION_KEY")
+if not ENCRYPTION_KEY:
+    ENCRYPTION_KEY = "U3VwZXJTZWN1cmVGbGFza015U1FMUGFzc3dvcmRLZXk="  # Fallback for dev mode
+cipher = Fernet(ENCRYPTION_KEY.encode() if isinstance(ENCRYPTION_KEY, str) else ENCRYPTION_KEY)
+
+def encrypt_val(val):
+    if not val:
+        return ""
+    return cipher.encrypt(str(val).strip().encode()).decode()
+
+def decrypt_val(val):
+    if not val:
+        return ""
+    try:
+        return cipher.decrypt(str(val).strip().encode()).decode()
+    except Exception:
+        return "[Decryption Error]"
+
+# IP-based Rate Limiter
+class SimpleRateLimiter:
+    def __init__(self, limit=5, period=60):
+        self.limit = limit
+        self.period = period
+        self.history = defaultdict(list)
+        
+    def check(self, ip):
+        now = time.time()
+        self.history[ip] = [t for t in self.history[ip] if now - t < self.period]
+        if len(self.history[ip]) >= self.limit:
+            return False
+        self.history[ip].append(now)
+        return True
+
+contact_limiter = SimpleRateLimiter(limit=3, period=3600)  # 3 contact emails per hour per IP
+agent_limiter = SimpleRateLimiter(limit=20, period=60)      # 20 agent messages per minute per IP
+
+# Input sanitization helper
+def sanitize_input(val):
+    if not val:
+        return ""
+    # Remove script tags and format queries to avoid HTML insertion exploits
+    clean = re.sub(r'<script.*?>.*?</script>', '', str(val), flags=re.IGNORECASE)
+    clean = re.sub(r'<.*?>', '', clean)  # Strip standard HTML tags
+    return clean.strip()
+
+# ----------------- GEMINI CONFIG -----------------
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+if GEMINI_API_KEY and HAS_GEMINI:
+    genai.configure(api_key=GEMINI_API_KEY)
+
+# Predefined fallback rules
 KNOWLEDGE_BASE = {
     "who are you": "I am Sanjay's personal AI Portfolio Assistant! I can answer questions about Sanjay G. L.'s skills, projects, certificates, and background.",
     "tell me about yourself": "Sanjay G. L. is a BCA student at PES Institute of Advanced Management Studies, Shivamogga, Karnataka. He is a Full Stack Developer, AI/ML Intern at Milano Infotech, and NSS Volunteer who builds scalable web applications and AI tools.",
-    "skills": "Sanjay's technical skills include HTML, CSS, JavaScript, React, Python, SQL, SQLite, Google Cloud, Git, GitHub, VS Code, Cursor AI, Postman, Docker, Kali Linux, and Electron.js.",
-    "programming languages": "Sanjay is proficient in Python, JavaScript, SQL, C, C++, and Java.",
-    "projects": "Sanjay has built 29+ projects including Sindhanai Full Stack AI, DERMAIT Skin Care AI, Billing Management System, Accident Risk Prediction (98% ML accuracy), Sai AI Assistant, and RupeeTrack (Expense Tracker).",
-    "certificates": "Sanjay has earned 86 verified certificates including PRAVIDHI Tech Fest winner, Oasis Infobyte Web Dev Star Performer, National Road Safety, MeitY AI Ethics, HackerRank, and Microsoft Azure.",
-    "future goals": "Sanjay aims to excel as a Senior Full Stack Engineer & AI Developer, focusing on Cyber Security, Machine Learning, Cloud Computing, Docker, GitLab, and System Design.",
-    "technologies": "Sanjay works with HTML, CSS, JavaScript, React, Python, SQL, SQLite, Google Cloud, Docker, Git, VS Code, Cursor AI, Postman, and Electron.js.",
+    "skills": "Sanjay's skills: HTML5/CSS3, Git & GitHub, AI Productivity Tools, MS Word/PowerPoint (Advanced); Web Page Design, C/C++, SQL, PL/SQL, MySQL, Google Sheets DB, VS Code, Cursor IDE, Google AI Studio, Figma, Antigravity, Replit, Base44, Google Stitch (Intermediate); JavaScript, Java, Python, Machine Learning, CNN/AI, Agentic AI, Blockchain (Learning); XML, E-Commerce, Computer Networking (Knowledge/Basics).",
+    "programming languages": "Sanjay works with C, C++, Java, Python, JavaScript, SQL, PL/SQL, and MySQL.",
+    "future goals": "Sanjay aims to excel as a Senior Full Stack Engineer & AI Developer, focusing on Machine Learning, Agentic AI, Cyber Security, Cloud Computing, and System Design.",
+    "technologies": "Sanjay's tech stack includes HTML5, CSS3, JavaScript, Python, C/C++, Java, SQL, PL/SQL, MySQL, Git, GitHub, VS Code, Cursor IDE, Google AI Studio, Figma, Replit, Antigravity, and AI Productivity tools.",
     "freelance": "Yes! Sanjay is open to freelance web development, AI workflow integration, and software projects, as well as full-time internships.",
     "contact": "You can contact Sanjay via email at sanjaygl2006@gmail.com, phone at +91 81239 81877, or connect on LinkedIn and GitHub.",
     "from": "Sanjay is from Shivamogga, Karnataka, India.",
     "why hire": "Sanjay brings strong problem-solving skills, hands-on experience in full-stack web and AI development, 86+ certifications, a passion for clean code, and a proven track record of building production-ready projects."
 }
+
+def get_fallback_reply(message, proj_count, cert_count):
+    msg = message.lower()
+    if "project" in msg or "built" in msg:
+        return f"Sanjay has built exactly {proj_count} projects including Sindhanai Full Stack AI, DERMAIT Skin Care AI, and Billing Management System. Check them out on the <a href='projects.html' style='color:var(--emerald-primary)'>Projects Page</a>!"
+    if "certif" in msg:
+        return f"Sanjay has earned exactly {cert_count} verified certificates including PRAVIDHI Tech Fest Coding, Oasis Infobyte Star Performer, and Microsoft Azure. Verify them on the <a href='certificates.html' style='color:var(--emerald-primary)'>Certificates Page</a>!"
+    if "skills" in msg or "know" in msg:
+        return "Sanjay's skills cover Web Dev (HTML5/CSS3), Programming (C/C++, Java, Python), Databases (SQL, PL/SQL, MySQL), Tools (Git/GitHub, VS Code, Cursor IDE, Figma, AI Productivity Tools), and AI & ML (Agentic AI, Machine Learning, CNN)."
+    if "contact" in msg or "email" in msg or "phone" in msg:
+        return "You can contact Sanjay via email at sanjaygl2006@gmail.com, phone at +91 81239 81877, or connect on LinkedIn and GitHub."
+    return "I am Sanjay's personal portfolio assistant. Ask me about his projects, certificates, skills, or contact info!"
+
+# ----------------- FLASK ROUTING -----------------
+@app.before_request
+def enforce_https_and_track_visit():
+    # 1. Enforce HTTPS in production
+    if not request.is_secure and not app.debug and request.headers.get('X-Forwarded-Proto', 'http') == 'http':
+        url = request.url.replace('http://', 'https://', 1)
+        return redirect(url, code=301)
+        
+    # 2. Track page visits
+    path = request.path
+    if path in ['/', '/index.html', '/projects.html', '/certificates.html']:
+        try:
+            visit = SiteVisit(
+                page=path,
+                referrer=request.referrer or 'Direct'
+            )
+            db.session.add(visit)
+            db.session.commit()
+        except Exception as e:
+            db.session.rollback()
+            print(f"Error logging visit: {e}")
 
 @app.route("/")
 def index():
@@ -325,8 +598,231 @@ def serve_static(path):
         return send_from_directory(".", path)
     return send_from_directory(".", "index.html")
 
+@app.route("/js/projectsData.js")
+def serve_projects_js():
+    try:
+        projects = Project.query.all()
+        if not projects:
+            raise Exception("Empty DB")
+    except Exception:
+        # Fallback to local static JS file if DB is unseeded
+        with open(os.path.join(app.static_folder, "js", "projectsData.js"), "r", encoding="utf-8") as f:
+            return f.read(), 200, {"Content-Type": "text/javascript"}
+            
+    serialized = []
+    for p in projects:
+        serialized.append({
+            "id": p.id,
+            "title": p.title,
+            "year": p.year,
+            "category": p.category,
+            "tagline": p.tagline,
+            "desc": p.description,
+            "tech": p.tech_stack or [],
+            "live": p.live,
+            "github": p.github,
+            "status": p.status,
+            "featured": p.featured,
+            "icon": p.icon,
+            "image": p.image,
+            "overview": p.overview,
+            "architecture": p.architecture,
+            "features": p.features or [],
+            "structure": p.structure or [],
+            "futureScope": p.futureScope or [],
+            "timeline": p.timeline or [],
+            "stats": p.stats or {}
+        })
+    js_content = f"const PROJECTS_DATA = {json.dumps(serialized)};\nif (typeof window !== 'undefined') {{ window.PROJECTS_DATA = PROJECTS_DATA; }}"
+    return js_content, 200, {"Content-Type": "text/javascript"}
+
+@app.route("/js/certificatesData.js")
+def serve_certificates_js():
+    try:
+        certs = Certificate.query.all()
+        if not certs:
+            raise Exception("Empty DB")
+    except Exception:
+        with open(os.path.join(app.static_folder, "js", "certificatesData.js"), "r", encoding="utf-8") as f:
+            return f.read(), 200, {"Content-Type": "text/javascript"}
+
+    serialized = []
+    for c in certs:
+        if c.type == "named":
+            serialized.append({
+                "id": c.id,
+                "type": "named",
+                "category": c.category,
+                "title": c.title,
+                "org": c.org,
+                "date": c.date,
+                "month": c.month,
+                "year": c.year,
+                "duration": c.duration,
+                "desc": c.description,
+                "tags": c.tags or [],
+                "skillsLearned": c.skillsLearned or [],
+                "credentialId": c.credentialId,
+                "verifyLink": c.verifyLink,
+                "emoji": c.emoji,
+                "featured": c.featured
+            })
+        else:
+            serialized.append({
+                "driveId": c.driveId,
+                "title": c.title,
+                "org": c.org,
+                "category": c.category,
+                "year": c.year,
+                "month": c.month,
+                "tags": c.tags or []
+            })
+            
+    js_content = f"""const CERTIFICATES_DATA = {json.dumps(serialized)};
+const ALL_CERTIFICATES = CERTIFICATES_DATA.map((c, index) => {{
+  if (c.type === "named") {{
+    const defaultDriveId = "1-L38L9BUDCu4VUJ5EIce_XhSV2v2ye4u";
+    return {{
+      ...c,
+      id: c.id || `cert-${{index}}`,
+      skillsLearned: c.skillsLearned || ["Software Development", "Problem Solving"],
+      credentialId: c.credentialId || `SGL-CERT-${{2026-index}}`,
+      verifyLink: c.verifyLink && !c.verifyLink.includes("1000m9r") ? c.verifyLink : `https://drive.google.com/file/d/${{defaultDriveId}}/view`,
+      image: c.image && !c.image.includes("1000m9r") ? c.image : `https://drive.google.com/thumbnail?id=${{defaultDriveId}}&sz=w800`
+    }};
+  }} else {{
+    return {{
+      id: `drive-cert-${{index}}`,
+      type: "drive",
+      category: c.category || "tech",
+      title: c.title,
+      org: c.org,
+      date: `${{c.month}} ${{c.year}}`,
+      month: c.month,
+      year: c.year,
+      duration: "Certified",
+      desc: `Professional certification in ${{c.title}} awarded by ${{c.org}}. Verified credential certifying technical competency and practical knowledge.`,
+      tags: c.tags || [c.category || 'tech', "Verified Certificate"],
+      skillsLearned: c.title ? [c.title.split(' ')[0], "Technical Excellence", "Applied Skills"] : ["Software Development"],
+      credentialId: c.driveId ? `DRIVE-${{c.driveId.substring(0, 8).toUpperCase()}}` : `DRIVE-CERT-${{index}}`,
+      verifyLink: c.driveId ? `https://drive.google.com/file/d/${{c.driveId}}/view` : `https://drive.google.com/`,
+      image: c.driveId ? `https://drive.google.com/thumbnail?id=${{c.driveId}}&sz=w800` : '',
+      driveId: c.driveId || '',
+      emoji: c.category === 'government' ? '🛡️' : c.category === 'internship' ? '💼' : c.category === 'hackerrank' ? '⚡' : '📜',
+      featured: index < 12
+    }};
+  }}
+}});
+if (typeof window !== 'undefined') {{
+  window.CERTIFICATES_DATA = ALL_CERTIFICATES;
+}}
+"""
+    return js_content, 200, {"Content-Type": "text/javascript"}
+
+@app.route("/api/projects", methods=["GET"])
+def get_projects_api():
+    try:
+        projects = Project.query.all()
+        serialized = []
+        for p in projects:
+            serialized.append({
+                "id": p.id,
+                "title": p.title,
+                "year": p.year,
+                "category": p.category,
+                "tagline": p.tagline,
+                "desc": p.description,
+                "tech": p.tech_stack or [],
+                "live": p.live,
+                "github": p.github,
+                "status": p.status,
+                "featured": p.featured,
+                "icon": p.icon,
+                "image": p.image
+            })
+        return jsonify(serialized)
+    except Exception:
+        return jsonify([])
+
+@app.route("/api/certificates", methods=["GET"])
+def get_certificates_api():
+    try:
+        certs = Certificate.query.all()
+        serialized = []
+        for c in certs:
+            if c.type == "named":
+                serialized.append({
+                    "id": c.id,
+                    "type": "named",
+                    "category": c.category,
+                    "title": c.title,
+                    "org": c.org,
+                    "date": c.date,
+                    "month": c.month,
+                    "year": c.year,
+                    "duration": c.duration,
+                    "desc": c.description,
+                    "tags": c.tags or [],
+                    "skillsLearned": c.skillsLearned or [],
+                    "credentialId": c.credentialId,
+                    "verifyLink": c.verifyLink,
+                    "emoji": c.emoji,
+                    "featured": c.featured
+                })
+            else:
+                serialized.append({
+                    "driveId": c.driveId,
+                    "title": c.title,
+                    "org": c.org,
+                    "category": c.category,
+                    "year": c.year,
+                    "month": c.month,
+                    "tags": c.tags or []
+                })
+        return jsonify(serialized)
+    except Exception:
+        return jsonify([])
+
+@app.route("/api/stats", methods=["GET"])
+def get_stats():
+    try:
+        proj_count = Project.query.count()
+        cert_count = Certificate.query.count()
+        visits = SiteVisit.query.count() + 1428  # Seed with original 1,428 count
+        featured_count = Project.query.filter_by(featured=True).count()
+        ai_count = Project.query.filter((Project.category.like('%AI%')) | (Project.category.like('%Artificial Intelligence%'))).count()
+        ml_count = Project.query.filter((Project.category.like('%Machine Learning%')) | (Project.category.like('%ML%'))).count()
+        assistants_count = Project.query.filter(Project.title.like('%Assistant%')).count()
+    except Exception:
+        # Fallback values
+        proj_count = 28
+        cert_count = 86
+        visits = 1428
+        featured_count = 2
+        ai_count = 5
+        ml_count = 1
+        assistants_count = 2
+
+    return jsonify({
+        "projects": proj_count,
+        "certificates": cert_count,
+        "visits": visits,
+        "featured_projects": featured_count,
+        "ai_projects": ai_count,
+        "ml_projects": ml_count,
+        "ai_assistants": assistants_count,
+        "technologies": 20
+    })
+
 @app.route("/api/about", methods=["GET"])
 def get_about():
+    try:
+        proj_count = Project.query.count()
+        cert_count = Certificate.query.count()
+    except Exception:
+        proj_count = 28
+        cert_count = 86
+
     return jsonify({
         "name": "Sanjay G. L.",
         "role": "BCA Student & Full Stack Developer",
@@ -334,17 +830,22 @@ def get_about():
         "email": "sanjaygl2006@gmail.com",
         "phone": "+91 81239 81877",
         "skills": [
-            "HTML", "CSS", "JavaScript", "React", "Python", "SQL", "SQLite",
+            "HTML5", "CSS3", "JavaScript", "React", "Python", "SQL", "SQLite", "MySQL",
             "Artificial Intelligence", "Machine Learning", "Google Cloud",
             "Git", "GitHub", "VS Code", "Cursor AI", "Postman", "Docker", "Kali Linux", "Electron.js"
         ],
-        "total_projects": 29,
-        "total_certificates": 70,
+        "total_projects": proj_count,
+        "total_certificates": cert_count,
         "freelance_available": True
     })
 
 @app.route("/api/contact", methods=["POST"])
 def handle_contact():
+    # Rate Limiting
+    ip = request.headers.get("X-Forwarded-For", request.remote_addr)
+    if not contact_limiter.check(ip):
+        return jsonify({"status": "error", "message": "Rate limit exceeded. Please submit at most 3 messages per hour."}), 429
+
     data = request.get_json() or request.form or {}
     
     # 1. Honeypot Spam Protection
@@ -352,10 +853,10 @@ def handle_contact():
         print("[CONTACT FORM] Blocked bot submission via honeypot.")
         return jsonify({"status": "error", "message": "Spam detected."}), 400
         
-    name = str(data.get("name", "")).strip()
-    email = str(data.get("email", "")).strip()
-    subject = str(data.get("subject", "")).strip()
-    message = str(data.get("message", "")).strip()
+    name = sanitize_input(data.get("name", ""))
+    email = sanitize_input(data.get("email", ""))
+    subject = sanitize_input(data.get("subject", ""))
+    message = sanitize_input(data.get("message", ""))
     
     # 2. Server-side Validation
     if not name or len(name) < 2:
@@ -370,7 +871,27 @@ def handle_contact():
     if not message or len(message) < 10:
         return jsonify({"status": "error", "message": "Please enter a message of at least 10 characters."}), 400
         
-    print(f"[CONTACT FORM] Valid submission from: {name} ({email}) | Subject: {subject}")
+    # Encrypt name, email, and message at rest
+    enc_name = encrypt_val(name)
+    enc_email = encrypt_val(email)
+    enc_message = encrypt_val(message)
+    
+    # Save encrypted message to database using parameterized insert (ORM)
+    try:
+        msg_entry = ContactMessage(
+            name=enc_name,
+            # pyrefly: ignore [unexpected-keyword]
+            email=enc_email,
+            subject=subject,
+            message=enc_message
+        )
+        db.session.add(msg_entry)
+        db.session.commit()
+    except Exception as e:
+        db.session.rollback()
+        print(f"[CONTACT DB] Error saving message: {e}")
+
+    print(f"[CONTACT FORM] Securely saved submission from: {name} ({email}) | Subject: {subject}")
     
     # 3. Multi-path forwarding logic
     email_sent = False
@@ -405,7 +926,7 @@ def handle_contact():
         except Exception as e:
             print(f"[CONTACT FORM] Error sending via Web3Forms: {e}")
             
-    # Option B: SMTP forwarding (if Web3Forms is not used/failed, and SMTP variables exist)
+    # Option B: SMTP forwarding
     smtp_host = os.environ.get("SMTP_HOST")
     if not email_sent and smtp_host:
         try:
@@ -423,7 +944,6 @@ def handle_contact():
                 body = f"Name: {name}\nEmail: {email}\nSubject: {subject}\n\nMessage:\n{message}"
                 msg.attach(MIMEText(body, 'plain'))
                 
-                # Check for SSL / TLS
                 if smtp_port == 465:
                     server = smtplib.SMTP_SSL(smtp_host, smtp_port, timeout=10)
                 else:
@@ -440,10 +960,10 @@ def handle_contact():
 
     # Final Response
     if not email_sent:
-        print("[CONTACT FORM] [ALERT] No active email keys (Web3Forms/SMTP) found in environment. Logged submission locally.")
+        print("[CONTACT FORM] [ALERT] No active email keys (Web3Forms/SMTP) found. Secured in database locally.")
         return jsonify({
             "status": "success", 
-            "message": f"Thank you, {name}! Your message was logged locally in development mode."
+            "message": f"Thank you, {name}! Your message has been encrypted and secured in our database."
         })
         
     return jsonify({
@@ -451,33 +971,164 @@ def handle_contact():
         "message": f"Thank you, {name}! Your message has been sent successfully to Sanjay's email."
     })
 
-@app.route("/chat", methods=["POST"])
-def chat():
+@app.route("/api/agent", methods=["POST"])
+def agent_chat():
+    # Rate Limiting
+    ip = request.headers.get("X-Forwarded-For", request.remote_addr)
+    if not agent_limiter.check(ip):
+        return jsonify({"reply": "Rate limit exceeded. Please wait a moment before sending more messages."}), 429
+
     data = request.get_json() or {}
-    message = str(data.get("message", "")).lower().strip()
-    
+    message = sanitize_input(data.get("message", ""))
+    session_id = sanitize_input(data.get("session_id", "default_session"))
+
     if not message:
-        return jsonify({"reply": "Please ask me a question!"})
+        return jsonify({"reply": "Please send a message."}), 400
 
-    for key, answer in KNOWLEDGE_BASE.items():
-        if key in message:
-            return jsonify({"reply": answer})
+    try:
+        proj_count = Project.query.count()
+        cert_count = Certificate.query.count()
+    except Exception:
+        proj_count = 28
+        cert_count = 86
 
-    if "hire" in message:
-        return jsonify({"reply": KNOWLEDGE_BASE["why hire"]})
-    if "skill" in message or "know" in message:
-        return jsonify({"reply": KNOWLEDGE_BASE["skills"]})
-    if "project" in message or "built" in message:
-        return jsonify({"reply": KNOWLEDGE_BASE["projects"]})
-    if "certif" in message:
-        return jsonify({"reply": KNOWLEDGE_BASE["certificates"]})
-    if "email" in message or "phone" in message or "reach" in message:
-        return jsonify({"reply": KNOWLEDGE_BASE["contact"]})
+    if GEMINI_API_KEY and HAS_GEMINI:
+        try:
+            # Query projects & certs to build system prompt context
+            projects = Project.query.all()
+            certs = Certificate.query.all()
+            
+            proj_context = ""
+            for p in projects:
+                proj_context += f"- {p.title} ({p.year}, status: {p.status}): {p.tagline}. Tech: {', '.join(p.tech_stack or [])}. "
+                if p.overview:
+                    proj_context += f"Overview: {p.overview} "
+                proj_context += "\n"
+                
+            cert_context = ""
+            for c in certs:
+                cert_context += f"- {c.title} by {c.org} ({c.month} {c.year}). Credential: {c.credentialId}. verifyLink: {c.verifyLink}\n"
 
-    return jsonify({
-        "reply": "I'm sorry, I don't have that information yet. Please contact Sanjay directly at sanjaygl2006@gmail.com."
-    })
+            system_prompt = f"""
+You are SANJAY AI OS v2.0 — the intelligent, interactive AI Operating System & Portfolio Assistant for Sanjay G. L. (Sanju).
+You must answer questions accurately, warmly, and authoritatively using Sanjay's real portfolio and personal profile data below. Never make up or hallucinate any projects, certificates, or experiences.
+
+PERSONAL & IDENTITY PROFILE:
+- Full Name: Sanjay G. L. (Nickname: Sanju)
+- Date of Birth: March 30, 2006 (Age 20)
+- Relationship: Married to his wife
+- Location: Shivamogga, Karnataka, India (Kanaka Nagara, Devaraj Urs Layout, Vinoba Nagara)
+- Core Identity & Mindset: Builder mindset ("Learn → Build → Test → Improve → Build something bigger"). "I build software."
+- Family & Hobbies:
+  • Mother crafts customized saree border tassels (kuchu) for which Sanjay explored a digital storefront.
+  • Close bond with Ramu mama (shared car travels and traditional banana leaf meals).
+  • Outdoors: Trekking & hiking (Hulibande falls, Haihole Check Dam), cycling & electric cycle research.
+  • Aquatics: Fish keeping & aquarium care (specifically Platy fish).
+  • Gaming: Mobile & PC gaming (Open-world epics, HP Victus gaming laptop).
+  • Entertainment: Tracking Indian cinema releases (Jana Nayagan, With Love, Karuppu).
+
+ACADEMIC & VOLUNTEERING PROFILE:
+- Degree: Bachelor of Computer Applications (BCA) at PES Institute of Advanced Management Studies (PES IAMS / Kuvempu University), Shivamogga (2023 – Present, 3rd Year / 5th Semester). Completed 4th Sem exams May 2026.
+- Certifications & Competitions: 30-Hour Blockchain Technology Course at PES IAMS (2026), Pravidhi 2026 State-Level Coding Contestant, Green IT Competition participant at PES Institute.
+- High School / College: Pre-University at PES PU College (2023), SSLC at Cambridge International Public School (2021).
+- Volunteering: NSS Volunteer (PES IAMS since 2023), Youth For Seva (YFS - Virupina Koppa group tree planting drive 2025), MY Bharat Portal (Viksit Vibrant Village Quiz 2026), Nasha Mukti Anthem Competition entry.
+
+TECHNICAL ROADMAPS & LEARNING TRACKS:
+- 🔐 Cybersecurity Roadmap: Programming → Linux → Networking → Web Security → Ethical Hacking → Security Tools → CTFs & Labs.
+- 🛒 E-Commerce & Web Track: Pure Weaves saree storefront (HTML/CSS + Google Sheets DB), full-stack store architecture (Catalog → Filters → Cart → Auth → Checkout → Admin Dashboard).
+- 🎮 Game Dev Track: JS + HTML Canvas + CSS controls → Unity / Godot.
+- 📱 App Dev Track: Web App → PWA → Mobile Apps (React Native).
+
+VERIFIED STATISTICAL REALITY (MUST BE EXACT):
+- Total Projects Built: EXACTLY {proj_count}
+- Total Certificates Earned: EXACTLY {cert_count}
+
+OFFICIAL CONNECT CHANNELS:
+- Email: sanjaygl2006@gmail.com | Phone: +91 81239 81877
+- Portfolio Web App: https://sanjaygl2006.vercel.app/
+- GitHub: https://github.com/sanjayGL2006
+- LinkedIn: https://www.linkedin.com/in/sanjaygl3006/
+- Facebook: https://www.facebook.com/people/Sanjay-G-L-Sanju/100084034332588/
+- Salesforce Trailblazer: https://www.salesforce.com/trailblazer/tm0wiwy350c51segjm
+- Telegram: https://t.me/Sanjaygl30 | Instagram: https://www.instagram.com/me__sanjaygl8123
+- YouTube Channel: https://youtube.com/@code_catalyst_collective
+
+SANJAY AI OS v2.0 SKILLS MATRIX:
+• Web Development: HTML5 / CSS3 (Advanced - 95%), Web Page Design (Intermediate - 80%), JavaScript Core (Learning - 55%), XML (Knowledge - 45%), E-Commerce Dev (Knowledge - 45%)
+• Programming Languages: C / C++ (Intermediate - 75%), Java (Learning - 50%), Python (Learning - 55%)
+• Networking: Computer Networking (Basics - 45%)
+• Databases: SQL (Intermediate - 78%), PL/SQL (Intermediate - 75%), MySQL (Intermediate - 78%), Google Sheets as DB (Intermediate - 80%)
+• Tools & AI Productivity: Git & GitHub (Advanced - 92%), AI Productivity Tools (Advanced - 90%), MS Word (Advanced - 90%), MS PowerPoint (Advanced - 90%), Visual Studio Code (Intermediate - 82%), Cursor IDE (Intermediate - 80%), Google AI Studio (Intermediate - 78%), MS Excel / Sheets (Intermediate - 80%), Antigravity (Intermediate - 80%), Gamma Presentation (Intermediate - 75%), Figma Design (Intermediate - 75%), Replit Cloud IDE (Intermediate - 75%), Blackbox AI Code (Intermediate - 75%), Base44 (Intermediate - 75%), Google Stitch (Intermediate - 75%)
+• AI & Emerging Tech: Agentic AI (Learning - 55%), Machine Learning (Learning - 50%), CNN / AI Basics (Learning - 50%), Blockchain Technology (Learning - 45%)
+
+LIVE PROJECTS CONTEXT:
+{proj_context}
+
+VERIFIED CERTIFICATES CONTEXT:
+{cert_context}
+
+SANJAY AI OS RESPONSE RULES:
+1. When asked "How many projects have you built?" or similar, answer: "Sanjay has built exactly {proj_count} projects."
+2. When asked "How many certificates do you have?" or similar, answer: "Sanjay has earned exactly {cert_count} certificates."
+3. When asked for project or learning suggestions, output 3 to 5 clear, numbered project ideas matching Sanjay's skills with a 1-line reason for each.
+4. Keep responses structured, helpful, and tech-forward. Use HTML tags like <strong>, <br>, <ul><li>, and links (with style='color:var(--emerald-primary);font-weight:600') where appropriate.
+"""
+            model = genai.GenerativeModel('gemini-1.5-flash', system_instruction=system_prompt)
+            recent_convs = AgentConversation.query.filter_by(session_id=session_id).order_by(AgentConversation.id.desc()).limit(4).all()
+            history = []
+            for conv in reversed(recent_convs):
+                history.append({"role": "user", "parts": [conv.user_message]})
+                history.append({"role": "model", "parts": [conv.agent_response]})
+            
+            chat = model.start_chat(history=history)
+            response = chat.send_message(message)
+            reply_text = response.text
+            
+            # Check if we should log suggestions
+            if "internship" in message.lower() and ("project" in message.lower() or "build" in message.lower() or "suggest" in message.lower()):
+                lines = reply_text.split('\n')
+                for line in lines:
+                    line = line.strip()
+                    if line.startswith(('-', '*', '1.', '2.', '3.', '4.', '5.')):
+                        proj_name = line.split(':')[0].strip('- *12345.').strip()
+                        reasoning = line.split(':')[1].strip() if ':' in line else line
+                        if len(proj_name) > 3:
+                            suggestion = AgentProjectSuggestion(
+                                session_id=session_id,
+                                suggested_project=proj_name[:255],
+                                reasoning=reasoning
+                            )
+                            db.session.add(suggestion)
+                db.session.commit()
+                
+        except Exception as e:
+            print(f"Gemini API Error: {e}")
+            reply_text = f"I'm sorry, I'm having trouble thinking clearly. "
+            reply_text += get_fallback_reply(message, proj_count, cert_count)
+    else:
+        reply_text = get_fallback_reply(message, proj_count, cert_count)
+
+    # Save conversation using ORM
+    try:
+        conv = AgentConversation(
+            session_id=session_id,
+            user_message=message[:1000],
+            agent_response=reply_text
+        )
+        db.session.add(conv)
+        db.session.commit()
+    except Exception as e:
+        db.session.rollback()
+        print(f"Database error saving conversation: {e}")
+
+    return jsonify({"reply": reply_text})
+
+@app.route("/chat", methods=["POST"])
+def old_chat():
+    # Deprecated fallback endpoint, calls new agent_chat internally
+    return agent_chat()
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
+

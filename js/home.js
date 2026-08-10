@@ -72,30 +72,60 @@ function initStatCounters() {
   const counters = document.querySelectorAll('[data-count]');
   if (!counters.length) return;
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const target = parseInt(el.getAttribute('data-count'));
-        const suffix = el.getAttribute('data-suffix') || '';
-        let current = 0;
-        const step = Math.ceil(target / 40);
-
-        const timer = setInterval(() => {
-          current += step;
-          if (current >= target) {
-            el.textContent = target + suffix;
-            clearInterval(timer);
-          } else {
-            el.textContent = current + suffix;
-          }
-        }, 30);
-        observer.unobserve(el);
+  fetch('/api/stats')
+    .then(res => res.json())
+    .then(stats => {
+      counters.forEach(el => {
+        const text = el.parentElement.querySelector('div:last-child').textContent.toLowerCase();
+        if (text.includes('featured')) {
+          el.setAttribute('data-count', stats.featured_projects);
+        } else if (text.includes('ai project')) {
+          el.setAttribute('data-count', stats.ai_projects);
+        } else if (text.includes('project')) {
+          el.setAttribute('data-count', stats.projects);
+        } else if (text.includes('certificate')) {
+          el.setAttribute('data-count', stats.certificates);
+        } else if (text.includes('technologies')) {
+          el.setAttribute('data-count', stats.technologies);
+        }
+      });
+      const visitorEl = document.getElementById('visitor-count-num');
+      if (visitorEl && stats.visits) {
+        visitorEl.textContent = stats.visits.toLocaleString();
       }
+      startObserver();
+    })
+    .catch(err => {
+      console.warn("Stats API error, fallback to HTML data-attributes:", err);
+      startObserver();
     });
-  }, { threshold: 0.5 });
 
-  counters.forEach(c => observer.observe(c));
+  function startObserver() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.getAttribute('data-count')) || 0;
+          const suffix = el.getAttribute('data-suffix') || '';
+          let current = 0;
+          const step = Math.max(1, Math.ceil(target / 40));
+
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+              el.textContent = target + suffix;
+              clearInterval(timer);
+            } else {
+              el.textContent = current + suffix;
+            }
+          }, 30);
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(c => observer.observe(c));
+  }
 }
 
 // Skills Filter & Progress Bars

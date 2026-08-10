@@ -1,27 +1,42 @@
 {
   "personal": {
-    "name": "Sanjay G. L.",
-    "role": "Full Stack Developer & AI Enthusiast",
-    "location": "Shivamogga, Karnataka, India",
+    "name": "Sanjay G. L. (Sanju)",
+    "dob": "March 30, 2006 (Age 20)",
+    "role": "Full Stack Developer, Student & AI/ML Intern at Milano Infotech",
+    "location": "Shivamogga, Karnataka, India (Kanaka Nagara, Devaraj Urs Layout, Vinoba Nagara)",
     "email": "sanjaygl2006@gmail.com",
     "phone": "+91 8123981877",
-    "status": "Student & Intern at Milano Infotech",
-    "bio": "Passionate BCA student from Shivamogga, Karnataka, building scalable, secure, and user-friendly web applications, exploring Artificial Intelligence, Cybersecurity, and Cloud Engineering.",
-    "future_goal": "Full Stack AI Engineer building intelligent autonomous systems and cloud-native applications.",
+    "status": "BCA 3rd Year (5th Semester) · PES IAMS",
+    "bio": "Passionate BCA student & developer from Shivamogga, Karnataka. A hands-on builder who lives by 'Learn → Build → Test → Improve → Build something bigger'. Passionate about Web Development, Cybersecurity, AI tools, and practical mini-projects.",
+    "core_philosophy": "Builder mindset: going from 'I have an idea' → 'I built it'. Learning by doing rather than watching passive tutorials.",
+    "future_goal": "Full-stack developer & Security Engineer building scalable web products, ethical cybersecurity labs, and AI systems.",
+    "personal_life": {
+      "relationship": "Married to his wife",
+      "family": "Has a brother, grandparents, and Ramu mama (shared car travels & traditional banana leaf meals)",
+      "mother_craft": "Mother crafts customized saree border tassels (kuchu) for which Sanjay explored creating a digital storefront",
+      "hobbies": ["Trekking & Hiking (Hulibande falls, Haihole Check Dam)", "Cycling & Electric Cycle Research", "Fish keeping & aquarium care (Platy fish)", "Mobile & PC gaming (Open-world epics, HP Victus laptop)", "Indian Cinema (Tracking releases like Jana Nayagan, With Love, Karuppu)"]
+    },
     "github": "https://github.com/sanjayGL2006",
     "linkedin": "https://linkedin.com/in/sanjaygl2006",
     "telegram": "https://t.me/sanjaygl2006",
     "instagram": "https://instagram.com/sanjaygl2006",
-    "youtube": "https://youtube.com/@sanjaygl",
+    "youtube": "https://youtube.com/@code_catalyst_collective",
     "resume": "assets/Sanjay_GL_Resume.pdf"
   },
   "education": [
     {
       "degree": "Bachelor of Computer Applications (BCA)",
-      "institution": "PES Institute of Advanced Management Studies (PES IAMS)",
+      "institution": "PES Institute of Advanced Management Studies (PES IAMS / Kuvempu University)",
       "location": "Shivamogga, Karnataka",
       "period": "2023 – Present",
-      "status": "Current · 3rd Year · 5th Semester"
+      "status": "Current · 3rd Year · 5th Semester (Completed 4th Sem Exams May 2026)"
+    },
+    {
+      "degree": "30-Hour Blockchain Technology Certification Course",
+      "institution": "PES Institute of Advanced Management Studies",
+      "location": "Shivamogga, Karnataka",
+      "period": "2026",
+      "status": "Completed"
     },
     {
       "degree": "Pre-University Course (PUC)",
@@ -39,48 +54,62 @@
     }
   ],
   "currently_learning": {
-    "topic": "Artificial Intelligence & Containerization",
-    "badge": "Currently Learning AI, ML & DevOps",
+    "topic": "Artificial Intelligence, Agentic Systems & Containerization",
+    "badge": "SANJAY AI OS v2.0 · Active AI & DevOps Stack",
     "subtopics": [
-      "Artificial Intelligence (50%)",
-      "Machine Learning (40%)",
-      "Docker (35%)",
-      "Electron.js (25%)",
-      "Kali Linux (30%)",
-      "GitLab (Active)",
-      "Prompt Engineering (Active)"
+      "Agentic AI (55%)",
+      "JavaScript Core (55%)",
+      "Python (55%)",
+      "Java (50%)",
+      "Machine Learning (50%)",
+      "CNN / AI Basics (50%)",
+      "Blockchain Technology (45%)"
     ]
   },
   "skills": {
-    "frontend": [
-      { "name": "HTML", "level": "Advanced", "percentage": 95 },
-      { "name": "CSS", "level": "Advanced", "percentage": 92 },
-      { "name": "JavaScript", "level": "Intermediate", "percentage": 88 },
-      { "name": "React", "level": "Learning", "percentage": 60 }
+    "web_development": [
+      { "name": "HTML5 / CSS3", "level": "Advanced", "percentage": 95 },
+      { "name": "Web Page Design", "level": "Intermediate", "percentage": 80 },
+      { "name": "JavaScript (Core)", "level": "Learning", "percentage": 55 },
+      { "name": "XML", "level": "Knowledge", "percentage": 45 },
+      { "name": "E-Commerce Dev", "level": "Knowledge", "percentage": 45 }
     ],
-    "backend": [
-      { "name": "Python", "level": "Intermediate", "percentage": 82 }
+    "programming": [
+      { "name": "C / C++", "level": "Intermediate", "percentage": 75 },
+      { "name": "Java", "level": "Learning", "percentage": 50 },
+      { "name": "Python", "level": "Learning", "percentage": 55 }
+    ],
+    "networking": [
+      { "name": "Computer Networking", "level": "Basics", "percentage": 45 }
     ],
     "database": [
-      { "name": "SQL", "level": "Intermediate", "percentage": 85 },
-      { "name": "SQLite", "level": "Intermediate", "percentage": 80 }
+      { "name": "SQL", "level": "Intermediate", "percentage": 78 },
+      { "name": "PL/SQL", "level": "Intermediate", "percentage": 75 },
+      { "name": "MySQL", "level": "Intermediate", "percentage": 78 },
+      { "name": "Google Sheets as DB", "level": "Intermediate", "percentage": 80 }
     ],
-    "ai": [
-      { "name": "Artificial Intelligence", "level": "Learning", "percentage": 50 },
-      { "name": "Machine Learning", "level": "Learning", "percentage": 40 }
+    "tools_and_productivity": [
+      { "name": "Git & GitHub", "level": "Advanced", "percentage": 92 },
+      { "name": "AI Productivity Tools", "level": "Advanced", "percentage": 90 },
+      { "name": "MS Word", "level": "Advanced", "percentage": 90 },
+      { "name": "MS PowerPoint", "level": "Advanced", "percentage": 90 },
+      { "name": "Visual Studio Code", "level": "Intermediate", "percentage": 82 },
+      { "name": "Cursor IDE", "level": "Intermediate", "percentage": 80 },
+      { "name": "Google AI Studio", "level": "Intermediate", "percentage": 78 },
+      { "name": "MS Excel / Sheets", "level": "Intermediate", "percentage": 80 },
+      { "name": "antigravity", "level": "Intermediate", "percentage": 80 },
+      { "name": "Gamma Presentation", "level": "Intermediate", "percentage": 75 },
+      { "name": "Figma Design", "level": "Intermediate", "percentage": 75 },
+      { "name": "Replit Cloud IDE", "level": "Intermediate", "percentage": 75 },
+      { "name": "Blackbox AI Code", "level": "Intermediate", "percentage": 75 },
+      { "name": "Base44", "level": "Intermediate", "percentage": 75 },
+      { "name": "google stitch", "level": "Intermediate", "percentage": 75 }
     ],
-    "cloud": [
-      { "name": "Google Cloud", "level": "Learning", "percentage": 45 }
-    ],
-    "tools": [
-      { "name": "Git", "level": "Advanced", "percentage": 90 },
-      { "name": "GitHub", "level": "Advanced", "percentage": 90 },
-      { "name": "VS Code", "level": "Advanced", "percentage": 92 },
-      { "name": "Cursor AI", "level": "Advanced", "percentage": 90 },
-      { "name": "Postman", "level": "Intermediate", "percentage": 80 },
-      { "name": "Docker", "level": "Learning", "percentage": 35 },
-      { "name": "Kali Linux", "level": "Learning", "percentage": 30 },
-      { "name": "Electron.js", "level": "Learning", "percentage": 25 }
+    "ai_and_ml": [
+      { "name": "Agentic AI", "level": "Learning", "percentage": 55 },
+      { "name": "Machine Learning", "level": "Learning", "percentage": 50 },
+      { "name": "CNN / AI Basics", "level": "Learning", "percentage": 50 },
+      { "name": "Blockchain Technology", "level": "Learning", "percentage": 45 }
     ]
   },
   "projects": {
@@ -141,11 +170,14 @@
   },
   "volunteer": [
     { "role": "NSS Volunteer", "org": "National Service Scheme (PES IAMS)", "period": "2023 – Present" },
-    { "role": "Youth For Seva (YFS)", "org": "Community Service Initiative", "period": "2024 – Present" },
-    { "role": "MY Bharat Volunteer", "org": "Government of India (Ministry of Youth Affairs)", "period": "2024 – Present" }
+    { "role": "Youth For Seva (YFS)", "org": "Virupina Koppa Group Tree Planting Drive (2025)", "period": "2024 – Present" },
+    { "role": "MY Bharat Volunteer", "org": "Govt. of India / Viksit Vibrant Village Program Quiz 2026", "period": "2024 – Present" },
+    { "role": "Nasha Mukti Competition", "org": "Creative Anthem Entry for Drug-Free India Initiative", "period": "2026" }
   ],
   "achievements": [
     "86+ Verified Technical & Government Certificates",
+    "Completed 30-Hour Blockchain Technology Course at PES IAMS (2026)",
+    "Participated in Green IT Competition at PES Institute",
     "35+ Open Source GitHub Repositories",
     "8+ Production Web Applications Live",
     "7+ AI-powered Projects & Chatbots",

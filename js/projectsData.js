@@ -469,7 +469,7 @@ const PROJECTS_DATA = [
     tagline: "Personal portfolio showcasing projects, credentials, and technical skills.",
     desc: "Responsive developer website showcasing projects, skills, education timeline, and contact pathways.",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "https://sanjaygl2006.vercel.app/",
+    live: "https://sanjaygl30ai.vercel.app/",
     github: "https://github.com/sanjayGL2006",
     status: "Completed",
     featured: true,

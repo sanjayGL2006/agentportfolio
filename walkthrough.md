@@ -44,3 +44,16 @@ npm install -g vercel
 # Deploy (login and setup)
 vercel --prod
 ```
+
+---
+
+## AI Chatbot Database Integration & MySQL Support
+
+### 1. Database Persistence
+- Every question asked by visitors via the chat panel is logged in the `agent_conversations` database table using dynamic ORM queries in `app.py`.
+- If an internship project suggestion is triggered, those ideas and reasoning are logged into `agent_project_suggestions`.
+
+### 2. Administrative Tools
+- **[view_agent_conversations.py](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/view_agent_conversations.py)**: A new CLI tool to display all question-and-answer interactions stored in the database.
+- **[.env.example](file:///c:/Users/Sanjay%20G%20L/Desktop/portfolio/.env.example)**: A configuration guide showing how to set up environment parameters to switch from the default local SQLite database to a production MySQL database instance.
+

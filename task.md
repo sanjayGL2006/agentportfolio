@@ -3,3 +3,5 @@
 - `[x]` Create `vercel.json`
 - `[x]` Create `api/index.py`
 - `[x]` Verify files and create walkthrough
+- `[x]` Set up database persistence for AI agent conversations (MySQL/SQLite)
+- `[x]` Create view_agent_conversations.py CLI query tool
