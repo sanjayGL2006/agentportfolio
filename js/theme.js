@@ -45,10 +45,26 @@
       visitorEl.textContent = visitCount.toLocaleString();
     }
 
-    // Register Service Worker for PWA
+    // Register / Unregister Service Worker for PWA
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js').catch(() => {});
+      const isLocal = Boolean(
+        window.location.hostname === 'localhost' ||
+        window.location.hostname === '127.0.0.1' ||
+        window.location.hostname === '[::1]' ||
+        window.location.hostname.endsWith('.local')
+      );
+
+      if (isLocal) {
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          for (const registration of registrations) {
+            registration.unregister();
+          }
+        }).catch(() => {});
+      } else {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      }
     }
+
 
     // Developer Console Welcome Message
     console.log("Welcome to Sanjay G. L. Portfolio Website!");
