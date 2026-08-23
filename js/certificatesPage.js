@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderGallery(list) {
     if (!grid) return;
     if (list.length === 0) {
-      grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:60px;" class="glass">No certificates matching filter</div>`;
+      grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:60px;" class="glass"><i class="fa-solid fa-certificate" style="font-size:2.5rem; margin-bottom:12px; color:var(--emerald-primary);"></i><h3 style="font-weight:700; color:var(--text-main); margin-bottom:8px;">No Certificates Currently Listed</h3><p style="color:var(--text-muted); font-size:0.9rem;">All certificates have been cleared.</p></div>`;
       return;
     }
 
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderTimeline(list) {
     if (!timelineContainer) return;
     if (list.length === 0) {
-      timelineContainer.innerHTML = `<div style="text-align:center;padding:60px;" class="glass">No certificates found</div>`;
+      timelineContainer.innerHTML = `<div style="text-align:center;padding:60px;" class="glass"><i class="fa-solid fa-certificate" style="font-size:2.5rem; margin-bottom:12px; color:var(--emerald-primary);"></i><h3 style="font-weight:700; color:var(--text-main); margin-bottom:8px;">No Certificates Currently Listed</h3><p style="color:var(--text-muted); font-size:0.9rem;">All certificates have been cleared.</p></div>`;
       return;
     }
 

@@ -150,6 +150,7 @@ img {
   height: 100vh;
   z-index: -1;
   pointer-events: none;
+  contain: strict;
 }
 
 /* Scroll progress indicator */
@@ -166,44 +167,8 @@ img {
 }
 
 /* ===================================================================
-   MAGICAL STAR CURSOR & SPARKLES
+   STAR PARTICLES (used by Theme Easter Egg)
 =================================================================== */
-.cursor-dot {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  background: var(--golden-yellow);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 99999;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 10px var(--golden-yellow), 0 0 20px var(--emerald-primary);
-  transition: opacity 0.3s ease;
-}
-
-.cursor-ring {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 36px;
-  height: 36px;
-  border: 1.5px solid var(--emerald-primary);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 99998;
-  transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease, border-color 0.3s ease, transform 0.15s ease-out;
-}
-
-.cursor-ring.active {
-  width: 56px;
-  height: 56px;
-  border-color: var(--purple-accent);
-  background: rgba(139, 92, 246, 0.1);
-}
-
 .star-particle {
   position: fixed;
   pointer-events: none;
@@ -226,8 +191,17 @@ img {
 }
 
 @media (max-width: 900px) {
-  .cursor-dot, .cursor-ring, .star-particle {
+  .star-particle {
     display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }
 
@@ -536,9 +510,9 @@ body.light-theme .navbar.scrolled {
    HERO SECTION
 =================================================================== */
 .hero-section {
-  min-height: 100vh;
-  padding-top: 140px;
-  padding-bottom: 80px;
+  min-height: auto;
+  padding-top: 84px;
+  padding-bottom: 32px;
   display: flex;
   align-items: center;
   position: relative;
@@ -794,7 +768,7 @@ body.light-theme .navbar.scrolled {
    ABOUT SECTION & QUICK FACTS
 =================================================================== */
 .about-section {
-  padding: 100px 0;
+  padding: 56px 0;
   position: relative;
 }
 
@@ -909,7 +883,7 @@ body.light-theme .navbar.scrolled {
    SKILLS SECTION & CIRCULAR PROGRESS
 =================================================================== */
 .skills-section {
-  padding: 100px 0;
+  padding: 56px 0;
   background: var(--bg-surface);
 }
 
@@ -917,7 +891,7 @@ body.light-theme .navbar.scrolled {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
   justify-content: center;
 }
 
@@ -1082,7 +1056,7 @@ body.light-theme .navbar.scrolled {
    PROJECTS PAGE & 3D FLIP CARDS
 =================================================================== */
 .projects-section {
-  padding: 120px 0 80px;
+  padding: 60px 0 40px;
 }
 
 .controls-bar {
@@ -1091,7 +1065,7 @@ body.light-theme .navbar.scrolled {
   gap: 16px;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .search-input-wrap {
@@ -1140,7 +1114,7 @@ body.light-theme .navbar.scrolled {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 36px;
+  margin-bottom: 20px;
 }
 
 /* 3D Flip Card Component */
@@ -1264,7 +1238,7 @@ body.light-theme .navbar.scrolled {
    CERTIFICATES PAGE & GALLERY / TIMELINE
 =================================================================== */
 .certs-section {
-  padding: 120px 0 80px;
+  padding: 60px 0 40px;
 }
 
 .view-toggle-bar {
@@ -1821,17 +1795,9 @@ footer {
   transform: translateY(0) scale(1);
 }
 
-/* 5. Custom Cursor Glow update */
-.cursor-ring.active {
-  width: 52px;
-  height: 52px;
-  border-color: var(--coral-pink);
-  background: rgba(236, 72, 153, 0.15);
-}
-
 /* 6. Timeline Styles for Research & AI Projects */
 .research-timeline-section {
-  padding: 80px 0;
+  padding: 48px 0;
 }
 
 .timeline-horizontal {
@@ -2171,9 +2137,9 @@ body.light-theme {
 }
 
 .hero-centered .profile-visual-container {
-  margin-bottom: 45px;
+  margin-bottom: 28px;
   width: 100%;
-  height: 380px;
+  height: 280px;
   position: relative;
   display: flex;
   align-items: center;
@@ -2183,8 +2149,8 @@ body.light-theme {
 /* Circular Profile glass frame */
 .hero-centered .profile-glass-frame {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   border-radius: 50% !important;
   padding: 6px;
   background: var(--bg-glass-card);
@@ -2428,5 +2394,3 @@ body.light-theme .circular-progress .bg-circle {
 body.light-theme .premium-modal-overlay {
   background: rgba(255, 255, 255, 0.6) !important;
 }
-
-

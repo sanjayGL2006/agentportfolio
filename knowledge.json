@@ -174,11 +174,6 @@
         "percentage": 82
       },
       {
-        "name": "Cursor IDE",
-        "level": "Intermediate",
-        "percentage": 80
-      },
-      {
         "name": "Google AI Studio",
         "level": "Intermediate",
         "percentage": 78
@@ -271,12 +266,18 @@
     "total_count": "29+",
     "featured_count": 5,
     "ai_projects_count": "7+",
-    "certificates_count": "86+",
+    "certificates_count": "87+",
     "technologies_count": "20+",
     "live_deployments_count": "8+",
     "machine_learning_projects_count": "2+",
     "ai_assistants_count": "2+",
     "list": [
+      {
+        "title": "DataGauge — Dataset Quality Monitoring System",
+        "category": "Data Engineering",
+        "year": 2026,
+        "github": "https://github.com/sanjayGL2006/DataGauge-Dataset-Quality-Monitoring-System"
+      },
       {
         "title": "Sindhanai Full Stack AI",
         "category": "AI",
@@ -428,7 +429,7 @@
     ]
   },
   "certificates": {
-    "total_count": "86+",
+    "total_count": "87+",
     "named_count": 6,
     "drive_count": 96,
     "highlights": [

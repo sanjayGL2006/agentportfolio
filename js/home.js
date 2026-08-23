@@ -251,23 +251,56 @@ function initContactForm() {
     }
     
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ name, email, subject, message })
-      });
-      
-      const result = await response.json();
-      
-      if (response.ok && result.status === 'success') {
+      let sentSuccess = false;
+      let responseMsg = '';
+
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, subject, message })
+        });
+        const result = await response.json();
+        if (response.ok && result.status === 'success') {
+          sentSuccess = true;
+          responseMsg = result.message || `Thank you, ${name}! Your message has been sent successfully.`;
+        }
+      } catch (backendErr) {
+        console.warn('Backend contact route failed/unavailable, trying FormSubmit fallback:', backendErr);
+      }
+
+      // Static fallback using FormSubmit.co directly to sanjaygl2006@gmail.com
+      if (!sentSuccess) {
+        const fsResponse = await fetch('https://formsubmit.co/ajax/sanjaygl2006@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            _replyto: email,
+            _subject: `[Portfolio Direct Message] ${subject} from ${name}`,
+            message: message,
+            _template: 'table',
+            _captcha: 'false'
+          })
+        });
+        const fsResult = await fsResponse.json();
+        if (fsResponse.ok && (fsResult.success === 'true' || fsResult.success === true || fsResult.message)) {
+          sentSuccess = true;
+          responseMsg = `Thank you, ${name}! Your message has been sent directly to sanjaygl2006@gmail.com.`;
+        }
+      }
+
+      if (sentSuccess) {
         if (window.ToastManager) {
-          window.ToastManager.show(result.message || `Thank you, ${name}! Your message has been sent successfully.`, 'success', 'fa-paper-plane');
+          window.ToastManager.show(responseMsg, 'success', 'fa-paper-plane');
         }
         form.reset();
       } else {
-        throw new Error(result.message || 'Server error occurred.');
+        throw new Error('Could not deliver message via backend or email service.');
       }
     } catch (err) {
       console.error('Contact submit error:', err);
@@ -510,9 +543,19 @@ function renderHomeFeaturedCertificates() {
   const grid = document.getElementById('homeFeaturedCertsGrid');
   if (!grid || typeof CERTIFICATES_DATA === 'undefined') return;
 
-  // Explicitly select the top 5 certificates
-  const selectedCerts = [];
+  if (!CERTIFICATES_DATA || CERTIFICATES_DATA.length === 0) {
+    grid.innerHTML = `
+      <div class="glass" style="grid-column: 1 / -1; padding: 40px; text-align: center; color: var(--text-muted); border-radius: var(--radius-lg);">
+        <i class="fa-solid fa-certificate" style="font-size: 2.5rem; margin-bottom: 12px; color: var(--emerald-primary);"></i>
+        <h3 style="font-weight: 700; color: var(--text-main); margin-bottom: 8px;">No Certificates Currently Listed</h3>
+        <p style="font-size: 0.9rem;">All certificates have been cleared from the archive.</p>
+      </div>
+    `;
+    return;
+  }
   
+  const selectedCerts = [];
+
   // 1. PRAVIDHI
   let c1 = CERTIFICATES_DATA.find(c => c.id === "cert-named-1");
   if (c1) selectedCerts.push(c1);

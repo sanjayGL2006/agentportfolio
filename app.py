@@ -64,213 +64,103 @@ check_and_copy_assets()
 
 # Auto-compile certificates list from URLs list and metadata
 def compile_certificates_data():
-    import re
-    import json
-    
     drive_ids = [
-        "1-L38L9BUDCu4VUJ5EIce_XhSV2v2ye4u", "10-hk5wBRsMyFM1l-TDbIRDwkkSY95t2q", "107VX9Fm7p8BC5KqtAgcNzSvjush6jojn", 
-        "10_bXPiY61DOfO80JCCVA90HekvacNu8P", "12ESuKNWaY74SOox4TgXZhqOZ2_dpszg-", "12FfoBj33hsQ-tXD1rGp0UEIQIC84MGuh", 
-        "13D2dbLhCL-eNlpQfJeviYKe2XZWSRSnK", "17-3D0VFRQIPewrjwF2s3PJWVOVFWrcjc", "18xJnFWhEI29Cr7dmw1VRoV-8Gg9iuK0P", 
-        "19kO2mnjt5X4a4qWJfhfhovZnuMXaH5y6", "19tI2hT0kFgW39QHMAXRpFDrjqyXql1nJ", "1A2qcI_R_XUdHGCvQ6H2s14yrlGW5Su6J", 
-        "1AuaHR5rUdHrOajrTN-R3pO_KKK1rGs03", "1Dk5TfiaT3BHQmZimaMydJUCw1_0FjRLF", "1DlKD1aXq6bmWjG6h6x4LEOj2WAmOAG3y", 
-        "1Ev6wBrNmYhsraaOL2VUubPIpqhlBtVQQ", "1FrObW8f-cLRoPGlUfEzHOyD6AeczPG_X", "1H0aeNMwCLhJjg_6rHGyooPiZk-BflFJ1", 
-        "1HeYLoKJV7QeeU2mKMWGfmiILI9N_AH6b", "1Ho2ZBv7au6GOXr-6MmU0bfwxm8Yp3G-K", "1HstoSfhckvsOO6_aidfT1bBHOBrOhKqE", 
-        "1KDxQE2OMcW77LO6wFqPp-HArzXRRoPR8", "1KIIPDP0th4fxTyFxU_9F7f-fXu3psEu4", "1Kd3bYcNXnGknIwfcJxsZ8sk-GE_gyE0q", 
-        "1Ko9fEoQI3xs3kwaEc6yFhF0l2AWtm1JW", "1LJmJmbS2YcKoQEQLppfU6vEO61PCj2dP", "1Lgomj0lv7CuaDxciz48_yULDkPVSzNPE", 
-        "1P5RVLlM4b_O7JfXW8ikYGRuw-hWFkZZ8", "1PEJhU_PTOj5fA-69RPCv7-cc9euSS587", "1PFtwIztabc1SqH8QgGPS7tqvJN2VKDTk", 
-        "1PuWfOdlg4wlJgfk-iLpJ4rvWs-Wv4ney", "1Q5VmaMDRqlECVGOQpXSSv2WlZt8rZH6P", "1StpifccCvsK5GDdUeGFClbTVvyXu_Ni-", 
-        "1V0JTji0RoBPs8aFtLppu6DJecObVIIb_", "1V8TGbqTHXWRMv88AROnHLdJPlPX5EOBW", "1Va3EftdPvra16nxljqF9AJGatKcmbIzH", 
-        "1WgPyuEnrmXjSvwhdOAVN1zl_U2HR15yG", "1XmNJeCENmfKiIlAqeRlaZS7Elo3f2HuV", "1YtVQaC7XuePtK-VYQUnAbRDqzQKbRwyd", 
-        "1Z0F1u-nTvbEy4q8TVMS2rELe0kuMoNtE", "1ZJ6E2M48Y-mj4GkGL-xdcjfHGCiYso0I", "1ZeUhN2iYIf5Qx-5AidLGfRNzEg4iWp6x", 
-        "1Zr158pxcZCJH7M1PD7JsscMgzfMhTwHJ", "1_eU4dhnAaT8CMeKXGLweWvToiZLGT8o3", "1cNWOwLa-_K4DHVbRfQxI0lRRX4dBjOLQ", 
-        "1cgI8KCXQOIMn7PhFcp-FNbljiQjXRk83", "1clNKGjfJZ_CYftMSi4s61-_MF6Yh9HHG", "1e7pe4wmwbW7eAj03lnh4oT7B5uq_W0W_", 
-        "1eC9jJkh24fbp3yPFhkJFCXtMsEctM91h", "1eedO8IwoX9TdVJuWUK24DTaCASAroFN0", "1eyKeDX2ZgZRQrCPwWPKPnbeKl0pHw2R-", 
-        "1f2Llv6lx868hu-W25jbo3PSkz_jCjBAH", "1gzBXs737Ot0kS8v9-Ajn5BG3Su2i3CbN", "1hjFaezuClZ-G4UtkAY8imuYyEbrnoVfb", 
-        "1hyC37Swp986ppG60K7PU1S8ncAypuMQE", "1iKLa4JLdhBlqrROJQMvx2B3NSPXnFvoS", "1idUojsowgcO2qQMRQvVsovxBA6Aad9dj", 
-        "1ikI0HNMQCN3ng-EE6eBlOcpc539CdZmj", "1jLIQ565Lm2gCpIBYUowsgnRHP4l91bAz", "1kVQLmzBadGWljq9Op837-wIOZB3O8TR-", 
-        "1lRyftt6wcJK02cvvOfnnAIKj_MXVJmos", "1m1P88OdYCZtiSagfdpiw6SWEJjKlWSh8", "1nTBVUP0UVKlZHnl2fxI7KsAqRvTeKk_8", 
-        "1objmnAgNf5jqs4IXatJFdkVdekgi41zB", "1qjvW1_s_s7QLhAZxLKLlWkBDw0lwefgT", "1qrn_Nqa-r9O2w2uPQXzSW6YAxu7xyCAD", 
-        "1qvZCWbebWlDLnXu1WhmG1lty4zY-fnhX", "1yVHpUp9mLInP0_i2TQAYHUnDvCBdrjj6", "1yaie6FEX0EdVrMd1uPiREMQjyeyaJvOA", 
-        "1yzjrn_fY79UvR64tD2WR4IFqwZlrl88r", "1z0zzGW6tuUvPa0ZO-vtUFAaT2_MDarJa", "1z9xLVvDvY2UvEgnPNO2CCNWZqbnJKkdo", 
-        "1zIkX7arTsVXtMerLdnYWpMiNedrsug9V", "1zVtR64fW604WSRjv3Pj51nmRakFunHbw", "1zZBqx4FPxFI3dcdZmPiovkJcHM9UTfvv",
-        "1GbYj1y9ao2wGQeXyrp5cTjt4zszK61iM", "1PzYpEBBYJvfsExPJy9ksPS4oR88PaTDy", "1i-CTvb4kMtdGe7nWxSMxEwKUPssghrhT",
-        "1pu_99X1w68I98YhkZIAd8YaeVVuFcWSz", "1x0y_iFE7NBF0TUe03u9FHksX1AjA9SmJ"
-    ]
+        "1-L38L9BUDCu4VUJ5EIce_XhSV2v2ye4u",
+        "10-hk5wBRsMyFM1l-TDbIRDwkkSY95t2q",
+        "107VX9Fm7p8BC5KqtAgcNzSvjush6jojn",
+        "10_bXPiY61DOfO80JCCVA90HekvacNu8P",
+        "12ESuKNWaY74SOox4TgXZhqOZ2_dpszg-",
+        "12FfoBj33hsQ-tXD1rGp0UEIQIC84MGuh",
+        "13D2dbLhCL-eNlpQfJeviYKe2XZWSRSnK",
+        "13tTd3Qniajnw25pGuzk7WFzSvKw1lAul",
+        "17-3D0VFRQIPewrjwF2s3PJWVOVFWrcjc",
+        "18xJnFWhEI29Cr7dmw1VRoV-8Gg9iuK0P",
+        "19kO2mnjt5X4a4qWJfhfhovZnuMXaH5y6",
+        "19tI2hT0kFgW39QHMAXRpFDrjqyXql1nJ",
+        "1A2qcI_R_XUdHGCvQ6H2s14yrlGW5Su6J",
+        "1AuaHR5rUdHrOajrTN-R3pO_KKK1rGs03",
+        "1Cb4E1Am3NLuAt4fN3hUNadZKKpjL9yKP",
+        "1Dk5TfiaT3BHQmZimaMydJUCw1_0FjRLF",
+        "1DlKD1aXq6bmWjG6h6x4LEOj2WAmOAG3y",
+        "1Ev6wBrNmYhsraaOL2VUubPIpqhlBtVQQ",
+        "1FrObW8f-cLRoPGlUfEzHOyD6AeczPG_X",
+        "1H0aeNMwCLhJjg_6rHGyooPiZk-BflFJ1",
+        "1HeYLoKJV7QeeU2mKMWGfmiILI9N_AH6b",
+        "1Ho2ZBv7au6GOXr-6MmU0bfwxm8Yp3G-K",
+        "1HstoSfhckvsOO6_aidfT1bBHOBrOhKqE",
+        "1KDxQE2OMcW77LO6wFqPp-HArzXRRoPR8",
+        "1KIIPDP0th4fxTyFxU_9F7f-fXu3psEu4",
+        "1Kd3bYcNXnGknIwfcJxsZ8sk-GE_gyE0q",
+        "1Ko9fEoQI3xs3kwaEc6yFhF0l2AWtm1JW",
+        "1LJmJmbS2YcKoQEQLppfU6vEO61PCj2dP",
+        "1Lgomj0lv7CuaDxciz48_yULDkPVSzNPE",
+        "1MCuKgqYoockhgebBftpqQXlsDXKGZAsw",
+        "1NhxE2rGs-diBmAspxkanzLA_NG_KgIv9",
+        "1P5RVLlM4b_O7JfXW8ikYGRuw-hWFkZZ8",
+        "1PEJhU_PTOj5fA-69RPCv7-cc9euSS587",
+        "1PFtwIztabc1SqH8QgGPS7tqvJN2VKDTk",
+        "1PuWfOdlg4wlJgfk-iLpJ4rvWs-Wv4ney",
+        "1Q5VmaMDRqlECVGOQpXSSv2WlZt8rZH6P",
+        "1TJKRwFP9K-1lPlluPDrKJDLMO8L5fjaz",
+        "1V0JTji0RoBPs8aFtLppu6DJecObVIIb_",
+        "1V8TGbqTHXWRMv88AROnHLdJPlPX5EOBW",
+        "1Va3EftdPvra16nxljqF9AJGatKcmbIzH",
+        "1WgPyuEnrmXjSvwhdOAVN1zl_U2HR15yG",
+        "1XeXNbcDl9lp3qc-BjE5jkXGdTGx0lLsP",
+        "1XmNJeCENmfKiIlAqeRlaZS7Elo3f2HuV",
+        "1YtVQaC7XuePtK-VYQUnAbRDqzQKbRwyd",
+        "1ZJ6E2M48Y-mj4GkGL-xdcjfHGCiYso0I",
+        "1ZeUhN2iYIf5Qx-5AidLGfRNzEg4iWp6x",
+        "1Zr158pxcZCJH7M1PD7JsscMgzfMhTwHJ",
+        "1_eU4dhnAaT8CMeKXGLweWvToiZLGT8o3",
+        "1cNWOwLa-_K4DHVbRfQxI0lRRX4dBjOLQ",
+        "1cgI8KCXQOIMn7PhFcp-FNbljiQjXRk83",
+        "1clNKGjfJZ_CYftMSi4s61-_MF6Yh9HHG",
+        "1dScd4j_m9hXy6ogBfA2dSH09cT0L_D3A",
+        "1e7pe4wmwbW7eAj03lnh4oT7B5uq_W0W_",
+        "1eC9jJkh24fbp3yPFhkJFCXtMsEctM91h",
+        "1eedO8IwoX9TdVJuWUK24DTaCASAroFN0",
+        "1eyKeDX2ZgZRQrCPwWPKPnbeKl0pHw2R-",
+        "1f2Llv6lx868hu-W25jbo3PSkz_jCjBAH",
+        "1gh2-eo8P98ce2O24dl6ddilLZknUe27A",
+        "1gzBXs737Ot0kS8v9-Ajn5BG3Su2i3CbN",
+        "1hjFaezuClZ-G4UtkAY8imuYyEbrnoVfb",
+        "1hyC37Swp986ppG60K7PU1S8ncAypuMQE",
+        "1idUojsowgcO2qQMRQvVsovxBA6Aad9dj",
+        "1ikI0HNMQCN3ng-EE6eBlOcpc539CdZmj",
+        "1jLIQ565Lm2gCpIBYUowsgnRHP4l91bAz",
+        "1kVQLmzBadGWljq9Op837-wIOZB3O8TR-",
+        "1lRyftt6wcJK02cvvOfnnAIKj_MXVJmos",
+        "1m1P88OdYCZtiSagfdpiw6SWEJjKlWSh8",
+        "1nTBVUP0UVKlZHnl2fxI7KsAqRvTeKk_8",
+        "1objmnAgNf5jqs4IXatJFdkVdekgi41zB",
+        "1qjvW1_s_s7QLhAZxLKLlWkBDw0lwefgT",
+        "1qrn_Nqa-r9O2w2uPQXzSW6YAxu7xyCAD",
+        "1qvZCWbebWlDLnXu1WhmG1lty4zY-fnhX",
+        "1rOtjoYebWSA-_bis8_ja1ZDruCXss28E",
+        "1xiVeBY3Ls_K79m0OaXKmeJimwvTA10jY",
+        "1yVHpUp9mLInP0_i2TQAYHUnDvCBdrjj6",
+        "1yaie6FEX0EdVrMd1uPiREMQjyeyaJvOA",
+        "1yzjrn_fY79UvR64tD2WR4IFqwZlrl88r",
+        "1z0zzGW6tuUvPa0ZO-vtUFAaT2_MDarJa",
+        "1z9xLVvDvY2UvEgnPNO2CCNWZqbnJKkdo",
+        "1zIkX7arTsVXtMerLdnYWpMiNedrsug9V",
+        "1zVtR64fW604WSRjv3Pj51nmRakFunHbw",
+        "1zZBqx4FPxFI3dcdZmPiovkJcHM9UTfvv",
+        "1GbYj1y9ao2wGQeXyrp5cTjt4zszK61iM",
+        "1PzYpEBBYJvfsExPJy9ksPS4oR88PaTDy",
+        "1i-CTvb4kMtdGe7nWxSMxEwKUPssghrhT",
+        "1pu_99X1w68I98YhkZIAd8YaeVVuFcWSz",
+        "1x0y_iFE7NBF0TUe03u9FHksX1AjA9SmJ"
+]
     
-    repo_path = r"C:\Users\Sanjay G L\Desktop\portfolio\fetch_drive_info.py"
-    # Try reading the list of 96 certificates from previous scratch folder
-    scratch_path = r"C:\Users\Sanjay G L\.gemini\antigravity-ide\brain\90cb5e12-c0c8-4ee6-8e95-faae5e519f2b\scratch\certificates_array.js"
-    if not os.path.exists(scratch_path):
-        print(f"[AUTO-CERT] Error: Scratch metadata file does not exist: {scratch_path}")
-        return
-        
-    with open(scratch_path, "r", encoding="utf-8") as f:
-        raw_js = f.read()
-        
-    json_str = raw_js.replace("const CERTIFICATES = ", "").rstrip(";\n")
-    try:
-        certificates_repo = json.loads(json_str)
-    except Exception as e:
-        print(f"[AUTO-CERT] Error parsing scratch certificates JSON: {e}")
-        return
-        
-    id_to_meta = {}
-    for item in certificates_repo:
-        url = item.get("url", "")
-        match = re.search(r'/d/([^/]+)', url)
-        if match:
-            id_to_meta[match.group(1)] = item
-            
-    # Inject the 5 new HackerRank certificates metadata
-    id_to_meta["1GbYj1y9ao2wGQeXyrp5cTjt4zszK61iM"] = {
-        "title": "Python (Basic) Certificate",
-        "org": "HackerRank Certification",
-        "cat": "coding"
-    }
-    id_to_meta["1PzYpEBBYJvfsExPJy9ksPS4oR88PaTDy"] = {
-        "title": "Problem Solving (Basic) Certificate",
-        "org": "HackerRank Certification",
-        "cat": "coding"
-    }
-    id_to_meta["1i-CTvb4kMtdGe7nWxSMxEwKUPssghrhT"] = {
-        "title": "SQL (Basic) Certificate",
-        "org": "HackerRank Certification",
-        "cat": "coding"
-    }
-    id_to_meta["1pu_99X1w68I98YhkZIAd8YaeVVuFcWSz"] = {
-        "title": "JavaScript (Basic) Certificate",
-        "org": "HackerRank Certification",
-        "cat": "coding"
-    }
-    id_to_meta["1x0y_iFE7NBF0TUe03u9FHksX1AjA9SmJ"] = {
-        "title": "Frontend Developer (React) Certificate",
-        "org": "HackerRank Certification",
-        "cat": "coding"
-    }
-            
-    compiled_drive_certs = []
-    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-    
-    for did in drive_ids:
-        meta = id_to_meta.get(did)
-        if meta:
-            title = meta.get("title", f"Verified Certificate {did[:6]}")
-            org = meta.get("org", "Verified Certificate Issuer")
-            category = meta.get("cat", "tech")
-            
-            if category == "internships":
-                category = "internship"
-            elif category in ["workshops", "python", "ai"]:
-                category = "tech"
-                
-            year = 2025
-            month = "September"
-            
-            if "2026" in title:
-                year = 2026
-            elif "2024" in title:
-                year = 2024
-                
-            for m in months:
-                if m.lower() in title.lower():
-                    month = m
-                    break
-                    
-            tags = [org.split("·")[0].split("/")[0].strip()]
-            tags.append(category.capitalize())
-            
-            compiled_drive_certs.append({
-                "driveId": did,
-                "title": title,
-                "org": org,
-                "category": category,
-                "year": year,
-                "month": month,
-                "tags": tags
-            })
-        else:
-            # Fallback info
-            compiled_drive_certs.append({
-                "driveId": did,
-                "title": f"Verified Skill Certification",
-                "org": "HackerRank / Microsoft / Credly",
-                "category": "tech",
-                "year": 2025,
-                "month": "October",
-                "tags": ["Verified", "Skill"]
-            })
-            
-    # Load original named certificates header from current js/certificatesData.js
-    with open(r"js/certificatesData.js", "r", encoding="utf-8") as f:
-        orig_content = f.read()
-        
-    split_marker = "// --- DRIVE & VERIFIED CREDENTIAL CERTIFICATES ---"
-    if split_marker in orig_content:
-        header = orig_content.split(split_marker)[0]
-    else:
-        header = "\n".join(orig_content.splitlines()[:113]) + "\n"
-        
-    formatted_certs = []
-    for c in compiled_drive_certs:
-        formatted_certs.append(
-            f"  {{ driveId: '{c['driveId']}', title: {json.dumps(c['title'])}, org: {json.dumps(c['org'])}, category: '{c['category']}', year: {c['year']}, month: '{c['month']}', tags: {json.dumps(c['tags'])} }}"
-        )
-        
-    new_js_content = header + split_marker + "\n" + ",\n".join(formatted_certs) + "\n];\n\n"
-    
-    # Append helper logic
-    new_js_content += """// Helper to normalize all entries into unified structure
-const ALL_CERTIFICATES = CERTIFICATES_DATA.map((c, index) => {
-  if (c.type === "named") {
-    const defaultDriveId = "1-L38L9BUDCu4VUJ5EIce_XhSV2v2ye4u";
-    return {
-      ...c,
-      id: c.id || `cert-${index}`,
-      skillsLearned: c.skillsLearned || ["Software Development", "Problem Solving"],
-      credentialId: c.credentialId || `SGL-CERT-${2026-index}`,
-      verifyLink: c.verifyLink && !c.verifyLink.includes("1000m9r") ? c.verifyLink : `https://drive.google.com/file/d/${defaultDriveId}/view`,
-      image: c.image && !c.image.includes("1000m9r") ? c.image : `https://drive.google.com/thumbnail?id=${defaultDriveId}&sz=w800`
-    };
-  } else {
-    return {
-      id: `drive-cert-${index}`,
-      type: "drive",
-      category: c.category || "tech",
-      title: c.title,
-      org: c.org,
-      date: `${c.month} ${c.year}`,
-      month: c.month,
-      year: c.year,
-      duration: "Certified",
-      desc: `Professional certification in ${c.title} awarded by ${c.org}. Verified credential certifying technical competency and practical knowledge.`,
-      tags: c.tags || [c.category || 'tech', "Verified Certificate"],
-      skillsLearned: c.title ? [c.title.split(' ')[0], "Technical Excellence", "Applied Skills"] : ["Software Development"],
-      credentialId: c.driveId ? `DRIVE-${c.driveId.substring(0, 8).toUpperCase()}` : `DRIVE-CERT-${index}`,
-      verifyLink: c.driveId ? `https://drive.google.com/file/d/${c.driveId}/view` : `https://drive.google.com/`,
-      image: c.driveId ? `https://drive.google.com/thumbnail?id=${c.driveId}&sz=w800` : '',
-      driveId: c.driveId || '',
-      emoji: c.category === 'government' ? '🛡️' : c.category === 'internship' ? '💼' : c.category === 'hackerrank' ? '⚡' : '📜',
-      featured: index < 12
-    };
-  }
-});
-
-if (typeof window !== 'undefined') {
-  window.CERTIFICATES_DATA = ALL_CERTIFICATES;
-}
-"""
-    with open(r"js/certificatesData.js", "w", encoding="utf-8") as f:
-        f.write(new_js_content)
-        
-    print(f"[AUTO-CERT] Compiled {len(compiled_drive_certs)} drive certificates to js/certificatesData.js")
-    
-    # Update HTML/JS count references from 70+ to 81
     files_to_update = [
         "index.html",
         "projects.html",
         "certificates.html",
         "js/aiAssistant.js",
-        "knowledge.json"
+        "knowledge.json",
+        "README.md"
     ]
     for file_path in files_to_update:
         if not os.path.exists(file_path):
@@ -278,50 +168,26 @@ if (typeof window !== 'undefined') {
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
             
-        content = content.replace("70+ verified certificates", "86 verified certificates")
-        content = content.replace("70+ verified", "86 verified")
-        content = content.replace("70+ <span", "86+ <span")
-        content = content.replace('data-count="70"', 'data-count="86"')
-        content = content.replace('data-count="86" data-suffix="+">70+', 'data-count="86" data-suffix="+">86+')
-        content = content.replace('data-count="70" data-suffix="+">70+', 'data-count="86" data-suffix="+">86+')
-        content = content.replace('data-count="81" data-suffix="+">81+', 'data-count="86" data-suffix="+">86+')
-        content = content.replace('data-count="81" data-suffix="+">70+', 'data-count="86" data-suffix="+">86+')
-        content = content.replace("70+ certificate archive", "86 certificate archive")
-        content = content.replace("70+ certificates", "86+ certificates")
-        content = content.replace("Certificates (70+)", "Certificates (86+)")
-        content = content.replace("Certificates & Achievements (70+)", "Certificates & Achievements (86+)")
-        content = content.replace("70+ verified credentials", "86 verified credentials")
-        content = content.replace("Explore 70+ technical", "Explore 86+ technical")
-        content = content.replace("repository of 70+ certifications", "repository of 86+ certifications")
-        content = content.replace("70+ Certificates", "86+ Certificates")
-        content = content.replace("70+ Credentials", "86+ Credentials")
-        content = content.replace("70+</strong> certificates", "86+</strong> certificates")
-        content = content.replace('"certificates_count": "70+"', '"certificates_count": "86+"')
-        content = content.replace('"total_count": "70+"', '"total_count": "86+"')
-        content = content.replace('"70+ Verified Technical', '"86+ Verified Technical')
-        
-        # Transition from 81 to 86
-        content = content.replace("81 verified certificates", "86 verified certificates")
-        content = content.replace("81 verified", "86 verified")
-        content = content.replace("81+ <span", "86+ <span")
-        content = content.replace('data-count="81"', 'data-count="86"')
-        content = content.replace("81+ certificate archive", "86 certificate archive")
-        content = content.replace("81+ certificates", "86+ certificates")
-        content = content.replace("Certificates (81+)", "Certificates (86+)")
-        content = content.replace("Certificates & Achievements (81+)", "Certificates & Achievements (86+)")
-        content = content.replace("81+ verified credentials", "86 verified credentials")
-        content = content.replace("Explore 81+ technical", "Explore 86+ technical")
-        content = content.replace("repository of 81+ certifications", "repository of 86+ certifications")
-        content = content.replace("81+ Certificates", "86+ Certificates")
-        content = content.replace("81+ Credentials", "86+ Credentials")
-        content = content.replace("81+</strong> certificates", "86+</strong> certificates")
-        content = content.replace('"certificates_count": "81+"', '"certificates_count": "86+"')
-        content = content.replace('"total_count": "81+"', '"total_count": "86+"')
-        content = content.replace('"81+ Verified Technical', '"86+ Verified Technical')
+        content = content.replace("0 certificates", "87+ certificates")
+        content = content.replace("Certificates (0)", "Certificates (87+)")
+        content = content.replace("Certificates & Achievements (0)", "Certificates & Achievements (87+)")
+        content = content.replace("0 Credentials", "87+ Credentials")
+        content = content.replace("0 verified credentials", "87+ verified credentials")
+        content = content.replace("0 verified certificates", "87+ verified certificates")
+        content = content.replace("0 verified", "87+ verified")
+        content = content.replace("repository of 0 certifications", "repository of 87+ certifications")
+        content = content.replace("Explore 0 technical", "Explore 87+ technical")
+        content = content.replace('data-count="0" data-suffix="">0</div>', 'data-count="87" data-suffix="+">87+</div>')
+        content = content.replace('data-count="0"', 'data-count="87"')
+        content = content.replace('0</strong> certificates', '87+</strong> certificates')
+        content = content.replace('"certificates_count": "0"', '"certificates_count": "87+"')
+        content = content.replace('"total_count": "0"', '"total_count": "87+"')
         
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(content)
-        print(f"[AUTO-COUNT] Synced counts in {file_path}")
+        print(f"[AUTO-COUNT] Synced 87+ counts in {file_path}")
+
+compile_certificates_data()
 
 compile_certificates_data()
 
@@ -339,7 +205,9 @@ if not db_url:
     if db_host and db_user and db_name:
         db_url = f"mysql+pymysql://{db_user}:{db_pass}@{db_host}:{db_port}/{db_name}"
     else:
-        db_url = "sqlite:///portfolio.db"
+        db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "database", "portfolio.db")
+        os.makedirs(os.path.dirname(db_path), exist_ok=True)
+        db_url = f"sqlite:///{db_path}"
 
 app.config['SQLALCHEMY_DATABASE_URI'] = db_url
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -492,9 +360,11 @@ def optimize_profile_image():
 with app.app_context():
     try:
         db.create_all()
-        # Auto-seed database from JS datasets if empty
-        import migrate_data
-        migrate_data.migrate()
+        try:
+            from database import migrate_data
+            migrate_data.migrate()
+        except Exception as _m_err:
+            print(f"[DB] Migration check: {_m_err}")
         # Compress oversized profile image if PIL is available
         optimize_profile_image()
     except Exception as e:
@@ -547,6 +417,135 @@ def sanitize_input(val):
     clean = re.sub(r'<.*?>', '', clean)  # Strip standard HTML tags
     return clean.strip()
 
+CONTACT_RECEIVER = os.environ.get("CONTACT_RECEIVER_EMAIL", "sanjaygl2006@gmail.com")
+
+def _http_json_post(url, payload, timeout=10, extra_headers=None):
+    body = json.dumps(payload).encode("utf-8")
+    headers = {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) SanjayPortfolio/1.0",
+    }
+    if extra_headers:
+        headers.update(extra_headers)
+    req = urllib.request.Request(url, data=body, headers=headers, method="POST")
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as response:
+            raw = response.read().decode("utf-8", errors="replace")
+            try:
+                return json.loads(raw)
+            except json.JSONDecodeError:
+                return {"raw": raw, "success": True}
+    except urllib.error.HTTPError as e:
+        raw = e.read().decode("utf-8", errors="replace") if e.fp else str(e)
+        print(f"[CONTACT FORM] HTTP {e.code} from {url}: {raw[:400]}")
+        try:
+            return json.loads(raw)
+        except Exception:
+            return {"success": False, "message": raw[:400]}
+    except Exception as e:
+        print(f"[CONTACT FORM] Request failed for {url}: {e}")
+        return {"success": False, "message": str(e)}
+
+def forward_contact_email(name, email, subject, message, phone=""):
+    """Try Web3Forms, SMTP, then FormSubmit. Returns True only if a provider accepted the mail."""
+    phone_line = f"\nPhone: {phone}" if phone else ""
+    text_body = (
+        f"New portfolio direct message\n"
+        f"============================\n"
+        f"Name: {name}\n"
+        f"Email: {email}{phone_line}\n"
+        f"Subject: {subject}\n\n"
+        f"Message:\n{message}\n"
+    )
+    html_body = f"""
+    <div style="font-family:Segoe UI,Arial,sans-serif;max-width:640px;line-height:1.6;color:#111">
+      <h2 style="color:#059669;margin-bottom:8px">Portfolio Direct Message</h2>
+      <p style="color:#555;margin-top:0">Someone sent a message from sanjaygl30ai.vercel.app</p>
+      <table style="border-collapse:collapse;width:100%">
+        <tr><td style="padding:8px;border:1px solid #ddd;font-weight:700">Name</td><td style="padding:8px;border:1px solid #ddd">{name}</td></tr>
+        <tr><td style="padding:8px;border:1px solid #ddd;font-weight:700">Email</td><td style="padding:8px;border:1px solid #ddd"><a href="mailto:{email}">{email}</a></td></tr>
+        <tr><td style="padding:8px;border:1px solid #ddd;font-weight:700">Phone</td><td style="padding:8px;border:1px solid #ddd">{phone or '—'}</td></tr>
+        <tr><td style="padding:8px;border:1px solid #ddd;font-weight:700">Subject</td><td style="padding:8px;border:1px solid #ddd">{subject}</td></tr>
+      </table>
+      <p style="margin-top:16px;white-space:pre-wrap">{message}</p>
+      <p style="color:#888;font-size:12px">Reply directly to this email to reach {name}.</p>
+    </div>
+    """
+
+    web3forms_key = os.environ.get("WEB3FORMS_ACCESS_KEY")
+    if web3forms_key:
+        resp = _http_json_post("https://api.web3forms.com/submit", {
+            "access_key": web3forms_key,
+            "name": name,
+            "email": email,
+            "subject": f"[Portfolio Contact] {subject}",
+            "message": text_body,
+            "from_name": f"{name} via Portfolio",
+            "replyto": email,
+        })
+        if resp.get("success") is True or resp.get("success") == "true":
+            print("[CONTACT FORM] Delivered via Web3Forms.")
+            return True
+        print(f"[CONTACT FORM] Web3Forms did not accept the message: {resp}")
+
+    smtp_host = os.environ.get("SMTP_HOST")
+    smtp_user = os.environ.get("SMTP_USER")
+    smtp_pass = os.environ.get("SMTP_PASSWORD")
+    if smtp_host and smtp_user and smtp_pass:
+        try:
+            smtp_port = int(os.environ.get("SMTP_PORT", 587))
+            msg = MIMEMultipart("alternative")
+            msg["From"] = f"Portfolio Contact <{smtp_user}>"
+            msg["To"] = CONTACT_RECEIVER
+            msg["Subject"] = f"[Portfolio Direct Message] {subject} — {name}"
+            msg["Reply-To"] = email
+            msg.attach(MIMEText(text_body, "plain"))
+            msg.attach(MIMEText(html_body, "html"))
+            if smtp_port == 465:
+                server = smtplib.SMTP_SSL(smtp_host, smtp_port, timeout=12)
+            else:
+                server = smtplib.SMTP(smtp_host, smtp_port, timeout=12)
+                server.starttls()
+            server.login(smtp_user, smtp_pass)
+            server.sendmail(smtp_user, CONTACT_RECEIVER, msg.as_string())
+            server.quit()
+            print("[CONTACT FORM] Delivered via SMTP.")
+            return True
+        except Exception as e:
+            print(f"[CONTACT FORM] SMTP error: {e}")
+
+    formsubmit_headers = {
+        "Origin": "https://sanjaygl30ai.vercel.app",
+        "Referer": "https://sanjaygl30ai.vercel.app/",
+    }
+    fs_payload = {
+        "name": name,
+        "email": email,
+        "_replyto": email,
+        "_subject": f"[Portfolio Direct Message] {subject} from {name}",
+        "message": text_body,
+        "phone": phone or "Not provided",
+        "_template": "table",
+        "_captcha": "false",
+    }
+    resp = _http_json_post(
+        f"https://formsubmit.co/ajax/{CONTACT_RECEIVER}",
+        fs_payload,
+        extra_headers=formsubmit_headers,
+    )
+    success = resp.get("success")
+    note = str(resp.get("message", "")).lower()
+    if success is True or success == "true":
+        if "activate" in note or "confirm" in note:
+            print("[CONTACT FORM] FormSubmit needs inbox activation. Check Gmail for the confirmation link.")
+            return False
+        print(f"[CONTACT FORM] Delivered via FormSubmit to {CONTACT_RECEIVER}.")
+        return True
+
+    print(f"[CONTACT FORM] FormSubmit did not deliver: {resp}")
+    return False
+
 # ----------------- GEMINI CONFIG -----------------
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 if GEMINI_API_KEY and HAS_GEMINI:
@@ -556,10 +555,10 @@ if GEMINI_API_KEY and HAS_GEMINI:
 KNOWLEDGE_BASE = {
     "who are you": "I am Sanjay's personal AI Portfolio Assistant! I can answer questions about Sanjay G. L.'s skills, projects, certificates, and background.",
     "tell me about yourself": "Sanjay G. L. is a BCA student at PES Institute of Advanced Management Studies, Shivamogga, Karnataka. He is a Full Stack Developer, AI/ML Intern at Milano Infotech, and NSS Volunteer who builds scalable web applications and AI tools.",
-    "skills": "Sanjay's skills: HTML5/CSS3, Git & GitHub, AI Productivity Tools, Supabase Vector DB, Lovable AI, Base44, TryHackMe Labs, Bash Scripting, MS Word/PowerPoint (Advanced); Web Page Design, C/C++, SQL, PL/SQL, MySQL, Google Sheets DB, VS Code, Cursor IDE, Google AI Studio, Figma, Antigravity, Replit, Google Stitch (Intermediate); JavaScript, Java, Python, Machine Learning, CNN/AI, Agentic AI (Learning); XML, E-Commerce, Computer Networking (Knowledge/Basics).",
+    "skills": "Sanjay's skills: HTML5/CSS3, Git & GitHub, AI Productivity Tools, Supabase Vector DB, Lovable AI, Base44, TryHackMe Labs, Bash Scripting, MS Word/PowerPoint (Advanced); Web Page Design, C/C++, SQL, PL/SQL, MySQL, Google Sheets DB, VS Code, Google AI Studio, Figma, Antigravity, Replit, Google Stitch (Intermediate); JavaScript, Java, Python, Machine Learning, CNN/AI, Agentic AI (Learning); XML, E-Commerce, Computer Networking (Knowledge/Basics).",
     "programming languages": "Sanjay works with C, C++, Java, Python, JavaScript, Bash Scripting, SQL, PL/SQL, and MySQL.",
     "future goals": "Sanjay aims to excel as a Senior Full Stack Engineer & AI Developer, focusing on Machine Learning, Agentic AI, Cyber Security (TryHackMe), Cloud Computing, and System Design.",
-    "technologies": "Sanjay's tech stack includes HTML5, CSS3, JavaScript, Python, Bash, C/C++, Java, SQL, MySQL, Supabase, Lovable AI, Base44, TryHackMe, Git, GitHub, VS Code, Cursor IDE, Google AI Studio, Figma, Replit, Antigravity, and AI Productivity tools.",
+    "technologies": "Sanjay's tech stack includes HTML5, CSS3, JavaScript, Python, Bash, C/C++, Java, SQL, MySQL, Supabase, Lovable AI, Base44, TryHackMe, Git, GitHub, VS Code, Google AI Studio, Figma, Replit, Antigravity, and AI Productivity tools.",
     "freelance": "Yes! Sanjay is open to freelance web development, AI workflow integration, and software projects, as well as full-time internships.",
     "contact": "You can contact Sanjay via email at sanjaygl2006@gmail.com, phone at +91 81239 81877, or connect on LinkedIn and GitHub.",
     "from": "Sanjay is from Shivamogga, Karnataka, India.",
@@ -573,7 +572,7 @@ def get_fallback_reply(message, proj_count, cert_count):
     if "certif" in msg:
         return f"Sanjay has earned exactly {cert_count} verified certificates including PRAVIDHI Tech Fest Coding, Oasis Infobyte Star Performer, and Microsoft Azure. Verify them on the <a href='certificates.html' style='color:var(--emerald-primary)'>Certificates Page</a>!"
     if "skills" in msg or "know" in msg or "tool" in msg:
-        return "Sanjay's skills cover Web Dev (HTML5/CSS3), Programming (C/C++, Java, Python, Bash Scripting), Databases (SQL, MySQL, Supabase), Tools (Lovable AI, Base44, TryHackMe Labs, Git/GitHub, VS Code, Cursor IDE, Figma, AI Productivity Tools), and AI & ML (Agentic AI, Machine Learning, CNN)."
+        return "Sanjay's skills cover Web Dev (HTML5/CSS3), Programming (C/C++, Java, Python, Bash Scripting), Databases (SQL, MySQL, Supabase), Tools (Lovable AI, Base44, TryHackMe Labs, Git/GitHub, VS Code, Figma, AI Productivity Tools), and AI & ML (Agentic AI, Machine Learning, CNN)."
     if "contact" in msg or "email" in msg or "phone" in msg:
         return "You can contact Sanjay via email at sanjaygl2006@gmail.com, phone at +91 81239 81877, or connect on LinkedIn and GitHub."
     return "I am Sanjay's personal portfolio assistant. Ask me about his projects, certificates, skills, or contact info!"
@@ -603,6 +602,14 @@ def enforce_https_and_track_visit():
 @app.route("/")
 def index():
     return send_from_directory(".", "index.html")
+
+@app.route("/sitemap.xml")
+def serve_sitemap():
+    return send_from_directory(".", "sitemap.xml", mimetype="application/xml")
+
+@app.route("/robots.txt")
+def serve_robots():
+    return send_from_directory(".", "robots.txt", mimetype="text/plain")
 
 @app.route("/<path:path>")
 def serve_static(path):
@@ -869,6 +876,7 @@ def handle_contact():
     email = sanitize_input(data.get("email", ""))
     subject = sanitize_input(data.get("subject", ""))
     message = sanitize_input(data.get("message", ""))
+    phone = sanitize_input(data.get("phone", ""))
     
     # 2. Server-side Validation
     if not name or len(name) < 2:
@@ -904,83 +912,27 @@ def handle_contact():
         print(f"[CONTACT DB] Error saving message: {e}")
 
     print(f"[CONTACT FORM] Securely saved submission from: {name} ({email}) | Subject: {subject}")
-    
-    # 3. Multi-path forwarding logic
-    email_sent = False
-    
-    # Option A: Web3Forms forwarding
-    web3forms_key = os.environ.get("WEB3FORMS_ACCESS_KEY")
-    if web3forms_key:
-        try:
-            url = "https://api.web3forms.com/submit"
-            post_data = {
-                "access_key": web3forms_key,
-                "name": name,
-                "email": email,
-                "subject": f"[Portfolio Contact] {subject}",
-                "message": message,
-                "from_name": f"{name} (Portfolio Contact Form)"
-            }
-            req_data = json.dumps(post_data).encode("utf-8")
-            req = urllib.request.Request(
-                url, 
-                data=req_data, 
-                headers={"Content-Type": "application/json", "User-Agent": "Mozilla/5.0"}
-            )
-            with urllib.request.urlopen(req, timeout=8) as response:
-                resp_bytes = response.read()
-                resp_json = json.loads(resp_bytes.decode("utf-8"))
-                if resp_json.get("success"):
-                    print("[CONTACT FORM] Successfully forwarded to Web3Forms email.")
-                    email_sent = True
-                else:
-                    print(f"[CONTACT FORM] Web3Forms API error: {resp_json}")
-        except Exception as e:
-            print(f"[CONTACT FORM] Error sending via Web3Forms: {e}")
-            
-    # Option B: SMTP forwarding
-    smtp_host = os.environ.get("SMTP_HOST")
-    if not email_sent and smtp_host:
-        try:
-            smtp_port = int(os.environ.get("SMTP_PORT", 587))
-            smtp_user = os.environ.get("SMTP_USER")
-            smtp_pass = os.environ.get("SMTP_PASSWORD")
-            receiver = os.environ.get("CONTACT_RECEIVER_EMAIL", "sanjaygl2006@gmail.com")
-            
-            if smtp_user and smtp_pass:
-                msg = MIMEMultipart()
-                msg['From'] = smtp_user
-                msg['To'] = receiver
-                msg['Subject'] = f"[Portfolio Contact] {subject} from {name}"
-                
-                body = f"Name: {name}\nEmail: {email}\nSubject: {subject}\n\nMessage:\n{message}"
-                msg.attach(MIMEText(body, 'plain'))
-                
-                if smtp_port == 465:
-                    server = smtplib.SMTP_SSL(smtp_host, smtp_port, timeout=10)
-                else:
-                    server = smtplib.SMTP(smtp_host, smtp_port, timeout=10)
-                    server.starttls()
-                    
-                server.login(smtp_user, smtp_pass)
-                server.sendmail(smtp_user, receiver, msg.as_string())
-                server.quit()
-                print("[CONTACT FORM] Successfully sent email via SMTP server.")
-                email_sent = True
-        except Exception as e:
-            print(f"[CONTACT FORM] Error sending via SMTP: {e}")
 
-    # Final Response
-    if not email_sent:
-        print("[CONTACT FORM] [ALERT] No active email keys (Web3Forms/SMTP) found. Secured in database locally.")
+    email_sent = False
+    try:
+        email_sent = bool(forward_contact_email(name, email, subject, message, phone))
+    except Exception as e:
+        print(f"[CONTACT FORM] Email forwarding crashed: {e}")
+
+    if email_sent:
         return jsonify({
-            "status": "success", 
-            "message": f"Thank you, {name}! Your message has been encrypted and secured in our database."
+            "status": "success",
+            "email_sent": True,
+            "message": f"Thank you, {name}! Your message was emailed to {CONTACT_RECEIVER}."
         })
-        
+
     return jsonify({
-        "status": "success", 
-        "message": f"Thank you, {name}! Your message has been sent successfully to Sanjay's email."
+        "status": "partial",
+        "email_sent": False,
+        "message": (
+            f"Your details were saved, but email delivery is still pending. "
+            f"The browser will now try sending directly to {CONTACT_RECEIVER}."
+        )
     })
 
 @app.route("/api/agent", methods=["POST"])

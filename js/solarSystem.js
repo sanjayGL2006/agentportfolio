@@ -27,6 +27,10 @@
   let icons = [];
   let mouse = { x: 0, y: 0, targetX: 0, targetY: 0 };
   let animationFrame;
+  let lastFrameTime = 0;
+  let isVisible = true;
+  const FRAME_INTERVAL = 1000 / 30;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // Orbit Dimensions config
   const BASE_RADII = [160, 240, 320]; // Inner, Middle, Outer
@@ -101,6 +105,10 @@
   function init() {
     container = document.getElementById("solar-system-container");
     if (!container) return;
+    if (reduceMotion || window.matchMedia('(pointer: coarse)').matches) {
+      container.replaceChildren();
+      return;
+    }
 
     // Reset container contents
     container.innerHTML = "";
@@ -126,12 +134,25 @@
       mouse.targetY = (e.clientY - cy) / cy;
     }, { passive: true });
 
-    // Start loop
-    if (animationFrame) cancelAnimationFrame(animationFrame);
-    loop();
+    const observer = new IntersectionObserver(([entry]) => {
+      isVisible = entry.isIntersecting;
+      if (isVisible && !animationFrame && !document.hidden) loop(performance.now());
+    }, { threshold: 0.05 });
+    observer.observe(container.closest('.hero-section') || container);
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden && isVisible && !animationFrame) loop(performance.now());
+    });
+    loop(performance.now());
   }
 
-  function loop() {
+  function loop(timestamp) {
+    animationFrame = null;
+    if (!isVisible || document.hidden) return;
+    if (timestamp - lastFrameTime < FRAME_INTERVAL) {
+      animationFrame = requestAnimationFrame(loop);
+      return;
+    }
+    lastFrameTime = timestamp;
     // Smooth mouse coordinates interpolation
     mouse.x += (mouse.targetX - mouse.x) * 0.05;
     mouse.y += (mouse.targetY - mouse.y) * 0.05;

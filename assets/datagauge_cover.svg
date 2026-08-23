@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="DataGauge Dataset Quality Monitoring System">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#041018"/>
+      <stop offset="100%" stop-color="#0b1f2a"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="980" cy="120" r="180" fill="#10b981" opacity="0.08"/>
+  <circle cx="180" cy="560" r="220" fill="#8b5cf6" opacity="0.08"/>
+  <rect x="80" y="90" width="1040" height="495" rx="28" fill="#071820" stroke="#1f3b48" stroke-width="2"/>
+  <text x="120" y="160" fill="#10b981" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">DATAGAUGE</text>
+  <text x="120" y="215" fill="#e8f4f0" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="800">Dataset Quality Score</text>
+  <text x="120" y="270" fill="#9fb3bd" font-family="Segoe UI, Arial, sans-serif" font-size="22">CSV / Excel · FastAPI · React · Pandas</text>
+  <circle cx="900" cy="360" r="130" fill="none" stroke="#14313d" stroke-width="22"/>
+  <circle cx="900" cy="360" r="130" fill="none" stroke="url(#ring)" stroke-width="22" stroke-linecap="round" stroke-dasharray="620" stroke-dashoffset="80" transform="rotate(-90 900 360)"/>
+  <text x="900" y="355" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="800">92</text>
+  <text x="900" y="400" text-anchor="middle" fill="#10b981" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">EXCELLENT</text>
+  <rect x="120" y="330" width="210" height="90" rx="16" fill="#0c2430"/>
+  <text x="140" y="368" fill="#9fb3bd" font-size="16" font-family="Segoe UI, Arial, sans-serif">Completeness</text>
+  <text x="140" y="398" fill="#10b981" font-size="28" font-weight="800" font-family="Segoe UI, Arial, sans-serif">25%</text>
+  <rect x="350" y="330" width="210" height="90" rx="16" fill="#0c2430"/>
+  <text x="370" y="368" fill="#9fb3bd" font-size="16" font-family="Segoe UI, Arial, sans-serif">Validity</text>
+  <text x="370" y="398" fill="#8b5cf6" font-size="28" font-weight="800" font-family="Segoe UI, Arial, sans-serif">20%</text>
+  <rect x="120" y="440" width="210" height="90" rx="16" fill="#0c2430"/>
+  <text x="140" y="478" fill="#9fb3bd" font-size="16" font-family="Segoe UI, Arial, sans-serif">PDF / Excel Reports</text>
+  <text x="140" y="508" fill="#f59e0b" font-size="22" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Guided Cleaning</text>
+  <rect x="350" y="440" width="210" height="90" rx="16" fill="#0c2430"/>
+  <text x="370" y="478" fill="#9fb3bd" font-size="16" font-family="Segoe UI, Arial, sans-serif">Live Engine</text>
+  <text x="370" y="508" fill="#e8f4f0" font-size="22" font-weight="800" font-family="Segoe UI, Arial, sans-serif">0–100 Score</text>
+</svg>

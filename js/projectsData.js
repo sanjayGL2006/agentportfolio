@@ -1,6 +1,61 @@
 // Projects Dataset for Sanjay G. L. Portfolio
 const PROJECTS_DATA = [
   {
+    id: 29,
+    title: "DataGauge — Dataset Quality Monitoring System",
+    year: 2026,
+    category: "Data Engineering",
+    tagline: "Full-stack CSV/Excel quality scoring, issue flags, guided cleaning, and PDF/Excel reports.",
+    desc: "A FastAPI + React dataset quality platform that uploads CSV/Excel files and computes a live 0–100 quality score, categorized issues, interactive dashboards, guided cleaning, and downloadable PDF/Excel reports — without hard-coding any specific dataset.",
+    tech: ["Python", "FastAPI", "Pandas", "NumPy", "SciPy", "SQLAlchemy", "React", "Vite", "Tailwind CSS", "Recharts", "JWT", "ReportLab", "OpenPyXL"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/DataGauge-Dataset-Quality-Monitoring-System",
+    status: "Completed",
+    featured: true,
+    icon: "fa-gauge-high",
+    image: "assets/datagauge_cover.svg",
+    overview: "DataGauge lets users upload CSV or Excel datasets and receive an automatic quality assessment: completeness, validity, consistency, uniqueness, and anomaly scores plus issue management, history trends, and user-approved cleaning that never mutates the original file.",
+    architecture: "React 18 (Vite, Tailwind, Axios, Recharts) talks to a FastAPI backend. Pandas/NumPy/SciPy power a modular quality engine (one module per check). SQLAlchemy stores users, datasets, issues, and history with PostgreSQL, MySQL, or SQLite via DATABASE_URL. JWT + bcrypt protect routes; ReportLab and OpenPyXL generate reports.",
+    features: [
+      "JWT authentication with Admin / Analyst / Viewer roles",
+      "Drag-and-drop CSV, XLSX, and XLS upload with validation pipeline",
+      "Modular quality engine: completeness, duplicates, types, validity, consistency, dates, booleans, outliers, logical rules",
+      "Configurable 0–100 weighted quality score (defaults: 25/20/20/20/15)",
+      "Interactive dashboard with 10 Recharts visualizations",
+      "Searchable preview with problematic-cell highlighting",
+      "Issue workflow: Open → Reviewed → Resolved / Ignored",
+      "Guided cleaning that writes a new file and compares before/after scores",
+      "PDF, Excel, and CSV issue reports",
+      "Quality history trends across analysis runs"
+    ],
+    structure: [
+      "backend/app/quality_engine/ — one module per quality check plus score aggregator.",
+      "backend/app/api/ — auth, datasets, issues, reports, and dashboard routers.",
+      "backend/app/services/analysis_service.py — orchestrates engine and database writes.",
+      "backend/app/reports/ — ReportLab PDF and OpenPyXL Excel exporters.",
+      "frontend/src/pages/ — Login, Dashboard, Upload, DatasetDetails, Reports, Settings.",
+      "run_desktop.py — optional frameless desktop window launcher."
+    ],
+    futureScope: [
+      "Async job queue for very large files",
+      "Row-level cleaning diffs with per-cell approve/undo",
+      "Light mode theme",
+      "Admin panel for users and roles",
+      "WebSocket progress for long-running analyses"
+    ],
+    timeline: [
+      "2026: FastAPI quality engine, JWT auth, and SQLAlchemy models (Completed)",
+      "2026: React dashboard, charts, issue workflow, and guided cleaning (Completed)",
+      "2026: PDF/Excel reports, history trends, and desktop launcher (Completed)"
+    ],
+    stats: {
+      "Quality Score": "0–100 live",
+      "Check Modules": "10+",
+      "Chart Types": "10",
+      "Reports": "PDF + Excel"
+    }
+  },
+  {
     id: 26,
     title: "Sindhanai Full Stack AI",
     year: 2026,

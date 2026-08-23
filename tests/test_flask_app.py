@@ -1,6 +1,8 @@
 import sys, os, json
 
-sys.path.insert(0, r"c:\Users\Sanjay G L\Desktop\portfolio")
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, ROOT_DIR)
+os.chdir(ROOT_DIR)
 print("=== TESTING FLASK APPLICATION ROUTES & SUPABASE INTEGRATION ===")
 
 try:

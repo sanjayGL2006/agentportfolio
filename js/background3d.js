@@ -5,6 +5,10 @@
   let particles = [];
   let mouse = { x: 0, y: 0, targetX: 0, targetY: 0 };
   let activeSection = "home";
+  let isVisible = true;
+  let lastFrameTime = 0;
+  const FRAME_INTERVAL = 1000 / 30;
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // Section specific shapes config
   const SECTION_SHAPES = {
@@ -146,6 +150,14 @@
   }
 
   function init() {
+    // A full-screen canvas is expensive on low-power and touch devices. The
+    // rest of the page remains fully usable without this decorative effect.
+    if (reduceMotion || window.matchMedia("(pointer: coarse)").matches) {
+      canvas = document.getElementById('canvas-3d');
+      if (canvas) canvas.remove();
+      return;
+    }
+
     canvas = document.getElementById('canvas-3d');
     if (!canvas) {
       canvas = document.createElement('canvas');
@@ -156,6 +168,10 @@
 
     resize();
     window.addEventListener('resize', resize, { passive: true });
+    document.addEventListener('visibilitychange', () => {
+      isVisible = !document.hidden;
+      if (isVisible && !animationFrame) loop(performance.now());
+    });
 
     // Mouse Parallax movement
     let mouseThrottle = false;
@@ -173,9 +189,9 @@
     // Setup Section Observer to morph canvas particles
     setupSectionObserver();
 
-    // Spawn floating particles (38 total count for good performance at 60 FPS)
-    particles = Array.from({ length: 38 }, () => new Particle3D());
-    loop();
+    // Keep the background subtle enough for smooth scrolling on laptops.
+    particles = Array.from({ length: 24 }, () => new Particle3D());
+    loop(performance.now());
   }
 
   function setupSectionObserver() {
@@ -225,11 +241,22 @@
   function resize() {
     width = window.innerWidth;
     height = window.innerHeight;
-    canvas.width = width;
-    canvas.height = height;
+    const pixelRatio = Math.min(window.devicePixelRatio || 1, 1.25);
+    canvas.width = Math.floor(width * pixelRatio);
+    canvas.height = Math.floor(height * pixelRatio);
+    canvas.style.width = `${width}px`;
+    canvas.style.height = `${height}px`;
+    ctx.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
   }
 
-  function loop() {
+  function loop(timestamp) {
+    animationFrame = null;
+    if (!isVisible) return;
+    if (timestamp - lastFrameTime < FRAME_INTERVAL) {
+      animationFrame = requestAnimationFrame(loop);
+      return;
+    }
+    lastFrameTime = timestamp;
     // Interpolate mouse coordinates smoothly
     mouse.x += (mouse.targetX - mouse.x) * 0.05;
     mouse.y += (mouse.targetY - mouse.y) * 0.05;
@@ -251,7 +278,6 @@
 
         const dist = Math.hypot(x1 - x2, y1 - y2);
         if (dist < 150) {
-          ctx.save();
           ctx.beginPath();
           ctx.moveTo(x1, y1);
           ctx.lineTo(x2, y2);
@@ -263,7 +289,6 @@
             : `rgba(16, 185, 129, ${opacity})`;
           ctx.lineWidth = 0.7 * scale1;
           ctx.stroke();
-          ctx.restore();
         }
       }
     }
