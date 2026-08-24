@@ -1,10 +1,18 @@
 // Projects Dataset for Sanjay G. L. Portfolio
+// Categorized into 5 main sectors:
+// 1. AI & Machine Learning
+// 2. Web Applications & Full-Stack Projects
+// 3. Tools, Security & Utilities
+// 4. Games
+// 5. Portfolios, Profiles & Tributes
+
 const PROJECTS_DATA = [
+  // ===================== 1. AI & MACHINE LEARNING =====================
   {
     id: 29,
     title: "DataGauge — Dataset Quality Monitoring System",
     year: 2026,
-    category: "Data Engineering",
+    category: "AI & Machine Learning",
     tagline: "Full-stack CSV/Excel quality scoring, issue flags, guided cleaning, and PDF/Excel reports.",
     desc: "A FastAPI + React dataset quality platform that uploads CSV/Excel files and computes a live 0–100 quality score, categorized issues, interactive dashboards, guided cleaning, and downloadable PDF/Excel reports — without hard-coding any specific dataset.",
     tech: ["Python", "FastAPI", "Pandas", "NumPy", "SciPy", "SQLAlchemy", "React", "Vite", "Tailwind CSS", "Recharts", "JWT", "ReportLab", "OpenPyXL"],
@@ -28,26 +36,6 @@ const PROJECTS_DATA = [
       "PDF, Excel, and CSV issue reports",
       "Quality history trends across analysis runs"
     ],
-    structure: [
-      "backend/app/quality_engine/ — one module per quality check plus score aggregator.",
-      "backend/app/api/ — auth, datasets, issues, reports, and dashboard routers.",
-      "backend/app/services/analysis_service.py — orchestrates engine and database writes.",
-      "backend/app/reports/ — ReportLab PDF and OpenPyXL Excel exporters.",
-      "frontend/src/pages/ — Login, Dashboard, Upload, DatasetDetails, Reports, Settings.",
-      "run_desktop.py — optional frameless desktop window launcher."
-    ],
-    futureScope: [
-      "Async job queue for very large files",
-      "Row-level cleaning diffs with per-cell approve/undo",
-      "Light mode theme",
-      "Admin panel for users and roles",
-      "WebSocket progress for long-running analyses"
-    ],
-    timeline: [
-      "2026: FastAPI quality engine, JWT auth, and SQLAlchemy models (Completed)",
-      "2026: React dashboard, charts, issue workflow, and guided cleaning (Completed)",
-      "2026: PDF/Excel reports, history trends, and desktop launcher (Completed)"
-    ],
     stats: {
       "Quality Score": "0–100 live",
       "Check Modules": "10+",
@@ -56,73 +44,20 @@ const PROJECTS_DATA = [
     }
   },
   {
-    id: 26,
-    title: "Sindhanai Full Stack AI",
-    year: 2026,
-    category: "Artificial Intelligence",
-    tagline: "Full stack AI-driven content generation and workflow platform.",
-    desc: "A premium full-stack AI workspace facilitating document summarization, customized coding templates, automated content creation, and secure chatbot dialogs.",
-    tech: ["React", "Node.js", "Express", "MongoDB", "Google Gemini API", "Tailwind CSS", "JWT", "Markdown"],
-    live: "",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: true,
-    icon: "fa-brain",
-    image: "assets/sindhanai_cover.png",
-    overview: "Sindhanai is a next-generation AI content creation platform designed for developers and content strategists. Built on Google Gemini Pro and MongoDB, it features automatic code completion templates, full-document summaries, and team workspaces.",
-    architecture: "Built using the MERN stack (MongoDB, Express, React, Node.js) with Google Gemini Pro API. Features JWT-based session security, server-side content generation caching, and real-time streaming using WebSockets.",
-    features: [
-      "Google Gemini Pro API content generation engine",
-      "Rich Text Editor with PDF export capability",
-      "Real-time WebSocket chat interface",
-      "JWT-based session authentication & security",
-      "Code snippet generation, formatting & syntax highlighting",
-      "Document summarization tool",
-      "Database caching using MongoDB aggregation pipelines",
-      "Fully responsive desktop-first workspace layout"
-    ],
-    structure: [
-      "server/routes/api.js — Gateway managing authentication & Gemini prompts.",
-      "server/models/User.js — MongoDB user credential schema.",
-      "client/src/components/Dashboard.jsx — Main workspace panel UI.",
-      "client/src/components/ChatWindow.jsx — Chat interface with streaming responses.",
-      "client/src/App.js — Root client component with navigation router."
-    ],
-    futureScope: [
-      "Multi-agent collaborative workflows",
-      "Voice commands and audio transcription",
-      "Integration with Google Drive and OneDrive",
-      "Team workspace collaboration dashboard",
-      "Advanced billing and subscription tiers"
-    ],
-    timeline: [
-      "Q1 2026: Database modeling & backend route integrations (Completed)",
-      "Q2 2026: Frontend component architecture & state design (Completed)",
-      "Q3 2026: Gemini API integration & WebSocket setup (Completed)",
-      "Q4 2026: Collaborative workspaces and team access (Roadmap)"
-    ],
-    stats: {
-      "API Latency": "< 800ms",
-      "Accuracy": "Gemini Pro",
-      "Auth Model": "JWT Secure Token",
-      "Database": "MongoDB Atlas"
-    }
-  },
-  {
     id: 27,
-    title: "DERMAIT Skin Care AI",
+    title: "DermAI — AI-Powered Skincare Diagnosis App",
     year: 2026,
     category: "AI & Machine Learning",
-    tagline: "Deep learning skin lesion analysis and dermatology assistant.",
+    tagline: "Deep learning skin lesion analysis and dermatology diagnostic assistant.",
     desc: "An AI-powered dermatological diagnostic assistant that screens skin lesions using CNN models, providing risk classifications and clinical care recommendations.",
     tech: ["Python", "Flask", "TensorFlow", "Keras", "OpenCV", "Scikit-image", "HTML5", "CSS3", "JavaScript"],
     live: "",
-    github: "https://github.com/sanjayGL2006",
+    github: "https://github.com/sanjayGL2006/DermAI-AI-Powered-Skincare-Diagnosis-App",
     status: "Completed",
     featured: true,
     icon: "fa-stethoscope",
     image: "assets/dermait_cover.png",
-    overview: "DERMAIT is a healthcare AI utility applying Deep Learning Convolutional Neural Networks (CNN) to screen and classify skin lesions from digital camera images. It serves as a triage assistant for clinical dermatology workflows.",
+    overview: "DermAI is a healthcare AI utility applying Deep Learning Convolutional Neural Networks (CNN) to screen and classify skin lesions from digital camera images. It serves as a triage assistant for clinical dermatology workflows.",
     architecture: "Developed on a Python Flask framework serving predictions from a TensorFlow/Keras model. The frontend handles image uploads, local preprocessing via HTML5 Canvas, and displays prediction graphs and probabilities using Chart.js.",
     features: [
       "TensorFlow / Keras CNN Model (94% accuracy)",
@@ -131,87 +66,89 @@ const PROJECTS_DATA = [
       "Dermatology triage flow charts & clinical advice recommendations",
       "Secure user upload data sanitization",
       "Mobile-first responsive design for quick triage tests",
-      "PDF diagnostic summary generation",
-      "API endpoint versioning for multi-client connections"
-    ],
-    structure: [
-      "model_loader.py — Standardizes CNN model loading via Keras API.",
-      "preprocessing.py — Resizes, normalizes, and segments images using OpenCV.",
-      "app.py — Serves the main web templates and model inference endpoint.",
-      "static/js/upload.js — Coordinates image uploads & API fetch operations.",
-      "templates/index.html — Premium healthcare triage dashboard page."
-    ],
-    futureScope: [
-      "Support for dermoscopy image input standards",
-      "Integration with healthcare electronic record databases",
-      "LLM-generated detailed clinical triage write-ups",
-      "Offline model caching using WebAssembly / TensorFlow.js",
-      "HIPAA-compliant patient data encryption modules"
-    ],
-    timeline: [
-      "Q2 2025: CNN training & dataset image processing (Completed)",
-      "Q3 2025: Flask server setup & TensorFlow integration (Completed)",
-      "Q4 2025: Chart dashboard creation & triage routing (Completed)",
-      "Q1 2026: Clinical testing & API scaling (Completed)"
+      "PDF diagnostic summary generation"
     ],
     stats: {
       "Model Accuracy": "94%",
       "Training Epochs": "75 Epochs",
-      "Image Format": "JPEG, PNG, WEBP",
       "Inference Time": "< 120ms"
     }
   },
   {
-    id: 28,
-    title: "Billing Management System",
+    id: 1,
+    title: "AI Agent using Google API",
     year: 2025,
-    category: "Utility",
-    tagline: "Enterprise billing, inventory tracking and invoice generator.",
-    desc: "A professional desktop billing and inventory utility designed for retail storefronts, supporting invoice generation, inventory counts, and PDF exports.",
-    tech: ["HTML5", "CSS3", "JavaScript", "SQLite", "Node.js", "Electron.js", "PDFKit", "Chart.js"],
-    live: "",
-    github: "https://github.com/sanjayGL2006",
+    category: "AI & Machine Learning",
+    tagline: "Autonomous assistant powered by Google AI APIs for intelligent conversations & task automation.",
+    desc: "An AI-powered assistant integrated with Google AI APIs for intelligent conversations, reasoning, and context-aware task automation.",
+    tech: ["Python", "HTML5", "CSS3", "JavaScript", "Google AI API", "Google Cloud Run"],
+    live: "https://untitled-138389699449.asia-southeast1.run.app/",
+    github: "https://github.com/sanjayGL2006/AI-Agent-used-google-api",
     status: "Completed",
     featured: true,
-    icon: "fa-file-invoice-dollar",
-    image: "assets/billing_system_cover.png",
-    overview: "A lightweight billing manager running as a desktop client. It coordinates retail inventories, logs invoices, calculates taxes (GST), and generates print-ready PDFs for client transactions.",
-    architecture: "Built using Electron.js to frame a web interface in a secure desktop wrapper. SQLite manages persistent store databases on the user's disk, and PDFKit generates invoice documents locally without internet connection.",
-    features: [
-      "Electron.js desktop framing with native operating system menus",
-      "SQLite database integration with automated backup tables",
-      "PDF invoice generator with custom company branding templates",
-      "Real-time inventory calculation and low-stock alerts",
-      "Sales report dashboard with Chart.js analytics tracking",
-      "Tax calculations (GST/VAT) with custom rate settings",
-      "Multi-user local operator profiles & permissions",
-      "Barcode scanner interface support"
-    ],
-    structure: [
-      "main.js — Manages Electron main process & windows.",
-      "database.js — Coordinates SQLite queries & product records.",
-      "pdfGenerator.js — Builds invoice sheets via PDFKit libraries.",
-      "ui/index.html — Retail checkout counter dashboard.",
-      "ui/script.js — Logic handling cart additions and checkout clicks."
-    ],
-    futureScope: [
-      "Automatic cloud backups to Google Drive or AWS S3",
-      "Multi-store inventory synchronization via APIs",
-      "WhatsApp and Email invoice delivery workflows",
-      "Payment gateway integration (UPI / Stripe)",
-      "Tally ERP reporting file format exports"
-    ],
-    timeline: [
-      "Jan 2026: Desktop window setup & SQLite database schema (Completed)",
-      "Feb 2026: Checkout cart logic & PDF generation (Completed)",
-      "Mar 2026: Inventory reporting dashboards & tests (Completed)",
-      "Future: Cloud synchronization APIs (Roadmap)"
-    ],
+    icon: "fa-robot",
     stats: {
-      "DB Model": "SQLite Local DB",
-      "Invoice Export": "PDF File Format",
-      "Processing Speed": "< 5ms",
-      "Tax Engine": "Dynamic GST Config"
+      "API": "Google AI Studio",
+      "Mode": "Autonomous Agent",
+      "Deployment": "Cloud Run"
+    }
+  },
+  {
+    id: 18,
+    title: "Surya Chatbot",
+    year: 2025,
+    category: "AI & Machine Learning",
+    tagline: "Interactive conversational AI bot with custom response logic and floating UI.",
+    desc: "Rule-based and generative AI chatbot designed to answer queries with an intuitive floating chat window interface and quick answer shortcuts.",
+    tech: ["HTML5", "CSS3", "JavaScript", "NLP Rules"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/Surya-chatbot",
+    status: "Completed",
+    featured: false,
+    icon: "fa-comments",
+    stats: {
+      "Interface": "Floating Widget",
+      "Response Time": "< 100ms",
+      "Engine": "NLP Dictionary"
+    }
+  },
+  {
+    id: 8,
+    title: "Kai Assistant",
+    year: 2025,
+    category: "AI & Machine Learning",
+    tagline: "In-browser conversational AI assistant built for instant answers & quick text generation.",
+    desc: "Lightweight browser-based virtual assistant capable of quick question answering, task prompts, context formatting, and contextual text generation.",
+    tech: ["HTML5", "CSS3", "JavaScript", "AI API"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/kai-assistant",
+    status: "Completed",
+    featured: false,
+    icon: "fa-brain",
+    stats: {
+      "Type": "Browser Extension / Web Agent",
+      "Latency": "Instant",
+      "Tech": "JS + AI API"
+    }
+  },
+  {
+    id: 30,
+    title: "Traffic & Vehicle Object Detection with YOLOv8",
+    year: 2026,
+    category: "AI & Machine Learning",
+    tagline: "Real-time computer vision system for traffic monitoring & vehicle detection using YOLOv8.",
+    desc: "High-performance object detection model trained on traffic surveillance datasets to detect cars, buses, motorcycles, and pedestrians with bounding box confidence scores.",
+    tech: ["Python", "YOLOv8", "OpenCV", "PyTorch", "Flask", "Chart.js"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/Traffic-Vehicle-Object-Detection-with-YOLOv8",
+    status: "Completed",
+    featured: true,
+    icon: "fa-car-side",
+    overview: "Computer vision application that processes live camera feeds or video files, detecting vehicle classes, counting traffic density, and calculating road congestion stats.",
+    stats: {
+      "Model": "YOLOv8 Nano/Small",
+      "Detection Speed": "30+ FPS",
+      "Precision": "92% mAP"
     }
   },
   {
@@ -220,427 +157,487 @@ const PROJECTS_DATA = [
     year: 2026,
     category: "AI & Machine Learning",
     tagline: "Machine Learning based accident risk prediction system for safer roads.",
-    desc: "A Machine Learning web application that predicts traffic accident risks using road conditions, weather, traffic volume, and historical accident patterns. It provides risk probabilities, feature importances, and smart safety recommendations.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Python", "Flask", "Scikit-learn", "Pandas", "NumPy", "Joblib", "SQL", "SQLite", "Machine Learning"],
+    desc: "A Machine Learning web application that predicts traffic accident risks using road conditions, weather, traffic volume, and historical accident patterns.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Python", "Flask", "Scikit-learn", "Pandas", "NumPy", "Joblib", "SQLite"],
     live: "",
-    github: "https://github.com/sanjayGL2006",
+    github: "https://github.com/sanjayGL2006/accident-risk-prediction",
     status: "Completed",
     featured: true,
     icon: "fa-triangle-exclamation",
     image: "assets/accident_prediction_cover.png",
-    overview: "A Machine Learning web application that predicts traffic accident risks using road conditions, weather, traffic volume, and historical accident patterns. Designed to assist municipal departments and transport planners in identifying high-risk corridors and taking preemptive measures.",
-    architecture: "The application is built on a Python-Flask backend that exposes prediction endpoints. The backend uses Scikit-learn to run a Random Forest Classifier model, loaded via Joblib. The client dashboard communicates via JSON APIs, presenting charts and risk statistics dynamically.",
-    features: [
-      "Random Forest Classifier (98% Training Accuracy)",
-      "Risk Prediction Dashboard with Interactive Risk Score Gauges",
-      "Feature Importance Visualization (Precipitation, Density, Visibility, Speed Limit, Fatigue)",
-      "Dynamic Risk Factor Analysis & Classification (High, Medium, Low)",
-      "Lightweight Flask Backend Server & SQLite logging",
-      "Responsive User Interface with dynamic charts",
-      "Machine Learning Pipeline for automatic preprocessing"
-    ],
-    structure: [
-      "dataset.py — Generates synthetic traffic and road condition matrices.",
-      "train_model.py — Runs the scikit-learn pipeline and stores the trained classifier.",
-      "predictor.py — Loads the Joblib model and analyzes feature weights.",
-      "app.py — Serves the main Flask routes and prediction API endpoints.",
-      "templates/index.html — Rich responsive dashboard with analytics charts."
-    ],
-    futureScope: [
-      "Google Maps API integration for spatial risk visualization.",
-      "Real-world Live Traffic API and weather data ingestion.",
-      "AI Recommendations based on LLM warning generators.",
-      "Municipal road safety dashboard for municipal administrations."
-    ],
-    timeline: [
-      "Q1 2026: ML Model training & parameter tuning (Completed)",
-      "Q2 2026: Flask API development & testing (Completed)",
-      "Q3 2026: Dashboard UI integration & SQLite logging (Completed)",
-      "Q4 2026: Live API integrations (Future Roadmap)"
-    ],
+    overview: "A Machine Learning web application that predicts traffic accident risks using road conditions, weather, traffic volume, and historical accident patterns.",
     stats: {
       "Accuracy": "98%",
       "Dataset Size": "10k+ Records",
-      "Model Type": "Random Forest Classifier",
-      "Inference Time": "< 12ms"
+      "Model Type": "Random Forest"
+    }
+  },
+  {
+    id: 31,
+    title: "AIML Course & Practical Labs",
+    year: 2025,
+    category: "AI & Machine Learning",
+    tagline: "Comprehensive repository of Artificial Intelligence & Machine Learning practical experiments.",
+    desc: "A curated lab notebook containing practical implementations of supervised/unsupervised learning algorithms, neural network architectures, data preprocessing, and model evaluations.",
+    tech: ["Python", "Jupyter Notebook", "Scikit-learn", "TensorFlow", "Pandas", "Matplotlib"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/AIML-course-and-Practical",
+    status: "Completed",
+    featured: false,
+    icon: "fa-graduation-cap",
+    stats: {
+      "Labs": "20+ Notebooks",
+      "Algorithms": "Linear/Logistic, SVM, Decision Trees, CNN",
+      "Language": "Python"
+    }
+  },
+  {
+    id: 26,
+    title: "Sindhanai Full Stack AI",
+    year: 2026,
+    category: "AI & Machine Learning",
+    tagline: "Full stack AI-driven content generation and workflow platform.",
+    desc: "A premium full-stack AI workspace facilitating document summarization, customized coding templates, automated content creation, and secure chatbot dialogs.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "Google Gemini API", "Tailwind CSS", "JWT"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/sindhanai-fullstack-ai",
+    status: "Completed",
+    featured: true,
+    icon: "fa-brain",
+    image: "assets/sindhanai_cover.png",
+    stats: {
+      "API Latency": "< 800ms",
+      "Accuracy": "Gemini Pro",
+      "Auth Model": "JWT Token"
     }
   },
   {
     id: 25,
     title: "Sai AI Assistant",
     year: 2026,
-    category: "Artificial Intelligence",
+    category: "AI & Machine Learning",
     tagline: "Modern AI assistant powered by Gemini with productivity tools.",
     desc: "An AI-powered assistant capable of chatting, answering educational questions, generating code, showing live news, saving conversations, and helping users with productivity.",
     tech: ["HTML", "CSS", "JavaScript", "Python", "Flask", "SQLite", "Google Gemini API"],
     live: "",
-    github: "https://github.com/sanjayGL2006",
+    github: "https://github.com/sanjayGL2006/sai_assistant",
     status: "Completed",
     featured: true,
     icon: "fa-robot",
     image: "assets/sai_assistant_cover.png",
-    overview: "A premium AI assistant designed to streamline daily tasks. Driven by Google's Gemini Pro model, it features code completion, educational support modules, and real-time news search integration.",
-    architecture: "Engineered with a client-server structure. The frontend uses a responsive design with customizable font settings and theme switching (Light/Dark). The Python-Flask backend manages SQLite databases to store conversation history and user settings, and communicates securely with the Gemini API.",
-    features: [
-      "Conversational AI Chat powered by Gemini Pro API",
-      "Educational Q&A Mode with step-by-step problem solver",
-      "Syntax-highlighting Code Generation & completion engine",
-      "Real-time News widget integrating current news events",
-      "WhatsApp message generator with preset templates",
-      "Dynamic theme system (Dark/Light mode & custom font adjustments)",
-      "Persistent conversation storage with SQLite database",
-      "One-click Chat sharing and session export controls"
-    ],
-    structure: [
-      "index.html — Client-side HTML layout structured with visual widgets.",
-      "style.css — Custom glassmorphic styling system & responsive designs.",
-      "app.js — Script handling API fetch requests & interactive animations.",
-      "app.py — Flask gateway managing SQLite schemas & Gemini endpoints.",
-      "requirements.txt — Python library dependency declarations.",
-      "sai_chat.db — SQLite database file storing sessions & settings."
-    ],
-    futureScope: [
-      "Voice assistant module with text-to-speech feedback.",
-      "Multimodal image analysis & OCR scan capabilities.",
-      "PDF and document chat context windows.",
-      "Automatic speech recognition for hands-free interactions.",
-      "Integrated translation and multi-language services.",
-      "Email and calendar integration for automated reminders."
-    ],
-    timeline: [
-      "Jan 2026: Layout creation & framework setup (Completed)",
-      "Feb 2026: Gemini API integration & database schema (Completed)",
-      "Mar 2026: Feature additions (News, PDF parser, Settings) (Completed)",
-      "Future: Multimodal voice model integration (Roadmap)"
-    ],
     stats: {
-      "API Version": "Google Gemini Pro API",
+      "API Version": "Gemini Pro",
       "Response Time": "< 1.5s",
-      "Storage Model": "SQLite Local DB",
-      "Features": "12+ Built-in Modules"
+      "Storage": "SQLite DB"
     }
   },
+
+  // ===================== 2. WEB APPLICATIONS & FULL-STACK PROJECTS =====================
   {
-    id: 1,
-    title: "AI Agent using Google API",
+    id: 13,
+    title: "Pure Weaves E-Commerce",
     year: 2025,
-    category: "AI",
-    tagline: "Autonomous assistant powered by Google AI APIs for intelligent conversations & task automation.",
-    desc: "An AI-powered assistant integrated with Google AI APIs for intelligent conversations, reasoning, and context-aware task automation.",
-    tech: ["Python", "HTML5", "CSS3", "JavaScript", "Google AI API", "Google Cloud Run"],
-    live: "https://untitled-138389699449.asia-southeast1.run.app/",
-    github: "https://github.com/sanjayGL2006",
+    category: "Web Applications & Full-Stack Projects",
+    tagline: "Handcrafted saree store with live inventory and inquiry backend.",
+    desc: "Elegant e-commerce storefront for artisanal sarees featuring high-definition galleries, dynamic product filters, shopping cart, and Google Sheets serverless database order processing.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Google Apps Script", "Vercel"],
+    live: "https://pureweaves.vercel.app/",
+    github: "https://github.com/sanjayGL2006/pure-weaves-ecommerce",
     status: "Completed",
     featured: true,
-    icon: "fa-robot"
-  },
-  {
-    id: 2,
-    title: "BMI Calculator",
-    year: 2025,
-    category: "Utility",
-    tagline: "Instant health index calculator for height and weight measurements.",
-    desc: "Responsive BMI calculator providing immediate body mass index feedback, healthy range charts, and personalized health indicators.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: false,
-    icon: "fa-calculator"
-  },
-  {
-    id: 3,
-    title: "Digital Board Duel",
-    year: 2025,
-    category: "Game",
-    tagline: "Interactive two-player digital board game with real-time turns & smooth UI.",
-    desc: "Interactive Tic-Tac-Toe duel featuring modern glassmorphic design, score history, sound effects, and smooth turn animations.",
-    tech: ["TypeScript", "React", "CSS3", "Tailwind CSS"],
-    live: "https://digital-board-duel.lovable.app/",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: true,
-    icon: "fa-gamepad"
-  },
-  {
-    id: 4,
-    title: "RupeeTrack (Expense Tracker)",
-    year: 2025,
-    category: "Finance",
-    tagline: "Comprehensive personal finance & expense tracking web application.",
-    desc: "Modern expense tracker enabling users to log transactions, classify income/expenses, monitor monthly budgets, and analyze spending habits.",
-    tech: ["HTML5", "CSS3", "JavaScript", "LocalStorage"],
-    live: "https://rupeetrack-app.netlify.app/",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: true,
-    icon: "fa-wallet"
-  },
-  {
-    id: 5,
-    title: "Grab Notes",
-    year: 2025,
-    category: "Productivity",
-    tagline: "Smart note-taking application for quick capture and seamless note management.",
-    desc: "Clean note-taking suite with quick tag filtering, search indexing, auto-save drafts, and rich markdown text rendering.",
-    tech: ["TypeScript", "React", "Tailwind CSS"],
-    live: "https://grab-notes.base44.app",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: true,
-    icon: "fa-note-sticky"
-  },
-  {
-    id: 6,
-    title: "Handcrafted with Love – Pure Weaves",
-    year: 2025,
-    category: "E-Commerce",
-    tagline: "Boutique showcase for artisanal handcrafted sarees & traditional weaves.",
-    desc: "Elegant storefront for traditional sarees featuring high-definition photo galleries, product filtering, and order inquiry workflows.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: false,
-    icon: "fa-store"
-  },
-  {
-    id: 7,
-    title: "Hyper Rent Local",
-    year: 2025,
-    category: "Real Estate",
-    tagline: "Local rental property discovery and tenant management platform.",
-    desc: "Geolocated rental listing dashboard connecting property owners with prospective tenants for streamlined bookings.",
-    tech: ["TypeScript", "React", "Tailwind CSS"],
-    live: "",
-    github: "https://github.com/sanjayGL2006",
-    status: "In Progress",
-    featured: false,
-    icon: "fa-house-user"
-  },
-  {
-    id: 8,
-    title: "Kai Assistant",
-    year: 2025,
-    category: "AI",
-    tagline: "In-browser conversational AI assistant built for instant answers.",
-    desc: "Lightweight browser-based virtual assistant capable of quick question answering, task prompts, and contextual text generation.",
-    tech: ["HTML5", "CSS3", "JavaScript", "AI API"],
-    live: "",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: false,
-    icon: "fa-brain"
-  },
-  {
-    id: 9,
-    title: "PES Placement",
-    year: 2025,
-    category: "Education",
-    tagline: "Student placement update portal for campus recruitment drives.",
-    desc: "Placement updates portal delivering real-time notifications about campus placement schedules, drive eligibility, and interview tips.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: false,
-    icon: "fa-graduation-cap"
-  },
-  {
-    id: 10,
-    title: "Placement PES IAMS",
-    year: 2026,
-    category: "Education",
-    tagline: "Comprehensive campus placement management system for PES IAMS students.",
-    desc: "Full-scale institutional portal for tracking student placement status, resume verification, company drives, and recruiter dashboards.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Python"],
-    live: "",
-    github: "https://github.com/sanjayGL2006",
-    status: "In Progress",
-    featured: true,
-    icon: "fa-school"
-  },
-  {
-    id: 11,
-    title: "Pizza Shop Website",
-    year: 2025,
-    category: "Landing Page",
-    tagline: "Mouth-watering pizza restaurant landing page with online order preview.",
-    desc: "Dynamic landing page for an artisanal pizzeria featuring interactive menu selection, customization preview, and delivery zone checker.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: false,
-    icon: "fa-pizza-slice"
+    icon: "fa-bag-shopping",
+    stats: {
+      "Storefront": "Responsive E-Commerce",
+      "Database": "Google Sheets API",
+      "Deployment": "Vercel"
+    }
   },
   {
     id: 12,
     title: "Property Manager Dashboard",
     year: 2025,
-    category: "Dashboard",
+    category: "Web Applications & Full-Stack Projects",
     tagline: "Admin dashboard for real-estate property listings & tenant management.",
-    desc: "Administrative dashboard with analytics charts, tenant rent status, maintenance requests, and property unit occupancy trackers.",
-    tech: ["TypeScript", "React", "Tailwind CSS"],
+    desc: "Administrative web dashboard featuring analytics charts, tenant rent status, maintenance ticket tracking, and property unit occupancy management.",
+    tech: ["TypeScript", "React", "Tailwind CSS", "Recharts"],
     live: "",
-    github: "https://github.com/sanjayGL2006",
+    github: "https://github.com/sanjayGL2006/prop-manager-dash-95721",
     status: "Completed",
     featured: false,
-    icon: "fa-chart-line"
+    icon: "fa-chart-line",
+    stats: {
+      "UI Stack": "React + TypeScript",
+      "Styling": "Tailwind CSS",
+      "Type": "Real Estate Dashboard"
+    }
   },
   {
-    id: 13,
-    title: "Pure Weaves E-Commerce",
+    id: 5,
+    title: "Daily Task Nexus (Grab Notes)",
     year: 2025,
-    category: "E-Commerce",
-    tagline: "Full storefront for handcrafted sarees with Google Sheets backend integration.",
-    desc: "Full-featured e-commerce platform using Google Apps Script as a serverless database backend to fetch live inventory and process inquiries.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Google Apps Script"],
-    live: "https://pureweaves.vercel.app/",
-    github: "https://github.com/sanjayGL2006",
+    category: "Web Applications & Full-Stack Projects",
+    tagline: "Smart task manager & note-taking application for productive workflows.",
+    desc: "Clean productivity suite with quick tag filtering, search indexing, auto-save drafts, task priority checklists, and rich Markdown text rendering.",
+    tech: ["TypeScript", "React", "Tailwind CSS", "LocalStorage"],
+    live: "https://grab-notes.base44.app",
+    github: "https://github.com/sanjayGL2006/daily-task-nexus",
     status: "Completed",
     featured: true,
-    icon: "fa-bag-shopping"
+    icon: "fa-note-sticky",
+    stats: {
+      "Stack": "React + TypeScript",
+      "Persistence": "Local Cache",
+      "Live App": "Base44"
+    }
+  },
+  {
+    id: 4,
+    title: "RupeeTrack — Expense Tracker",
+    year: 2025,
+    category: "Web Applications & Full-Stack Projects",
+    tagline: "Comprehensive personal finance & expense tracking web application.",
+    desc: "Modern expense tracker enabling users to log transactions, classify income/expenses, monitor monthly budgets, and analyze spending habits with interactive charts.",
+    tech: ["HTML5", "CSS3", "JavaScript", "LocalStorage", "Chart.js"],
+    live: "https://rupeetrack-app.netlify.app/",
+    github: "https://github.com/sanjayGL2006/expense-tracker",
+    status: "Completed",
+    featured: true,
+    icon: "fa-wallet",
+    stats: {
+      "Category": "Personal Finance",
+      "Analytics": "Chart.js",
+      "Deployment": "Netlify"
+    }
+  },
+  {
+    id: 28,
+    title: "Paperless Office & Billing Management System",
+    year: 2025,
+    category: "Web Applications & Full-Stack Projects",
+    tagline: "Enterprise paperless document workflow, billing & invoice generator.",
+    desc: "A professional billing and document management system designed for digital offices and retail storefronts, supporting inventory tracking, tax calculations, and instant PDF invoice generation.",
+    tech: ["HTML5", "CSS3", "JavaScript", "SQLite", "Node.js", "Electron.js", "PDFKit"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/Paperless-Office-System",
+    status: "Completed",
+    featured: true,
+    icon: "fa-file-invoice-dollar",
+    image: "assets/billing_system_cover.png",
+    stats: {
+      "DB Model": "SQLite",
+      "Export": "PDF Document",
+      "Engine": "Node / Electron"
+    }
+  },
+  {
+    id: 11,
+    title: "Pizza Shop Website",
+    year: 2025,
+    category: "Web Applications & Full-Stack Projects",
+    tagline: "Mouth-watering pizza restaurant website with online order preview.",
+    desc: "Dynamic web application for an artisanal pizzeria featuring interactive menu selection, custom pizza builder preview, cart state, and delivery zone checker.",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/pizza-shop-website",
+    status: "Completed",
+    featured: false,
+    icon: "fa-pizza-slice",
+    stats: {
+      "UX Design": "Interactive Menu",
+      "Cart": "Client JS",
+      "Responsive": "Mobile-First"
+    }
+  },
+  {
+    id: 22,
+    title: "VPN Service Landing Page",
+    year: 2025,
+    category: "Web Applications & Full-Stack Projects",
+    tagline: "High-converting cybersecurity VPN subscription product landing page.",
+    desc: "Commercial product landing page presenting VPN feature matrices, pricing tiers, server location maps, speed benchmarks, and security FAQs.",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/vpn-landing-page1",
+    status: "Completed",
+    featured: false,
+    icon: "fa-key",
+    stats: {
+      "Design": "Modern Dark Glass UI",
+      "Sections": "6 Interactive Blocks",
+      "Responsiveness": "100%"
+    }
   },
   {
     id: 14,
     title: "Registration Form",
     year: 2025,
-    category: "Form",
-    tagline: "Clean modern user registration form with CSS validation UI.",
-    desc: "Interactive registration form featuring real-time input validation, password strength meter, and polished micro-animations.",
+    category: "Web Applications & Full-Stack Projects",
+    tagline: "Clean modern user registration form with real-time CSS & JS validation.",
+    desc: "Interactive registration form featuring real-time input validation, password strength meter, confirmation matching, and polished micro-animations.",
     tech: ["HTML5", "CSS3", "JavaScript"],
     live: "",
-    github: "https://github.com/sanjayGL2006",
+    github: "https://github.com/sanjayGL2006/Registration-form",
     status: "Completed",
     featured: false,
-    icon: "fa-id-card"
+    icon: "fa-id-card",
+    stats: {
+      "Validation": "Real-time regex",
+      "UI Polish": "Glassmorphism",
+      "Lightweight": "Zero Dependencies"
+    }
   },
-  {
-    id: 15,
-    title: "Sanjay GL Portfolio",
-    year: 2025,
-    category: "Portfolio",
-    tagline: "Personal portfolio showcasing projects, credentials, and technical skills.",
-    desc: "Responsive developer website showcasing projects, skills, education timeline, and contact pathways.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "https://sanjaygl30ai.vercel.app/",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: true,
-    icon: "fa-globe"
-  },
-  {
-    id: 16,
-    title: "Sanju Portfolio Pro Hub",
-    year: 2025,
-    category: "Portfolio",
-    tagline: "Advanced React-powered portfolio with glassmorphism & dynamic transitions.",
-    desc: "React portfolio hub engineered with ambient background effects, glassmorphic cards, and project showcase filters.",
-    tech: ["TypeScript", "React", "Tailwind CSS"],
-    live: "https://sanju-portfolio-pro-hub.base44.app",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: true,
-    icon: "fa-laptop-code"
-  },
-  {
-    id: 17,
-    title: "Spy Detect Pro",
-    year: 2025,
-    category: "Cybersecurity",
-    tagline: "Cybersecurity threat detection utility for analyzing security risks.",
-    desc: "Interactive cybersecurity tool providing security risk assessments, password strength audits, and threat detection simulation.",
-    tech: ["TypeScript", "React", "Tailwind CSS"],
-    live: "https://spy-detect-pro.base44.app",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: true,
-    icon: "fa-shield-halved"
-  },
-  {
-    id: 18,
-    title: "Surya Chatbot",
-    year: 2025,
-    category: "AI",
-    tagline: "Interactive conversational AI bot with custom response logic.",
-    desc: "Rule-based and generative AI chatbot designed to answer queries with an intuitive floating chat window interface.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: false,
-    icon: "fa-comments"
-  },
-  {
-    id: 19,
-    title: "Temperature Converter",
-    year: 2025,
-    category: "Utility",
-    tagline: "Instant Celsius to Fahrenheit temperature conversion utility.",
-    desc: "Sleek conversion calculator handling bi-directional transformations between Celsius, Fahrenheit, and Kelvin scales.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: false,
-    icon: "fa-temperature-high"
-  },
-  {
-    id: 20,
-    title: "Tic-Tac-Toe (Python)",
-    year: 2025,
-    category: "Game",
-    tagline: "Classic terminal-based two-player Tic-Tac-Toe game in Python.",
-    desc: "Console application written in Python demonstrating core programming logic, array manipulation, and game state management.",
-    tech: ["Python"],
-    live: "",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: false,
-    icon: "fa-brands fa-python"
-  },
+
+  // ===================== 3. TOOLS, SECURITY & UTILITIES =====================
   {
     id: 21,
     title: "Vault Secure Auth",
     year: 2025,
-    category: "Authentication",
-    tagline: "Secure authentication portal with login and signup UI validation.",
-    desc: "Modern security portal UI implementing client-side validation, password visibility toggles, and multi-step authentication layouts.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
+    category: "Tools, Security & Utilities",
+    tagline: "Secure authentication portal with password security audits & login UI validation.",
+    desc: "Modern security portal UI implementing client-side input validation, password visibility toggles, hash calculation previews, and multi-step authentication layouts.",
+    tech: ["HTML5", "CSS3", "JavaScript", "CryptoJS"],
     live: "",
-    github: "https://github.com/sanjayGL2006",
+    github: "https://github.com/sanjayGL2006/vault-secure-auth",
     status: "Completed",
     featured: false,
-    icon: "fa-lock"
-  },
-  {
-    id: 22,
-    title: "VPN Landing Page",
-    year: 2025,
-    category: "Landing Page",
-    tagline: "High-converting cybersecurity VPN subscription product landing page.",
-    desc: "Commercial product landing page presenting VPN feature matrices, pricing tiers, speed test benchmarks, and user reviews.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
-    github: "https://github.com/sanjayGL2006",
-    status: "Completed",
-    featured: false,
-    icon: "fa-key"
+    icon: "fa-lock",
+    stats: {
+      "Security": "Client Hashing",
+      "Validation": "Interactive UI",
+      "Type": "Auth Portal"
+    }
   },
   {
     id: 23,
-    title: "Web Calculator",
+    title: "Web Calculator JS",
     year: 2025,
-    category: "Utility",
-    tagline: "Feature-rich web calculator with percentage and root functions.",
-    desc: "Scientific-lite calculator UI offering memory recall, percentage formulas, square root functions, and keypress shortcuts.",
+    category: "Tools, Security & Utilities",
+    tagline: "Feature-rich web calculator with percentage, square root, and keyboard shortcuts.",
+    desc: "Scientific-lite web calculator offering memory recall, percentage formulas, square root functions, calculation history, and physical keypress bindings.",
     tech: ["HTML5", "CSS3", "JavaScript"],
     live: "",
-    github: "https://github.com/sanjayGL2006",
+    github: "https://github.com/sanjayGL2006/web-calculator-js",
     status: "Completed",
     featured: false,
-    icon: "fa-square-root-variable"
+    icon: "fa-square-root-variable",
+    stats: {
+      "Functions": "Standard + Scientific",
+      "Input": "Touch + Keyboard",
+      "History": "Saved per session"
+    }
+  },
+  {
+    id: 19,
+    title: "Temperature Converter Web App",
+    year: 2025,
+    category: "Tools, Security & Utilities",
+    tagline: "Instant Celsius, Fahrenheit, and Kelvin scale conversion utility.",
+    desc: "Sleek conversion calculator handling instant bi-directional transformations between Celsius, Fahrenheit, and Kelvin temperature scales with visual warmth indicators.",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/ttemp-convert-web-app",
+    status: "Completed",
+    featured: false,
+    icon: "fa-temperature-high",
+    stats: {
+      "Scales": "Celsius / Fahrenheit / Kelvin",
+      "Conversion": "Real-time input",
+      "UI": "Dynamic Gradient"
+    }
+  },
+  {
+    id: 2,
+    title: "BMI Calculator",
+    year: 2025,
+    category: "Tools, Security & Utilities",
+    tagline: "Instant health index calculator for height and weight measurements.",
+    desc: "Responsive Body Mass Index (BMI) calculator providing immediate health index feedback, target weight ranges, and interactive health gauge visualizations.",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/bmi_calculator",
+    status: "Completed",
+    featured: false,
+    icon: "fa-calculator",
+    stats: {
+      "Formula": "Standard BMI",
+      "Feedback": "Categorized health status",
+      "Speed": "Instant"
+    }
+  },
+  {
+    id: 32,
+    title: "Bluetooth Chat Utility",
+    year: 2025,
+    category: "Tools, Security & Utilities",
+    tagline: "Wireless peer-to-peer local messaging app over Bluetooth connections.",
+    desc: "Utility application designed to establish direct device-to-device Bluetooth socket connections for offline text messaging and file transfer without internet access.",
+    tech: ["Android", "Java", "Bluetooth RFCOMM", "XML"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/bluetooth-chat-",
+    status: "Completed",
+    featured: false,
+    icon: "fa-bluetooth-b",
+    stats: {
+      "Connection": "RFCOMM Sockets",
+      "Mode": "Offline Peer-to-Peer",
+      "Platform": "Android / Java"
+    }
+  },
+  {
+    id: 33,
+    title: "Pixel Perfect Design Tool",
+    year: 2025,
+    category: "Tools, Security & Utilities",
+    tagline: "Precision screen measurement and grid overlay tool for UI developers.",
+    desc: "Developer utility allowing web designers to overlay alignment grids, inspect exact element dimensions in pixels, and verify responsive design fidelity.",
+    tech: ["JavaScript", "HTML5 Canvas", "CSS3"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/pixel-perfect",
+    status: "Completed",
+    featured: false,
+    icon: "fa-crop-simple",
+    stats: {
+      "Precision": "1px grid step",
+      "Mode": "Developer Overlay",
+      "Tech": "Vanilla JS"
+    }
+  },
+
+  // ===================== 4. GAMES =====================
+  {
+    id: 34,
+    title: "Chess Game Engine",
+    year: 2025,
+    category: "Games",
+    tagline: "Interactive 2-player chess game with legal move validation and visual board.",
+    desc: "A fully functional chess game featuring piece movement rules, castling, en passant checks, move history, and checkmate detection.",
+    tech: ["JavaScript", "HTML5", "CSS3", "Chess Logic"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/chess-game",
+    status: "Completed",
+    featured: true,
+    icon: "fa-chess",
+    stats: {
+      "Logic": "FIDE Move Rules",
+      "Players": "2 Players / Local",
+      "UI": "Custom Drag & Drop Board"
+    }
+  },
+  {
+    id: 20,
+    title: "Tic-Tac-Toe Game in Python",
+    year: 2025,
+    category: "Games",
+    tagline: "Classic terminal and graphical Tic-Tac-Toe game in Python.",
+    desc: "Console and Tkinter application written in Python demonstrating game matrix evaluation, AI minimax opponent, and turn state management.",
+    tech: ["Python", "Tkinter"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/Tic-Tac-Toe-Game-in-python-coder",
+    status: "Completed",
+    featured: false,
+    icon: "fa-brands fa-python",
+    stats: {
+      "Language": "Python 3",
+      "Opponent": "Local 2-Player & Minimax AI",
+      "UI": "Terminal & GUI"
+    }
+  },
+  {
+    id: 3,
+    title: "Digital Board Duel",
+    year: 2025,
+    category: "Games",
+    tagline: "Interactive two-player digital board game with real-time turns & smooth UI.",
+    desc: "Modern digital board game featuring glassmorphic graphics, sound synthesizers, turn animations, score tracking, and smooth interactive gameplay.",
+    tech: ["TypeScript", "React", "CSS3", "Tailwind CSS"],
+    live: "https://digital-board-duel.lovable.app/",
+    github: "https://github.com/sanjayGL2006/digital-board-duel",
+    status: "Completed",
+    featured: true,
+    icon: "fa-gamepad",
+    stats: {
+      "Framework": "React + TypeScript",
+      "Styling": "Tailwind CSS",
+      "Live App": "Lovable AI"
+    }
+  },
+
+  // ===================== 5. PORTFOLIOS, PROFILES & TRIBUTES =====================
+  {
+    id: 16,
+    title: "Sanju Portfolio Pro Hub",
+    year: 2025,
+    category: "Portfolios, Profiles & Tributes",
+    tagline: "Advanced React-powered portfolio with glassmorphism & dynamic transitions.",
+    desc: "React portfolio hub engineered with ambient background particle effects, glassmorphic cards, search indexes, and project showcase filters.",
+    tech: ["TypeScript", "React", "Tailwind CSS"],
+    live: "https://sanju-portfolio-pro-hub.base44.app",
+    github: "https://github.com/sanjayGL2006/agentportfolio",
+    status: "Completed",
+    featured: true,
+    icon: "fa-laptop-code",
+    stats: {
+      "Tech": "React + TypeScript",
+      "Design": "Glassmorphism",
+      "Deployment": "Base44"
+    }
+  },
+  {
+    id: 15,
+    title: "Sanjay GL Developer Portfolio & Profile",
+    year: 2025,
+    category: "Portfolios, Profiles & Tributes",
+    tagline: "Personal portfolio & developer hub showcasing projects, skills, and credentials.",
+    desc: "Responsive developer website featuring 3D ambient space background, terminal command palette, verified certificates archive, AI co-pilot, and contact form.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Python", "Flask"],
+    live: "https://sanjaygl30ai.vercel.app/",
+    github: "https://github.com/sanjayGL2006/sanjayGL2006",
+    status: "Completed",
+    featured: true,
+    icon: "fa-globe",
+    stats: {
+      "Projects": "29+ Cataloged",
+      "Certificates": "87+ Verified",
+      "AI OS": "Gemini Integration"
+    }
+  },
+  {
+    id: 35,
+    title: "Sri Mariyamma Temple Portal",
+    year: 2025,
+    category: "Portfolios, Profiles & Tributes",
+    tagline: "Community temple cultural website & event information portal.",
+    desc: "Dedicated cultural web portal created to showcase temple history, annual festival schedules, photo galleries, and community announcements.",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/srimariyammatemple",
+    status: "Completed",
+    featured: false,
+    icon: "fa-place-of-worship",
+    stats: {
+      "Purpose": "Community & Cultural Portal",
+      "Gallery": "High-Res Photography",
+      "Language": "Kannada & English"
+    }
+  },
+  {
+    id: 36,
+    title: "Maya Angelou Tribute Showcase",
+    year: 2025,
+    category: "Portfolios, Profiles & Tributes",
+    tagline: "Literary tribute page celebrating Maya Angelou's poetry, life, and legacy.",
+    desc: "Polished biographical tribute webpage highlighting Maya Angelou's famous poems, civil rights contributions, audio recitations, and timeline milestones.",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/maya-angelou-tribute",
+    status: "Completed",
+    featured: false,
+    icon: "fa-feather-pointed",
+    stats: {
+      "Subject": "Maya Angelou Tribute",
+      "Design": "Classic Editorial Layout",
+      "Features": "Poetry Carousel & Quotes"
+    }
   }
 ];
 

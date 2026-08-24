@@ -20,7 +20,7 @@
     { name: "Kali Linux", iconClass: "fa-solid fa-shield-halved", ring: 2, speed: 0.002, color: "#8b5cf6", glow: "rgba(139,92,246,0.4)" },
     { name: "AI Chip", iconClass: "fa-solid fa-microchip", ring: 2, speed: 0.002, color: "#f59e0b", glow: "rgba(245,158,11,0.4)" },
     { name: "Database", iconClass: "fa-solid fa-server", ring: 2, speed: 0.002, color: "#ec4899", glow: "rgba(236,72,153,0.4)" },
-    { name: "Cloud", iconClass: "fa-solid fa-cloud", ring: 2, speed: 0.002, color: "#f59e0b", glow: "rgba(245,158,11,0.4)" }
+    { name: "TypeScript", iconClass: "fa-solid fa-code", ring: 2, speed: 0.002, color: "#3178c6", glow: "rgba(49,120,198,0.4)" }
   ];
 
   let container;

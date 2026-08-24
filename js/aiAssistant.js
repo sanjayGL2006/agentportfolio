@@ -131,9 +131,18 @@
       appendMessage(data.reply, 'bot');
     })
     .catch(err => {
-      console.error("Agent chat error:", err);
+      console.warn("Agent chat route offline, providing client fallback:", err);
       typingMsg.remove();
-      appendMessage("I'm sorry, I'm having trouble connecting to my brain right now. Please try again later!", 'bot');
+      let fallbackText = "I am Sanjay's AI Assistant! You can explore his 29+ projects categorized into <strong>AI & Machine Learning</strong>, <strong>Web Applications</strong>, <strong>Tools & Security</strong>, <strong>Games</strong>, and <strong>Portfolios & Profiles</strong>. Direct messages can be sent to <strong>sanjaygl2006@gmail.com</strong>.";
+      const lower = query.toLowerCase();
+      if (lower.includes("contact") || lower.includes("email") || lower.includes("mail") || lower.includes("message")) {
+        fallbackText = "You can contact Sanjay directly via email at <a href='mailto:sanjaygl2006@gmail.com' style='color:var(--emerald-primary)'>sanjaygl2006@gmail.com</a>, phone at +91 81239 81877, or using the contact form on this site.";
+      } else if (lower.includes("project") || lower.includes("built")) {
+        fallbackText = "Sanjay has built 29+ projects including DermAI, AI Agent using Google API, DataGauge, Pure Weaves E-Commerce, Property Manager Dashboard, and Paperless Office System. Check them out on the <a href='projects.html' style='color:var(--emerald-primary)'>Projects Page</a>!";
+      } else if (lower.includes("skill") || lower.includes("react")) {
+        fallbackText = "Sanjay specializes in React, Modern Web Development, Python (Flask/FastAPI), SQL, Cybersecurity, and AI/ML systems.";
+      }
+      appendMessage(fallbackText, 'bot');
     });
   }
 

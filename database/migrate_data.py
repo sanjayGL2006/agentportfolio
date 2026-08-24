@@ -68,7 +68,7 @@ def migrate():
             try:
                 js_array = array_match.group(1)
                 json_str = clean_js_object(js_array)
-                projects = json.loads(json_str)
+                projects = json.loads(json_str, strict=False)
                 
                 print(f"[MIGRATION] Loaded {len(projects)} projects from projectsData.js. Migrating...")
                 
@@ -176,7 +176,7 @@ def migrate():
         for block in named_blocks:
             try:
                 json_str = clean_js_object(block)
-                c = json.loads(json_str)
+                c = json.loads(json_str, strict=False)
                 
                 sql = """
                     INSERT INTO certificates (
@@ -217,7 +217,7 @@ def migrate():
         for idx, block in enumerate(drive_blocks):
             try:
                 json_str = clean_js_object(block)
-                c = json.loads(json_str)
+                c = json.loads(json_str, strict=False)
                 
                 c_id = f"drive-cert-{idx}"
                 sql = """

@@ -8,7 +8,7 @@
     { title: "All Projects (28)", desc: "Explore all 28 software projects", action: () => window.location.href = "projects.html", icon: "fa-diagram-project" },
     { title: "Certificates (86)", desc: "View all technical & government certificates", action: () => window.location.href = "certificates.html", icon: "fa-certificate" },
     { title: "Docker Roadmap", desc: "View Docker containerization learning status", action: () => window.location.href = "index.html#docker", icon: "fa-box" },
-    { title: "Technical Skills", desc: "Check skills in Python, React, JS, MySQL, Cloud", action: () => window.location.href = "index.html#skills", icon: "fa-code" },
+    { title: "Technical Skills", desc: "Check skills in React, Python, JavaScript, MySQL, AI", action: () => window.location.href = "index.html#skills", icon: "fa-code" },
     { title: "Download Resume", desc: "Download Sanjay G. L. Resume PDF", action: () => window.open("assets/Sanjay_GL_Resume.pdf", "_blank"), icon: "fa-file-pdf" },
     { title: "GitHub Profile", desc: "Visit github.com/sanjayGL2006", action: () => window.open("https://github.com/sanjayGL2006", "_blank"), icon: "fa-brands fa-github" },
     { title: "LinkedIn Profile", desc: "Connect on LinkedIn", action: () => window.open("https://www.linkedin.com/in/sanjaygl3006/", "_blank"), icon: "fa-brands fa-linkedin" },

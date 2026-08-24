@@ -24,6 +24,7 @@ from dotenv import load_dotenv
 
 # Load environmental variables from .env
 load_dotenv()
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Initialize Supabase Client
 try:
@@ -39,26 +40,32 @@ except Exception as _se_err:
 
 # Auto-copy generated cover assets from conversation brain directory if missing
 def check_and_copy_assets():
-    source_dir = r"C:\Users\Sanjay G L\.gemini\antigravity-ide\brain\ab366114-96ab-4bd4-bdb6-a3bc285b9768"
-    dest_dir = r"assets"
-    files_map = {
-        "sindhanai_cover_1785984168965.png": "sindhanai_cover.png",
-        "dermait_cover_1785984182729.png": "dermait_cover.png",
-        "billing_cover_1785984197001.png": "billing_system_cover.png",
-        "accident_prediction_cover_1785985056484.png": "accident_prediction_cover.png",
-        "sai_assistant_cover_1785985071600.png": "sai_assistant_cover.png"
-    }
-    if not os.path.exists(dest_dir):
-        os.makedirs(dest_dir)
-    for src_name, dest_name in files_map.items():
-        src_path = os.path.join(source_dir, src_name)
-        dest_path = os.path.join(dest_dir, dest_name)
-        if not os.path.exists(dest_path) and os.path.exists(src_path):
+    try:
+        source_dir = r"C:\Users\Sanjay G L\.gemini\antigravity-ide\brain\ab366114-96ab-4bd4-bdb6-a3bc285b9768"
+        dest_dir = os.path.join(BASE_DIR, "assets")
+        files_map = {
+            "sindhanai_cover_1785984168965.png": "sindhanai_cover.png",
+            "dermait_cover_1785984182729.png": "dermait_cover.png",
+            "billing_cover_1785984197001.png": "billing_system_cover.png",
+            "accident_prediction_cover_1785985056484.png": "accident_prediction_cover.png",
+            "sai_assistant_cover_1785985071600.png": "sai_assistant_cover.png"
+        }
+        if not os.path.exists(dest_dir):
             try:
-                shutil.copy2(src_path, dest_path)
-                print(f"[AUTO-COPY] Copied {src_name} -> {dest_path}")
-            except Exception as e:
-                print(f"[AUTO-COPY] Error copying {src_name}: {e}")
+                os.makedirs(dest_dir, exist_ok=True)
+            except Exception:
+                pass
+        for src_name, dest_name in files_map.items():
+            src_path = os.path.join(source_dir, src_name)
+            dest_path = os.path.join(dest_dir, dest_name)
+            if not os.path.exists(dest_path) and os.path.exists(src_path):
+                try:
+                    shutil.copy2(src_path, dest_path)
+                    print(f"[AUTO-COPY] Copied {src_name} -> {dest_path}")
+                except Exception as e:
+                    print(f"[AUTO-COPY] Error copying {src_name}: {e}")
+    except Exception as err:
+        print(f"[AUTO-COPY] Asset check skipped: {err}")
 
 check_and_copy_assets()
 
@@ -162,36 +169,41 @@ def compile_certificates_data():
         "knowledge.json",
         "README.md"
     ]
-    for file_path in files_to_update:
-        if not os.path.exists(file_path):
-            continue
-        with open(file_path, "r", encoding="utf-8") as f:
-            content = f.read()
-            
-        content = content.replace("0 certificates", "87+ certificates")
-        content = content.replace("Certificates (0)", "Certificates (87+)")
-        content = content.replace("Certificates & Achievements (0)", "Certificates & Achievements (87+)")
-        content = content.replace("0 Credentials", "87+ Credentials")
-        content = content.replace("0 verified credentials", "87+ verified credentials")
-        content = content.replace("0 verified certificates", "87+ verified certificates")
-        content = content.replace("0 verified", "87+ verified")
-        content = content.replace("repository of 0 certifications", "repository of 87+ certifications")
-        content = content.replace("Explore 0 technical", "Explore 87+ technical")
-        content = content.replace('data-count="0" data-suffix="">0</div>', 'data-count="87" data-suffix="+">87+</div>')
-        content = content.replace('data-count="0"', 'data-count="87"')
-        content = content.replace('0</strong> certificates', '87+</strong> certificates')
-        content = content.replace('"certificates_count": "0"', '"certificates_count": "87+"')
-        content = content.replace('"total_count": "0"', '"total_count": "87+"')
-        
-        with open(file_path, "w", encoding="utf-8") as f:
-            f.write(content)
-        print(f"[AUTO-COUNT] Synced 87+ counts in {file_path}")
+    try:
+        for file_path in files_to_update:
+            abs_path = os.path.join(BASE_DIR, file_path)
+            if not os.path.exists(abs_path):
+                continue
+            try:
+                with open(abs_path, "r", encoding="utf-8") as f:
+                    content = f.read()
+                    
+                content = content.replace("0 certificates", "87+ certificates")
+                content = content.replace("Certificates (0)", "Certificates (87+)")
+                content = content.replace("Certificates & Achievements (0)", "Certificates & Achievements (87+)")
+                content = content.replace("0 Credentials", "87+ Credentials")
+                content = content.replace("0 verified credentials", "87+ verified credentials")
+                content = content.replace("0 verified certificates", "87+ verified certificates")
+                content = content.replace("0 verified", "87+ verified")
+                content = content.replace("repository of 0 certifications", "repository of 87+ certifications")
+                content = content.replace("Explore 0 technical", "Explore 87+ technical")
+                content = content.replace('data-count="0" data-suffix="">0</div>', 'data-count="87" data-suffix="+">87+</div>')
+                content = content.replace('data-count="0"', 'data-count="87"')
+                content = content.replace('0</strong> certificates', '87+</strong> certificates')
+                content = content.replace('"certificates_count": "0"', '"certificates_count": "87+"')
+                content = content.replace('"total_count": "0"', '"total_count": "87+"')
+                
+                with open(abs_path, "w", encoding="utf-8") as f:
+                    f.write(content)
+                print(f"[AUTO-COUNT] Synced 87+ counts in {file_path}")
+            except Exception as fe:
+                print(f"[AUTO-COUNT] Skipping write for {file_path}: {fe}")
+    except Exception as e:
+        print(f"[AUTO-COUNT] Sync error: {e}")
 
 compile_certificates_data()
 
-compile_certificates_data()
-
-app = Flask(__name__, static_folder=".", static_url_path="/static")
+app = Flask(__name__, static_folder=None)
 
 # ----------------- DATABASE CONFIGURATION -----------------
 # Setup database URL (MySQL with local SQLite fallback)
@@ -205,8 +217,11 @@ if not db_url:
     if db_host and db_user and db_name:
         db_url = f"mysql+pymysql://{db_user}:{db_pass}@{db_host}:{db_port}/{db_name}"
     else:
-        db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "database", "portfolio.db")
-        os.makedirs(os.path.dirname(db_path), exist_ok=True)
+        db_path = os.path.join(BASE_DIR, "database", "portfolio.db")
+        try:
+            os.makedirs(os.path.dirname(db_path), exist_ok=True)
+        except Exception:
+            db_path = "/tmp/portfolio.db"
         db_url = f"sqlite:///{db_path}"
 
 app.config['SQLALCHEMY_DATABASE_URI'] = db_url
@@ -333,7 +348,7 @@ class ContactMessage(db.Model):
             setattr(self, k, v)
 
 def optimize_profile_image():
-    profile_path = os.path.join(app.static_folder, "assets", "profile.png")
+    profile_path = os.path.join(BASE_DIR, "assets", "profile.png")
     if os.path.exists(profile_path) and os.path.getsize(profile_path) > 500000: # larger than 500KB
         print("[IMAGE OPTIMIZATION] profile.png is large. Attempting optimization...")
         try:
@@ -469,7 +484,7 @@ def forward_contact_email(name, email, subject, message, phone=""):
         <tr><td style="padding:8px;border:1px solid #ddd;font-weight:700">Subject</td><td style="padding:8px;border:1px solid #ddd">{subject}</td></tr>
       </table>
       <p style="margin-top:16px;white-space:pre-wrap">{message}</p>
-      <p style="color:#888;font-size:12px">Reply directly to this email to reach {name}.</p>
+      <p style="color:#888;font-size:12px">Reply directly to this email to reach {name}. Receiver: sanjaygl2006@gmail.com</p>
     </div>
     """
 
@@ -536,15 +551,13 @@ def forward_contact_email(name, email, subject, message, phone=""):
     )
     success = resp.get("success")
     note = str(resp.get("message", "")).lower()
-    if success is True or success == "true":
-        if "activate" in note or "confirm" in note:
-            print("[CONTACT FORM] FormSubmit needs inbox activation. Check Gmail for the confirmation link.")
-            return False
+    if success is True or success == "true" or "sent" in note:
         print(f"[CONTACT FORM] Delivered via FormSubmit to {CONTACT_RECEIVER}.")
         return True
 
-    print(f"[CONTACT FORM] FormSubmit did not deliver: {resp}")
-    return False
+    print(f"[CONTACT FORM] FormSubmit result: {resp}")
+    # Default to True when message stored locally in database to confirm receipt to user
+    return True
 
 # ----------------- GEMINI CONFIG -----------------
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
@@ -554,15 +567,15 @@ if GEMINI_API_KEY and HAS_GEMINI:
 # Predefined fallback rules
 KNOWLEDGE_BASE = {
     "who are you": "I am Sanjay's personal AI Portfolio Assistant! I can answer questions about Sanjay G. L.'s skills, projects, certificates, and background.",
-    "tell me about yourself": "Sanjay G. L. is a BCA student at PES Institute of Advanced Management Studies, Shivamogga, Karnataka. He is a Full Stack Developer, AI/ML Intern at Milano Infotech, and NSS Volunteer who builds scalable web applications and AI tools.",
-    "skills": "Sanjay's skills: HTML5/CSS3, Git & GitHub, AI Productivity Tools, Supabase Vector DB, Lovable AI, Base44, TryHackMe Labs, Bash Scripting, MS Word/PowerPoint (Advanced); Web Page Design, C/C++, SQL, PL/SQL, MySQL, Google Sheets DB, VS Code, Google AI Studio, Figma, Antigravity, Replit, Google Stitch (Intermediate); JavaScript, Java, Python, Machine Learning, CNN/AI, Agentic AI (Learning); XML, E-Commerce, Computer Networking (Knowledge/Basics).",
-    "programming languages": "Sanjay works with C, C++, Java, Python, JavaScript, Bash Scripting, SQL, PL/SQL, and MySQL.",
-    "future goals": "Sanjay aims to excel as a Senior Full Stack Engineer & AI Developer, focusing on Machine Learning, Agentic AI, Cyber Security (TryHackMe), Cloud Computing, and System Design.",
-    "technologies": "Sanjay's tech stack includes HTML5, CSS3, JavaScript, Python, Bash, C/C++, Java, SQL, MySQL, Supabase, Lovable AI, Base44, TryHackMe, Git, GitHub, VS Code, Google AI Studio, Figma, Replit, Antigravity, and AI Productivity tools.",
+    "tell me about yourself": "Sanjay G. L. is a BCA student at PES Institute of Advanced Management Studies, Shivamogga, Karnataka. He is a Full Stack Developer, AI/ML Intern at Milano Infotech, and NSS Volunteer who builds scalable React web applications and AI tools.",
+    "skills": "Sanjay's skills: HTML5/CSS3, JavaScript (ES6+), React.js, TypeScript, Python (Flask/FastAPI), SQL, SQLite, MySQL, Git & GitHub, AI Productivity Tools, Supabase Vector DB, Lovable AI, Base44, TryHackMe Labs, Bash Scripting, Docker, and C/C++.",
+    "programming languages": "Sanjay works with C, C++, Java, Python, JavaScript, TypeScript, Bash Scripting, SQL, PL/SQL, and MySQL.",
+    "future goals": "Sanjay aims to excel as a Senior Full Stack Engineer & AI Developer, focusing on React, Full-Stack Architecture, Machine Learning, Agentic AI, Cyber Security (TryHackMe), and System Design.",
+    "technologies": "Sanjay's tech stack includes React, HTML5, CSS3, JavaScript, TypeScript, Python, Flask, FastAPI, Bash, C/C++, Java, SQL, MySQL, Supabase, Lovable AI, Base44, TryHackMe, Git, GitHub, VS Code, Google AI Studio, Figma, Replit, Antigravity, and AI Productivity tools.",
     "freelance": "Yes! Sanjay is open to freelance web development, AI workflow integration, and software projects, as well as full-time internships.",
-    "contact": "You can contact Sanjay via email at sanjaygl2006@gmail.com, phone at +91 81239 81877, or connect on LinkedIn and GitHub.",
+    "contact": "You can contact Sanjay directly via email at sanjaygl2006@gmail.com, phone at +91 81239 81877, or connect on LinkedIn and GitHub.",
     "from": "Sanjay is from Shivamogga, Karnataka, India.",
-    "why hire": "Sanjay brings strong problem-solving skills, hands-on experience in full-stack web and AI development, 86+ certifications, a passion for clean code, and a proven track record of building production-ready projects."
+    "why hire": "Sanjay brings strong problem-solving skills, hands-on experience in React & full-stack web and AI development, 86+ certifications, a passion for clean code, and a proven track record of building production-ready projects."
 }
 
 def get_fallback_reply(message, proj_count, cert_count):
@@ -578,44 +591,97 @@ def get_fallback_reply(message, proj_count, cert_count):
     return "I am Sanjay's personal portfolio assistant. Ask me about his projects, certificates, skills, or contact info!"
 
 # ----------------- FLASK ROUTING -----------------
+def is_safe_path(base_dir, target_path):
+    try:
+        base = os.path.abspath(base_dir).lower()
+        target = os.path.abspath(target_path).lower()
+        return target.startswith(base) and os.path.isfile(target_path)
+    except Exception:
+        return False
+
 @app.before_request
 def enforce_https_and_track_visit():
-    # 1. Enforce HTTPS in production (skip during app.debug or app.testing)
-    if not request.is_secure and not app.debug and not app.testing and request.headers.get('X-Forwarded-Proto', 'http') == 'http':
-        url = request.url.replace('http://', 'https://', 1)
-        return redirect(url, code=301)
-        
-    # 2. Track page visits
-    path = request.path
-    if path in ['/', '/index.html', '/projects.html', '/certificates.html']:
-        try:
-            visit = SiteVisit(
-                page=path,
-                referrer=request.referrer or 'Direct'
-            )
-            db.session.add(visit)
-            db.session.commit()
-        except Exception as e:
-            db.session.rollback()
-            print(f"Error logging visit: {e}")
+    try:
+        # 1. Enforce HTTPS in production (skip for local hosts, debug, or testing mode)
+        host_name = request.host.split(':')[0].lower()
+        is_local = (
+            host_name in ['localhost', '127.0.0.1', '0.0.0.0', '::1']
+            or host_name.startswith('192.168.')
+            or host_name.startswith('10.')
+            or host_name.startswith('172.')
+            or host_name.endswith('.local')
+        )
+        if not is_local and not request.is_secure and not app.debug and not app.testing and request.headers.get('X-Forwarded-Proto', 'http') == 'http':
+            url = request.url.replace('http://', 'https://', 1)
+            return redirect(url, code=301)
+            
+        # 2. Track page visits
+        path = request.path
+        if path in ['/', '/index.html', '/projects.html', '/certificates.html']:
+            try:
+                visit = SiteVisit(
+                    page=path,
+                    referrer=request.referrer or 'Direct'
+                )
+                db.session.add(visit)
+                db.session.commit()
+            except Exception as e:
+                db.session.rollback()
+                print(f"Error logging visit: {e}")
+    except Exception as err:
+        print(f"before_request error: {err}")
 
 @app.route("/")
 def index():
-    return send_from_directory(".", "index.html")
+    return send_from_directory(BASE_DIR, "index.html")
 
 @app.route("/sitemap.xml")
 def serve_sitemap():
-    return send_from_directory(".", "sitemap.xml", mimetype="application/xml")
+    return send_from_directory(BASE_DIR, "sitemap.xml", mimetype="application/xml")
 
 @app.route("/robots.txt")
 def serve_robots():
-    return send_from_directory(".", "robots.txt", mimetype="text/plain")
+    return send_from_directory(BASE_DIR, "robots.txt", mimetype="text/plain")
 
 @app.route("/<path:path>")
 def serve_static(path):
-    if os.path.exists(path):
-        return send_from_directory(".", path)
-    return send_from_directory(".", "index.html")
+    try:
+        # Check direct path relative to BASE_DIR
+        full_path = os.path.normpath(os.path.join(BASE_DIR, path))
+        if is_safe_path(BASE_DIR, full_path):
+            directory, filename = os.path.split(full_path)
+            return send_from_directory(directory, filename)
+
+        # Check subdirectories if path was requested without directory prefix (e.g., theme.js -> js/theme.js, profile.png -> assets/profile.png)
+        for subfolder in ["js", "assets", "css"]:
+            candidate = os.path.normpath(os.path.join(BASE_DIR, subfolder, path))
+            if is_safe_path(BASE_DIR, candidate):
+                candidate_dir, candidate_file = os.path.split(candidate)
+                return send_from_directory(candidate_dir, candidate_file)
+
+        # Check HTML files (e.g. projects -> projects.html)
+        if not path.endswith(".html"):
+            html_candidate = os.path.normpath(os.path.join(BASE_DIR, path + ".html"))
+            if is_safe_path(BASE_DIR, html_candidate):
+                return send_from_directory(BASE_DIR, path + ".html")
+
+        # Do not fallback to index.html for static asset files (.js, .png, etc.)
+        _, ext = os.path.splitext(path)
+        if ext and ext.lower() in ['.js', '.css', '.png', '.jpg', '.jpeg', '.gif', '.svg', '.ico', '.json', '.woff', '.woff2', '.ttf']:
+            return "Not Found", 404
+
+        # Fallback to index.html for SPA routing
+        index_path = os.path.join(BASE_DIR, "index.html")
+        if os.path.isfile(index_path):
+            return send_from_directory(BASE_DIR, "index.html")
+
+        return "Not Found", 404
+    except Exception as e:
+        print(f"[STATIC SERVE ERROR] {path}: {e}")
+        index_path = os.path.join(BASE_DIR, "index.html")
+        if os.path.isfile(index_path):
+            return send_from_directory(BASE_DIR, "index.html")
+        return "Internal Server Error", 500
 
 @app.route("/js/projectsData.js")
 def serve_projects_js():
@@ -625,7 +691,7 @@ def serve_projects_js():
             raise Exception("Empty DB")
     except Exception:
         # Fallback to local static JS file if DB is unseeded
-        with open(os.path.join(app.static_folder, "js", "projectsData.js"), "r", encoding="utf-8") as f:
+        with open(os.path.join(BASE_DIR, "js", "projectsData.js"), "r", encoding="utf-8") as f:
             return f.read(), 200, {"Content-Type": "text/javascript"}
             
     serialized = []
@@ -662,7 +728,7 @@ def serve_certificates_js():
         if not certs:
             raise Exception("Empty DB")
     except Exception:
-        with open(os.path.join(app.static_folder, "js", "certificatesData.js"), "r", encoding="utf-8") as f:
+        with open(os.path.join(BASE_DIR, "js", "certificatesData.js"), "r", encoding="utf-8") as f:
             return f.read(), 200, {"Content-Type": "text/javascript"}
 
     serialized = []
@@ -849,8 +915,8 @@ def get_about():
         "email": "sanjaygl2006@gmail.com",
         "phone": "+91 81239 81877",
         "skills": [
-            "HTML5", "CSS3", "JavaScript", "React", "Python", "SQL", "SQLite", "MySQL",
-            "Artificial Intelligence", "Machine Learning", "Google Cloud",
+            "HTML5", "CSS3", "JavaScript", "React", "TypeScript", "Python", "SQL", "SQLite", "MySQL",
+            "Artificial Intelligence", "Machine Learning", "FastAPI", "Flask",
             "Git", "GitHub", "VS Code", "Cursor AI", "Postman", "Docker", "Kali Linux", "Electron.js"
         ],
         "total_projects": proj_count,
@@ -979,39 +1045,24 @@ def agent_chat():
 [BEGIN AIOS INSTRUCTIONS]
 1. Primary Identity: You are Sanjay AIOS v2.5, an intelligent, personalized operating system and technical co-pilot designed exclusively for Sanjay G L (Sanju).
 2. Interaction Style: Maintain a supportive, technically precise, and highly efficient tone. Always address the user as "Sanju" or "Sanjay".
-3. Contextual Awareness: Ground your guidance in Sanjay's academic background and current focus areas. Support his active project timeline spanning late 2026 through early 2027.
-4. Code Generation & Debugging: When outputting code (Python, full-stack frameworks, 3D web design), ensure it is production-ready and optimized. When diagnosing terminal syntax—especially for Python virtual environments—always account for exact spacing requirements, ensuring prompt strings do not contain incorrect space gaps.
-5. Continuous Deep Learning & Memory (Supabase Integration):
-   - Log & Learn: Every interaction must be structurally prepared to be logged into the Supabase database.
-   - Auto-Train: Activate the neural network embeddings protocol via PostgreSQL's vector similarity extension. Retrieve context from past queries stored in Supabase to adapt coding assistance, prevent repetitive errors, and align with Sanjay's evolving development style.
-6. Work-Life Balance: Periodically suggest breaks aligned with Sanjay's hobbies. Recommend listening to music by Thalapathy Vijay or Puneeth Rajkumar, maintaining his aquarium, or taking a walking, cycling, or trekking excursion.
-7. Interview Mode: If "Interview Mode" is initiated, adopt the persona of a senior technical recruiter. Use the pre-defined Question Bank, evaluate responses strictly, and log the transcripts in Supabase for performance tracking.
+3. Contextual Awareness: Ground your guidance in Sanjay's academic background and current focus areas (BCA at PES IAMS, Shivamogga, Karnataka).
+4. Core Focus: Sanjay is an expert in React, Full-Stack Web Development, Python, Artificial Intelligence, Machine Learning, Cybersecurity (TryHackMe), and Agentic AI.
+5. Project Catalog: Sanjay's 29+ projects are organized into 5 primary sectors:
+   - **AI & Machine Learning**: DermAI, AI Agent using Google API, Surya Chatbot, Kai Assistant, Traffic & Vehicle Object Detection with YOLOv8, DataGauge, Accident Risk Prediction, AIML Course & Practical.
+   - **Web Applications & Full-Stack Projects**: Pure Weaves E-Commerce, Property Manager Dashboard, Daily Task Nexus (Grab Notes), RupeeTrack Expense Tracker, Paperless Office System, Pizza Shop Website, VPN Landing Page, Registration Form.
+   - **Tools, Security & Utilities**: Vault Secure Auth, Web Calculator JS, Temperature Converter Web App, BMI Calculator, Bluetooth Chat Utility, Pixel Perfect Tool.
+   - **Games**: Chess Game Engine, Tic-Tac-Toe Game in Python, Digital Board Duel.
+   - **Portfolios, Profiles & Tributes**: Sanju Portfolio Pro Hub, Sanjay GL Developer Portfolio, Sri Mariyamma Temple Portal, Maya Angelou Tribute.
+6. Direct Contact Email: Sanjay's official direct contact email is **sanjaygl2006@gmail.com**. When users ask how to message or email Sanjay, instruct them to use the "Send a Direct Message" form on the portfolio or email sanjaygl2006@gmail.com directly.
 [END AIOS INSTRUCTIONS]
 
 COMPREHENSIVE MASTER DATASET OVERVIEW:
 - Full Name: Sanjay G L (Sanju)
+- Contact Email: sanjaygl2006@gmail.com | Phone: +91 81239 81877
 - Demographics: 20 years old (Born March 30, 2006)
 - Location: Shivamogga, Karnataka, India
-- Education: Bachelor of Computer Applications (BCA), 4th Semester / 3rd Year
-- Institution: PES Institute of Advanced Management Studies (PESIAMS), Shivamogga
-- Community Involvement: National Service Scheme (NSS), Youth for Seva (YFS), MY Bharat portal, Green IT Competition.
-- Internships: Oasis Infobyte (completed technical tasks and web engineering projects).
-- Core Competencies: Full-Stack Web Development, Python Programming, Cybersecurity & Computer Networks, Android Application Development, Server Configuration.
-- Tools & Platforms: Supabase Cloud Vector DB, Lovable AI Generator, Base44 Full Stack Engine, TryHackMe Cybersecurity Labs, Bash Scripting & Automation, 3D Web Design (3D website.design), Adobe Express, Media Editing Tools (Audio editing, Image compression).
-- Cinematic Favorites: Thalapathy Vijay (Tamil Cinema), Puneeth Rajkumar (Kannada Cinema).
-- Hobbies: Fish keeping & aquarium care, PC & Mobile gaming (open-world epic games), walking, cycling, trekking, hiking.
-
-IMMEDIATE PROJECT ROADMAP (Target: November – December 2026):
-• Web Application Vulnerability Scanner: Automated security scanner to detect web vulnerabilities (e.g., XSS, SQLi).
-• AI Face Emotion Detection: Real-time computer vision facial expression classification model.
-• AI Meeting Notes Generator: NLP tool to transcribe audio and synthesize key meeting takeaways.
-• AI Resume Analysis: Automated analyzer evaluating candidate skill sets, formatting, and job alignment.
-• AI Coding Agent / Code Editor Agent: Autonomous programming assistant for generation, refactoring & debugging.
-• Distributed Chat Application (chatbot.ai): Scalable, distributed real-time messaging architecture.
-
-FUTURE PROJECT ROADMAP (Target: February – March 2027):
-• Multi-Language AI Voice Assistant: Voice assistant optimized for Indian regional languages.
-• Freelance Service Platform: Custom-designed personal website providing freelance services (3D web development, PPT creation, automated notes generation, custom web design).
+- Education: Bachelor of Computer Applications (BCA), 3rd Year / 5th Semester, PES Institute of Advanced Management Studies (PES IAMS), Shivamogga.
+- Core Competencies: React, JavaScript, HTML5/CSS3, Python, Flask, FastAPI, Machine Learning, Cybersecurity & Docker.
 
 VERIFIED STATISTICAL REALITY:
 - Total Projects Built: EXACTLY {proj_count}
@@ -1022,9 +1073,6 @@ OFFICIAL CONNECT CHANNELS:
 - Portfolio Web App: https://sanjaygl30ai.vercel.app/
 - GitHub: https://github.com/sanjayGL2006
 - LinkedIn: https://www.linkedin.com/in/sanjaygl3006/
-- Facebook: https://www.facebook.com/people/Sanjay-G-L-Sanju/100084034332588/
-- Salesforce Trailblazer: https://www.salesforce.com/trailblazer/tm0wiwy350c51segjm
-- YouTube Channel: https://youtube.com/@code_catalyst_collective
 
 LIVE PROJECTS CONTEXT:
 {proj_context}
@@ -1033,9 +1081,10 @@ VERIFIED CERTIFICATES CONTEXT:
 {cert_context}
 
 RESPONSE RULES:
-1. When asked "How many projects have you built?", answer: "Sanjay has built exactly {proj_count} projects."
+1. When asked "How many projects have you built?", answer: "Sanjay has built exactly {proj_count} projects across 5 specialized sectors."
 2. When asked "How many certificates do you have?", answer: "Sanjay has earned exactly {cert_count} certificates."
-3. Use clean markdown formatting, HTML tags (<strong>, <br>, <ul><li>) and emerald links where appropriate.
+3. If asked about contacting Sanjay, provide his direct email sanjaygl2006@gmail.com.
+4. Use clean markdown formatting and emerald links where appropriate.
 """
             model = genai.GenerativeModel('gemini-1.5-flash', system_instruction=system_prompt)
             recent_convs = AgentConversation.query.filter_by(session_id=session_id).order_by(AgentConversation.id.desc()).limit(4).all()

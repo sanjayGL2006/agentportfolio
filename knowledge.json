@@ -7,9 +7,9 @@
     "email": "sanjaygl2006@gmail.com",
     "phone": "+91 8123981877",
     "status": "BCA 3rd Year (5th Semester) · PES IAMS",
-    "bio": "Passionate BCA student & developer from Shivamogga, Karnataka. A hands-on builder who lives by 'Learn → Build → Test → Improve → Build something bigger'. Passionate about Web Development, Cybersecurity, AI tools, and practical mini-projects.",
+    "bio": "Passionate BCA student & developer from Shivamogga, Karnataka. A hands-on builder who lives by 'Learn → Build → Test → Improve → Build something bigger'. Passionate about Modern Web Development, React, Cybersecurity, AI tools, and practical mini-projects.",
     "core_philosophy": "Builder mindset: going from 'I have an idea' → 'I built it'. Learning by doing rather than watching passive tutorials.",
-    "future_goal": "Full-stack developer & Security Engineer building scalable web products, ethical cybersecurity labs, and AI systems.",
+    "future_goal": "Full-stack engineer & Security Developer building scalable web applications, ethical cybersecurity labs, and AI systems.",
     "personal_life": {
       "relationship": "single and i am bca student",
       "family": "Has a brother, grandparents, and Ramu mama (shared car travels & traditional banana leaf meals)",
@@ -60,48 +60,59 @@
     }
   ],
   "currently_learning": {
-    "topic": "Artificial Intelligence, Agentic Systems & Containerization",
-    "badge": "SANJAY AI OS v2.5 · Active AI & DevOps Stack",
+    "topic": "Modern Web Development, React & AI Agent Systems",
+    "badge": "SANJAY AI OS v2.5 · Active React & Full-Stack AI Stack",
     "subtopics": [
-      "Supabase Vector DB & Auth (80%)",
-      "Lovable AI & Base44 Full Stack Engines (80%)",
+      "React 18 & TypeScript (90%)",
+      "Supabase Vector DB & Auth (85%)",
+      "Lovable AI & Base44 Full Stack Engines (85%)",
       "TryHackMe Cybersecurity Labs (75%)",
       "Bash Scripting & Automation (75%)",
-      "Agentic AI (55%)",
-      "JavaScript Core (55%)",
-      "Python (55%)",
-      "Machine Learning (50%)"
+      "Agentic AI (65%)",
+      "JavaScript Core & ES6+ (85%)",
+      "Python & Flask / FastAPI (80%)",
+      "Machine Learning & CNN (60%)"
     ]
   },
   "skills": {
     "web_development": [
+      {
+        "name": "React / React.js",
+        "level": "Advanced",
+        "percentage": 90
+      },
       {
         "name": "HTML5 / CSS3",
         "level": "Advanced",
         "percentage": 95
       },
       {
-        "name": "Web Page Design",
+        "name": "JavaScript (ES6+)",
+        "level": "Advanced",
+        "percentage": 85
+      },
+      {
+        "name": "TypeScript",
         "level": "Intermediate",
-        "percentage": 80
+        "percentage": 78
       },
       {
-        "name": "JavaScript (Core)",
-        "level": "Learning",
-        "percentage": 55
+        "name": "Tailwind CSS & Glassmorphism",
+        "level": "Advanced",
+        "percentage": 88
       },
       {
-        "name": "XML",
-        "level": "Knowledge",
-        "percentage": 45
-      },
-      {
-        "name": "E-Commerce Dev",
-        "level": "Knowledge",
-        "percentage": 45
+        "name": "E-Commerce & Full Stack Web Apps",
+        "level": "Intermediate",
+        "percentage": 82
       }
     ],
     "programming": [
+      {
+        "name": "Python (Flask / FastAPI)",
+        "level": "Advanced",
+        "percentage": 85
+      },
       {
         "name": "C / C++",
         "level": "Intermediate",
@@ -109,32 +120,15 @@
       },
       {
         "name": "Java",
-        "level": "Learning",
-        "percentage": 50
-      },
-      {
-        "name": "Python",
-        "level": "Learning",
-        "percentage": 55
-      }
-    ],
-    "networking": [
-      {
-        "name": "Computer Networking",
-        "level": "Basics",
-        "percentage": 45
+        "level": "Intermediate",
+        "percentage": 65
       }
     ],
     "database": [
       {
-        "name": "SQL",
-        "level": "Intermediate",
-        "percentage": 78
-      },
-      {
-        "name": "PL/SQL",
-        "level": "Intermediate",
-        "percentage": 75
+        "name": "SQL & SQLite",
+        "level": "Advanced",
+        "percentage": 85
       },
       {
         "name": "MySQL",
@@ -142,7 +136,7 @@
         "percentage": 78
       },
       {
-        "name": "Google Sheets as DB",
+        "name": "Supabase Vector DB",
         "level": "Intermediate",
         "percentage": 80
       }
@@ -154,277 +148,207 @@
         "percentage": 92
       },
       {
-        "name": "AI Productivity Tools",
+        "name": "AI Productivity Tools & Agents",
         "level": "Advanced",
         "percentage": 90
       },
       {
-        "name": "MS Word",
+        "name": "Visual Studio Code / Cursor",
         "level": "Advanced",
         "percentage": 90
       },
       {
-        "name": "MS PowerPoint",
+        "name": "Google AI Studio & Gemini API",
         "level": "Advanced",
-        "percentage": 90
+        "percentage": 88
       },
       {
-        "name": "Visual Studio Code",
+        "name": "Base44 & Lovable AI",
         "level": "Intermediate",
         "percentage": 82
       },
       {
-        "name": "Google AI Studio",
-        "level": "Intermediate",
-        "percentage": 78
-      },
-      {
-        "name": "MS Excel / Sheets",
-        "level": "Intermediate",
-        "percentage": 80
-      },
-      {
-        "name": "antigravity",
-        "level": "Intermediate",
-        "percentage": 80
-      },
-      {
-        "name": "Gamma Presentation",
-        "level": "Intermediate",
-        "percentage": 75
-      },
-      {
-        "name": "Figma Design",
-        "level": "Intermediate",
-        "percentage": 75
-      },
-      {
-        "name": "Replit Cloud IDE",
-        "level": "Intermediate",
-        "percentage": 75
-      },
-      {
-        "name": "Blackbox AI Code",
-        "level": "Intermediate",
-        "percentage": 75
-      },
-      {
-        "name": "Base44",
-        "level": "Intermediate",
-        "percentage": 80
-      },
-      {
-        "name": "Supabase",
-        "level": "Intermediate",
-        "percentage": 80
-      },
-      {
-        "name": "Lovable AI",
-        "level": "Intermediate",
-        "percentage": 80
-      },
-      {
-        "name": "TryHackMe",
-        "level": "Intermediate",
-        "percentage": 75
-      },
-      {
-        "name": "Bash Scripting",
-        "level": "Intermediate",
-        "percentage": 75
-      },
-      {
-        "name": "google stitch",
+        "name": "TryHackMe Cybersecurity",
         "level": "Intermediate",
         "percentage": 75
       }
     ],
     "ai_and_ml": [
       {
-        "name": "Agentic AI",
-        "level": "Learning",
-        "percentage": 55
+        "name": "Agentic AI Systems",
+        "level": "Intermediate",
+        "percentage": 70
       },
       {
-        "name": "Machine Learning",
-        "level": "Learning",
-        "percentage": 50
+        "name": "Machine Learning & Scikit-Learn",
+        "level": "Intermediate",
+        "percentage": 70
       },
       {
-        "name": "CNN / AI Basics",
-        "level": "Learning",
-        "percentage": 50
-      },
-      {
-        "name": "Blockchain Technology",
-        "level": "Learning",
-        "percentage": 45
+        "name": "CNN / Image Classification",
+        "level": "Intermediate",
+        "percentage": 65
       }
     ]
   },
+  "project_categories": [
+    "AI & Machine Learning",
+    "Web Applications & Full-Stack Projects",
+    "Tools, Security & Utilities",
+    "Games",
+    "Portfolios, Profiles & Tributes"
+  ],
   "projects": {
     "total_count": "29+",
     "featured_count": 5,
-    "ai_projects_count": "7+",
     "certificates_count": "87+",
     "technologies_count": "20+",
     "live_deployments_count": "8+",
-    "machine_learning_projects_count": "2+",
-    "ai_assistants_count": "2+",
     "list": [
       {
-        "title": "DataGauge — Dataset Quality Monitoring System",
-        "category": "Data Engineering",
-        "year": 2026,
-        "github": "https://github.com/sanjayGL2006/DataGauge-Dataset-Quality-Monitoring-System"
-      },
-      {
-        "title": "Sindhanai Full Stack AI",
-        "category": "AI",
-        "year": 2026
-      },
-      {
-        "title": "DERMAIT Skin Care AI",
-        "category": "AI & ML",
-        "year": 2026
-      },
-      {
-        "title": "Billing Management System",
-        "category": "Utility",
-        "year": 2025
-      },
-      {
-        "title": "Accident Risk Prediction",
-        "category": "AI & ML",
-        "year": 2026
-      },
-      {
-        "title": "Sai AI Assistant",
-        "category": "AI",
-        "year": 2026
+        "title": "DermAI — AI-Powered Skincare Diagnosis App",
+        "category": "AI & Machine Learning",
+        "github": "https://github.com/sanjayGL2006/DermAI-AI-Powered-Skincare-Diagnosis-App"
       },
       {
         "title": "AI Agent using Google API",
-        "category": "AI",
-        "year": 2025,
-        "live": "https://untitled-138389699449.asia-southeast1.run.app/"
-      },
-      {
-        "title": "BMI Calculator",
-        "category": "Utility",
-        "year": 2025
-      },
-      {
-        "title": "Digital Board Duel",
-        "category": "Game",
-        "year": 2025,
-        "live": "https://digital-board-duel.lovable.app/"
-      },
-      {
-        "title": "RupeeTrack (Expense Tracker)",
-        "category": "Finance",
-        "year": 2025,
-        "live": "https://rupeetrack-app.netlify.app/"
-      },
-      {
-        "title": "Grab Notes",
-        "category": "Productivity",
-        "year": 2025,
-        "live": "https://grab-notes.base44.app"
-      },
-      {
-        "title": "Handcrafted with Love – Pure Weaves",
-        "category": "E-Commerce",
-        "year": 2025
-      },
-      {
-        "title": "Hyper Rent Local",
-        "category": "Real Estate",
-        "year": 2025
-      },
-      {
-        "title": "Kai Assistant",
-        "category": "AI",
-        "year": 2025
-      },
-      {
-        "title": "PES Placement",
-        "category": "Education",
-        "year": 2025
-      },
-      {
-        "title": "Placement PES IAMS",
-        "category": "Education",
-        "year": 2026
-      },
-      {
-        "title": "Pizza Shop Website",
-        "category": "Landing Page",
-        "year": 2025
-      },
-      {
-        "title": "Property Manager Dashboard",
-        "category": "Dashboard",
-        "year": 2025
-      },
-      {
-        "title": "Pure Weaves E-Commerce",
-        "category": "E-Commerce",
-        "year": 2025,
-        "live": "https://pureweaves.vercel.app/"
-      },
-      {
-        "title": "Registration Form",
-        "category": "Form",
-        "year": 2025
-      },
-      {
-        "title": "Sanjay GL Portfolio",
-        "category": "Portfolio",
-        "year": 2025,
-        "live": "https://sanjaygl2006.vercel.app/"
-      },
-      {
-        "title": "Sanju Portfolio Pro Hub",
-        "category": "Portfolio",
-        "year": 2025,
-        "live": "https://sanju-portfolio-pro-hub.base44.app"
-      },
-      {
-        "title": "Spy Detect Pro",
-        "category": "Cybersecurity",
-        "year": 2025,
-        "live": "https://spy-detect-pro.base44.app"
+        "category": "AI & Machine Learning",
+        "github": "https://github.com/sanjayGL2006/AI-Agent-used-google-api"
       },
       {
         "title": "Surya Chatbot",
-        "category": "AI",
-        "year": 2025
+        "category": "AI & Machine Learning",
+        "github": "https://github.com/sanjayGL2006/Surya-chatbot"
       },
       {
-        "title": "Temperature Converter",
-        "category": "Utility",
-        "year": 2025
+        "title": "Kai Assistant",
+        "category": "AI & Machine Learning",
+        "github": "https://github.com/sanjayGL2006/kai-assistant"
       },
       {
-        "title": "Tic-Tac-Toe (Python)",
-        "category": "Game",
-        "year": 2025
+        "title": "Traffic & Vehicle Object Detection with YOLOv8",
+        "category": "AI & Machine Learning",
+        "github": "https://github.com/sanjayGL2006/Traffic-Vehicle-Object-Detection-with-YOLOv8"
       },
       {
-        "title": "Vault Secure Auth",
-        "category": "Authentication",
-        "year": 2025
+        "title": "DataGauge — Dataset Quality Monitoring System",
+        "category": "AI & Machine Learning",
+        "github": "https://github.com/sanjayGL2006/DataGauge-Dataset-Quality-Monitoring-System"
       },
       {
-        "title": "VPN Landing Page",
-        "category": "Landing Page",
-        "year": 2025
+        "title": "Accident Risk Prediction",
+        "category": "AI & Machine Learning",
+        "github": "https://github.com/sanjayGL2006/accident-risk-prediction"
       },
       {
-        "title": "Web Calculator",
-        "category": "Utility",
-        "year": 2025
+        "title": "AIML Course & Practical Labs",
+        "category": "AI & Machine Learning",
+        "github": "https://github.com/sanjayGL2006/AIML-course-and-Practical"
+      },
+      {
+        "title": "Pure Weaves E-Commerce",
+        "category": "Web Applications & Full-Stack Projects",
+        "github": "https://github.com/sanjayGL2006/pure-weaves-ecommerce"
+      },
+      {
+        "title": "Property Manager Dashboard",
+        "category": "Web Applications & Full-Stack Projects",
+        "github": "https://github.com/sanjayGL2006/prop-manager-dash-95721"
+      },
+      {
+        "title": "Daily Task Nexus (Grab Notes)",
+        "category": "Web Applications & Full-Stack Projects",
+        "github": "https://github.com/sanjayGL2006/daily-task-nexus"
+      },
+      {
+        "title": "Expense Tracker (RupeeTrack)",
+        "category": "Web Applications & Full-Stack Projects",
+        "github": "https://github.com/sanjayGL2006/expense-tracker"
+      },
+      {
+        "title": "Paperless Office & Billing Management System",
+        "category": "Web Applications & Full-Stack Projects",
+        "github": "https://github.com/sanjayGL2006/Paperless-Office-System"
+      },
+      {
+        "title": "Pizza Shop Website",
+        "category": "Web Applications & Full-Stack Projects",
+        "github": "https://github.com/sanjayGL2006/pizza-shop-website"
+      },
+      {
+        "title": "VPN Service Landing Page",
+        "category": "Web Applications & Full-Stack Projects",
+        "github": "https://github.com/sanjayGL2006/vpn-landing-page1"
+      },
+      {
+        "title": "Registration Form",
+        "category": "Web Applications & Full-Stack Projects",
+        "github": "https://github.com/sanjayGL2006/Registration-form"
+      },
+      {
+        "title": "Vault Secure Auth Gateway",
+        "category": "Tools, Security & Utilities",
+        "github": "https://github.com/sanjayGL2006/vault-secure-auth"
+      },
+      {
+        "title": "Web Calculator JS",
+        "category": "Tools, Security & Utilities",
+        "github": "https://github.com/sanjayGL2006/web-calculator-js"
+      },
+      {
+        "title": "Temperature Converter Web App",
+        "category": "Tools, Security & Utilities",
+        "github": "https://github.com/sanjayGL2006/ttemp-convert-web-app"
+      },
+      {
+        "title": "BMI Calculator",
+        "category": "Tools, Security & Utilities",
+        "github": "https://github.com/sanjayGL2006/bmi_calculator"
+      },
+      {
+        "title": "Bluetooth Chat Utility",
+        "category": "Tools, Security & Utilities",
+        "github": "https://github.com/sanjayGL2006/bluetooth-chat-"
+      },
+      {
+        "title": "Pixel Perfect Design Tool",
+        "category": "Tools, Security & Utilities",
+        "github": "https://github.com/sanjayGL2006/pixel-perfect"
+      },
+      {
+        "title": "Chess Game Engine",
+        "category": "Games",
+        "github": "https://github.com/sanjayGL2006/chess-game"
+      },
+      {
+        "title": "Tic-Tac-Toe Game in Python",
+        "category": "Games",
+        "github": "https://github.com/sanjayGL2006/Tic-Tac-Toe-Game-in-python-coder"
+      },
+      {
+        "title": "Digital Board Duel",
+        "category": "Games",
+        "github": "https://github.com/sanjayGL2006/digital-board-duel"
+      },
+      {
+        "title": "Sanju Portfolio Pro Hub",
+        "category": "Portfolios, Profiles & Tributes",
+        "github": "https://github.com/sanjayGL2006/agentportfolio"
+      },
+      {
+        "title": "Sanjay GL Developer Portfolio & Profile",
+        "category": "Portfolios, Profiles & Tributes",
+        "github": "https://github.com/sanjayGL2006/sanjayGL2006"
+      },
+      {
+        "title": "Sri Mariyamma Temple Portal",
+        "category": "Portfolios, Profiles & Tributes",
+        "github": "https://github.com/sanjayGL2006/srimariyammatemple"
+      },
+      {
+        "title": "Maya Angelou Tribute Showcase",
+        "category": "Portfolios, Profiles & Tributes",
+        "github": "https://github.com/sanjayGL2006/maya-angelou-tribute"
       }
     ]
   },

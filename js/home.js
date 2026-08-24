@@ -30,10 +30,10 @@ function initTypingEffect() {
   if (!roleEl) return;
 
   const roles = [
-    "Full Stack Developer",
+    "React & Full Stack Developer",
     "AI Agent Engineer",
     "Cybersecurity Explorer",
-    "Cloud & Docker Enthusiast",
+    "Python & Web Developer",
     "BCA Student @ PES IAMS"
   ];
 
@@ -261,37 +261,49 @@ function initContactForm() {
           body: JSON.stringify({ name, email, subject, message })
         });
         const result = await response.json();
-        if (response.ok && result.status === 'success') {
+        if (response.ok && (result.status === 'success' || result.status === 'partial')) {
           sentSuccess = true;
-          responseMsg = result.message || `Thank you, ${name}! Your message has been sent successfully.`;
+          responseMsg = result.message || `Thank you, ${name}! Your direct message has been logged & sent to sanjaygl2006@gmail.com.`;
         }
       } catch (backendErr) {
-        console.warn('Backend contact route failed/unavailable, trying FormSubmit fallback:', backendErr);
+        console.warn('Backend contact route unavailable, trying direct FormSubmit service:', backendErr);
       }
 
       // Static fallback using FormSubmit.co directly to sanjaygl2006@gmail.com
       if (!sentSuccess) {
-        const fsResponse = await fetch('https://formsubmit.co/ajax/sanjaygl2006@gmail.com', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-            name: name,
-            email: email,
-            _replyto: email,
-            _subject: `[Portfolio Direct Message] ${subject} from ${name}`,
-            message: message,
-            _template: 'table',
-            _captcha: 'false'
-          })
-        });
-        const fsResult = await fsResponse.json();
-        if (fsResponse.ok && (fsResult.success === 'true' || fsResult.success === true || fsResult.message)) {
-          sentSuccess = true;
-          responseMsg = `Thank you, ${name}! Your message has been sent directly to sanjaygl2006@gmail.com.`;
+        try {
+          const fsResponse = await fetch('https://formsubmit.co/ajax/sanjaygl2006@gmail.com', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+              name: name,
+              email: email,
+              _replyto: email,
+              _subject: `[Portfolio Direct Message] ${subject} from ${name}`,
+              message: message,
+              _template: 'table',
+              _captcha: 'false'
+            })
+          });
+          const fsResult = await fsResponse.json();
+          if (fsResponse.ok && (fsResult.success === 'true' || fsResult.success === true || fsResult.message)) {
+            sentSuccess = true;
+            responseMsg = `Thank you, ${name}! Your direct message was sent to sanjaygl2006@gmail.com.`;
+          }
+        } catch (fsErr) {
+          console.warn('FormSubmit AJAX failed, opening mail client fallback:', fsErr);
         }
+      }
+
+      // Final Fail-Safe Fallback: Launch default mail client to sanjaygl2006@gmail.com
+      if (!sentSuccess) {
+        const mailtoUrl = `mailto:sanjaygl2006@gmail.com?subject=${encodeURIComponent('[Portfolio Message] ' + subject)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message)}`;
+        window.location.href = mailtoUrl;
+        sentSuccess = true;
+        responseMsg = `Opening your email client to send message to sanjaygl2006@gmail.com...`;
       }
 
       if (sentSuccess) {
@@ -299,14 +311,13 @@ function initContactForm() {
           window.ToastManager.show(responseMsg, 'success', 'fa-paper-plane');
         }
         form.reset();
-      } else {
-        throw new Error('Could not deliver message via backend or email service.');
       }
     } catch (err) {
       console.error('Contact submit error:', err);
       if (window.ToastManager) {
-        window.ToastManager.show('Failed to send message. Please check connection and try again.', 'error', 'fa-circle-xmark');
+        window.ToastManager.show('Opening direct mail link to sanjaygl2006@gmail.com...', 'info', 'fa-envelope');
       }
+      window.location.href = `mailto:sanjaygl2006@gmail.com?subject=${encodeURIComponent('[Portfolio Direct Message] ' + subject)}&body=${encodeURIComponent(message)}`;
     } finally {
       if (submitBtn) {
         submitBtn.disabled = false;

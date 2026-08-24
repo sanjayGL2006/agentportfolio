@@ -64,6 +64,10 @@ def run_tests():
     r_css = client.get('/css/styles.css')
     test("GET /css/styles.css", r_css.status_code == 200 and len(r_css.data) > 1000)
 
+    for asset_file in ['theme.js', 'profile.png', 'cmdPalette.js', 'toast.js', 'aiAssistant.js', 'home.js', 'cursor.js', 'solarSystem.js', 'background3d.js']:
+        r_asset = client.get(f'/{asset_file}')
+        test(f"GET /{asset_file}", r_asset.status_code == 200, f"Status: {r_asset.status_code}")
+
     r_manifest = client.get('/manifest.json')
     test("GET /manifest.json", r_manifest.status_code == 200)
 
