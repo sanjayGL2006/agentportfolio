@@ -4,6 +4,7 @@ import ssl
 import json
 import os
 import concurrent.futures
+# pyrefly: ignore [missing-import]
 from pypdf import PdfReader
 
 urls = [

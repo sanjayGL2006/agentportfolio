@@ -1,6 +1,7 @@
 import os
 import sqlite3
 import pymysql
+# pyrefly: ignore [missing-import]
 from cryptography.fernet import Fernet
 from dotenv import load_dotenv
 

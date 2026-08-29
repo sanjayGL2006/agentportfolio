@@ -7,11 +7,13 @@ import smtplib
 import shutil
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from flask import Flask, render_template, send_from_directory, request, jsonify, redirect
+from flask import Flask, render_template, send_from_directory, request, jsonify, redirect, make_response
 # pyrefly: ignore [missing-import]
 from flask_sqlalchemy import SQLAlchemy
+# pyrefly: ignore [missing-import]
 from cryptography.fernet import Fernet
 try:
+    # pyrefly: ignore [missing-import]
     import google.generativeai as genai
     HAS_GEMINI = True
 except:
@@ -580,15 +582,36 @@ KNOWLEDGE_BASE = {
 
 def get_fallback_reply(message, proj_count, cert_count):
     msg = message.lower()
+    if "cnn" in msg or "convolutional" in msg or "deep learning" in msg:
+        return (
+            "<strong>Convolutional Neural Network (CNN) Deep Learning Architecture</strong>:<br>"
+            "CNNs are multi-layer neural networks designed for grid-structured data like images. Core pipeline:<br>"
+            "1. <strong>Input Layer</strong>: Accepts raw pixel matrices (e.g. 224×224×3 RGB).<br>"
+            "2. <strong>Convolutional Layers</strong>: Applies learned sliding kernels/filters to extract spatial feature maps (edges, textures, shapes).<br>"
+            "3. <strong>Activation (ReLU)</strong>: Introduces non-linearity max(0, x).<br>"
+            "4. <strong>Pooling Layers (Max Pooling)</strong>: Downsamples feature maps to reduce spatial dimension and computation.<br>"
+            "5. <strong>Fully Connected (Dense) & Softmax</strong>: Flattens features to output classification probabilities.<br>"
+            "Sanjay applied CNN models in <strong>DermAI</strong> (94% lesion screening accuracy), <strong>Traffic & Vehicle Detection (YOLOv8)</strong>, and <strong>Indian Traffic Sign Classifier</strong>!"
+        )
+    if "rag" in msg or "retrieval augmented" in msg:
+        return "<strong>Retrieval-Augmented Generation (RAG)</strong> combines vector database retrieval (FAISS, Supabase) with Large Language Models (LLMs) to ground responses in verified external documents, eliminating hallucinations without retraining model weights."
+    if "agent" in msg or "ai agent" in msg:
+        return "An <strong>AI Agent</strong> perceives its environment, formulates multi-step plans, calls dynamic tools (APIs, calculators, SQL DBs), observes results, and iterates autonomously toward a user-defined goal."
+    if "oop" in msg or "object oriented" in msg:
+        return "<strong>OOP (Object-Oriented Programming)</strong> organizes software around Objects and Classes. Four core pillars: <strong>Encapsulation</strong> (data hiding), <strong>Abstraction</strong> (hiding implementation complexity), <strong>Inheritance</strong> (reusing parent class traits), and <strong>Polymorphism</strong> (overriding/overloading methods)."
+    if "sql injection" in msg or "sqli" in msg:
+        return "<strong>SQL Injection (SQLi)</strong> occurs when untrusted user input is concatenated directly into SQL query strings. Prevented using <strong>Parameterized Queries / Prepared Statements</strong>, input validation, and principle of least privilege."
+    if "xss" in msg or "cross site scripting" in msg:
+        return "<strong>Cross-Site Scripting (XSS)</strong> allows attackers to inject malicious scripts into trusted websites. Prevented via HTML output encoding, Content Security Policy (CSP), and avoiding unescaped innerHTML insertion."
     if "project" in msg or "built" in msg:
-        return f"Sanjay has built exactly {proj_count} projects including Sindhanai Full Stack AI, DERMAIT Skin Care AI, and Billing Management System. Check them out on the <a href='projects.html' style='color:var(--emerald-primary)'>Projects Page</a>!"
+        return f"Sanjay has built exactly {proj_count} cataloged projects across AI/ML, Enterprise Systems, Web Apps, Tools, Games, and Portfolios. Explore them on the <a href='projects.html' style='color:var(--emerald-primary)'>Projects Page</a>!"
     if "certif" in msg:
-        return f"Sanjay has earned exactly {cert_count} verified certificates including PRAVIDHI Tech Fest Coding, Oasis Infobyte Star Performer, and Microsoft Azure. Verify them on the <a href='certificates.html' style='color:var(--emerald-primary)'>Certificates Page</a>!"
+        return f"Sanjay has earned exactly {cert_count} verified certificates across Microsoft, SAP, Google Developers, HackerRank, Simplilearn, and Infosys. View them on the <a href='certificates.html' style='color:var(--emerald-primary)'>Certificates Page</a>!"
     if "skills" in msg or "know" in msg or "tool" in msg:
-        return "Sanjay's skills cover Web Dev (HTML5/CSS3), Programming (C/C++, Java, Python, Bash Scripting), Databases (SQL, MySQL, Supabase), Tools (Lovable AI, Base44, TryHackMe Labs, Git/GitHub, VS Code, Figma, AI Productivity Tools), and AI & ML (Agentic AI, Machine Learning, CNN)."
+        return "Sanjay's core technical stack: React, JavaScript, HTML5/CSS3, Python (Flask/FastAPI), SQL, MySQL, SQLite, Supabase Vector DB, Docker, Git/GitHub, Cybersecurity (TryHackMe), and AI/ML (Agentic AI, CNN, TensorFlow, Scikit-learn)."
     if "contact" in msg or "email" in msg or "phone" in msg:
-        return "You can contact Sanjay via email at sanjaygl2006@gmail.com, phone at +91 81239 81877, or connect on LinkedIn and GitHub."
-    return "I am Sanjay's personal portfolio assistant. Ask me about his projects, certificates, skills, or contact info!"
+        return "Contact Sanjay directly via email at <a href='mailto:sanjaygl2006@gmail.com' style='color:var(--emerald-primary)'>sanjaygl2006@gmail.com</a> or phone at +91 81239 81877."
+    return "I am Sanjay AIOS v2.5. You can ask me any question about Sanjay's portfolio, background, or technical interview questions across Python, AI/ML, CNN, Full-Stack, Cybersecurity, and SQL!"
 
 # ----------------- FLASK ROUTING -----------------
 def is_safe_path(base_dir, target_path):
@@ -631,8 +654,63 @@ def enforce_https_and_track_visit():
     except Exception as err:
         print(f"before_request error: {err}")
 
-@app.route("/")
+@app.after_request
+def add_security_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, PATCH, DELETE, OPTIONS'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type, Authorization, X-Requested-With'
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    response.headers['X-Frame-Options'] = 'SAMEORIGIN'
+    response.headers['X-XSS-Protection'] = '1; mode=block'
+    response.headers['Referrer-Policy'] = 'strict-origin-when-cross-origin'
+    response.headers['Permissions-Policy'] = 'camera=(), microphone=(), geolocation=()'
+    if request.path.endswith(('.css', '.js', '.woff2', '.png', '.jpg', '.jpeg', '.svg', '.ico')):
+        response.headers['Cache-Control'] = 'public, max-age=31536000'
+    elif response.mimetype == 'text/html':
+        response.headers['Cache-Control'] = 'public, max-age=3600, must-revalidate'
+    if request.is_secure:
+        response.headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'
+    return response
+
+@app.errorhandler(405)
+def handle_405_error(e):
+    if request.method == 'OPTIONS':
+        res = make_response('', 200)
+        res.headers['Access-Control-Allow-Origin'] = '*'
+        res.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, PATCH, DELETE, OPTIONS'
+        res.headers['Access-Control-Allow-Headers'] = 'Content-Type, Authorization, X-Requested-With'
+        return res
+    return jsonify({
+        "status": "error",
+        "code": 405,
+        "message": f"Method '{request.method}' is not allowed for path '{request.path}'.",
+        "allowed_methods": ["GET", "POST", "OPTIONS"],
+        "api_endpoints": {
+            "contact": "/api/contact [POST]",
+            "agent": "/api/agent [POST]",
+            "stats": "/api/stats [GET]",
+            "projects": "/api/projects [GET]",
+            "certificates": "/api/certificates [GET]"
+        }
+    }), 405
+
+@app.route("/", methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"])
 def index():
+    if request.method == "OPTIONS":
+        return "", 200
+    if request.method != "GET":
+        return jsonify({
+            "status": "notice",
+            "message": "Endpoint '/' renders the frontend HTML application. For API data, use /api endpoints.",
+            "allowed_methods": ["GET", "OPTIONS"],
+            "api_endpoints": {
+                "contact": "/api/contact [POST]",
+                "agent": "/api/agent [POST]",
+                "stats": "/api/stats [GET]",
+                "projects": "/api/projects [GET]",
+                "certificates": "/api/certificates [GET]"
+            }
+        }), 200
     return send_from_directory(BASE_DIR, "index.html")
 
 @app.route("/sitemap.xml")
@@ -1054,6 +1132,7 @@ def agent_chat():
    - **Games**: Chess Game Engine, Tic-Tac-Toe Game in Python, Digital Board Duel.
    - **Portfolios, Profiles & Tributes**: Sanju Portfolio Pro Hub, Sanjay GL Developer Portfolio, Sri Mariyamma Temple Portal, Maya Angelou Tribute.
 6. Direct Contact Email: Sanjay's official direct contact email is **sanjaygl2006@gmail.com**. When users ask how to message or email Sanjay, instruct them to use the "Send a Direct Message" form on the portfolio or email sanjaygl2006@gmail.com directly.
+7. Technical & Interview Mastery: You have built-in knowledge of a 132+ Question Bank covering BCA Fresher IT, Python, AI/ML, CNN Deep Learning research (Input, Convolutional, ReLU, Max Pooling, Softmax), Full-Stack, Frontend, Cybersecurity, SQL, Generative AI, RAG, AI Agents, Coding Challenges, and HR Interview Questions. Answer any technical question with expert clarity.
 [END AIOS INSTRUCTIONS]
 
 COMPREHENSIVE MASTER DATASET OVERVIEW:

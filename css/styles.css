@@ -1056,7 +1056,7 @@ body.light-theme .navbar.scrolled {
    PROJECTS PAGE & 3D FLIP CARDS
 =================================================================== */
 .projects-section {
-  padding: 60px 0 40px;
+  padding: 130px 0 40px;
 }
 
 .controls-bar {
@@ -1238,7 +1238,7 @@ body.light-theme .navbar.scrolled {
    CERTIFICATES PAGE & GALLERY / TIMELINE
 =================================================================== */
 .certs-section {
-  padding: 60px 0 40px;
+  padding: 130px 0 40px;
 }
 
 .view-toggle-bar {
@@ -2394,3 +2394,17 @@ body.light-theme .circular-progress .bg-circle {
 body.light-theme .premium-modal-overlay {
   background: rgba(255, 255, 255, 0.6) !important;
 }
+
+/* Ensure subpages have ample top padding so top action buttons never collide with fixed navbar */
+.projects-section,
+.certs-section {
+  padding-top: 130px !important;
+}
+
+@media (max-width: 768px) {
+  .projects-section,
+  .certs-section {
+    padding-top: 140px !important;
+  }
+}
+

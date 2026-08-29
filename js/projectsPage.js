@@ -206,9 +206,10 @@ document.addEventListener('DOMContentLoaded', () => {
                   ${p.tech.map(t => `<span class="tech-pill">${t}</span>`).join('')}
                 </div>
               </div>
-              <div class="project-links-row">
-                ${p.live ? `<a href="${p.live}" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="flex:1"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>` : ''}
-                <a href="${p.github}" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="flex:1"><i class="fa-brands fa-github"></i> GitHub</a>
+              <div class="project-links-row" style="gap:6px;">
+                <button onclick="openPremiumProjectModal(${p.id})" class="btn btn-outline btn-sm ripple-btn" style="flex:1;"><i class="fa-solid fa-book-open"></i> Read More</button>
+                ${p.live ? `<a href="${p.live}" target="_blank" rel="noopener" class="btn btn-primary btn-sm ripple-btn" style="width:38px; height:38px; display:flex; align-items:center; justify-content:center;"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>` : ''}
+                <a href="${p.github}" target="_blank" rel="noopener" class="btn btn-outline btn-sm ripple-btn" style="width:38px; height:38px; display:flex; align-items:center; justify-content:center;"><i class="fa-brands fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -272,6 +273,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const p = PROJECTS_DATA.find(item => item.id === id);
     if (!p) return;
 
+    // Synchronize URL query parameter ?id=...
+    try {
+      const newUrl = window.location.pathname + '?id=' + p.id;
+      window.history.replaceState({ projectId: p.id }, '', newUrl);
+    } catch (e) {
+      console.warn("Could not update state URL:", e);
+    }
+
+    // Default fallbacks for missing modal content fields
+    const overviewText = p.overview || p.desc;
+    const timelineList = (p.timeline && p.timeline.length) ? p.timeline : [
+      "Requirements gathering & system architecture specification",
+      "Core feature development & stack implementation",
+      "Testing, security auditing, and deployment optimization"
+    ];
+    const archText = p.architecture || `${p.title} is engineered with ${p.tech ? p.tech.join(', ') : 'modern web standards'} prioritizing responsiveness, high performance, and security.`;
+    const featuresList = (p.features && p.features.length) ? p.features : [
+      p.tagline,
+      `Full integration with ${(p.tech || []).slice(0, 3).join(', ')}`,
+      "Responsive cross-device interface & dark mode design",
+      "Clean modular code structure and error handling"
+    ];
+    const structureList = (p.structure && p.structure.length) ? p.structure : [
+      "src/ — Main source code & component modules",
+      "assets/ — Visual resources, graphics, and stylesheets",
+      "README.md — Project setup and developer guidelines"
+    ];
+    const futureList = (p.futureScope || p.futureImprovements || []).length ? (p.futureScope || p.futureImprovements) : [
+      "Automated integration testing & CI/CD pipeline",
+      "Enhanced UI animations & accessibility improvements",
+      "API scaling and performance optimization"
+    ];
+
     let modal = document.getElementById('premiumProjectModal');
     if (!modal) {
       modal = document.createElement('div');
@@ -280,11 +314,22 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.appendChild(modal);
     }
 
+    const imageHtml = p.image ? `
+      <img class="modal-project-img" src="${p.image}" alt="${p.title}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div style="display:none; width:100%; height:180px; align-items:center; justify-content:center; background:rgba(255,255,255,0.03); border-radius:var(--radius-md); border:1px solid var(--border-glass);">
+        <i class="fa-solid ${p.icon || 'fa-laptop-code'}" style="font-size:3.5rem; color:var(--emerald-primary)"></i>
+      </div>
+    ` : `
+      <div style="width:100%; height:180px; display:flex; align-items:center; justify-content:center; background:rgba(255,255,255,0.03); border-radius:var(--radius-md); border:1px solid var(--border-glass);">
+        <i class="fa-solid ${p.icon || 'fa-laptop-code'}" style="font-size:3.5rem; color:var(--emerald-primary)"></i>
+      </div>
+    `;
+
     modal.innerHTML = `
       <div class="premium-modal-box">
         <div class="premium-modal-header">
           <div style="display:flex; align-items:center; gap:12px;">
-            <div class="project-icon-box" style="width:40px; height:40px; font-size:1.1rem; border-radius:10px;"><i class="fa-solid ${p.icon}"></i></div>
+            <div class="project-icon-box" style="width:40px; height:40px; font-size:1.1rem; border-radius:10px;"><i class="fa-solid ${p.icon || 'fa-laptop-code'}"></i></div>
             <div>
               <h2 style="font-size:1.3rem; font-weight:800; color: var(--text-main); margin-bottom: 2px;">${p.title}</h2>
               <span style="font-size:0.75rem; color:var(--text-muted);">${p.category} &bull; Year ${p.year} &bull; Status: <strong style="color:var(--emerald-primary);">${p.status}</strong></span>
@@ -295,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="premium-modal-body">
           <!-- Left Side: Image & Stats -->
           <div class="premium-modal-left">
-            <img class="modal-project-img" src="${p.image}" alt="${p.title}">
+            ${imageHtml}
             <div class="modal-project-stats">
               ${Object.entries(p.stats || {}).map(([lbl, val]) => `
                 <div class="modal-stat-card">
@@ -323,40 +368,40 @@ document.addEventListener('DOMContentLoaded', () => {
             <!-- Tab Contents -->
             <div id="overview-tab" class="modal-tab-content active">
               <h4 style="margin-bottom:8px; color:var(--emerald-primary); font-weight:700;">Project Overview</h4>
-              <p style="color:var(--text-muted); font-size:0.95rem;">${p.overview || p.desc}</p>
+              <p style="color:var(--text-muted); font-size:0.95rem;">${overviewText}</p>
               <h4 style="margin-top:16px; margin-bottom:8px; color:var(--purple-accent); font-weight:700;">Development Timeline</h4>
               <ul class="modal-bullets-list">
-                ${(p.timeline || []).map(t => `<li style="font-size:0.9rem;">${t}</li>`).join('')}
+                ${timelineList.map(t => `<li style="font-size:0.9rem;">${t}</li>`).join('')}
               </ul>
             </div>
             
             <div id="architecture-tab" class="modal-tab-content">
               <h4 style="margin-bottom:8px; color:var(--emerald-primary); font-weight:700;">Architecture & Design Pattern</h4>
-              <p style="color:var(--text-muted); font-size:0.95rem;">${p.architecture || 'Built using high-performance components and design systems.'}</p>
+              <p style="color:var(--text-muted); font-size:0.95rem;">${archText}</p>
               <h4 style="margin-top:16px; margin-bottom:8px; color:var(--golden-yellow); font-weight:700;">Tech Stack Used</h4>
               <div class="project-tech-pills">
-                ${p.tech.map(t => `<span class="tech-pill">${t}</span>`).join('')}
+                ${(p.tech || []).map(t => `<span class="tech-pill">${t}</span>`).join('')}
               </div>
             </div>
             
             <div id="features-tab" class="modal-tab-content">
               <h4 style="margin-bottom:8px; color:var(--emerald-primary); font-weight:700;">Core Features Included</h4>
               <ul class="modal-bullets-list" style="list-style:none; padding-left:0;">
-                ${(p.features || []).map(f => `<li style="margin-bottom:8px; font-size:0.9rem; color:var(--text-muted);"><i class="fa-solid fa-circle-check" style="color:var(--emerald-primary); margin-right:8px;"></i> ${f}</li>`).join('')}
+                ${featuresList.map(f => `<li style="margin-bottom:8px; font-size:0.9rem; color:var(--text-muted);"><i class="fa-solid fa-circle-check" style="color:var(--emerald-primary); margin-right:8px;"></i> ${f}</li>`).join('')}
               </ul>
             </div>
             
             <div id="structure-tab" class="modal-tab-content">
               <h4 style="margin-bottom:8px; color:var(--emerald-primary); font-weight:700;">Project Structure & File Modules</h4>
               <ul class="modal-bullets-list" style="font-family:var(--ff-code); font-size:0.82rem; list-style:none; padding-left:0;">
-                ${(p.structure || []).map(s => `<li style="margin-bottom:6px; color:var(--text-muted);"><i class="fa-solid fa-file-code" style="color:var(--purple-accent); margin-right:8px;"></i> ${s}</li>`).join('')}
+                ${structureList.map(s => `<li style="margin-bottom:6px; color:var(--text-muted);"><i class="fa-solid fa-file-code" style="color:var(--purple-accent); margin-right:8px;"></i> ${s}</li>`).join('')}
               </ul>
             </div>
             
             <div id="roadmap-tab" class="modal-tab-content">
               <h4 style="margin-bottom:8px; color:var(--emerald-primary); font-weight:700;">Future Roadmap & Scope</h4>
               <ul class="modal-bullets-list" style="list-style:none; padding-left:0;">
-                ${(p.futureScope || p.futureImprovements || []).map(item => `<li style="margin-bottom:8px; font-size:0.9rem; color:var(--text-muted);"><i class="fa-solid fa-rocket" style="color:var(--golden-yellow); margin-right:8px;"></i> ${item}</li>`).join('')}
+                ${futureList.map(item => `<li style="margin-bottom:8px; font-size:0.9rem; color:var(--text-muted);"><i class="fa-solid fa-rocket" style="color:var(--golden-yellow); margin-right:8px;"></i> ${item}</li>`).join('')}
               </ul>
             </div>
           </div>
@@ -375,6 +420,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modal) {
       modal.classList.remove('active');
       document.body.classList.remove('no-scroll');
+      try {
+        window.history.replaceState(null, '', window.location.pathname);
+      } catch (e) {}
     }
   };
 
