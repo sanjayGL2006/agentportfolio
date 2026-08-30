@@ -145,9 +145,10 @@ portfolio/
    docker-compose up --build -d
    ```
 
-2. **Check container status**:
+2. **Check container status & health**:
    ```bash
    docker ps
+   curl http://localhost:5000/health
    ```
 
 3. **Stop containers**:
@@ -157,11 +158,71 @@ portfolio/
 
 ---
 
+### Option C: Kubernetes Orchestration Deployment (Kustomize)
+
+1. **Deploy all manifests via Kustomize**:
+   ```bash
+   kubectl apply -k k8s/
+   ```
+
+2. **Verify pod status, deployment, storage, and autoscaler**:
+   ```bash
+   kubectl get all,pvc -n portfolio
+   ```
+
+3. **Port forward service for local testing**:
+   ```bash
+   kubectl port-forward svc/sanjay-portfolio-service 5000:80 -n portfolio
+   ```
+
+4. **Tear down deployment**:
+   ```bash
+   kubectl delete -k k8s/
+   ```
+
+---
+
+### Option D: Helm Chart Package Deployment
+
+1. **Install or upgrade release via Helm**:
+   ```bash
+   helm upgrade --install sanjay-portfolio ./helm/sanjay-portfolio -n portfolio --create-namespace
+   ```
+
+2. **Check release status & revision history**:
+   ```bash
+   helm list -n portfolio
+   helm status sanjay-portfolio -n portfolio
+   ```
+
+3. **Uninstall Helm release**:
+   ```bash
+   helm uninstall sanjay-portfolio -n portfolio
+   ```
+
+---
+
+### 📬 Postman API Testing Collection & Environment
+
+You can import the pre-configured Postman collection and environment to test all backend endpoints:
+1. Open **Postman** -> Click **Import**.
+2. Select [`postman/sanjay_aios_portfolio.postman_collection.json`](file:///d:/portfolio/postman/sanjay_aios_portfolio.postman_collection.json).
+3. Select [`postman/sanjay_aios_portfolio.postman_environment.json`](file:///d:/portfolio/postman/sanjay_aios_portfolio.postman_environment.json).
+4. Set active environment to **Sanjay AIOS Portfolio Environment** and run your requests against `http://localhost:5000` or production!
+
+---
+
+### 📖 Kubernetes Learning Guide
+For a step-by-step tutorial on Kubernetes architecture, object definitions, `kubectl` cheatsheet, and learning concepts, see the dedicated [**`k8s/README.md`**](file:///d:/portfolio/k8s/README.md).
+
+---
+
 ## 🔗 Key API Endpoints
 
 | Endpoint | Method | Description |
 |---|---|---|
 | `GET /` | `GET` | Main Portfolio Homepage |
+| `GET /health` | `GET` | Health Check Endpoint for Docker & Kubernetes Probes |
 | `GET /api/stats` | `GET` | Returns live statistical counters (Projects, Certificates, Visits) |
 | `GET /api/projects` | `GET` | Returns JSON dataset of all 28 projects |
 | `GET /api/certificates` | `GET` | Returns JSON dataset of all 86 verified certificates |

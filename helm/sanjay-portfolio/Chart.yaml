@@ -1,0 +1,10 @@
+apiVersion: v2
+name: sanjay-portfolio
+description: Helm chart for Sanjay G. L. Portfolio & Sanjay AIOS v2.5 Kubernetes deployment
+type: application
+version: 0.1.0
+appVersion: "2.5.0"
+maintainers:
+  - name: Sanjay G. L.
+    email: sanjaygl2006@gmail.com
+    url: https://sanjaygl30ai.vercel.app

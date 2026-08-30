@@ -21,6 +21,14 @@ try:
     stats_data = json.loads(res_stats.data)
     print(f"[OK] GET /api/stats returns 200 OK: {stats_data}")
 
+    # 2b. Test GET /health
+    res_health = client.get('/health')
+    assert res_health.status_code == 200, f"GET /health status code: {res_health.status_code}"
+    health_data = json.loads(res_health.data)
+    assert health_data.get("status") == "healthy"
+    print(f"[OK] GET /health returns 200 OK: {health_data}")
+
+
     # 3. Test GET /api/projects
     res_proj = client.get('/api/projects')
     assert res_proj.status_code == 200

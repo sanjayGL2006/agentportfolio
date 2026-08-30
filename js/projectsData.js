@@ -824,3 +824,9 @@ const PROJECTS_DATA = [
 if (typeof window !== 'undefined') {
   window.PROJECTS_DATA = PROJECTS_DATA;
 }
+if (typeof globalThis !== 'undefined') {
+  globalThis.PROJECTS_DATA = PROJECTS_DATA;
+}
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = PROJECTS_DATA;
+}

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "sanjay-portfolio.fullname" . }}-config
+  labels:
+    {{- include "sanjay-portfolio.labels" . | nindent 4 }}
+data:
+  PORT: {{ .Values.env.PORT | quote }}
+  FLASK_ENV: {{ .Values.env.FLASK_ENV | quote }}
+  SUPABASE_URL: {{ .Values.env.SUPABASE_URL | quote }}

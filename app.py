@@ -1232,6 +1232,18 @@ def old_chat():
     # Deprecated fallback endpoint, calls new agent_chat internally
     return agent_chat()
 
+@app.route("/health", methods=["GET"])
+@app.route("/api/health", methods=["GET"])
+def health_check():
+    """Health check endpoint for Docker and Kubernetes liveness/readiness probes."""
+    return jsonify({
+        "status": "healthy",
+        "service": "sanjay-aios-portfolio",
+        "version": "2.5.0",
+        "timestamp": datetime.utcnow().isoformat() + "Z"
+    }), 200
+
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)

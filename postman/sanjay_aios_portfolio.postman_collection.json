@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-7890-abcd-1234567890ab",
+		"name": "Sanjay AIOS v2.5 Portfolio API Collection",
+		"description": "Postman collection for testing the Sanjay G. L. Developer Portfolio & Sanjay AIOS v2.5 backend endpoints.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/health",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"health"
+					]
+				},
+				"description": "Checks the health status of the Flask backend server and container readiness probes."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Portfolio Statistics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/stats",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"stats"
+					]
+				},
+				"description": "Returns live statistics counters for projects, certificates, technology stack, and total visits."
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Projects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/projects",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"projects"
+					]
+				},
+				"description": "Retrieves JSON dataset of all 39 showcased projects."
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Certificates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/certificates",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"certificates"
+					]
+				},
+				"description": "Retrieves JSON dataset of all 93 verified certificates and credentials."
+			},
+			"response": []
+		},
+		{
+			"name": "Sanjay AIOS Chat Co-Pilot",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\": \"What are Sanjay's core skills and top AI projects?\",\n    \"session_id\": \"postman_test_session\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/chat",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"chat"
+					]
+				},
+				"description": "Sends user prompts to the Sanjay AIOS v2.5 co-pilot powered by Gemini API."
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Contact Form",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Tech Recruiter\",\n    \"email\": \"recruiter@example.com\",\n    \"subject\": \"Full Stack AI Developer Opportunity\",\n    \"message\": \"Hi Sanjay, we were impressed by your AIOS portfolio and projects!\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/contact",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"contact"
+					]
+				},
+				"description": "Submits a contact form message to the Sanjay AIOS backend."
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:5000",
+			"type": "string"
+		}
+	]
+}

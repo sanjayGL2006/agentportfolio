@@ -35,12 +35,36 @@ def load_js_data(file_path, var_name):
         match = re.search(r'const\s+' + var_name + r'\s*=\s*(\[[\s\S]*?\])\s*;', content)
         if match:
             js_str = match.group(1)
-            js_str = re.sub(r'//.*', '', js_str)
+            # Strip comments safely without stripping // inside string literals (e.g., https://)
+            js_str = re.sub(r'("(?:\\.|[^"\\])*"|\'(?:\\.|[^\'\\])*\')|//.*', lambda m: m.group(1) if m.group(1) else '', js_str)
+            js_str = re.sub(r'/\*[\s\S]*?\*/', '', js_str)
             js_str = re.sub(r'\btrue\b', 'True', js_str)
             js_str = re.sub(r'\bfalse\b', 'False', js_str)
             js_str = re.sub(r'\bnull\b', 'None', js_str)
-            js_str = re.sub(r'(?<=[{\s,])([a-zA-Z_]\w*)\s*:', r'"\1":', js_str)
-            js_str = re.sub(r',\s*([\]\}])', r'\1', js_str)
+            
+            # Quote unquoted object keys: key: -> "key":
+            def fix_keys(text):
+                pattern = r'("(?:\\.|[^"\\])*"|\'(?:\\.|[^\'\\])*\')|(?<=[{\s,])([a-zA-Z_]\w*)\s*:'
+                def replacer(m):
+                    if m.group(1):
+                        return m.group(1)
+                    else:
+                        return f'"{m.group(2)}":'
+                return re.sub(pattern, replacer, text)
+
+            js_str = fix_keys(js_str)
+            
+            # Remove trailing commas before ] or }
+            def remove_trailing_commas(text):
+                pattern = r'("(?:\\.|[^"\\])*"|\'(?:\\.|[^\'\\])*\')|,\s*([\]\}])'
+                def replacer(m):
+                    if m.group(1):
+                        return m.group(1)
+                    else:
+                        return m.group(2)
+                return re.sub(pattern, replacer, text)
+
+            js_str = remove_trailing_commas(js_str)
             import ast
             return ast.literal_eval(js_str)
     except Exception as err:

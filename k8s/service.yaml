@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sanjay-portfolio-service
+  namespace: portfolio
+  labels:
+    app.kubernetes.io/name: sanjay-portfolio
+    app.kubernetes.io/component: backend
+spec:
+  type: ClusterIP
+  selector:
+    app: sanjay-portfolio
+  ports:
+    - name: http
+      port: 80
+      targetPort: 5000
+      protocol: TCP

@@ -252,3 +252,9 @@ const ALL_CERTIFICATES = CERTIFICATES_DATA.map((c, index) => {
 if (typeof window !== 'undefined') {
   window.CERTIFICATES_DATA = ALL_CERTIFICATES;
 }
+if (typeof globalThis !== 'undefined') {
+  globalThis.CERTIFICATES_DATA = ALL_CERTIFICATES;
+}
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = ALL_CERTIFICATES;
+}

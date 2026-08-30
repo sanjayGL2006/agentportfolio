@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: sanjay-portfolio-pvc
+  namespace: portfolio
+  labels:
+    app.kubernetes.io/name: sanjay-portfolio
+    app.kubernetes.io/component: database-storage
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi

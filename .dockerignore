@@ -1,0 +1,23 @@
+# Docker Build Exclusion List
+.git
+.gitignore
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+.vscode
+.idea
+.env
+.env.local
+*.db
+tests/
+scratchpad_*.md
+implementation_plan.md
+walkthrough.md
+Dockerfile
+docker-compose.yml
+k8s/
+.DS_Store
+Thumbs.db

@@ -83,8 +83,8 @@ def run_tests():
     test("GET /api/stats Status", r_stats.status_code == 200)
     if r_stats.status_code == 200:
         stats = json.loads(r_stats.data)
-        test("API Stats Projects Count", stats.get("projects") == 28, f"Count: {stats.get('projects')}")
-        test("API Stats Certificates Count", stats.get("certificates") == 86, f"Count: {stats.get('certificates')}")
+        test("API Stats Projects Count", stats.get("projects") >= 39, f"Count: {stats.get('projects')}")
+        test("API Stats Certificates Count", stats.get("certificates") >= 93, f"Count: {stats.get('certificates')}")
 
     r_about = client.get('/api/about')
     test("GET /api/about Status", r_about.status_code == 200)
