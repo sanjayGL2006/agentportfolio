@@ -1634,52 +1634,45 @@ const CERTIFICATES_DATA = [
     verifyLink: 'https://drive.google.com/file/d/1zvv6bmS_EYKdRAnzjOONsNd7NArmcQjF/view?usp=sharing',
     image: 'https://drive.google.com/thumbnail?id=1zvv6bmS_EYKdRAnzjOONsNd7NArmcQjF&sz=w800',
     emoji: '🏆',
-    driveId: '1zvv6bmS_EYKdRAnzjOONsNd7NArmcQjF', title: "WhatsApp Image 2026-01-14 at 3.42.27 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
-];
-
-// Helper to normalize all entries into unified structure
-const ALL_CERTIFICATES = CERTIFICATES_DATA.map((c, index) => {
-  if (c.type === "named") {
-    const defaultDriveId = c.driveId || "1-L38L9BUDCu4VUJ5EIce_XhSV2v2ye4u";
-    return {
-      ...c,
-      id: c.id || `cert-${index}`,
-      driveId: defaultDriveId,
-      skillsLearned: c.skillsLearned || ["Software Development", "Problem Solving"],
-      credentialId: c.credentialId || `SGL-CERT-${2026-index}`,
-      verifyLink: c.verifyLink && !c.verifyLink.includes("1000m9r") ? c.verifyLink : `https://drive.google.com/file/d/${defaultDriveId}/view?usp=sharing`,
-      image: c.image && !c.image.includes("1000m9r") ? c.image : `https://drive.google.com/thumbnail?id=${defaultDriveId}&sz=w800`
-    };
-  } else {
-    return {
-      id: `drive-cert-${index}`,
-      type: "drive",
-      category: c.category || "tech",
-      title: c.title,
-      org: c.org,
-      date: `${c.month} ${c.year}`,
-      month: c.month,
-      year: c.year,
-      duration: "Certified",
-      desc: `Professional certification in ${c.title} awarded by ${c.org}. Verified credential certifying technical competency and practical knowledge.`,
-      tags: c.tags || [c.category || 'tech', "Verified Certificate"],
-      skillsLearned: c.title ? [c.title.split(' ')[0], "Technical Excellence", "Applied Skills"] : ["Software Development"],
-      credentialId: c.driveId ? `DRIVE-${c.driveId.substring(0, 8).toUpperCase()}` : `DRIVE-CERT-${index}`,
-      verifyLink: c.driveId ? `https://drive.google.com/file/d/${c.driveId}/view?usp=sharing` : `https://drive.google.com/`,
-      image: c.driveId ? `https://drive.google.com/thumbnail?id=${c.driveId}&sz=w800` : '',
-      driveId: c.driveId || '',
-      emoji: c.category === 'government' ? '🛡️' : c.category === 'internship' ? '💼' : c.category === 'hackerrank' ? '⚡' : '📜',
-      featured: index < 12
-    };
+    driveId: '1zvv6bmS_EYKdRAnzjOONsNd7NArmcQjF', title: "WhatsApp Image 2026-01-14 at 3.42.27 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] },
+  {
+    id: "cert-auto-6c6b4a65",
+    type: "certificate",
+    category: "tech",
+    title: "Achievement Certificate",
+    org: "Tech Organization",
+    date: "Aug 2026",
+    month: "Aug",
+    year: 2026,
+    duration: "1 week",
+    desc: "Successfully completed training and certification program.",
+    tags: ["Certification", "Tech"],
+    skillsLearned: ["Technical Skills"],
+    credentialId: "CRED-6B4A65",
+    driveId: "1SBxqY4o3yzGLB_ptM8us177sEi31ZmrM",
+    verifyLink: "https://drive.google.com/file/d/1SBxqY4o3yzGLB_ptM8us177sEi31ZmrM/view?usp=sharing",
+    image: "https://drive.google.com/thumbnail?id=1SBxqY4o3yzGLB_ptM8us177sEi31ZmrM&sz=w800",
+    emoji: "🏆",
+    featured: false
+  },
+  {
+    id: "cert-auto-131549db",
+    type: "certificate",
+    category: "tech",
+    title: "Achievement Certificate",
+    org: "Tech Organization",
+    date: "Aug 2026",
+    month: "Aug",
+    year: 2026,
+    duration: "1 week",
+    desc: "Successfully completed training and certification program.",
+    tags: ["Certification", "Tech"],
+    skillsLearned: ["Technical Skills"],
+    credentialId: "CRED-1549DB",
+    driveId: "1yG2keR1_LVSuBxQqjoN5es3uj1m9IHTb",
+    verifyLink: "https://drive.google.com/file/d/1yG2keR1_LVSuBxQqjoN5es3uj1m9IHTb/view?usp=sharing",
+    image: "https://drive.google.com/thumbnail?id=1yG2keR1_LVSuBxQqjoN5es3uj1m9IHTb&sz=w800",
+    emoji: "🏆",
+    featured: false
   }
-});
-
-if (typeof window !== 'undefined') {
-  window.CERTIFICATES_DATA = ALL_CERTIFICATES;
-}
-if (typeof globalThis !== 'undefined') {
-  globalThis.CERTIFICATES_DATA = ALL_CERTIFICATES;
-}
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = ALL_CERTIFICATES;
-}
+];
