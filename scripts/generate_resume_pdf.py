@@ -153,9 +153,9 @@ def create_resume(output_path):
     # Professional Summary
     story.append(Paragraph("PROFESSIONAL SUMMARY", style_section_heading))
     summary_text = (
-        "Motivated and results-driven BCA student (2nd Year, 4th Semester) at PES Institute of Advanced Management Studies, "
-        "Shivamogga, with strong hands-on experience in full-stack web development using Python Flask, JavaScript, HTML/CSS, "
-        "Java, and SQL. Recognised as Star Performer during AICTE internship at Oasis Infobyte. Passionate about building "
+        "Motivated and results-driven BCA student (3rd Year, 5th Semester) at PES Institute of Advanced Management Studies, "
+        "Shivamogga, with strong hands-on experience in full-stack web development using Python Flask, FastAPI, JavaScript, React, HTML/CSS, "
+        "Java, and SQL. Recognised as Star Performer during AICTE internship at Oasis Infobyte and currently interning at Milano Infotech. Passionate about building "
         "real-world applications, AI integrations, and clean user interfaces. Actively seeking part-time, freelance, and "
         "internship opportunities to apply and grow technical skills."
     )
@@ -164,7 +164,7 @@ def create_resume(output_path):
     # Education
     story.append(Paragraph("EDUCATION", style_section_heading))
     edu1_table = Table([
-        [Paragraph("Bachelor of Computer Applications (BCA) &nbsp;|&nbsp; 2nd Year, 4th Semester", style_item_title), Paragraph("2023 – 2026 (Expected)", style_item_date)]
+        [Paragraph("Bachelor of Computer Applications (BCA) &nbsp;|&nbsp; 3rd Year, 5th Semester", style_item_title), Paragraph("2023 – 2026 (Expected)", style_item_date)]
     ], colWidths=[412, 140])
     edu1_table.setStyle(TableStyle([('LEFTPADDING', (0,0), (-1,-1), 0), ('RIGHTPADDING', (0,0), (-1,-1), 0)]))
     story.append(edu1_table)
@@ -180,6 +180,16 @@ def create_resume(output_path):
 
     # Internships & Work Experience
     story.append(Paragraph("INTERNSHIPS & WORK EXPERIENCE", style_section_heading))
+
+    exp0_table = Table([
+        [Paragraph("AI, ML & Python Developer Intern &nbsp;|&nbsp; Milano Infotech", style_item_title), Paragraph("Aug 2026 – Present", style_item_date)]
+    ], colWidths=[412, 140])
+    exp0_table.setStyle(TableStyle([('LEFTPADDING', (0,0), (-1,-1), 0), ('RIGHTPADDING', (0,0), (-1,-1), 0)]))
+    story.append(exp0_table)
+    story.append(Paragraph("Shivamogga, Karnataka (Offline)", style_item_subtitle))
+    story.append(Paragraph("• Developing machine learning models, computer vision pipelines, and deep learning workflows.", style_bullet))
+    story.append(Paragraph("• Building practical Python automations and integrating AI systems with secure backends.", style_bullet))
+    story.append(Spacer(1, 3))
 
     exp1_table = Table([
         [Paragraph("Web Development & Designing Intern &nbsp;|&nbsp; Oasis Infobyte · AICTE OIB-SIP", style_item_title), Paragraph("Feb 2026 – Mar 2026", style_item_date)]
@@ -270,17 +280,17 @@ def create_resume(output_path):
     story.append(Paragraph("• <b>BMI Calculator:</b> Flask + Canvas charts + JSON history tracking.", style_bullet))
     story.append(Paragraph("• <b>Weather App:</b> CLI and browser-based using Open-Meteo + Nominatim APIs.", style_bullet))
     story.append(Paragraph("• <b>Random Password Generator:</b> Flask backend with cryptographic security + dark cyberpunk UI.", style_bullet))
-    story.append(Paragraph("• <b>Personal Portfolio Website:</b> Dark cyber theme, 84+ certificates, interactive skills and projects sections.", style_bullet))
+    story.append(Paragraph("• <b>Personal Portfolio Website:</b> Dark cyber theme, 87+ certificates, interactive skills and projects sections.", style_bullet))
 
     # Technical Skills
     story.append(Paragraph("TECHNICAL SKILLS", style_section_heading))
     skills_data = [
-        [Paragraph("Languages:", style_skill_cat), Paragraph("Python · Java · JavaScript · HTML5 · CSS3 · SQL", style_body)],
-        [Paragraph("Frameworks & Libraries:", style_skill_cat), Paragraph("Flask · SocketIO · React (basics) · Bootstrap", style_body)],
-        [Paragraph("Databases:", style_skill_cat), Paragraph("SQLite · MySQL · MongoDB (basics)", style_body)],
-        [Paragraph("Tools & Platforms:", style_skill_cat), Paragraph("Git · GitHub · VS Code · Vercel · Render · Postman · Figma (basics)", style_body)],
-        [Paragraph("Cloud & DevOps:", style_skill_cat), Paragraph("Google Cloud (basics) · Azure Fundamentals · IBM Cloud", style_body)],
-        [Paragraph("Other:", style_skill_cat), Paragraph("REST APIs · PWA · Prompt Engineering · AI Workflow Automation · Process Mining (Celonis)", style_body)]
+        [Paragraph("Languages:", style_skill_cat), Paragraph("Python · Java · JavaScript (ES6+) · HTML5 · CSS3 · C/C++ · SQL", style_body)],
+        [Paragraph("Frameworks & Libraries:", style_skill_cat), Paragraph("FastAPI · Flask · React · Electron.js · SocketIO", style_body)],
+        [Paragraph("Databases:", style_skill_cat), Paragraph("SQLite · MySQL · PostgreSQL (basics) · MongoDB", style_body)],
+        [Paragraph("Tools & Platforms:", style_skill_cat), Paragraph("Git · GitHub · VS Code · Vercel · Kali Linux · Docker", style_body)],
+        [Paragraph("Cloud & DevOps:", style_skill_cat), Paragraph("Google Cloud · Azure Fundamentals · Cloud Run", style_body)],
+        [Paragraph("Other:", style_skill_cat), Paragraph("Machine Learning (Scikit-learn, OpenCV, CNN) · REST APIs · Cybersecurity", style_body)]
     ]
     skills_table = Table(skills_data, colWidths=[125, 427])
     skills_table.setStyle(TableStyle([
@@ -321,7 +331,7 @@ def create_resume(output_path):
         "• <b>National Integration Camp Participant:</b> NSS / Ministry of Youth Affairs, Government of India",
         "• <b>My Bharat Youth Integration Camp:</b> Government of India Portal",
         "• <b>Cyber Security Cadet:</b> CDAC & ISEA Digital India / MeitY",
-        "• <b>74+ Certificates:</b> Across Tech, Internship, Government & Leadership domains"
+        "• <b>87+ Certificates:</b> Across Tech, Internship, Government & Leadership domains"
     ]
     for a in achievements_list:
         story.append(Paragraph(a, style_bullet))
@@ -345,7 +355,7 @@ def create_resume(output_path):
     story.append(Paragraph("I hereby declare that the information provided above is true and correct to the best of my knowledge and belief.", style_body))
     story.append(Spacer(1, 4))
     dec_table = Table([
-        [Paragraph("<b>Place:</b> Shivamogga, Karnataka<br/><b>Date:</b> June 2026", style_body), Paragraph("<b>Sanjay GL</b>", style_item_date)]
+        [Paragraph("<b>Place:</b> Shivamogga, Karnataka<br/><b>Date:</b> September 2026", style_body), Paragraph("<b>Sanjay GL</b>", style_item_date)]
     ], colWidths=[300, 252])
     dec_table.setStyle(TableStyle([('LEFTPADDING', (0,0), (-1,-1), 0), ('RIGHTPADDING', (0,0), (-1,-1), 0)]))
     story.append(dec_table)
