@@ -202,33 +202,7 @@ def create_resume(output_path):
     story.append(Paragraph("• Recognised as Star Performer for exceptional dedication and outstanding contributions.", style_bullet))
     story.append(Spacer(1, 3))
 
-    exp2_table = Table([
-        [Paragraph("Software Engineering Virtual Experience &nbsp;|&nbsp; JPMorgan Chase · Forage", style_item_title), Paragraph("2025", style_item_date)]
-    ], colWidths=[412, 140])
-    exp2_table.setStyle(TableStyle([('LEFTPADDING', (0,0), (-1,-1), 0), ('RIGHTPADDING', (0,0), (-1,-1), 0)]))
-    story.append(exp2_table)
-    story.append(Paragraph("Virtual", style_item_subtitle))
-    story.append(Paragraph("• Completed JPMorgan Chase Software Engineering Job Simulation via Forage.", style_bullet))
-    story.append(Paragraph("• Worked with Java-based tasks simulating real-world financial software engineering.", style_bullet))
-    story.append(Spacer(1, 3))
 
-    exp3_table = Table([
-        [Paragraph("Web Development Intern &nbsp;|&nbsp; CodSoft", style_item_title), Paragraph("2025", style_item_date)]
-    ], colWidths=[412, 140])
-    exp3_table.setStyle(TableStyle([('LEFTPADDING', (0,0), (-1,-1), 0), ('RIGHTPADDING', (0,0), (-1,-1), 0)]))
-    story.append(exp3_table)
-    story.append(Paragraph("Remote", style_item_subtitle))
-    story.append(Paragraph("• Completed Web Development and Full-Stack internship remotely via CodSoft.", style_bullet))
-    story.append(Paragraph("• Delivered UI/UX design and interactive web projects as part of internship deliverables.", style_bullet))
-    story.append(Spacer(1, 3))
-
-    exp4_table = Table([
-        [Paragraph("Virtual Internship Program &nbsp;|&nbsp; AICTE EduSkills", style_item_title), Paragraph("2025", style_item_date)]
-    ], colWidths=[412, 140])
-    exp4_table.setStyle(TableStyle([('LEFTPADDING', (0,0), (-1,-1), 0), ('RIGHTPADDING', (0,0), (-1,-1), 0)]))
-    story.append(exp4_table)
-    story.append(Paragraph("Remote", style_item_subtitle))
-    story.append(Paragraph("• Completed AICTE-recognised virtual internship via EduSkills Foundation.", style_bullet))
 
     # Projects
     story.append(Paragraph("PROJECTS", style_section_heading))
