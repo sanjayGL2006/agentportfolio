@@ -196,7 +196,7 @@ const PROJECTS_DATA = [
     overview: "Computer vision application that processes live camera feeds or video files, detecting vehicle classes, counting traffic density, and calculating road congestion stats.",
     stats: {
       "Model": "YOLOv8 Nano/Small",
-      "Detection Speed": "30+ FPS",
+      "Detection Speed": "69+ FPS",
       "Precision": "92% mAP"
     }
   },
@@ -776,7 +776,7 @@ const PROJECTS_DATA = [
     featured: true,
     icon: "fa-globe",
     stats: {
-      "Projects": "29+ Cataloged",
+      "Projects": "69+ Cataloged",
       "Certificates": "87+ Verified",
       "AI OS": "Gemini Integration"
     }

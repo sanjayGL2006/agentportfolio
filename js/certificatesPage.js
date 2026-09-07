@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Categories list
   const categories = ['all', 'named', 'tech', 'government', 'internship', 'hackerrank'];
   const categoryLabels = {
-    all: 'All Certificates (102+)',
+    all: 'All Certificates (224+)',
     named: '🏆 Featured Highlights',
     tech: '💻 Technical & Cloud',
     government: '🛡️ Government & Civic',
