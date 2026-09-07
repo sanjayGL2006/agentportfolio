@@ -1049,5 +1049,622 @@
       "answer": "Yes. It can explain the purpose, technologies, and key features of the projects listed in the portfolio.",
       "keywords": "agent,projects"
     }
+  ],
+  "extended_qna": [
+    {
+      "category": "Elevator Pitch",
+      "question": "If you had 30 seconds to describe your edge as a developer, what would you say?",
+      "answer": "I bridge the gap between frontend user experience, robust backend APIs, and emerging AI/security tooling. Rather than just building static UI or writing raw scripts, I focus on end-to-end execution\u2014from containerizing apps in Docker and hardening endpoints to shipping live platforms like Placement Pro and Pure Weaves that solve real operational friction.",
+      "keywords": "pitch,summary,strengths,value proposition"
+    },
+    {
+      "category": "Technical Philosophy",
+      "question": "How do you approach choosing the right tech stack for a project?",
+      "answer": "I prioritize project requirements and maintainability over hype. For instance, when high-throughput API speed and auto-generated OpenAPI documentation were critical for the Placement Pro portal, I chose FastAPI. For lightweight, stateful local utilities, I use Electron.js or standard Python. I select relational engines like PostgreSQL or MySQL when data integrity is paramount, and NoSQL when schema flexibility drives speed.",
+      "keywords": "architecture,stack selection,fastapi,system design"
+    },
+    {
+      "category": "Problem Solving",
+      "question": "Can you describe a challenging technical bug you encountered and resolved?",
+      "answer": "While integrating real-time catalog ordering workflows for Pure Weaves, handling asynchronous session updates alongside WhatsApp checkout redirects caused payload mismatches. I debugged the event listeners and state management flow, restructured the backend validation handlers, and tested the request-response cycle locally before redeploying to Railway, eliminating edge-case drops.",
+      "keywords": "problem solving,debugging,pure weaves,star method"
+    },
+    {
+      "category": "System Security",
+      "question": "How do you integrate security into your daily development workflow?",
+      "answer": "Security is not an afterthought. I write input validation logic to mitigate injection and XSS vulnerabilities, implement sanitized SQL queries with parameterized statements, handle CORS headers properly, and practice environment isolation using Docker. My hands-on work with Kali Linux and network auditing tools gives me an offensive perspective to build better defensive code.",
+      "keywords": "security,defensive coding,owasp,kali linux"
+    },
+    {
+      "category": "AI Integration",
+      "question": "How do you practically integrate AI into software rather than using it as a buzzword?",
+      "answer": "I integrate AI to solve specific workflow bottlenecks. That includes implementing computer vision pipelines with OpenCV and YOLOv8 for detection tasks, building RAG (Retrieval-Augmented Generation) setups with vector embeddings for context-specific question answering, and automating recurring data ingestion workflows in Python.",
+      "keywords": "ai practical,rag,yolo,opencv,automation"
+    },
+    {
+      "category": "Continuous Learning",
+      "question": "How do you keep up with rapid changes in web frameworks and AI?",
+      "answer": "I follow a build-to-learn methodology. Instead of only reading documentation, I build isolated proof-of-concept projects, test tools in sandbox environments, and earn structured certifications\u2014having completed over 87 technical courses. I also track open-source repositories and document developer workflows daily.",
+      "keywords": "learning,adaptation,growth,certifications"
+    },
+    {
+      "category": "Teamwork & Conflict",
+      "question": "Describe a time you collaborated under pressure during an event or deadline.",
+      "answer": "During the setup for HACK4 SHIVAMOGGA, we needed an immediate, reliable registration portal and schedule system with rapid turnarounds. I took ownership of the landing page architecture and automated data sync into backend sheets under tight timelines, coordinating closely with faculty and student volunteers to ensure zero registration downtime.",
+      "keywords": "teamwork,hackathon,pressure,deadlines,collaboration"
+    },
+    {
+      "category": "Code Quality",
+      "question": "What does clean code mean to you?",
+      "answer": "Clean code means readability, predictable side effects, and clear separation of concerns. I ensure variable and function names convey intent, adhere to modular folder structures in frontend and backend code, write descriptive commit messages, and document API contracts clearly so any teammate can onboard without friction.",
+      "keywords": "clean code,best practices,maintainability,git"
+    },
+    {
+      "category": "Work Under Ambiguity",
+      "question": "How do you handle a project requirement that is vague or incomplete?",
+      "answer": "I clarify goals by building a quick minimal viable prototype (MVP) to anchor discussions. For example, when building GrabNotes, initial requirements for note categorization were fluid; I drafted a functional UI prototype with basic CRUD operations, gathered direct student feedback on navigation friction, and iterated based on real usage patterns.",
+      "keywords": "ambiguity,mvp,agile,user feedback,grabnotes"
+    },
+    {
+      "category": "Motivation",
+      "question": "What drives you to build software every day?",
+      "answer": "I enjoy turning abstract logic into tools people actually use. Seeing a system go from an empty code editor to a containerized, live deployment handling real user requests\u2014like students checking placement opportunities or customers browsing an artisan catalog\u2014is what keeps me building every day.",
+      "keywords": "motivation,passion,drive,developer mindset"
+    },
+    {
+      "category": "HR Screening",
+      "question": "Why should our company hire you over other candidates?",
+      "answer": "I bring a balance of full-stack development speed, security-first thinking, and genuine shipping discipline. While many students keep projects local, I have deployed 8+ live platforms, delivered production software like Placement Pro and Pure Weaves, earned 87+ technical certifications, and gained hands-on industry experience at Milano Infotech. I ramp up quickly and contribute directly from day one.",
+      "keywords": "why hire me,value,roi,strengths,execution"
+    },
+    {
+      "category": "Culture Fit",
+      "question": "How do you handle receiving critical feedback or code review rejections?",
+      "answer": "I view code reviews as an engineering audit, not a personal critique. If a senior developer flags an unoptimized database query or redundant state handler, I ask clarifying questions to understand the architectural reason, benchmark the improvement, refactor the code, and document the standard to avoid repeating the mistake.",
+      "keywords": "feedback,code review,collaboration,growth mindset"
+    },
+    {
+      "category": "Work Style",
+      "question": "Do you work better independently or within a team?",
+      "answer": "I operate comfortably in both modes. For deep technical tasks like debugging an API router, configuring Dockerfiles, or writing automation scripts, I work with strong independent focus. When it comes to product roadmaps, cross-functional sprints, or event operations like Hack4 Shivamogga, I actively collaborate, communicate blockers early, and support teammates to hit deadlines.",
+      "keywords": "work style,team player,independent,autonomy"
+    },
+    {
+      "category": "Failure & Resilience",
+      "question": "Tell me about a time something went wrong with a deployment or project. What did you learn?",
+      "answer": "During an early deployment of a web application, an unhandled environment variable caused database connections to fail on the cloud server. Rather than panicking, I inspected runtime logs, identified the missing credential mapping, patched the config, and added structured `.env.example` templates and health-check endpoints. It taught me the necessity of robust deployment checklists.",
+      "keywords": "failure,mistakes,resilience,debugging,devops"
+    },
+    {
+      "category": "Pressure & Deadlines",
+      "question": "How do you prioritize your workload when juggling multiple urgent tasks?",
+      "answer": "I use an impact-versus-urgency matrix to sequence my work. I break large deliverables into discrete 30-to-60-minute development blocks, tackle core blockers first, automate repetitive steps with Python, and communicate proactively with stakeholders if scope trade-offs are required to safeguard product quality and ship on time.",
+      "keywords": "time management,prioritization,deadlines,stress"
+    },
+    {
+      "category": "Adaptability",
+      "question": "How do you approach learning a programming language or framework you haven't used before?",
+      "answer": "I deconstruct new technologies by mapping them to concepts I already master. When picking up a new framework, I immediately build a basic CRUD application to understand its routing, state management, and database connectivity. Hands-on implementation combined with official documentation gets me productive within days.",
+      "keywords": "adaptability,quick learner,frameworks,upskilling"
+    },
+    {
+      "category": "Leadership & Mentorship",
+      "question": "Tell me about an instance where you took initiative without being asked.",
+      "answer": "Seeing students struggle with disorganized academic materials, I independently initiated and designed GrabNotes to centralize and index study resources. Similarly, for Hack4 Shivamogga, I stepped up to build the public registration and schedule landing page to ensure participants had a smooth, zero-latency sign-up experience.",
+      "keywords": "leadership,initiative,proactive,grabnotes,hackathon"
+    },
+    {
+      "category": "Professional Integrity",
+      "question": "How do you handle ethical dilemmas in software, such as security vulnerabilities or data privacy?",
+      "answer": "I prioritize user trust and systemic security over quick fixes. If I identify a security flaw or an exposed endpoint, I follow responsible disclosure principles immediately: isolate the risk, document the vulnerability vector, notify the team lead, and assist in implementing secure patches before code reaches production.",
+      "keywords": "ethics,integrity,data privacy,responsible disclosure"
+    },
+    {
+      "category": "Day One Readiness",
+      "question": "What will your first 30 days look like if you join our team?",
+      "answer": "In the first 30 days, my priority is learning the codebase, understanding team deployment workflows, and building rapport with teammates. I will set up my local environment efficiently, pick up low-hanging bug fixes or documentation gaps to understand system edge cases, and start taking on independent feature tickets with zero hand-holding.",
+      "keywords": "first 30 days,onboarding,ramp up,productivity"
+    },
+    {
+      "category": "Remote & Hybrid",
+      "question": "How do you ensure accountability and clear communication in a remote or hybrid setup?",
+      "answer": "I rely on written clarity and proactive updates. I share daily asynchronous stand-ups detailing what was completed, current focus areas, and potential blockers. I maintain clean Git commit histories, write clear pull request descriptions, and make sure architectural decisions are documented in shared project repositories.",
+      "keywords": "remote work,communication,async,accountability"
+    },
+    {
+      "category": "General",
+      "question": "What programming languages do you know?",
+      "answer": "I work with Python, JavaScript (ES6+), C, C++, Java, HTML5, and CSS3.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is your strongest skill?",
+      "answer": "My advanced skills include Python (Flask/FastAPI), JavaScript, DBMS & SQL architecture, Git & GitHub, Cloud Deployment, AI Workflow Tools, and AI Systems (Agentic AI, Gemini API, Prompt Engineering).",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Do you know React?",
+      "answer": "Yes, at an intermediate level \u2014 I work with component architecture, custom hooks, state management, and Vite integration.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What backend frameworks do you use?",
+      "answer": "I use Flask and FastAPI in Python for backend development.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What databases have you worked with?",
+      "answer": "I've worked with SQL, PL/SQL, MySQL, and SQLite, including stored procedures, triggers, and cursor management.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Do you have machine learning experience?",
+      "answer": "Yes, I've built models using Scikit-learn, including Random Forest, Naive Bayes, and Linear/Logistic Regression.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Do you work with deep learning?",
+      "answer": "Yes, I have intermediate experience with CNNs, TensorFlow/Keras, OpenCV, and image classification.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What AI tools do you use?",
+      "answer": "I use Google Gemini API, Postman, Gamma, Slidesgo, Google Antigravity, Lovable, Base44, and Pomil for AI workflows.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Do you know Docker?",
+      "answer": "Yes, at an intermediate level \u2014 I work with Dockerfiles, containerization, and Docker Compose for microservices.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What cloud platforms have you deployed to?",
+      "answer": "I've deployed projects on Vercel, Netlify, Railway.app, Replit, and Google Cloud Run.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Do you have cybersecurity experience?",
+      "answer": "Yes, intermediate \u2014 I work with web security auditing, XSS/CSRF defenses, Kali Linux, and TryHackMe labs.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "How many projects have you built?",
+      "answer": "I've built 29+ projects in total",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "How many certificates do you hold?",
+      "answer": "I hold 87+ certificates across various technical domains.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "How many AI assistants have you built?",
+      "answer": "I've built 2+ AI assistants as part of my project portfolio.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is DataGauge?",
+      "answer": "DataGauge is a dataset quality monitoring platform I built with FastAPI and React that scores CSV/Excel datasets 0-100, flags issues, and exports PDF/Excel reports.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is the Accident Risk Prediction project?",
+      "answer": "It's a machine learning system using a Scikit-learn Random Forest Classifier to forecast local traffic hazard levels based on weather and road density data, built with Python, Flask, and SQLite.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is Sai AI Assistant?",
+      "answer": "Sai is a productivity assistant I built using Google Gemini Pro, featuring education tools, a WhatsApp text builder, a code snippet compiler, and SQLite session databases.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is the AI Agent using Google API project?",
+      "answer": "It's an autonomous web agent built with Google AI Studio SDKs that integrates reasoning and tool-calling to automate research tasks, deployed on Google Cloud Run.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is Surya Chatbot?",
+      "answer": "Surya is an interactive chatbot I built with HTML5, CSS3, and JavaScript using localized response dictionaries and smooth UI transitions.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is Kai Assistant?",
+      "answer": "Kai is a lightweight browser-based agent I built for text formatting, summarization, and prompt execution using JavaScript and AI APIs.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What skills are you currently learning?",
+      "answer": "I'm currently learning Artificial Intelligence, Machine Learning, Docker, Electron.js, Kali Linux, GitHub Actions, and Prompt Engineering.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What was your learning journey like?",
+      "answer": "I started with C/Python logic building, then learned HTML/CSS, JavaScript & DOM manipulation, React & TypeScript, and then built autonomous AI projects using Google AI Studio APIs.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is your long-term technical vision?",
+      "answer": "My goal is to become a Full Stack AI Engineer designing high-performance intelligent AI operating systems and enterprise applications.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Do you have version control experience?",
+      "answer": "Yes, advanced \u2014 I use Git & GitHub for version control, branching models, merge conflict resolution, and GitHub Actions.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is your experience with data structures and algorithms?",
+      "answer": "I have intermediate experience with arrays",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Who are you?",
+      "answer": "I'm Sanjay G. L., a Full Stack AI Developer and BCA student from Shivamogga, Karnataka, India.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is your full name?",
+      "answer": "My full name is Sanjay G. L.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What do you do?",
+      "answer": "I'm a BCA student and full stack developer building AI systems",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Where are you from?",
+      "answer": "I'm from Shivamogga",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What are you currently studying?",
+      "answer": "I'm pursuing a Bachelor of Computer Applications (BCA)",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Which college do you study at?",
+      "answer": "I study at PES Institute of Advanced Management Studies (PES IAMS)",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Are you currently working or interning?",
+      "answer": "Yes",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is your internship domain?",
+      "answer": "My internship focuses on AI",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Are you open to opportunities?",
+      "answer": "Yes",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is your educational background?",
+      "answer": "I completed my SSLC at Cambridge International Public School, my PUC at PES PU College in 2021, and I'm now pursuing BCA at PES IAMS Shivamogga (2023\u2013present).",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "When did you finish your PUC?",
+      "answer": "I completed my Pre-University Course (PUC) in April 2021.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "When did you finish your SSLC?",
+      "answer": "I completed my SSLC in March 2023 at Cambridge International Public School",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What are your hobbies?",
+      "answer": "I'm an aquarium hobbyist, trekker, history enthusiast, and I enjoy exploring electronics and cybersecurity.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What are your personal interests?",
+      "answer": "My interests include cybersecurity, computer networking, fish keeping, trekking, historical travel, electronics, and AI automation.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Are you involved in any volunteer work?",
+      "answer": "Yes, I'm an active NSS Volunteer and a YFS Volunteer (Mera Yuva Bharat) under the Ministry of Youth Affairs & Sports.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is your role in NSS?",
+      "answer": "As an NSS Volunteer since 2023, I've participated in community service, literacy drives, hygiene awareness, environmental sustainability, and social awareness programs across Shivamogga.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is your role in YFS?",
+      "answer": "As a YFS Volunteer since 2024, I've engaged in youth-led civic initiatives and Viksit Bharat campaigns, and received a Certificate of Recognition from the Ministry of Youth Affairs & Sports.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What languages do you speak?",
+      "answer": "I speak Kannada (native), Tamil (native/fluent), and English (professional).",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What are your soft skills?",
+      "answer": "My soft skills include community leadership, rapid learning, technical documentation, teamwork, and discipline.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What is your current goal?",
+      "answer": "I want to apply my skills in C",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What are your future career goals?",
+      "answer": "My roadmap includes Cybersecurity, Machine Learning, Artificial Intelligence, React & Web Dev, Docker, DevOps pipelines, System Design, Full Stack Dev, and AI Engineering.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "How can someone contact you?",
+      "answer": "You can email me at sanjaygl2006@gmail.com or call +91 8123981877.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Where can I see your resume?",
+      "answer": "You can download my full resume PDF from my portfolio site.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Do you have social media or GitHub?",
+      "answer": "Yes \u2014 GitHub: github.com/sanjayGL2006, LinkedIn: linkedin.com/in/sanjaygl3006, Instagram: @me__sanjaygl8123, and YouTube: @code_catalyst_collective.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Why did you build an AI portfolio?",
+      "answer": "I built an AI-powered portfolio and operating system to showcase my projects and certificates interactively using an AI assistant.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "What technologies is your portfolio built with?",
+      "answer": "My portfolio is built with HTML5, CSS3, JavaScript ES6, Three.js, and Framer Motion.",
+      "keywords": ""
+    },
+    {
+      "category": "General",
+      "question": "Tell me about yourself",
+      "answer": "I'm Sanjay G. L., a Full Stack AI Developer and BCA student from Shivamogga, Karnataka, building intelligent web apps and AI systems.",
+      "keywords": "",
+      "answer_type": "short"
+    },
+    {
+      "category": "General",
+      "question": "Tell me about yourself",
+      "answer": "I'm Sanjay G. L., a BCA student (3rd year, 5th semester) at PES Institute of Advanced Management Studies, Shivamogga. I build intelligent web applications, AI systems, and data-driven platforms \u2014 bridging frontend design, machine learning, and secure backend APIs. I'm currently interning at Milano Infotech in the AI/ML/Python domain and I'm open to internships and professional opportunities.",
+      "keywords": "",
+      "answer_type": "medium"
+    },
+    {
+      "category": "General",
+      "question": "Tell me about yourself",
+      "answer": "I'm Sanjay G. L., a dedicated BCA student at PES Institute of Advanced Management Studies, Shivamogga, currently in my 3rd year, 5th semester. I have a deep passion for frontend development, modern AI architectures, and building smart tech solutions that solve real-world problems. As a disciplined learner, I document AI workflows daily to optimize coding efficiency, and my interests span server management, database architecture using SQL and PL/SQL, and exploring cybersecurity fundamentals through Kali Linux. I've built 29+ projects, earned 87+ certificates, and am currently interning at Milano Infotech in AI, ML, and Python development. Outside the screen, I'm an active NSS and YFS volunteer, aquarium hobbyist, trekker, and history enthusiast \u2014 experiences that sharpen my teamwork, empathy, and problem-solving instincts.",
+      "keywords": "",
+      "answer_type": "long"
+    },
+    {
+      "category": "General",
+      "question": "Who are you?",
+      "answer": "I'm Sanjay G. L., a Full Stack AI Developer and BCA student from Shivamogga, Karnataka, India.",
+      "keywords": "",
+      "answer_type": "short"
+    },
+    {
+      "category": "General",
+      "question": "Who are you?",
+      "answer": "I'm Sanjay G. L. \u2014 a BCA student pursuing my degree at PES IAMS, Shivamogga, and a full stack developer focused on AI, web apps, and data-driven platforms. I'm currently interning at Milano Infotech.",
+      "keywords": "",
+      "answer_type": "medium"
+    },
+    {
+      "category": "General",
+      "question": "Who are you?",
+      "answer": "I'm Sanjay G. L., a BCA student in my 3rd year at PES Institute of Advanced Management Studies, Shivamogga. I specialize in building intelligent web applications, AI systems, and secure backend APIs, with 29+ projects and 87+ certificates to my name. I'm also an NSS/YFS volunteer, aquarium hobbyist, trekker, and history enthusiast, and I'm currently interning at Milano Infotech in AI, ML, and Python development while staying open to new opportunities.",
+      "keywords": "",
+      "answer_type": "long"
+    },
+    {
+      "category": "General",
+      "question": "What do you do?",
+      "answer": "I'm a BCA student and full stack developer building AI systems and web applications.",
+      "keywords": "",
+      "answer_type": "short"
+    },
+    {
+      "category": "General",
+      "question": "What do you do?",
+      "answer": "I build full stack web applications, AI systems, and machine learning models \u2014 combining frontend design, Python/Flask backends, and cloud deployment. I'm also currently interning at Milano Infotech in the AI/ML domain.",
+      "keywords": "",
+      "answer_type": "medium"
+    },
+    {
+      "category": "General",
+      "question": "What do you do?",
+      "answer": "I design and build intelligent web applications, AI assistants, and data-driven platforms \u2014 spanning frontend design (React, HTML/CSS/JS), backend development (Python, Flask, FastAPI), databases (SQL/PL-SQL), and machine learning (Scikit-learn, TensorFlow/Keras). I've delivered 29+ projects including AI chatbots, dataset quality tools, and ML risk-prediction systems, and I'm currently applying these skills through an internship at Milano Infotech.",
+      "keywords": "",
+      "answer_type": "long"
+    },
+    {
+      "category": "General",
+      "question": "Give me a quick intro",
+      "answer": "Hi, I'm Sanjay G. L. \u2014 Full Stack AI Developer and BCA student from Shivamogga, Karnataka.",
+      "keywords": "",
+      "answer_type": "short"
+    },
+    {
+      "category": "General",
+      "question": "Give me a quick intro",
+      "answer": "Hey, I'm Sanjay G. L., a BCA student and aspiring Full Stack AI Engineer from Shivamogga, Karnataka. I build AI-powered apps, chatbots, and ML models, and I'm currently interning at Milano Infotech.",
+      "keywords": "",
+      "answer_type": "medium"
+    },
+    {
+      "category": "General",
+      "question": "Give me a quick intro",
+      "answer": "Hi, I'm Sanjay G. L., a BCA student at PES IAMS, Shivamogga, currently in my 3rd year. I'm passionate about full stack development and AI \u2014 I've built 29+ projects (including AI assistants, a dataset quality monitoring tool, and an ML-based accident risk predictor) and earned 87+ certificates along the way. I'm currently interning at Milano Infotech in AI/ML/Python, and beyond tech, I'm an NSS volunteer, trekker, and aquarium hobbyist.",
+      "keywords": "",
+      "answer_type": "long"
+    },
+    {
+      "category": "General",
+      "question": "Introduce yourself",
+      "answer": "I'm Sanjay G. L. \u2014 a BCA student and Full Stack AI Developer from Shivamogga, Karnataka.",
+      "keywords": "",
+      "answer_type": "short"
+    },
+    {
+      "category": "General",
+      "question": "Introduce yourself",
+      "answer": "I'm Sanjay G. L., currently pursuing my BCA at PES Institute of Advanced Management Studies, Shivamogga. I focus on full stack development, AI systems, and machine learning, and I'm interning at Milano Infotech in the AI/ML/Python space.",
+      "keywords": "",
+      "answer_type": "medium"
+    },
+    {
+      "category": "General",
+      "question": "Introduce yourself",
+      "answer": "I'm Sanjay G. L., a BCA student at PES IAMS, Shivamogga, in my 3rd year, 5th semester. I'm passionate about frontend development, AI architectures, and solving real-world problems with smart tech. I've built 29+ projects and earned 87+ certificates across web development, AI, and machine learning, and I'm currently gaining hands-on experience through an internship at Milano Infotech. Outside of tech, I volunteer with NSS and YFS, and enjoy trekking, aquarium keeping, and history.",
+      "keywords": "",
+      "answer_type": "long"
+    },
+    {
+      "category": "General",
+      "question": "Can you describe yourself?",
+      "answer": "Sure \u2014 I'm Sanjay G. L., a BCA student and aspiring Full Stack AI Engineer from Shivamogga.",
+      "keywords": "",
+      "answer_type": "short"
+    },
+    {
+      "category": "General",
+      "question": "Can you describe yourself?",
+      "answer": "I'd describe myself as a disciplined, curious learner \u2014 a BCA student who's passionate about AI, web development, and problem-solving. I document my AI workflows daily and I'm always exploring new tech, from cybersecurity to cloud deployment.",
+      "keywords": "",
+      "answer_type": "medium"
+    },
+    {
+      "category": "General",
+      "question": "Can you describe yourself?",
+      "answer": "I'd describe myself as a disciplined and driven learner who documents AI workflows daily to sharpen coding efficiency. I'm currently a BCA student at PES IAMS, Shivamogga, with a strong interest in frontend development, modern AI architectures, server management, and database design using SQL/PL-SQL. Beyond academics, I'm an NSS and YFS volunteer, an aquarium hobbyist, a trekker, and a history enthusiast \u2014 all of which have shaped my teamwork, empathy, and problem-solving abilities.",
+      "keywords": "",
+      "answer_type": "long"
+    },
+    {
+      "category": "General",
+      "question": "What's your background?",
+      "answer": "I'm a BCA student from Shivamogga with a background in full stack development and AI.",
+      "keywords": "",
+      "answer_type": "short"
+    },
+    {
+      "category": "General",
+      "question": "What's your background?",
+      "answer": "My background is in computer applications \u2014 I completed my schooling in Shivamogga, and I'm now in the 3rd year of my BCA at PES IAMS. Alongside my studies, I've built 29+ projects and interned at Milano Infotech in AI/ML.",
+      "keywords": "",
+      "answer_type": "medium"
+    },
+    {
+      "category": "General",
+      "question": "What's your background?",
+      "answer": "I completed my SSLC at Cambridge International Public School and my PUC at PES PU College, both in Shivamogga. I'm now in the 3rd year of my BCA at PES Institute of Advanced Management Studies. Over this time, I've built a strong technical background across web development, Python, databases, and AI/ML, delivering 29+ projects and earning 87+ certificates. I've also gained practical experience through an internship at Milano Infotech and volunteer roles with NSS and YFS.",
+      "keywords": "",
+      "answer_type": "long"
+    },
+    {
+      "category": "General",
+      "question": "Why should we consider you?",
+      "answer": "I combine strong technical skills in AI/web development with discipline, fast learning, and hands-on project experience.",
+      "keywords": "",
+      "answer_type": "short"
+    },
+    {
+      "category": "General",
+      "question": "Why should we consider you?",
+      "answer": "I bring a rare mix of full stack development skills and applied AI/ML experience, backed by 29+ real projects and 87+ certificates. I'm a fast learner, disciplined in documenting my work, and I'm already gaining industry exposure through my internship at Milano Infotech.",
+      "keywords": "",
+      "answer_type": "medium"
+    },
+    {
+      "category": "General",
+      "question": "Why should we consider you?",
+      "answer": "I bring hands-on experience across the full stack \u2014 from frontend design and Python/Flask backends to machine learning models and cloud deployment \u2014 backed by 29+ completed projects and 87+ certificates. I'm a disciplined, fast learner who documents AI workflows daily to keep improving, and I'm currently applying these skills in a real internship at Milano Infotech in the AI/ML domain. Beyond technical ability, my volunteer work with NSS and YFS has strengthened my teamwork, leadership, and communication skills, which I bring into every project I work on.",
+      "keywords": "",
+      "answer_type": "long"
+    },
+    {
+      "category": "General",
+      "question": "What makes you unique?",
+      "answer": "I blend full stack development with applied AI/ML, backed by real projects and daily hands-on practice.",
+      "keywords": "",
+      "answer_type": "short"
+    },
+    {
+      "category": "General",
+      "question": "What makes you unique?",
+      "answer": "What sets me apart is combining frontend, backend, database, and AI/ML skills into complete, deployed projects \u2014 not just theory. I document my AI workflows daily and I'm equally comfortable in cybersecurity labs, ML notebooks, and React codebases.",
+      "keywords": "",
+      "answer_type": "medium"
+    },
+    {
+      "category": "General",
+      "question": "What makes you unique?",
+      "answer": "What makes me unique is the breadth of my hands-on experience \u2014 I don't just learn concepts, I ship complete projects that combine frontend design, secure backend APIs, database architecture, and machine learning. I've built AI assistants, dataset quality tools, and ML-based prediction systems, all while documenting my AI workflows daily to keep refining my process. On top of that, my volunteer work with NSS and YFS and my interests in trekking, history, and aquarium keeping give me a well-rounded perspective that shapes how I approach problems and work with people.",
+      "keywords": "",
+      "answer_type": "long"
+    }
   ]
 }
