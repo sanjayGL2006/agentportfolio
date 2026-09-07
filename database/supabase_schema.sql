@@ -1,20 +1,84 @@
--- Enable the pgvector and uuid extensions for deep learning embeddings & unique log IDs
-CREATE EXTENSION IF NOT EXISTS vector;
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+-- Supabase PostgreSQL Schema for Portfolio Database
 
--- Create the table to store AIOS interactions & continuous learning logs
-CREATE TABLE IF NOT EXISTS aios_chat_logs (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    session_id VARCHAR(255),
-    user_query TEXT NOT NULL,
-    agent_response TEXT NOT NULL,
-    query_embedding vector(1536), -- Neural network vector representation for RAG / auto-training
-    created_at TIMESTAMPTZ DEFAULT NOW()
+-- Create Projects Table
+CREATE TABLE IF NOT EXISTS projects (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    year INTEGER,
+    category VARCHAR(100),
+    tagline TEXT,
+    description TEXT,
+    technologies TEXT, -- JSON string or comma separated
+    live_url VARCHAR(500),
+    github_url VARCHAR(500),
+    status VARCHAR(50),
+    featured BOOLEAN DEFAULT FALSE,
+    icon VARCHAR(50),
+    image VARCHAR(500),
+    overview TEXT,
+    architecture TEXT,
+    features TEXT -- JSON string or comma separated
 );
 
--- Enable Row Level Security (RLS) to protect data
-ALTER TABLE aios_chat_logs ENABLE ROW LEVEL SECURITY;
+-- Create Certificates Table
+CREATE TABLE IF NOT EXISTS certificates (
+    id VARCHAR(100) PRIMARY KEY,
+    type VARCHAR(50),
+    category VARCHAR(100),
+    title VARCHAR(255) NOT NULL,
+    org VARCHAR(255),
+    date VARCHAR(100),
+    month VARCHAR(50),
+    year INTEGER,
+    duration VARCHAR(100),
+    description TEXT,
+    tags TEXT,
+    skills_learned TEXT,
+    credential_id VARCHAR(255),
+    drive_id VARCHAR(255),
+    verify_link VARCHAR(500),
+    image VARCHAR(500),
+    emoji VARCHAR(20),
+    featured BOOLEAN DEFAULT FALSE
+);
 
--- Policies for insertion and querying
-CREATE POLICY "Allow public insert" ON aios_chat_logs FOR INSERT WITH CHECK (true);
-CREATE POLICY "Allow public select" ON aios_chat_logs FOR SELECT USING (true);
+-- Create Agent Conversations Table
+CREATE TABLE IF NOT EXISTS agent_conversations (
+    id SERIAL PRIMARY KEY,
+    session_id VARCHAR(100) NOT NULL,
+    user_message TEXT NOT NULL,
+    agent_response TEXT NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create Agent Project Suggestions Table
+CREATE TABLE IF NOT EXISTS agent_project_suggestions (
+    id SERIAL PRIMARY KEY,
+    session_id VARCHAR(100) NOT NULL,
+    suggested_project VARCHAR(255) NOT NULL,
+    reasoning TEXT NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create Site Visits Table
+CREATE TABLE IF NOT EXISTS site_visits (
+    id SERIAL PRIMARY KEY,
+    page VARCHAR(100) NOT NULL,
+    referrer VARCHAR(255),
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create Contact Messages Table
+CREATE TABLE IF NOT EXISTS contact_messages (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    subject VARCHAR(255) NOT NULL,
+    message TEXT NOT NULL,
+    encrypted_key TEXT,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status VARCHAR(50) DEFAULT 'unread'
+);
+
+-- Note: Ensure Row Level Security (RLS) is configured appropriately via the Supabase Dashboard
+-- based on your application's access patterns.
