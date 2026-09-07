@@ -1340,15 +1340,23 @@ const PROJECTS_DATA = [
       "Type": "GitHub Project",
       "Source": "Auto-imported"
     }
+  },
+  {
+    id: "proj-auto-2d4c57c3",
+    title: "Sanjay-G.-L-",
+    year: 2026,
+    category: "Web Applications & Portals",
+    tagline: "Private portfolio, TypeScript",
+    desc: "A software engineering project built by Sanjay G. L.",
+    tech: ["Python", "JavaScript", "React", "HTML5"],
+    live: "",
+    github: "https://github.com/sanjayGL2006/Sanjay-G.-L-",
+    status: "Completed",
+    featured: false,
+    icon: "fa-code",
+    image: "assets/logo.svg",
+    overview: "This project showcases my ability to develop full-stack solutions and software tools.",
+    architecture: "Built with modern frameworks, focusing on modularity and clean code.",
+    features: ["Responsive UI", "REST API Integration", "Clean Architecture"]
   }
 ];
-
-if (typeof window !== 'undefined') {
-  window.PROJECTS_DATA = PROJECTS_DATA;
-}
-if (typeof globalThis !== 'undefined') {
-  globalThis.PROJECTS_DATA = PROJECTS_DATA;
-}
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = PROJECTS_DATA;
-}
