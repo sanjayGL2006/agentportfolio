@@ -209,7 +209,136 @@ const CERTIFICATES_DATA = [
   { driveId: '1PzYpEBBYJvfsExPJy9ksPS4oR88PaTDy', title: "Problem Solving (Basic) Certificate", org: "HackerRank Certification", category: 'coding', year: 2025, month: 'September', tags: ["HackerRank Certification", "Coding"] },
   { driveId: '1i-CTvb4kMtdGe7nWxSMxEwKUPssghrhT', title: "SQL (Basic) Certificate", org: "HackerRank Certification", category: 'coding', year: 2025, month: 'September', tags: ["HackerRank Certification", "Coding"] },
   { driveId: '1pu_99X1w68I98YhkZIAd8YaeVVuFcWSz', title: "JavaScript (Basic) Certificate", org: "HackerRank Certification", category: 'coding', year: 2025, month: 'September', tags: ["HackerRank Certification", "Coding"] },
-  { driveId: '1x0y_iFE7NBF0TUe03u9FHksX1AjA9SmJ', title: "Frontend Developer (React) Certificate", org: "HackerRank Certification", category: 'coding', year: 2025, month: 'September', tags: ["HackerRank Certification", "Coding"] }
+  { driveId: '1x0y_iFE7NBF0TUe03u9FHksX1AjA9SmJ', title: "Frontend Developer (React) Certificate", org: "HackerRank Certification", category: 'coding', year: 2025, month: 'September', tags: ["HackerRank Certification", "Coding"] },
+  { driveId: '1IxInGmobZUIL0epICbEmCtnMuLiYCuI1', title: "Certificate Screenshot", org: "Verified Credential Issuer", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] },
+  { driveId: '1LFECJnZV7bbS5a1b7BhXcTmPJap6zhF-', title: "Microsoft Copilot is an AI", org: "Microsoft Learn", category: 'tech', year: 2026, month: 'September', tags: ["Microsoft", "AI"] },
+  { driveId: '1TAO23u4ZVYsD2eM3e77wDyXC3qLxMEpJ', title: "IBM Design", org: "IBM", category: 'tech', year: 2026, month: 'September', tags: ["IBM", "Design"] },
+  { driveId: '1d4mtwjTA8oLyx20CXXcnUm1pNUjr02lF', title: "Certificate Screenshot", org: "Verified Credential Issuer", category: 'tech', year: 2026, month: 'August', tags: ["Tech", "Certificate"] },
+  { driveId: '1pV6BlK_PLhe5cu1YHbK0UItoCzLLTah6', title: "Azure identity, access, and security", org: "Microsoft Learn", category: 'cybersecurity', year: 2026, month: 'September', tags: ["Microsoft", "Azure", "Security"] },
+  { driveId: '1vgxKyUpgCv4_ydP4PznZaYTFg07s7Olg', title: "Generative AI and AI agents", org: "Microsoft Learn", category: 'tech', year: 2026, month: 'September', tags: ["AI", "Generative AI"] }
+  ,{ driveId: '1-9WHvzovaXE7Bm_vSMJaTauO15fiNFn6', title: "IMG_20250618_213916", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '114rvZ_i6HrauXYtLt702yi35-Uo8HUU8', title: "IMG20251017080843", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '11AUMxWS3Uasrek8Z6q46-v2xFUkSTv8Y', title: "IMG20250824161022", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '11H58F_d2FXl2ij7rgy5RfIdd1igQZ838', title: "certificate", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '11ishlFxU6fHlTQQL9bTidNdo6sd17Erh', title: "WhatsApp Image 2026-01-14 at 3.42.33 PM (1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '11vA5gGSydt4bW5b5409vV2bXC67igusc', title: "IMG20251213103533", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '12R3sXmNbNGGKOkigbvydBoV2vbguUpOO', title: "Certificate (2)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '12bNABXkIJGZbfV8P5EOZ59lIMY0M9rAN', title: "1000236254", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '13LGnGsoBFk_rX46KOgQ_MDD6QdD_8adr', title: "1000214310", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '13b1mxC7UluMOmXt13nCmWYm9RsIP3KyJ', title: "WhatsApp Image 2026-01-14 at 3.42.36 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '14GdbvNTpO3tMsqrgZchRRh1FDNmczCdR', title: "1000242375", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '15NoMn9GN76qj9DkGtEY5x67JD5jZYbcD', title: "WhatsApp Image 2026-01-14 at 3.42.49 PM (1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '15XdUEDRLK16AgcXHPrXvev9UL8fBMfUI', title: "WhatsApp Image 2026-01-14 at 3.42.50 PM (1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '16BisAFI6StGzLsFJh2Ef_a0EoxLub5HA', title: "WhatsApp Image 2026-01-14 at 3.42.28 PM (1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '16GIhv_fbofon_i4Ze9KPlxvx05lZ6sPI', title: "WhatsApp Image 2025-11-05 at 15.40.43_ad3e98e7", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '17QyCMHpWF8leCuQ306CxgczB-QbznAXz', title: "WhatsApp Image 2026-01-14 at 3.42.32 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '17TiZ9B7r2j3bzzoAziflEjfy3bXo3E-T', title: "WhatsApp Image 2026-01-14 at 3.42.32 PM (1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '18HUZP0VmwnOc1bP7IW_ANccqLDYQC0D0', title: "IMG-20251210-WA0020", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '191JiLGxgWo5g1mJNHKzoG_kxjJxE34lh', title: "certificate (3)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '19JI3ZB56Mcf74L_K0i7ROLGPX8IIRfAu', title: "WhatsApp Image 2026-01-14 at 3.42.51 PM (2)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1AKubfUdg0ITbRpcUaFNPCrIoihNakN8o', title: "WhatsApp Image 2026-01-14 at 3.42.46 PM (1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1AT5ss0Zh9aUkp_3Th44RLabf8ph5BuP9', title: "IMG20251017080812", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1B54eMTad9qdemREGm0hxJSabt7iKxbXT', title: "WhatsApp Image 2026-01-14 at 3.42.34 PM (1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1BN5Kwa8fQV6nRyqQaTskFKMBVNHNo6TD', title: "IMG20251017080805", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1BkNZIRzSaUhEbLgSeRckW3zcjx9F8MHZ', title: "IMG20251213103611", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1C5WB6MK8YchzNX4WnyzQylwh-MfLPMoc', title: "IMG20251017080729", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1CZQpPF5crnEK812BAQBKbMfuigt-WToY', title: "OplusInfoCollection_251025214303381", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1D0fvfuog6L2IIFpSwv8qlEGIxEy4x0V0', title: "IMG20251213103636", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1E-5KQ6vMaYEToyNqVz7_Fz-KtwgCqejb', title: "1000242373", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1EO0OPiYBnyHkR8Wkyi9_jXKDg_iQW9c1', title: "IMG20251213103513", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1EU0GJVJpf2OvJ3A9SbWSxB5ZBQc17pdn', title: "certificate_1773646539237", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1EhdbuIekh66NTF2_hbq3OJc-4Jiki-lx', title: "WhatsApp Image 2026-01-14 at 3.42.27 PM (1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1Es8Vppv888ilN0x51BlxbQWFKPdimhp2', title: "IMG20251017080837", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1G_wTkr4NPEHkB8PPCyqWTlWFK2OzJh7h', title: "IMG-20251031-WA0022", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1IFvSph-B05avBT1uYv7LNBIg324tFVN7', title: "1000213183", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1JEhzjfoA1Ux7FzMtLuvGZR6KIRXChKls', title: "IMG_20251025_214700(1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1KZXl9hjtIZKc25-n8cyUhIiS6Dh4g_rK', title: "WhatsApp Image 2026-01-14 at 3.42.45 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1KhwAB4oHRz1rPaxaIivtch71hMI1tiZw', title: "sanjay", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1Km_24RHjCLgTdHT2JA7XE2fqPFAyxzne', title: "Certificate (1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1L4pYZ_Yp7zMildCqhJzVt-nj0lQsAjk-', title: "crud-operations-in-mongodb.1", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1LEuxNotYW4YJZkrHPyD8vJUFtQIk91p1', title: "Screenshot_2025-09-20-20-43-28-57_40deb401b9ffe8e1df2f1cc5ba480b12", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1LJo1MsYqysco-v7QwLOvovssnfoubZ1Y', title: "OplusInfoCollection_251025214148323", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1LJz9n-2plhJgxP3CMaJcv9EFouF3ZzY3', title: "Image 13-10-2025 0009_3", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1LPWdVzvkIoaBdLEPUr2Xl-tcgUPjhntl', title: "1000245360", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1LeZ3xuZifK4pTdu4xkxKeq939KiCq_Y9', title: "Screenshot_2025-10-25-22-22-11-94_40deb401b9ffe8e1df2f1cc5ba480b12(1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1MpmkNc3MdYgbLVVThuZ-Y0U3Ut5W3Hgl', title: "IMG20251213103558", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1N5RB2iu9W1obGemp2qK_wvnlHgPkrSnc', title: "WhatsApp Image 2026-01-14 at 3.42.28 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1NXvNy5Suu3GrYkMMP48DMP5GVCtdPpAq', title: "IMG20250824161011", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1O99OwOVmPJBHJmgp5b8kyne6FSAjnuDb', title: "IMG20251017080703", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1PDcXMHOrwIfzLp_aeLeyg4b7vTeypSmN', title: "IMG20250824161202", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1PLetf6hzJq2wYnqG1Uhvi8EuWALG6kZY', title: "WhatsApp Image 2026-01-14 at 3.42.46 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1PTvu-HOzfFomnR9U8tfWnjq7A7co39VK', title: "certificate_1761901921606", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1PZoa1-45tUumA3UfwdTHwhiAXAUm-9JD', title: "1000213179", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1PahHRVZdxwZY3yA4brmt0kbNcbLALcOE', title: "WhatsApp Image 2026-01-14 at 3.42.50 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1Q2Dcp6fwYfk2nKJy_pe3fYD7fOaZfJst', title: "IMG20250824161210", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1QCEDkYyM-8vUpFtKrCTTcEO4p5ZN0s4b', title: "WhatsApp Image 2026-01-14 at 3.42.34 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1QRm5pvwvw804yx9Dd8TSPmbpbE7Iv4NI', title: "IMG20251017080750", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1R1Kp6l-YNtYK273MsWmHEpPzcEhSDh1f', title: "1000242378", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1R3v4g5NLk-2sbwtC2IZU7KcbgnMdUxjg', title: "OplusInfoCollection_251025214250212", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1RZOG8Fa-4YwpggdPw3vjqOxNDGgeOVLz', title: "OplusInfoCollection_251025214235598", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1SI37VLPh414Vikthbwm_OhGsMte2tY5w', title: "WhatsApp Image 2026-01-14 at 3.42.49 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1Seqm0rAWo7wrBD3XR9yl9gpJXUaxIMeF', title: "IMG20251017080612", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1Sroa5zcLFosAq1RprPobmClTllZB8PtC', title: "Screenshot_2025-09-11-19-53-30-65_40deb401b9ffe8e1df2f1cc5ba480b12", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1TQoeXRnuoVXQp0CcwSfcR9i1D-7l2IrK', title: "WhatsApp Image 2026-01-14 at 3.42.47 PM (1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1UnafE_VAf2mxHwlkgnZoUOyymw4M3J1A', title: "IMG20251213103617", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1V73ZF-tcFCDab6Fg7onBDroGCN045u-h', title: "1764608028548", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1WlU3abs2JKLMd3q-1Iw-wafXppgBIMDE', title: "WhatsApp Image 2025-11-05 at 15.40.43_d24f3053", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1XClTC7v7G_P6iXT8c0gzF_BI3XEUxjPD', title: "WhatsApp Image 2026-01-14 at 3.42.35 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1XKbi-YXOrQIgxoV1FKONgwKhEFUa72HU', title: "IMG-20251210-WA0019", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1XTINueBrR7V5xrEH-Z3zEQ7PY2JQ60db', title: "certificate (2)(1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1XVphMygdaVr-pquf4mkCpJ9bZVhkFqZw', title: "WhatsApp Image 2026-01-14 at 3.42.49 PM (2)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1XcKeNcMvXhVTd3qk55ChNSqJba-Buihw', title: "IMG_20251025_214700", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1Xno5xzSp5vvZLRf_bIS9fZ4eqdNEVOIR', title: "IMG_20251025_214031", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1Xtr4iK6S6WuyA1XpH7jJWFDC2MAIi86V', title: "1000188463", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1YBwoFYwRUVtZTgVfn1a-zPWhGZS0Swki', title: "1764608710844", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1YMd3kjcF9tfud-uJEiJ0Ds5qPpADEmWs', title: "IMG20251017080819", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1ZRYcN56aUnEjJaJ3Xxxu05-K-f6NpaKJ', title: "IMG20251213103632", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1_z7J0rn-Y4N5AF_X1EtdUJ8_RnIxevKL', title: "WhatsApp Image 2026-01-14 at 3.42.47 PM (2)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1aRHEACllXhO3tTAWw2qNhrYROwWDXQRY', title: "1764608920171", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1b10zaCVQiqmAyL2p9gC2MG51dTtkg4Et', title: "WhatsApp Image 2026-01-14 at 3.42.47 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1c38bSxJlzEb3iSG_a3-_oegtDQWZDLNS', title: "1000242382", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1c8yyja693Z24n8geqte2IdRT0IIEtZeb', title: "MyBharat_Quiz_Certificate", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1cz_3lUOPQASrQjG6S-ON_U4SB6FJYD00', title: "Certificate (1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1dDrAPAB5fWYZquPg0VkszdEOMyJoS57P', title: "WhatsApp Image 2026-01-14 at 3.42.48 PM (1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1epAjTxxs_SpqHwCTLjQu9IEvLs8FGFUi', title: "certificate (1)(1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1f6oWfLt0CUshekcQYiGKU1qS2Tb_u7nF', title: "WhatsApp Image 2026-01-14 at 3.42.51 PM (1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1fLUFzJLTfD3adJwUhvcAsMwkF5ijjqry', title: "certificate_1773646572335", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1fXbC_FqcsDRh60w-Po82xyg5nKSUeQz-', title: "IMG20251213103525", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1g-WVOMt4__AWaWBylu6T7jRk1dr-jLf5', title: "1000213177", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1gYtM5pLZpFkgewtdWiPgjzl4-x43cSrH', title: "Screenshot_2025-10-25-22-22-11-94_40deb401b9ffe8e1df2f1cc5ba480b12", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1gfZGSf_9mujL1O_ywlkC5gYtM6XbtDpI', title: "IMG-20251210-WA0017", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1h0cazLuPJpZfuMS1uf11Zb2p-3S5dUA0', title: "1000245365", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1i5EIhWV1_jMktBhxIkCat9SYdDK4-qMy', title: "IMG20251213103548", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1iPaWXTG6bDskNq3zyfZ0GbFrEjWFbSlr', title: "WhatsApp Image 2026-01-14 at 3.42.31 PM (1)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1iVgQqInATmm5vdwT6QVZC4FWDmTBMPsd', title: "OplusInfoCollection_251025214219017", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1iYNx1SKrxGpWJhQjmSY263embAO1tnHk', title: "1000213180", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1jJm44WLfgm3OHSM1Kty_-GS6jIZX0Xt_', title: "1000242383", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1jhnB6eNELsziHIV85SzXsyUBtJ6b3txg', title: "1000213213", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1kXwJMT8b8mTfPMruMATVBqETW-sjT2K1', title: "Screenshot_2025-09-11-19-53-18-65_40deb401b9ffe8e1df2f1cc5ba480b12", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1kcgzWwM5DkW7J2lhjmAoy_xWuvv45ZS-', title: "WhatsApp Image 2026-01-14 at 3.42.31 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1kpnLj90dbnf9LdI0cewkeeRM0h4Jc1XS', title: "1000245364", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1lCkaon9Uuh577D-mU58IBlxA6wcE6q8b', title: "1000242384", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1lJ05misKCaM_91jJ-ISYsABHNG0ekSYM', title: "IMG20251213103541", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1m8oaW8yJQYkQXK1soVh7Ov_xBdX6hf5P', title: "IMG20251017080742", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1mbbOmFfP1m6B0KfcM55BFYhjULHZC10Z', title: "Image 13-10-2025 0009", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1oDX7rGyY9qvQryO5RSMxeXsFdU6FVDB6', title: "IMG_20251212_153540", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1oNrUF3POokSI8i2k3zOKucQV1VxWQkRH', title: "WhatsApp Image 2026-01-14 at 3.42.33 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1pUNf3eLPHgB5256ye9mN4dJthy-mwl_o', title: "1764608482708", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1q3NmMR5_ZJ6xSUFBnlE9QMZ5J9OtBpWP', title: "Certificate (2)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1q3wQ9l_6Rsi5nrGBbVXSAAjo_dfRPPGM', title: "WhatsApp Image 2026-01-14 at 3.42.46 PM (2)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1rFabzhwokYKRB0E78fflooLNDWkWzrJ5', title: "WhatsApp Image 2026-01-14 at 3.42.29 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1sc8qIXzH9NDTl4mO08TfZrW_Abj3G9Nw', title: "IMG20251017080716", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1shVGzjgNzEA5JyFHF4rNjQKN72LFqhDv', title: "IMG20251017080830", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1tDkOLSt9rQfsIIWeYAkVPcByQP6_6nWv', title: "certificate_1773646359670", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1tZxm7TO1whu7th1T8rGpeOiFbtAYC9Jx', title: "Image 13-10-2025 0009_1", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1uMn55QFCgkE8nNUvpTCzXYdG8_llkXQU', title: "WhatsApp Image 2026-01-14 at 3.42.52 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1unDX0wU5JQEiuMGP44AUUINEuSIwx5qB', title: "WhatsApp Image 2026-01-14 at 3.42.48 PM (2)", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1vPP1VgYEJbQryHYEsHTbwhaZCVJSQx5Y', title: "WhatsApp Image 2026-01-14 at 3.42.48 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1vkGtGvlKqi1Mg9oqxjmb1wdLv5_89I_F', title: "IMG20251017080641", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1vzKjdwncP02hAERD7i1vD1TL6pIHl_IK', title: "IMG20251017080601", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1xBuYfPrrBdTjGYHOwxPr-vysNzWEKIri', title: "OplusInfoCollection_251025214123212", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1za772OoM-xPllviSgUp1eszqtCn4a8ra', title: "IMG20251213103625", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
+  ,{ driveId: '1zvv6bmS_EYKdRAnzjOONsNd7NArmcQjF', title: "WhatsApp Image 2026-01-14 at 3.42.27 PM", org: "Verified Credential", category: 'tech', year: 2026, month: 'September', tags: ["Tech", "Certificate"] }
 ];
 
 // Helper to normalize all entries into unified structure

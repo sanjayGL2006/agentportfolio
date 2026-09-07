@@ -17,7 +17,7 @@ const PROJECTS_DATA = [
     tagline: "Full-stack CSV/Excel quality scoring, issue flags, guided cleaning, and PDF/Excel reports.",
     desc: "A FastAPI + React dataset quality platform that uploads CSV/Excel files and computes a live 0–100 quality score, categorized issues, interactive dashboards, guided cleaning, and downloadable PDF/Excel reports.",
     tech: ["Python", "FastAPI", "Pandas", "NumPy", "SciPy", "SQLAlchemy", "React", "Vite", "Tailwind CSS", "Recharts", "JWT", "ReportLab", "OpenPyXL"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/DataGauge-Dataset-Quality-Monitoring-System",
     status: "Completed",
     featured: true,
@@ -52,7 +52,7 @@ const PROJECTS_DATA = [
     tagline: "Deep learning skin lesion analysis and dermatology diagnostic assistant.",
     desc: "An AI-powered dermatological diagnostic assistant that screens skin lesions using CNN models, providing risk classifications and clinical care recommendations.",
     tech: ["Python", "Flask", "TensorFlow", "Keras", "OpenCV", "Scikit-image", "HTML5", "CSS3", "JavaScript"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/DermAI-AI-Powered-Skincare-Diagnosis-App",
     status: "Completed",
     featured: true,
@@ -83,7 +83,7 @@ const PROJECTS_DATA = [
     tagline: "Machine Learning based accident risk prediction system for safer roads.",
     desc: "A Machine Learning web application that predicts traffic accident risks using road conditions, weather, traffic volume, and historical accident patterns.",
     tech: ["HTML5", "CSS3", "JavaScript", "Python", "Flask", "Scikit-learn", "Pandas", "NumPy", "Joblib", "SQLite"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/accident-risk-prediction",
     status: "Completed",
     featured: true,
@@ -129,7 +129,7 @@ const PROJECTS_DATA = [
     tagline: "Autonomous assistant powered by Google AI APIs for intelligent conversations & task automation.",
     desc: "An AI-powered assistant integrated with Google AI APIs for intelligent conversations, reasoning, and context-aware task automation.",
     tech: ["Python", "HTML5", "CSS3", "JavaScript", "Google AI API", "Google Cloud Run"],
-    live: "https://untitled-138389699449.asia-southeast1.run.app/",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/AI-Agent-used-google-api",
     status: "Completed",
     featured: true,
@@ -148,7 +148,7 @@ const PROJECTS_DATA = [
     tagline: "Full stack AI-driven content generation and workflow platform.",
     desc: "A premium full-stack AI workspace facilitating document summarization, customized coding templates, automated content creation, and secure chatbot dialogs.",
     tech: ["React", "Node.js", "Express", "MongoDB", "Google Gemini API", "Tailwind CSS", "JWT"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/sindhanai-fullstack-ai",
     status: "Completed",
     featured: true,
@@ -168,7 +168,7 @@ const PROJECTS_DATA = [
     tagline: "Modern AI assistant powered by Gemini with productivity tools.",
     desc: "An AI-powered assistant capable of chatting, answering educational questions, generating code, showing live news, saving conversations, and helping users with productivity.",
     tech: ["HTML", "CSS", "JavaScript", "Python", "Flask", "SQLite", "Google Gemini API"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/sai_assistant",
     status: "Completed",
     featured: true,
@@ -188,7 +188,7 @@ const PROJECTS_DATA = [
     tagline: "Real-time computer vision system for traffic monitoring & vehicle detection using YOLOv8.",
     desc: "High-performance object detection model trained on traffic surveillance datasets to detect cars, buses, motorcycles, and pedestrians with bounding box confidence scores.",
     tech: ["Python", "YOLOv8", "OpenCV", "PyTorch", "Flask", "Chart.js"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/Traffic-Vehicle-Object-Detection-with-YOLOv8",
     status: "Completed",
     featured: false,
@@ -208,7 +208,7 @@ const PROJECTS_DATA = [
     tagline: "Deep learning traffic sign classification for Indian road navigation & autonomous safety.",
     desc: "Computer vision app trained to recognize Indian regulatory, warning, and informatory traffic road signs in real-time from camera feeds.",
     tech: ["Python", "TensorFlow", "Keras", "OpenCV", "Flask"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/indian-traffic-sign-detection",
     status: "Completed",
     featured: false,
@@ -227,7 +227,7 @@ const PROJECTS_DATA = [
     tagline: "NLP Naive Bayes & Logistic Regression text classification for spam detection.",
     desc: "Machine Learning model application that analyzes email text and SMS messages to accurately flag spam, phishing, and scam messages.",
     tech: ["Python", "Scikit-learn", "NLTK", "Flask", "HTML5/CSS3"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/smart-spam-detector",
     status: "Completed",
     featured: false,
@@ -246,7 +246,7 @@ const PROJECTS_DATA = [
     tagline: "Interactive conversational AI bot with custom response logic and floating UI.",
     desc: "Rule-based and generative AI chatbot designed to answer queries with an intuitive floating chat window interface and quick answer shortcuts.",
     tech: ["HTML5", "CSS3", "JavaScript", "NLP Rules"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/Surya-chatbot",
     status: "Completed",
     featured: false,
@@ -265,7 +265,7 @@ const PROJECTS_DATA = [
     tagline: "In-browser conversational AI assistant built for instant answers & quick text generation.",
     desc: "Lightweight browser-based virtual assistant capable of quick question answering, task prompts, context formatting, and contextual text generation.",
     tech: ["HTML5", "CSS3", "JavaScript", "AI API"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/kai-assistant",
     status: "Completed",
     featured: false,
@@ -284,7 +284,7 @@ const PROJECTS_DATA = [
     tagline: "Comprehensive repository of Artificial Intelligence & Machine Learning practical experiments.",
     desc: "A curated lab notebook containing practical implementations of supervised/unsupervised learning algorithms, neural network architectures, data preprocessing, and model evaluations.",
     tech: ["Python", "Jupyter Notebook", "Scikit-learn", "TensorFlow", "Pandas", "Matplotlib"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/AIML-course-and-Practical",
     status: "Completed",
     featured: false,
@@ -305,7 +305,7 @@ const PROJECTS_DATA = [
     tagline: "Enterprise paperless document workflow, billing & invoice generator.",
     desc: "A professional billing and document management system designed for digital offices and retail storefronts, supporting inventory tracking, tax calculations, and instant PDF invoice generation.",
     tech: ["HTML5", "CSS3", "JavaScript", "SQLite", "Node.js", "Electron.js", "PDFKit"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/Paperless-Office-System",
     status: "Completed",
     featured: true,
@@ -325,7 +325,7 @@ const PROJECTS_DATA = [
     tagline: "Admin dashboard for real-estate property listings & tenant management.",
     desc: "Administrative web dashboard featuring analytics charts, tenant rent status, maintenance ticket tracking, and property unit occupancy management.",
     tech: ["TypeScript", "React", "Tailwind CSS", "Recharts"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/prop-manager-dash-95721",
     status: "Completed",
     featured: false,
@@ -344,7 +344,7 @@ const PROJECTS_DATA = [
     tagline: "Comprehensive healthcare portal for patient records, doctor appointments & billing.",
     desc: "Full-stack hospital database system managing patient registrations, doctor schedules, pharmacy billing, and medical department inventory.",
     tech: ["Python", "Flask", "SQLite", "HTML5", "Bootstrap"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/hospital-management-system",
     status: "Completed",
     featured: false,
@@ -363,7 +363,7 @@ const PROJECTS_DATA = [
     tagline: "Automated student attendance tracking & percentage generator.",
     desc: "Desktop/Web application providing class-wise attendance marking, shortage warnings, automated monthly percentage calculation, and CSV record exports.",
     tech: ["Python", "Tkinter", "SQLite", "Pandas"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/attendance_system",
     status: "Completed",
     featured: false,
@@ -382,7 +382,7 @@ const PROJECTS_DATA = [
     tagline: "College placement cell management portal for student profiles & recruiter drives.",
     desc: "Web portal streamlining campus placement drives, company registrations, student resume submissions, and interview schedule tracking.",
     tech: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/placement-pro",
     status: "Completed",
     featured: false,
@@ -422,7 +422,7 @@ const PROJECTS_DATA = [
     tagline: "Smart task manager & note-taking application for productive workflows.",
     desc: "Clean productivity suite with quick tag filtering, search indexing, auto-save drafts, task priority checklists, and rich Markdown text rendering.",
     tech: ["TypeScript", "React", "Tailwind CSS", "LocalStorage"],
-    live: "https://grab-notes.base44.app",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/daily-task-nexus",
     status: "Completed",
     featured: true,
@@ -460,7 +460,7 @@ const PROJECTS_DATA = [
     tagline: "Mouth-watering pizza restaurant website with online order preview.",
     desc: "Dynamic web application for an artisanal pizzeria featuring interactive menu selection, custom pizza builder preview, cart state, and delivery zone checker.",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/pizza-shop-website",
     status: "Completed",
     featured: false,
@@ -479,7 +479,7 @@ const PROJECTS_DATA = [
     tagline: "High-converting cybersecurity VPN subscription product landing page.",
     desc: "Commercial product landing page presenting VPN feature matrices, pricing tiers, server location maps, speed benchmarks, and security FAQs.",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/vpn-landing-page1",
     status: "Completed",
     featured: false,
@@ -498,7 +498,7 @@ const PROJECTS_DATA = [
     tagline: "Clean modern user registration form with real-time CSS & JS validation.",
     desc: "Interactive registration form featuring real-time input validation, password strength meter, confirmation matching, and polished micro-animations.",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/Registration-form",
     status: "Completed",
     featured: false,
@@ -517,7 +517,7 @@ const PROJECTS_DATA = [
     tagline: "Modern responsive commercial business website template.",
     desc: "Clean business web template tailored for local agencies and services, featuring hero sliders, service showcases, customer testimonials, and contact forms.",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/custom-business-website",
     status: "Completed",
     featured: false,
@@ -538,7 +538,7 @@ const PROJECTS_DATA = [
     tagline: "Secure authentication portal with password security audits & login UI validation.",
     desc: "Modern security portal UI implementing client-side input validation, password visibility toggles, hash calculation previews, and multi-step authentication layouts.",
     tech: ["HTML5", "CSS3", "JavaScript", "CryptoJS"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/vault-secure-auth",
     status: "Completed",
     featured: false,
@@ -557,7 +557,7 @@ const PROJECTS_DATA = [
     tagline: "Feature-rich web calculator with percentage, square root, and keyboard shortcuts.",
     desc: "Scientific-lite web calculator offering memory recall, percentage formulas, square root functions, calculation history, and physical keypress bindings.",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/web-calculator-js",
     status: "Completed",
     featured: false,
@@ -576,7 +576,7 @@ const PROJECTS_DATA = [
     tagline: "Instant Celsius, Fahrenheit, and Kelvin scale conversion utility.",
     desc: "Sleek conversion calculator handling instant bi-directional transformations between Celsius, Fahrenheit, and Kelvin temperature scales with visual warmth indicators.",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/ttemp-convert-web-app",
     status: "Completed",
     featured: false,
@@ -595,7 +595,7 @@ const PROJECTS_DATA = [
     tagline: "Instant health index calculator for height and weight measurements.",
     desc: "Responsive Body Mass Index (BMI) calculator providing immediate health index feedback, target weight ranges, and interactive health gauge visualizations.",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/bmi_calculator",
     status: "Completed",
     featured: false,
@@ -614,7 +614,7 @@ const PROJECTS_DATA = [
     tagline: "Wireless peer-to-peer local messaging app over Bluetooth connections.",
     desc: "Utility application designed to establish direct device-to-device Bluetooth socket connections for offline text messaging and file transfer without internet access.",
     tech: ["Android", "Java", "Bluetooth RFCOMM", "XML"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/bluetooth-chat-",
     status: "Completed",
     featured: false,
@@ -633,7 +633,7 @@ const PROJECTS_DATA = [
     tagline: "Precision screen measurement and grid overlay tool for UI developers.",
     desc: "Developer utility allowing web designers to overlay alignment grids, inspect exact element dimensions in pixels, and verify responsive design fidelity.",
     tech: ["JavaScript", "HTML5 Canvas", "CSS3"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/pixel-perfect",
     status: "Completed",
     featured: false,
@@ -652,7 +652,7 @@ const PROJECTS_DATA = [
     tagline: "Browser-based desktop operating system interface with draggable windows.",
     desc: "Web OS environment mimicking desktop window managers, featuring draggable app windows, file system preview, taskbar, and embedded utilities.",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/Peacock-OS",
     status: "Completed",
     featured: false,
@@ -671,7 +671,7 @@ const PROJECTS_DATA = [
     tagline: "In-browser live HTML/CSS/JS code playground and instant previewer.",
     desc: "Lightweight front-end web playground allowing real-time code editing, live preview iframe execution, and syntax highlighting.",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/codeforge",
     status: "Completed",
     featured: false,
@@ -692,7 +692,7 @@ const PROJECTS_DATA = [
     tagline: "Interactive 2-player chess game with legal move validation and visual board.",
     desc: "A fully functional chess game featuring piece movement rules, castling, en passant checks, move history, and checkmate detection.",
     tech: ["JavaScript", "HTML5", "CSS3", "Chess Logic"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/chess-game",
     status: "Completed",
     featured: true,
@@ -711,7 +711,7 @@ const PROJECTS_DATA = [
     tagline: "Classic terminal and graphical Tic-Tac-Toe game in Python.",
     desc: "Console and Tkinter application written in Python demonstrating game matrix evaluation, AI minimax opponent, and turn state management.",
     tech: ["Python", "Tkinter"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/Tic-Tac-Toe-Game-in-python-coder",
     status: "Completed",
     featured: false,
@@ -730,7 +730,7 @@ const PROJECTS_DATA = [
     tagline: "Interactive two-player digital board game with real-time turns & smooth UI.",
     desc: "Modern digital board game featuring glassmorphic graphics, sound synthesizers, turn animations, score tracking, and smooth interactive gameplay.",
     tech: ["TypeScript", "React", "CSS3", "Tailwind CSS"],
-    live: "https://digital-board-duel.lovable.app/",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/digital-board-duel",
     status: "Completed",
     featured: true,
@@ -751,7 +751,7 @@ const PROJECTS_DATA = [
     tagline: "Advanced React-powered portfolio with glassmorphism & dynamic transitions.",
     desc: "React portfolio hub engineered with ambient background particle effects, glassmorphic cards, search indexes, and project showcase filters.",
     tech: ["TypeScript", "React", "Tailwind CSS"],
-    live: "https://sanju-portfolio-pro-hub.base44.app",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/agentportfolio",
     status: "Completed",
     featured: true,
@@ -770,7 +770,7 @@ const PROJECTS_DATA = [
     tagline: "Personal portfolio & developer hub showcasing projects, skills, and credentials.",
     desc: "Responsive developer website featuring 3D ambient space background, terminal command palette, verified certificates archive, AI co-pilot, and contact form.",
     tech: ["HTML5", "CSS3", "JavaScript", "Python", "Flask"],
-    live: "https://sanjaygl30ai.vercel.app/",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/sanjayGL2006",
     status: "Completed",
     featured: true,
@@ -789,7 +789,7 @@ const PROJECTS_DATA = [
     tagline: "Community temple cultural website & event information portal.",
     desc: "Dedicated cultural web portal created to showcase temple history, annual festival schedules, photo galleries, and community announcements.",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/srimariyammatemple",
     status: "Completed",
     featured: false,
@@ -808,7 +808,7 @@ const PROJECTS_DATA = [
     tagline: "Literary tribute page celebrating Maya Angelou's poetry, life, and legacy.",
     desc: "Polished biographical tribute webpage highlighting Maya Angelou's famous poems, civil rights contributions, audio recitations, and timeline milestones.",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    live: "",
+    live: "https://sanjaygl2006.vercel.app/",
     github: "https://github.com/sanjayGL2006/maya-angelou-tribute",
     status: "Completed",
     featured: false,
@@ -817,6 +817,528 @@ const PROJECTS_DATA = [
       "Subject": "Maya Angelou Tribute",
       "Design": "Classic Editorial Layout",
       "Features": "Poetry Carousel & Quotes"
+    }
+  }
+  ,{
+    id: 100,
+    title: "Spvm3 Chat",
+    year: 2026,
+    category: "Web Applications & Portals",
+    tagline: "spvm3-chat",
+    desc: "SPVM3 Chat: A high-performance real-time chat app featuring instant messaging, multiple chat rooms, typing indicators, and live user presence. Powered by native WebSockets with a FastAPI backend an…",
+    tech: ["Python", "FastAPI", "React"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/spvm3-chat",
+    status: "Completed",
+    featured: false,
+    icon: "fa-globe",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 101,
+    title: "Social Analytics Ui",
+    year: 2026,
+    category: "Management & Enterprise Systems",
+    tagline: "social-analytics-ui",
+    desc: "PulseBoard: A modern social media analytics dashboard built with React, FastAPI, and Recharts. Features follower growth tracking, engagement metrics, and a recent posts feed.",
+    tech: ["Python", "FastAPI", "React"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/social-analytics-ui",
+    status: "Completed",
+    featured: false,
+    icon: "fa-chart-line",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 102,
+    title: " Spvm3 Reelfind React Fastapi",
+    year: 2026,
+    category: "Web Applications & Portals",
+    tagline: "-SPVM3-reelfind-react-fastapi",
+    desc: "A full-stack movie and TV show discovery app built with React and FastAPI.",
+    tech: ["Python", "FastAPI", "React"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/-SPVM3-reelfind-react-fastapi",
+    status: "Completed",
+    featured: false,
+    icon: "fa-globe",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 103,
+    title: "Spvm3 Spend Tracker",
+    year: 2026,
+    category: "Management & Enterprise Systems",
+    tagline: "spvm3-spend-tracker",
+    desc: "Fast, responsive finance and expense management dashboard built with React, Recharts, and FastAPI for SPVM³ Tech Solution.",
+    tech: ["Python", "FastAPI", "React"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/spvm3-spend-tracker",
+    status: "Completed",
+    featured: false,
+    icon: "fa-chart-line",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 104,
+    title: "Fastapi React Todo",
+    year: 2026,
+    category: "Web Applications & Portals",
+    tagline: "fastapi-react-todo",
+    desc: "Full-stack interactive to-do app built with React (Vite) and FastAPI featuring priorities, inline editing, and status filtering.",
+    tech: ["Python", "FastAPI", "React"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/fastapi-react-todo",
+    status: "Completed",
+    featured: false,
+    icon: "fa-globe",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 105,
+    title: "Spvm3 Task App",
+    year: 2026,
+    category: "Web Applications & Portals",
+    tagline: "spvm3-task-app",
+    desc: "SPVM³ Task App — A sleek, intuitive Kanban task manager featuring interactive drag-and-drop columns, priority indicators, and REST API integration with FastAPI & React.",
+    tech: ["Python", "FastAPI", "React"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/spvm3-task-app",
+    status: "Completed",
+    featured: false,
+    icon: "fa-globe",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 106,
+    title: "Spvm3 Player",
+    year: 2026,
+    category: "Web Applications & Portals",
+    tagline: "spvm3-player",
+    desc: "Full-stack modern music player built with React 18, Vite, and FastAPI. Features automatic local library sync, ID3 metadata & album art extraction, sleek glassmorphic UI, audio visualizer, and HTTP …",
+    tech: ["Python", "FastAPI", "React"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/spvm3-player",
+    status: "Completed",
+    featured: false,
+    icon: "fa-globe",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 107,
+    title: "Sentry Cyber Intel",
+    year: 2026,
+    category: "AI & Machine Learning",
+    tagline: "sentry-cyber-intel",
+    desc: "Multi-agent AI cybersecurity intelligence platform powered by CrewAI, Groq & Exa for automated threat intelligence research, CVE triage, and risk assessment.",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/sentry-cyber-intel",
+    status: "Completed",
+    featured: false,
+    icon: "fa-brain",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 108,
+    title: "Milano Infotech Internship",
+    year: 2026,
+    category: "Web Applications & Portals",
+    tagline: "Milano-infotech-internship",
+    desc: "Python Updated 2 days ago",
+    tech: ["Python", "FastAPI", "React"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/Milano-infotech-internship",
+    status: "Completed",
+    featured: false,
+    icon: "fa-globe",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 109,
+    title: "Spvm3 Code Notes",
+    year: 2026,
+    category: "Portfolios, Profiles & Tributes",
+    tagline: "SPVM3-code-notes",
+    desc: "Comprehensive Computer Science & Programming Notes Hub featuring interactive guides for 20+ technologies, code references, and an integrated certificate verification system.",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/SPVM3-code-notes",
+    status: "Completed",
+    featured: false,
+    icon: "fa-globe",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 110,
+    title: "Spvm3 Code Editor",
+    year: 2026,
+    category: "Tools, Systems & Utilities",
+    tagline: "spvm3-code-editor",
+    desc: "Modular, local-first desktop IDE built on Electron, React & Monaco. Features multi-language runners (Python, Java, C/C++, C#), A-Z file support, Extensions Marketplace, multi-version Python selecto…",
+    tech: ["Python", "FastAPI", "React"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/spvm3-code-editor",
+    status: "Completed",
+    featured: false,
+    icon: "fa-tools",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 111,
+    title: "Spvm3 Editor",
+    year: 2026,
+    category: "AI & Machine Learning",
+    tagline: "spvm3-editor",
+    desc: "Next-generation lightweight desktop IDE powered by Monaco Editor, integrated terminal runner, and offline-capable AI code intelligence.",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/spvm3-editor",
+    status: "Completed",
+    featured: false,
+    icon: "fa-brain",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 112,
+    title: "Smart Attendance Yolo",
+    year: 2026,
+    category: "AI & Machine Learning",
+    tagline: "smart-attendance-yolo",
+    desc: "Real-time automated classroom attendance tracker powered by custom YOLOv8 computer vision, Flask REST API, MySQL, and an interactive React teacher dashboard.",
+    tech: ["Python", "FastAPI", "React"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/smart-attendance-yolo",
+    status: "Completed",
+    featured: false,
+    icon: "fa-brain",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 113,
+    title: "Spvm3 Campus Placement",
+    year: 2026,
+    category: "AI & Machine Learning",
+    tagline: "spvm3-campus-placement",
+    desc: "An AI-powered campus placement & career intelligence suite: automated ATS resume analysis, skills gap roadmaps, safe AI natural language queries, and department-isolated analytics dashboards. Built…",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/spvm3-campus-placement",
+    status: "Completed",
+    featured: false,
+    icon: "fa-brain",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 114,
+    title: "Placement Pro Spvm3",
+    year: 2026,
+    category: "Management & Enterprise Systems",
+    tagline: "placement-pro-SPVM3",
+    desc: "Smart College Placement & Campus Recruitment Management System built with Python Flask, PHP, Docker, Kubernetes & Vercel. Developed by SPVM3 Tech Solution by Sanjay G L.",
+    tech: ["Python", "FastAPI", "React"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/placement-pro-SPVM3",
+    status: "Completed",
+    featured: false,
+    icon: "fa-chart-line",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 115,
+    title: "Spvm3 Car Game",
+    year: 2026,
+    category: "Games",
+    tagline: "spvm3-car-game",
+    desc: "Action-packed 2D physics racing game featuring 200-level stage progression, 60+ customizable vehicles, multi-layer parallax scenery, real-time audio synthesis, companion Python telemetry server, an…",
+    tech: ["Python", "FastAPI", "React"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/spvm3-car-game",
+    status: "Completed",
+    featured: false,
+    icon: "fa-gamepad",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 116,
+    title: "Text2Img Studio",
+    year: 2026,
+    category: "AI & Machine Learning",
+    tagline: "text2img-studio",
+    desc: "A full-stack Flask web app for AI text-to-image generation powered by Stable Diffusion with built-in MySQL/SQLite generation history tracking.",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/text2img-studio",
+    status: "Completed",
+    featured: false,
+    icon: "fa-brain",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 117,
+    title: "Small Project",
+    year: 2026,
+    category: "Web Applications & Portals",
+    tagline: "small-project",
+    desc: "A collection of small web projects, templates, and frontend experiments built with HTML, CSS, and JavaScript.",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/small-project",
+    status: "Completed",
+    featured: false,
+    icon: "fa-globe",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 118,
+    title: "Spvm3 Tech Solution Websites",
+    year: 2026,
+    category: "Web Applications & Portals",
+    tagline: "SPVM3-tech-solution-websites",
+    desc: "HTML Updated last week",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/SPVM3-tech-solution-websites",
+    status: "Completed",
+    featured: false,
+    icon: "fa-globe",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 119,
+    title: "Spvm3 Tech Solution",
+    year: 2026,
+    category: "Web Applications & Portals",
+    tagline: "SPVM3-tech-solution",
+    desc: "Python Updated last week",
+    tech: ["Python", "FastAPI", "React"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/SPVM3-tech-solution",
+    status: "Completed",
+    featured: false,
+    icon: "fa-globe",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 120,
+    title: "Sanjay Gl Website Carbon Intelligence",
+    year: 2026,
+    category: "Tools, Systems & Utilities",
+    tagline: "sanjay-gl-website-carbon-intelligence",
+    desc: "SANJAY GL Website Carbon Intelligence — A real-time web application and developer API to audit website carbon footprints, HTTP page payload telemetry, energy consumption (SWD v4), and green hosting…",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/sanjay-gl-website-carbon-intelligence",
+    status: "Completed",
+    featured: false,
+    icon: "fa-tools",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 121,
+    title: "Resume Analyzer",
+    year: 2026,
+    category: "AI & Machine Learning",
+    tagline: "resume-analyzer",
+    desc: "AI-powered resume match & skill gap analyzer built with Flask and MySQL. Uses TF-IDF vectorization to score resumes against job descriptions, highlight missing skills, and persist analysis results.",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/resume-analyzer",
+    status: "Completed",
+    featured: false,
+    icon: "fa-brain",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 122,
+    title: "Image To Svg Converter",
+    year: 2026,
+    category: "Tools, Systems & Utilities",
+    tagline: "image-to-svg-converter",
+    desc: "A blazingly fast, client-side web & desktop tool to convert JPG, PNG, and WEBP images into clean, scalable SVG vector graphics with K-means color quantization, Bezier smoothing, and zero server upl…",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/image-to-svg-converter",
+    status: "Completed",
+    featured: false,
+    icon: "fa-tools",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 123,
+    title: "Portfolio",
+    year: 2026,
+    category: "Portfolios, Profiles & Tributes",
+    tagline: "portfolio",
+    desc: "HTML Updated on Jul 7",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/portfolio",
+    status: "Completed",
+    featured: false,
+    icon: "fa-globe",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 124,
+    title: " Handcrafted With Love Pure Weaves",
+    year: 2026,
+    category: "Web Applications & Portals",
+    tagline: "-Handcrafted-with-Love-Pure-Weaves",
+    desc: "HTML Updated on Jun 17",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://pureweaves.vercel.app/",
+    github: "https://github.com/sanjayGL2006/-Handcrafted-with-Love-Pure-Weaves",
+    status: "Completed",
+    featured: false,
+    icon: "fa-globe",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 125,
+    title: "Srimariyammatemple Ad2Fd3A5",
+    year: 2026,
+    category: "Portfolios, Profiles & Tributes",
+    tagline: "srimariyammatemple-ad2fd3a5",
+    desc: "TypeScript Updated on Apr 7",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/srimariyammatemple-ad2fd3a5",
+    status: "Completed",
+    featured: false,
+    icon: "fa-globe",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 126,
+    title: "Temp Convert Web App",
+    year: 2026,
+    category: "Tools, Systems & Utilities",
+    tagline: "temp-convert-web-app",
+    desc: "A clean, mobile-responsive temperature converter built with HTML, CSS, and Vanilla JavaScript, featuring high-precision Celsius and Fahrenheit conversions.",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/temp-convert-web-app",
+    status: "Completed",
+    featured: false,
+    icon: "fa-tools",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 127,
+    title: "Pure Weaves",
+    year: 2026,
+    category: "AI & Machine Learning",
+    tagline: "Pure-Weaves",
+    desc: "Gemini said Pure Weaves is a PHP/MySQL e-commerce platform for artisan sarees. It features a heritage-inspired UI, AJAX-powered cart, and a secure seller dashboard. Key highlights include real-time…",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://pureweaves.vercel.app/",
+    github: "https://github.com/sanjayGL2006/Pure-Weaves",
+    status: "Completed",
+    featured: false,
+    icon: "fa-brain",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
+    }
+  }
+  ,{
+    id: 128,
+    title: "Sanjay G. L ",
+    year: 2026,
+    category: "Web Applications & Portals",
+    tagline: "Sanjay-G.-L-",
+    desc: "porfolio",
+    tech: ["JavaScript", "HTML", "CSS"],
+    live: "https://sanjaygl2006.vercel.app/",
+    github: "https://github.com/sanjayGL2006/Sanjay-G.-L-",
+    status: "Completed",
+    featured: false,
+    icon: "fa-globe",
+    stats: {
+      "Type": "GitHub Project",
+      "Source": "Auto-imported"
     }
   }
 ];

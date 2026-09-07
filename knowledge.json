@@ -6,9 +6,9 @@
     "location": "Shivamogga, Karnataka, India (Kanaka Nagara, Devaraj Urs Layout, Vinoba Nagara)",
     "email": "sanjaygl2006@gmail.com",
     "phone": "+91 8123981877",
-    "status": "BCA 3rd Year (5th Semester) · PES IAMS",
-    "bio": "Passionate BCA student & developer from Shivamogga, Karnataka. A hands-on builder who lives by 'Learn → Build → Test → Improve → Build something bigger'. Passionate about Modern Web Development, React, Cybersecurity, AI tools, and practical mini-projects.",
-    "core_philosophy": "Builder mindset: going from 'I have an idea' → 'I built it'. Learning by doing rather than watching passive tutorials.",
+    "status": "BCA 3rd Year (5th Semester) \u00b7 PES IAMS",
+    "bio": "Passionate BCA student & developer from Shivamogga, Karnataka. A hands-on builder who lives by 'Learn \u2192 Build \u2192 Test \u2192 Improve \u2192 Build something bigger'. Passionate about Modern Web Development, React, Cybersecurity, AI tools, and practical mini-projects.",
+    "core_philosophy": "Builder mindset: going from 'I have an idea' \u2192 'I built it'. Learning by doing rather than watching passive tutorials.",
     "future_goal": "Full-stack engineer & Security Developer building scalable web applications, ethical cybersecurity labs, and AI systems.",
     "personal_life": {
       "relationship": "single and i am bca student",
@@ -34,8 +34,8 @@
       "degree": "Bachelor of Computer Applications (BCA)",
       "institution": "PES Institute of Advanced Management Studies (PES IAMS / Kuvempu University)",
       "location": "Shivamogga, Karnataka",
-      "period": "2023 – Present",
-      "status": "Current · 3rd Year · 5th Semester (Completed 4th Sem Exams May 2026)"
+      "period": "2023 \u2013 Present",
+      "status": "Current \u00b7 3rd Year \u00b7 5th Semester (Completed 4th Sem Exams May 2026)"
     },
     {
       "degree": "30-Hour Blockchain Technology Certification Course",
@@ -61,7 +61,7 @@
   ],
   "currently_learning": {
     "topic": "Modern Web Development, React & AI Agent Systems",
-    "badge": "SANJAY AI OS v2.5 · Active React & Full-Stack AI Stack",
+    "badge": "SANJAY AI OS v2.5 \u00b7 Active React & Full-Stack AI Stack",
     "subtopics": [
       "React 18 & TypeScript (90%)",
       "Supabase Vector DB & Auth (85%)",
@@ -206,7 +206,7 @@
     "live_deployments_count": "8+",
     "list": [
       {
-        "title": "DermAI — AI-Powered Skincare Diagnosis App",
+        "title": "DermAI \u2014 AI-Powered Skincare Diagnosis App",
         "category": "AI & Machine Learning",
         "github": "https://github.com/sanjayGL2006/DermAI-AI-Powered-Skincare-Diagnosis-App"
       },
@@ -231,7 +231,7 @@
         "github": "https://github.com/sanjayGL2006/Traffic-Vehicle-Object-Detection-with-YOLOv8"
       },
       {
-        "title": "DataGauge — Dataset Quality Monitoring System",
+        "title": "DataGauge \u2014 Dataset Quality Monitoring System",
         "category": "AI & Machine Learning",
         "github": "https://github.com/sanjayGL2006/DataGauge-Dataset-Quality-Monitoring-System"
       },
@@ -357,11 +357,11 @@
     "named_count": 6,
     "drive_count": 96,
     "highlights": [
-      "PRAVIDHI — State Level BCA Tech Fest Coding Contest (JSS College Mysore)",
+      "PRAVIDHI \u2014 State Level BCA Tech Fest Coding Contest (JSS College Mysore)",
       "National Road Safety Quiz (Ministry of Road Transport & Highways)",
       "Online Quiz on Safe & Responsible Use of AI (MeitY / Digital India)",
-      "Certificate of Completion — Web Dev Internship (Oasis Infobyte / AICTE)",
-      "Certificate of Appreciation — Star Performer (Oasis Infobyte / AICTE)",
+      "Certificate of Completion \u2014 Web Dev Internship (Oasis Infobyte / AICTE)",
+      "Certificate of Appreciation \u2014 Star Performer (Oasis Infobyte / AICTE)",
       "Python for Beginners (Verified Certification)",
       "HackerRank Frontend Developer (React), JavaScript, SQL, Python, Problem Solving",
       "Microsoft Azure & Microsoft Copilot Certifications",
@@ -372,17 +372,17 @@
     {
       "role": "NSS Volunteer",
       "org": "National Service Scheme (PES IAMS)",
-      "period": "2023 – Present"
+      "period": "2023 \u2013 Present"
     },
     {
       "role": "Youth For Seva (YFS)",
       "org": "Virupina Koppa Group Tree Planting Drive (2025)",
-      "period": "2024 – Present"
+      "period": "2024 \u2013 Present"
     },
     {
       "role": "MY Bharat Volunteer",
       "org": "Govt. of India / Viksit Vibrant Village Program Quiz 2026",
-      "period": "2024 – Present"
+      "period": "2024 \u2013 Present"
     },
     {
       "role": "Nasha Mukti Competition",
@@ -399,5 +399,655 @@
     "7+ AI-powered Projects & Chatbots",
     "Awarded Star Performer Certificate at Oasis Infobyte AICTE Internship",
     "State Level BCA Tech Fest Coding Contestant at Pravidhi 2026"
+  ],
+  "interview_qna": [
+    {
+      "category": "identity",
+      "question": "Who are you?",
+      "answer": "I am Sanjay G. L., a BCA student and aspiring Full-Stack AI Engineer focused on web development, AI systems, machine learning, secure backend APIs, and practical software solutions.",
+      "keywords": "identity,about,sanjay"
+    },
+    {
+      "category": "identity",
+      "question": "Tell me about Sanjay G. L.",
+      "answer": "Sanjay G. L. is a BCA student at PES Institute of Advanced Management Studies in Shivamogga. He builds web applications, AI assistants, data-driven platforms, and software projects while continuously learning AI, ML, cybersecurity, Docker, and full-stack development.",
+      "keywords": "about,profile"
+    },
+    {
+      "category": "identity",
+      "question": "What is your full name?",
+      "answer": "My full name is Sanjay G. L.",
+      "keywords": "name,identity"
+    },
+    {
+      "category": "identity",
+      "question": "What do you do?",
+      "answer": "I am a BCA student, developer, learner, and aspiring Full-Stack AI Engineer. I work with web technologies, Python, AI workflows, databases, machine learning, and software development.",
+      "keywords": "role,developer"
+    },
+    {
+      "category": "identity",
+      "question": "Where are you based?",
+      "answer": "I am based in Shivamogga, Karnataka, India.",
+      "keywords": "location,city"
+    },
+    {
+      "category": "identity",
+      "question": "What is your current status?",
+      "answer": "I am currently a student pursuing my Bachelor of Computer Applications (BCA).",
+      "keywords": "student,status"
+    },
+    {
+      "category": "identity",
+      "question": "What are you currently studying?",
+      "answer": "I am pursuing BCA at PES Institute of Advanced Management Studies (PES IAMS), Shivamogga.",
+      "keywords": "education,bca"
+    },
+    {
+      "category": "education",
+      "question": "Which year of BCA are you in?",
+      "answer": "I am currently in my 3rd year, 5th semester of BCA.",
+      "keywords": "bca,semester"
+    },
+    {
+      "category": "education",
+      "question": "When did you start your BCA?",
+      "answer": "I started my BCA in 2023 and it is currently ongoing.",
+      "keywords": "bca,2023"
+    },
+    {
+      "category": "education",
+      "question": "Where are you studying?",
+      "answer": "I study at PES Institute of Advanced Management Studies (PES IAMS), Shivamogga, Karnataka.",
+      "keywords": "college,pesiams"
+    },
+    {
+      "category": "education",
+      "question": "Where did you complete PUC?",
+      "answer": "I completed my Pre-University Course at PES PU College, Shivamogga, in March 2023.",
+      "keywords": "puc,education"
+    },
+    {
+      "category": "education",
+      "question": "Where did you complete SSLC?",
+      "answer": "I completed SSLC at Cambridge International Public School, Shivamogga, in April 2021.",
+      "keywords": "sslc,education"
+    },
+    {
+      "category": "career",
+      "question": "What is your career goal?",
+      "answer": "My long-term goal is to become a Full-Stack AI Engineer who designs high-performance intelligent systems and enterprise applications.",
+      "keywords": "career,goal,ai"
+    },
+    {
+      "category": "career",
+      "question": "What kind of opportunities are you looking for?",
+      "answer": "I am open to internships and professional opportunities where I can apply my skills, learn from real projects, and deliver useful software solutions.",
+      "keywords": "internship,opportunity"
+    },
+    {
+      "category": "career",
+      "question": "What is your active career goal?",
+      "answer": "My current goal is to apply my skills in C, Java, Python, HTML/CSS, and AI workflows in a professional role and deliver high-quality results.",
+      "keywords": "career,current-goal"
+    },
+    {
+      "category": "career",
+      "question": "What domain are you interested in?",
+      "answer": "My main interests are AI, machine learning, Python development, full-stack development, cybersecurity, databases, cloud deployment, and intelligent software systems.",
+      "keywords": "domain,interests"
+    },
+    {
+      "category": "career",
+      "question": "Why do you want to become an AI engineer?",
+      "answer": "I enjoy combining software development, data, automation, and intelligent systems to solve real-world problems. AI engineering lets me connect these interests into practical products.",
+      "keywords": "ai,career"
+    },
+    {
+      "category": "skills",
+      "question": "What are your strongest technical skills?",
+      "answer": "My strongest areas include HTML/CSS, JavaScript, Python, SQL/DBMS, Git/GitHub, cloud deployment tools, AI workflows, and practical full-stack development.",
+      "keywords": "skills,technical"
+    },
+    {
+      "category": "skills",
+      "question": "What programming languages do you know?",
+      "answer": "I work with Python, JavaScript, C, C++, Java, PHP, HTML, and CSS. My proficiency varies by technology and project.",
+      "keywords": "programming,languages"
+    },
+    {
+      "category": "skills",
+      "question": "How good are you at Python?",
+      "answer": "I have advanced practical experience with Python, including Flask, FastAPI, Scikit-learn, Pandas, NumPy, and data automation.",
+      "keywords": "python,skill"
+    },
+    {
+      "category": "skills",
+      "question": "How good are you at JavaScript?",
+      "answer": "I have advanced JavaScript knowledge covering ES6+, asynchronous programming, DOM processing, Web APIs, and event-driven logic.",
+      "keywords": "javascript,skill"
+    },
+    {
+      "category": "skills",
+      "question": "How good are you at HTML and CSS?",
+      "answer": "I have advanced HTML5/CSS3 skills, including semantic markup, responsive layouts, Flexbox, Grid, design tokens, and modern visual effects.",
+      "keywords": "html,css,frontend"
+    },
+    {
+      "category": "skills",
+      "question": "Do you know React?",
+      "answer": "Yes. I have intermediate React experience, including component architecture, custom hooks, state management, Vite integration, and modular application development.",
+      "keywords": "react,frontend"
+    },
+    {
+      "category": "skills",
+      "question": "Do you know PHP?",
+      "answer": "Yes. I have intermediate PHP and server-side scripting experience, including form processing, sessions, and server-side application logic.",
+      "keywords": "php,backend"
+    },
+    {
+      "category": "skills",
+      "question": "Do you know Electron.js?",
+      "answer": "Yes. I have intermediate Electron.js experience for desktop application development, including local file storage and paperless systems.",
+      "keywords": "electron,desktop"
+    },
+    {
+      "category": "skills",
+      "question": "Do you know C and C++?",
+      "answer": "Yes. I have intermediate experience with C and C++, including procedural programming, object-oriented concepts, pointers, and memory control.",
+      "keywords": "c,cpp,programming"
+    },
+    {
+      "category": "skills",
+      "question": "Do you know data structures?",
+      "answer": "Yes. I have worked with arrays, linked lists, stacks, queues, binary search trees, and graphs in C.",
+      "keywords": "data-structures,c"
+    },
+    {
+      "category": "skills",
+      "question": "Do you know Java?",
+      "answer": "Yes. I have intermediate Java fundamentals knowledge, including OOP, exception handling, collections, and Android basics.",
+      "keywords": "java"
+    },
+    {
+      "category": "skills",
+      "question": "Do you know SQL and DBMS?",
+      "answer": "Yes. I have advanced DBMS and SQL knowledge covering relational design, normalization, joins, indexing, transactions, and database architecture.",
+      "keywords": "sql,dbms,database"
+    },
+    {
+      "category": "skills",
+      "question": "Do you know PL/SQL?",
+      "answer": "Yes. I have intermediate PL/SQL and MySQL experience, including stored procedures, triggers, functions, cursors, and SQLite.",
+      "keywords": "plsql,mysql,sql"
+    },
+    {
+      "category": "skills",
+      "question": "Do you know cybersecurity?",
+      "answer": "Yes. I have intermediate cybersecurity testing knowledge, including web security auditing, XSS/CSRF defenses, Kali Linux, and TryHackMe labs.",
+      "keywords": "cybersecurity,kali,security"
+    },
+    {
+      "category": "skills",
+      "question": "Do you know Linux?",
+      "answer": "Yes. I have intermediate Linux and operating-system knowledge, including process management, Bash scripting, file permissions, and memory concepts.",
+      "keywords": "linux,os,bash"
+    },
+    {
+      "category": "skills",
+      "question": "Do you know Git and GitHub?",
+      "answer": "Yes. Git and GitHub are among my advanced skills. I work with version control, branching, merge conflict resolution, and GitHub Actions.",
+      "keywords": "git,github,version-control"
+    },
+    {
+      "category": "skills",
+      "question": "Do you know Docker?",
+      "answer": "Yes. I have intermediate Docker knowledge, including Dockerfiles, containerization, Docker Compose, and microservice environments.",
+      "keywords": "docker,containers"
+    },
+    {
+      "category": "skills",
+      "question": "Which cloud deployment platforms have you used?",
+      "answer": "I have experience with Vercel, Netlify, Railway, Replit, and Google Cloud Run deployment workflows.",
+      "keywords": "cloud,deployment"
+    },
+    {
+      "category": "skills",
+      "question": "What AI tools and workflows do you use?",
+      "answer": "I work with AI workflow tools such as Google Gemini API, Postman, Gamma, Slidesgo, Google Antigravity, Lovable, Base44, and Pomil.",
+      "keywords": "ai-tools,workflow"
+    },
+    {
+      "category": "skills",
+      "question": "Do you know machine learning?",
+      "answer": "Yes. I have intermediate machine learning experience with Scikit-learn, including Random Forest, Naive Bayes, Linear Regression, and Logistic Regression.",
+      "keywords": "machine-learning,ml"
+    },
+    {
+      "category": "skills",
+      "question": "Do you know deep learning?",
+      "answer": "Yes. I have intermediate experience with CNNs, TensorFlow/Keras, OpenCV, and image classification.",
+      "keywords": "deep-learning,cnn,tensorflow"
+    },
+    {
+      "category": "skills",
+      "question": "What is your experience with AI agents?",
+      "answer": "I have worked on agentic AI workflows, Google Gemini API integrations, prompt engineering, autonomous agents, and AI assistants.",
+      "keywords": "ai-agents,gemini,prompt-engineering"
+    },
+    {
+      "category": "skills",
+      "question": "What are you currently learning?",
+      "answer": "I am currently developing my knowledge in Artificial Intelligence, Machine Learning, Docker, Electron.js, Kali Linux, GitHub Actions, and prompt engineering.",
+      "keywords": "learning,current"
+    },
+    {
+      "category": "skills",
+      "question": "What are your AI learning levels?",
+      "answer": "My portfolio lists Artificial Intelligence at 50% and Machine Learning at 40% as current learning progress indicators.",
+      "keywords": "ai,ml,progress"
+    },
+    {
+      "category": "skills",
+      "question": "What are your Docker and Kali Linux learning levels?",
+      "answer": "My portfolio lists Docker at 35%, Kali Linux at 30%, and Electron.js at 25% as current learning progress indicators.",
+      "keywords": "docker,kali,electron"
+    },
+    {
+      "category": "journey",
+      "question": "How did you start programming?",
+      "answer": "I started with C and Python, focusing on logic building and solving basic algorithmic problems.",
+      "keywords": "journey,programming"
+    },
+    {
+      "category": "journey",
+      "question": "How did you learn web development?",
+      "answer": "After programming fundamentals, I learned HTML and CSS, then JavaScript and DOM manipulation, and later React and TypeScript.",
+      "keywords": "journey,web-development"
+    },
+    {
+      "category": "journey",
+      "question": "What did you build after learning JavaScript?",
+      "answer": "I built dynamic interactive utilities, calculators, and API-fetch applications while learning JavaScript and DOM manipulation.",
+      "keywords": "javascript,projects"
+    },
+    {
+      "category": "journey",
+      "question": "What did you build with React?",
+      "answer": "I engineered single-page React applications with modular components and Tailwind CSS.",
+      "keywords": "react,projects"
+    },
+    {
+      "category": "journey",
+      "question": "How did you get into AI projects?",
+      "answer": "I moved from web development into autonomous AI projects, integrating Google AI Studio APIs to create assistants and chatbots deployed on Google Cloud Run.",
+      "keywords": "ai,journey"
+    },
+    {
+      "category": "journey",
+      "question": "What are you learning now in DevOps?",
+      "answer": "I am learning Docker, Docker Compose, containerization, and cloud deployment pipelines as part of my DevOps journey.",
+      "keywords": "devops,docker"
+    },
+    {
+      "category": "journey",
+      "question": "What is your future technical goal?",
+      "answer": "My future goal is to become a Full-Stack AI Engineer and design intelligent, high-performance systems and enterprise applications.",
+      "keywords": "future,ai-engineer"
+    },
+    {
+      "category": "projects",
+      "question": "How many projects have you built?",
+      "answer": "My portfolio currently lists 29+ projects.",
+      "keywords": "projects,count"
+    },
+    {
+      "category": "projects",
+      "question": "How many AI projects do you have?",
+      "answer": "My portfolio currently lists 5+ AI projects.",
+      "keywords": "ai-projects,count"
+    },
+    {
+      "category": "projects",
+      "question": "How many machine learning projects do you have?",
+      "answer": "My portfolio currently lists 1+ ML projects.",
+      "keywords": "ml-projects,count"
+    },
+    {
+      "category": "projects",
+      "question": "How many AI assistants have you built?",
+      "answer": "My portfolio currently lists 2+ AI assistants.",
+      "keywords": "ai-assistants,count"
+    },
+    {
+      "category": "projects",
+      "question": "What is DataGauge?",
+      "answer": "DataGauge is a FastAPI and React platform that scores uploaded CSV/Excel datasets from 0\u2013100, flags completeness, validity, and outlier issues, provides guided cleaning, and exports PDF/Excel reports.",
+      "keywords": "datagauge,project,data-engineering"
+    },
+    {
+      "category": "projects",
+      "question": "What technologies are used in DataGauge?",
+      "answer": "DataGauge uses FastAPI, React, Pandas, JWT, and Recharts.",
+      "keywords": "datagauge,fastapi,react"
+    },
+    {
+      "category": "projects",
+      "question": "What is Accident Risk Prediction?",
+      "answer": "It is a machine learning system using a Scikit-learn Random Forest Classifier to evaluate traffic safety, weather variables, and road density and forecast local hazard levels.",
+      "keywords": "accident-risk,ml,random-forest"
+    },
+    {
+      "category": "projects",
+      "question": "What technologies are used in Accident Risk Prediction?",
+      "answer": "The project uses Python, Flask, Scikit-learn, Pandas, and SQLite.",
+      "keywords": "accident-risk,python,flask"
+    },
+    {
+      "category": "projects",
+      "question": "What is Sai AI Assistant?",
+      "answer": "Sai AI Assistant is an intelligent productivity assistant using Google Gemini Pro. It includes education tools, a WhatsApp preset text builder, a code snippet compiler, and custom SQLite session databases.",
+      "keywords": "sai-ai,assistant,gemini"
+    },
+    {
+      "category": "projects",
+      "question": "What technologies are used in Sai AI Assistant?",
+      "answer": "Sai AI Assistant uses the Gemini API, Flask, Python, SQLite, HTML, and CSS.",
+      "keywords": "sai-ai,technology"
+    },
+    {
+      "category": "projects",
+      "question": "What is your AI Agent using Google API project?",
+      "answer": "It is an autonomous web agent using Google AI Studio SDKs, reasoning capabilities, and custom tool calling to automate complex research questions.",
+      "keywords": "ai-agent,google-api"
+    },
+    {
+      "category": "projects",
+      "question": "What technologies are used in the Google API AI Agent?",
+      "answer": "The project uses Google AI, Python, Cloud Run, and JavaScript.",
+      "keywords": "ai-agent,cloud-run"
+    },
+    {
+      "category": "projects",
+      "question": "What is Surya Chatbot?",
+      "answer": "Surya Chatbot is an interactive chatbot interface using localized response dictionaries and smooth visual transitions for client engagement.",
+      "keywords": "surya-chatbot,chatbot"
+    },
+    {
+      "category": "projects",
+      "question": "What technologies are used in Surya Chatbot?",
+      "answer": "Surya Chatbot uses HTML5, CSS3, and JavaScript.",
+      "keywords": "surya-chatbot,web"
+    },
+    {
+      "category": "projects",
+      "question": "What is Kai Assistant?",
+      "answer": "Kai Assistant is a lightweight local browser-based agent designed for text formatting, summarization, and prompt execution tasks.",
+      "keywords": "kai-assistant,ai"
+    },
+    {
+      "category": "projects",
+      "question": "What technologies are used in Kai Assistant?",
+      "answer": "Kai Assistant uses JavaScript, HTML5, and AI APIs.",
+      "keywords": "kai-assistant,technology"
+    },
+    {
+      "category": "projects",
+      "question": "What is your approach to projects?",
+      "answer": "I prefer hands-on projects that solve practical problems. I combine frontend interfaces, backend APIs, databases, AI workflows, and deployment technologies depending on the project.",
+      "keywords": "projects,approach"
+    },
+    {
+      "category": "experience",
+      "question": "Do you have internship experience?",
+      "answer": "Yes. My portfolio lists an offline internship at Milano Infotech in Shivamogga, focused on AI, machine learning, and Python development.",
+      "keywords": "internship,milano-infotech"
+    },
+    {
+      "category": "experience",
+      "question": "What was the mode of your internship?",
+      "answer": "The internship was offline in Shivamogga.",
+      "keywords": "internship,offline"
+    },
+    {
+      "category": "volunteering",
+      "question": "Are you an NSS volunteer?",
+      "answer": "Yes. I am an NSS Volunteer at PES IAMS Shivamogga and have participated in community service and awareness activities.",
+      "keywords": "nss,volunteer"
+    },
+    {
+      "category": "volunteering",
+      "question": "What did you do as an NSS volunteer?",
+      "answer": "I participated in community service, literacy, hygiene awareness, environmental sustainability, and social awareness programs, developing teamwork, discipline, and leadership skills.",
+      "keywords": "nss,experience"
+    },
+    {
+      "category": "volunteering",
+      "question": "Are you a YFS volunteer?",
+      "answer": "Yes. I am a Youth for Seva (Mera Yuva Bharat) volunteer and have participated in youth-led initiatives, civic engagement programs, and Viksit Bharat campaigns.",
+      "keywords": "yfs,volunteer"
+    },
+    {
+      "category": "volunteering",
+      "question": "Have you received recognition for volunteering?",
+      "answer": "Yes. My portfolio states that I was recognised with a Certificate of Recognition by the Ministry of Youth Affairs & Sports.",
+      "keywords": "recognition,yfs"
+    },
+    {
+      "category": "soft-skills",
+      "question": "What are your soft skills?",
+      "answer": "My listed soft skills include community leadership, rapid learning, technical documentation, teamwork, and discipline.",
+      "keywords": "soft-skills"
+    },
+    {
+      "category": "soft-skills",
+      "question": "What makes you a good team member?",
+      "answer": "My volunteering experiences and project work have helped me develop teamwork, discipline, empathy, leadership, and problem-solving skills.",
+      "keywords": "teamwork,leadership"
+    },
+    {
+      "category": "soft-skills",
+      "question": "How do you learn new technology?",
+      "answer": "I learn through hands-on development, documentation, experimentation, academic coursework, and continuous self-learning.",
+      "keywords": "learning,method"
+    },
+    {
+      "category": "interests",
+      "question": "What are your hobbies and interests?",
+      "answer": "My interests include cybersecurity, computer networking, fish keeping and aquarium care, trekking, historical travel, electronics and components, AI, and automation.",
+      "keywords": "hobbies,interests"
+    },
+    {
+      "category": "interests",
+      "question": "Do you like cybersecurity?",
+      "answer": "Yes. Cybersecurity is one of my technical interests, especially web security auditing, Kali Linux, and security testing fundamentals.",
+      "keywords": "cybersecurity,interest"
+    },
+    {
+      "category": "interests",
+      "question": "Do you keep fish?",
+      "answer": "Yes. Fish keeping and aquarium care are among my personal interests.",
+      "keywords": "aquarium,hobby"
+    },
+    {
+      "category": "interests",
+      "question": "Do you like trekking?",
+      "answer": "Yes. Trekking is one of my personal interests.",
+      "keywords": "trekking,hobby"
+    },
+    {
+      "category": "interests",
+      "question": "Are you interested in history?",
+      "answer": "Yes. Historical travel and history are among my interests.",
+      "keywords": "history,travel"
+    },
+    {
+      "category": "languages",
+      "question": "What languages do you speak?",
+      "answer": "I speak Kannada, English, and Tamil.",
+      "keywords": "languages,kannada,english,tamil"
+    },
+    {
+      "category": "languages",
+      "question": "What is your primary language?",
+      "answer": "Kannada is listed as my native/primary language.",
+      "keywords": "kannada,language"
+    },
+    {
+      "category": "languages",
+      "question": "What is your English level?",
+      "answer": "English is listed as a professional language for me.",
+      "keywords": "english,language"
+    },
+    {
+      "category": "languages",
+      "question": "What is your Tamil level?",
+      "answer": "Tamil is listed as native/fluent for me.",
+      "keywords": "tamil,language"
+    },
+    {
+      "category": "portfolio",
+      "question": "What is your portfolio website?",
+      "answer": "My portfolio is available at https://sanjaygl30ai.vercel.app/",
+      "keywords": "portfolio,website"
+    },
+    {
+      "category": "portfolio",
+      "question": "What is special about your portfolio?",
+      "answer": "It is an AI-powered portfolio and operating system showcasing my skills, projects, certificates, learning journey, resume, and contact information.",
+      "keywords": "portfolio,website"
+    },
+    {
+      "category": "portfolio",
+      "question": "How many certificates do you have?",
+      "answer": "My portfolio currently lists 87+ certificates.",
+      "keywords": "certificates,count"
+    },
+    {
+      "category": "portfolio",
+      "question": "How many technologies are listed in your portfolio?",
+      "answer": "My portfolio currently lists 20+ technologies.",
+      "keywords": "technologies,count"
+    },
+    {
+      "category": "portfolio",
+      "question": "How many live deployments are listed?",
+      "answer": "My portfolio currently lists 8+ live deployments.",
+      "keywords": "deployments,count"
+    },
+    {
+      "category": "portfolio",
+      "question": "How many featured projects are listed?",
+      "answer": "My portfolio currently highlights 5 featured projects.",
+      "keywords": "featured-projects,count"
+    },
+    {
+      "category": "portfolio",
+      "question": "How many visitors does your portfolio show?",
+      "answer": "The portfolio page currently displays a visitor count of 1,428.",
+      "keywords": "visitors,portfolio"
+    },
+    {
+      "category": "interview",
+      "question": "Why should a company consider you?",
+      "answer": "I bring a combination of programming fundamentals, full-stack development, AI experimentation, database knowledge, cybersecurity learning, and a strong hands-on learning mindset. I am eager to contribute and grow through real-world engineering work.",
+      "keywords": "interview,strengths"
+    },
+    {
+      "category": "interview",
+      "question": "What are your strengths?",
+      "answer": "My strengths are rapid learning, practical project building, technical documentation, discipline, teamwork, problem solving, and curiosity about emerging technologies.",
+      "keywords": "interview,strengths"
+    },
+    {
+      "category": "interview",
+      "question": "What is one area you are improving?",
+      "answer": "I am continuously improving deeper AI and machine learning knowledge, Docker and DevOps skills, cybersecurity, and advanced full-stack engineering.",
+      "keywords": "interview,improvement"
+    },
+    {
+      "category": "interview",
+      "question": "Where do you see yourself in the future?",
+      "answer": "I see myself as a Full-Stack AI Engineer building intelligent products, automation systems, secure applications, and enterprise-grade software.",
+      "keywords": "interview,future"
+    },
+    {
+      "category": "interview",
+      "question": "What type of projects do you enjoy?",
+      "answer": "I enjoy projects that combine software engineering with practical automation, AI, data, security, or productivity improvements.",
+      "keywords": "interview,projects"
+    },
+    {
+      "category": "interview",
+      "question": "How do you handle learning difficult topics?",
+      "answer": "I break the topic into fundamentals, practice through small projects, document what I learn, and gradually integrate it into larger applications.",
+      "keywords": "interview,learning"
+    },
+    {
+      "category": "interview",
+      "question": "How would you describe yourself in one sentence?",
+      "answer": "I am a curious and disciplined BCA developer who enjoys turning ideas into practical web, AI, data, and software solutions.",
+      "keywords": "interview,about"
+    },
+    {
+      "category": "interview",
+      "question": "What motivates you as a developer?",
+      "answer": "I am motivated by learning new technology, solving real problems, building useful applications, and seeing an idea become a working product.",
+      "keywords": "interview,motivation"
+    },
+    {
+      "category": "contact",
+      "question": "How can someone contact you?",
+      "answer": "For professional contact, my portfolio lists sanjaygl2006@gmail.com and a phone contact at +91 8123981877. My portfolio also provides social links and a contact form.",
+      "keywords": "contact"
+    },
+    {
+      "category": "contact",
+      "question": "What is your email?",
+      "answer": "My portfolio lists sanjaygl2006@gmail.com as my contact email.",
+      "keywords": "email,contact"
+    },
+    {
+      "category": "contact",
+      "question": "What is your LinkedIn?",
+      "answer": "My portfolio contains a LinkedIn profile link in the Social Media Channels section.",
+      "keywords": "linkedin,social"
+    },
+    {
+      "category": "contact",
+      "question": "What is your GitHub?",
+      "answer": "My portfolio contains a GitHub profile link and GitHub project links in the project sections.",
+      "keywords": "github,social"
+    },
+    {
+      "category": "agent",
+      "question": "Can your personal agent answer questions about you?",
+      "answer": "Yes. A personal agent can use this question-and-answer dataset as a knowledge base to answer questions about my education, skills, projects, experience, interests, goals, and portfolio.",
+      "keywords": "agent,knowledge-base"
+    },
+    {
+      "category": "agent",
+      "question": "What should the agent do if it does not know an answer?",
+      "answer": "The agent should avoid inventing personal facts. It should say that the information is not available in its knowledge base and, when appropriate, suggest checking the portfolio or asking Sanjay directly.",
+      "keywords": "agent,safety"
+    },
+    {
+      "category": "agent",
+      "question": "Should the agent claim uncertain information as fact?",
+      "answer": "No. The agent should only state information supported by the profile or dataset and clearly indicate when something is unknown or may have changed.",
+      "keywords": "agent,grounding"
+    },
+    {
+      "category": "agent",
+      "question": "Can the agent answer interview questions?",
+      "answer": "Yes. The dataset includes interview-style questions covering strengths, goals, learning style, projects, motivation, and career direction.",
+      "keywords": "agent,interview"
+    },
+    {
+      "category": "agent",
+      "question": "Can the agent explain Sanjay's projects?",
+      "answer": "Yes. It can explain the purpose, technologies, and key features of the projects listed in the portfolio.",
+      "keywords": "agent,projects"
+    }
   ]
 }
