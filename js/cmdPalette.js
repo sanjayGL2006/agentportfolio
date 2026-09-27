@@ -5,13 +5,16 @@
 
   const COMMANDS = [
     { title: "Home Page", desc: "Navigate to portfolio home", action: () => window.location.href = "index.html#home", icon: "fa-house" },
-    { title: "All Projects (28)", desc: "Explore all 28 software projects", action: () => window.location.href = "projects.html", icon: "fa-diagram-project" },
-    { title: "Certificates (86)", desc: "View all technical & government certificates", action: () => window.location.href = "certificates.html", icon: "fa-certificate" },
+    { title: "SPVM 3 Tech Solution", desc: "App operations, technical education & coding tutorials", action: () => window.location.href = "index.html#spvm3tech", icon: "fa-laptop-code" },
+    { title: "All Projects (69+)", desc: "Explore all software projects", action: () => window.location.href = "projects.html", icon: "fa-diagram-project" },
+    { title: "Certificates (87+)", desc: "View all technical & verified certificates", action: () => window.location.href = "certificates.html", icon: "fa-certificate" },
     { title: "Docker Roadmap", desc: "View Docker containerization learning status", action: () => window.location.href = "index.html#docker", icon: "fa-box" },
     { title: "Technical Skills", desc: "Check skills in React, Python, JavaScript, MySQL, AI", action: () => window.location.href = "index.html#skills", icon: "fa-code" },
     { title: "Download Resume", desc: "Download Sanjay G. L. Resume PDF", action: () => window.open("assets/Sanjay_GL_Resume.pdf", "_blank"), icon: "fa-file-pdf" },
+    { title: "YouTube (@spvm3techsolution)", desc: "Subscribe on YouTube", action: () => window.open("https://www.youtube.com/@spvm3techsolution", "_blank"), icon: "fa-brands fa-youtube" },
+    { title: "Instagram (@spvm3techsolution)", desc: "Follow on Instagram", action: () => window.open("https://www.instagram.com/spvm3techsolution", "_blank"), icon: "fa-brands fa-instagram" },
+    { title: "LinkedIn (SPVM 3 Tech)", desc: "Connect on LinkedIn", action: () => window.open("https://www.linkedin.com/in/spvm3-tech-solution-solution-096bb8436", "_blank"), icon: "fa-brands fa-linkedin" },
     { title: "GitHub Profile", desc: "Visit github.com/sanjayGL2006", action: () => window.open("https://github.com/sanjayGL2006", "_blank"), icon: "fa-brands fa-github" },
-    { title: "LinkedIn Profile", desc: "Connect on LinkedIn", action: () => window.open("https://www.linkedin.com/in/sanjaygl3006/", "_blank"), icon: "fa-brands fa-linkedin" },
     { title: "Toggle Dark/Light Mode", desc: "Switch color theme palette", action: () => window.toggleTheme(), icon: "fa-circle-half-stroke" },
     { title: "Contact Sanjay", desc: "Send email or get contact info", action: () => window.location.href = "index.html#contact", icon: "fa-envelope" }
   ];

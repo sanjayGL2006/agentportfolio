@@ -3,12 +3,6 @@ import json
 import logging
 from sqlalchemy import create_engine, MetaData
 from sqlalchemy.orm import sessionmaker
-# Import models from your app.py if needed, or we can use raw SQLAlchemy core to migrate data.
-try:
-    from app import app, db, Project, Certificate
-except ImportError:
-    print("Run this script from the root directory: python database/migrate_data.py")
-    exit(1)
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -21,6 +15,12 @@ SUPABASE_DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://...")
 def migrate():
     if SUPABASE_DATABASE_URL == "postgresql://...":
         logger.error("Please set your SUPABASE_DATABASE_URL in the script or in your .env file!")
+        return
+
+    try:
+        from app import app, db, Project, Certificate
+    except ImportError:
+        print("Run this script from the root directory: python database/migrate_data.py")
         return
 
     logger.info(f"Connecting to Supabase Database...")
@@ -40,3 +40,4 @@ def migrate():
 
 if __name__ == "__main__":
     migrate()
+

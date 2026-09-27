@@ -377,15 +377,10 @@ def optimize_profile_image():
 with app.app_context():
     try:
         db.create_all()
-        try:
-            from database import migrate_data
-            migrate_data.migrate()
-        except Exception as _m_err:
-            print(f"[DB] Migration check: {_m_err}")
         # Compress oversized profile image if PIL is available
         optimize_profile_image()
     except Exception as e:
-        print(f"[DB] Error creating or seeding tables: {e}")
+        print(f"[DB] Error creating tables: {e}")
 
 # ----------------- SECURITY UTILITIES -----------------
 # Cryptography (Fernet symmetric encryption for sensitive contact form values)
@@ -587,9 +582,10 @@ KNOWLEDGE_BASE = {
     "future goals": "Sanjay aims to excel as a Senior Full Stack Engineer & AI Developer, focusing on React, Full-Stack Architecture, Machine Learning, Agentic AI, Cyber Security (TryHackMe), and System Design.",
     "technologies": "Sanjay's tech stack includes React, HTML5, CSS3, JavaScript, TypeScript, Python, Flask, FastAPI, Bash, C/C++, Java, SQL, MySQL, Supabase, Lovable AI, Base44, TryHackMe, Git, GitHub, VS Code, Google AI Studio, Figma, Replit, Antigravity, and AI Productivity tools.",
     "freelance": "Yes! Sanjay is open to freelance web development, AI workflow integration, and software projects, as well as full-time internships.",
-    "contact": "You can contact Sanjay directly via email at sanjaygl2006@gmail.com, phone at +91 81239 81877, or connect on LinkedIn and GitHub.",
+    "spvm3tech": "SPVM 3 Tech Solution is a modern tech ecosystem dedicated to building web application operations and teaching core programming languages (Python, JavaScript, C/C++, Java, SQL). Official channels: Instagram (@spvm3techsolution), YouTube (@spvm3techsolution), and LinkedIn (SPVM 3 Tech Solution).",
+    "contact": "You can contact Sanjay directly via email at sanjaygl2006@gmail.com, phone at +91 81239 81877, or connect on Instagram (@spvm3techsolution), YouTube (@spvm3techsolution), and LinkedIn (spvm3-tech-solution).",
     "from": "Sanjay is from Shivamogga, Karnataka, India.",
-    "why hire": "Sanjay brings strong problem-solving skills, hands-on experience in React & full-stack web and AI development, 86+ certifications, a passion for clean code, and a proven track record of building production-ready projects."
+    "why hire": "Sanjay brings strong problem-solving skills, hands-on experience in React & full-stack web and AI development, 87+ certifications, a passion for clean code, and a proven track record of building production-ready projects."
 }
 
 def get_fallback_reply(message, proj_count, cert_count):
@@ -1258,5 +1254,13 @@ def health_check():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port, debug=True)
+    try:
+        app.run(host="0.0.0.0", port=port, debug=True)
+    except OSError as err:
+        if "forbidden" in str(err).lower() or "in use" in str(err).lower() or getattr(err, 'winerror', None) == 10013:
+            fallback_port = 5001 if port == 5000 else port + 1
+            print(f"[SERVER WARN] Port {port} is occupied or restricted. Falling back to port {fallback_port}...")
+            app.run(host="0.0.0.0", port=fallback_port, debug=True)
+        else:
+            raise err
 

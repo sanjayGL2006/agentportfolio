@@ -12,7 +12,7 @@
     "future_goal": "Full-stack engineer & Security Developer building scalable web applications, ethical cybersecurity labs, and AI systems.",
     "personal_life": {
       "relationship": "single and i am bca student",
-      "family": "Has a brother, grandparents, and Ramu mama (shared car travels & traditional banana leaf meals)",
+      "family": "Has a brother, grandparents (shared car travels & traditional banana leaf meals)",
       "mother_craft": "Mother crafts customized saree border tassels (kuchu) for which Sanjay explored creating a digital storefront",
       "hobbies": [
         "Trekking & Hiking (Hulibande falls, Haihole Check Dam)",
@@ -23,10 +23,11 @@
       ]
     },
     "github": "https://github.com/sanjayGL2006",
-    "linkedin": "https://linkedin.com/in/sanjaygl2006",
+    "linkedin": "https://www.linkedin.com/in/spvm3-tech-solution-solution-096bb8436",
     "telegram": "https://t.me/sanjaygl2006",
-    "instagram": "https://instagram.com/sanjaygl2006",
-    "youtube": "https://youtube.com/@code_catalyst_collective",
+    "instagram": "https://www.instagram.com/spvm3techsolution",
+    "youtube": "https://www.youtube.com/@spvm3techsolution",
+    "spvm3tech": "https://sanjaygl30ai.vercel.app/#spvm3tech",
     "resume": "assets/Sanjay_GL_Resume.pdf"
   },
   "education": [
@@ -199,7 +200,7 @@
     "Portfolios, Profiles & Tributes"
   ],
   "projects": {
-    "total_count": "29+",
+    "total_count": 62,
     "featured_count": 5,
     "certificates_count": "87+",
     "technologies_count": "20+",
@@ -233,7 +234,8 @@
       {
         "title": "DataGauge \u2014 Dataset Quality Monitoring System",
         "category": "AI & Machine Learning",
-        "github": "https://github.com/sanjayGL2006/DataGauge-Dataset-Quality-Monitoring-System"
+        "github": "https://github.com/sanjayGL2006/DataGauge-Dataset-Quality-Monitoring-System",
+        "description": "Full-stack dataset quality monitoring system built with FastAPI, React, and Pandas. Automatically computes 0-100 quality scores, flags data issues, provides guided cleaning, interactive dashboards, and PDF exports."
       },
       {
         "title": "Accident Risk Prediction",
@@ -258,7 +260,8 @@
       {
         "title": "Daily Task Nexus (Grab Notes)",
         "category": "Web Applications & Full-Stack Projects",
-        "github": "https://github.com/sanjayGL2006/daily-task-nexus"
+        "github": "https://github.com/sanjayGL2006/daily-task-nexus",
+        "description": "Minimalist, locally-persistent Daily Task manager built with HTML5, CSS3 (Custom Animations & Gradients), and Vanilla JavaScript featuring dynamic filtering and task lifecycle tracking."
       },
       {
         "title": "Expense Tracker (RupeeTrack)",
@@ -349,11 +352,593 @@
         "title": "Maya Angelou Tribute Showcase",
         "category": "Portfolios, Profiles & Tributes",
         "github": "https://github.com/sanjayGL2006/maya-angelou-tribute"
+      },
+      {
+        "id": 101,
+        "title": "SPVM\u00b3 Spend Tracker",
+        "category": "Management & Enterprise Systems",
+        "tagline": "Fast, responsive finance and expense management dashboard.",
+        "description": "Fast, responsive finance and expense management dashboard built with React, Recharts, and FastAPI for SPVM\u00b3 Tech Solution.",
+        "tech": [
+          "React",
+          "FastAPI",
+          "Recharts",
+          "Python",
+          "JavaScript",
+          "Tailwind CSS"
+        ],
+        "github": "https://github.com/sanjayGL2006/spvm3-spend-tracker",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 102,
+        "title": "SPVM\u00b3 Engineering Blog",
+        "category": "Web Applications & Portals",
+        "tagline": "Full-stack React & FastAPI technical blog engine.",
+        "description": "Full-stack React & FastAPI engine showcasing real-world engineering logs on real-time chat, anti-cheat mechanisms, and AI prompt engineering with load-more pagination.",
+        "tech": [
+          "React",
+          "FastAPI",
+          "Python",
+          "JavaScript",
+          "CSS3"
+        ],
+        "github": "https://github.com/sanjayGL2006/SPVM3-Blog",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 103,
+        "title": "SPVM\u00b3 Music Player",
+        "category": "Tools, Systems & Utilities",
+        "tagline": "Full-stack glassmorphic music player with local library sync.",
+        "description": "Full-stack modern music player built with React 18, Vite, and FastAPI featuring automatic local library sync, ID3 metadata & album art extraction, sleek glassmorphic UI, and audio visualizer.",
+        "tech": [
+          "React 18",
+          "Vite",
+          "FastAPI",
+          "Python",
+          "JavaScript",
+          "Web Audio API"
+        ],
+        "github": "https://github.com/sanjayGL2006/spvm3-player",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 104,
+        "title": "SPVM\u00b3 API Platform",
+        "category": "Tools, Systems & Utilities",
+        "tagline": "Multi-user Flask & MySQL backend for API keys and developer knowledge.",
+        "description": "Multi-user Flask & MySQL backend for managing API keys and serving programming knowledge via REST APIs. Includes built-in user dashboard and admin panel.",
+        "tech": [
+          "Python",
+          "Flask",
+          "MySQL",
+          "REST API",
+          "SQLAlchemy",
+          "JWT"
+        ],
+        "github": "https://github.com/sanjayGL2006/spvm3-api-platform",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 105,
+        "title": "Image to Text OCR Converter",
+        "category": "Tools, Systems & Utilities",
+        "tagline": "Extract text from photos and convert into editable documents.",
+        "description": "Web application that extracts text from photos and documents using optical character recognition (OCR) and converts them into editable formats.",
+        "tech": [
+          "Python",
+          "Flask",
+          "Tesseract OCR",
+          "OpenCV",
+          "JavaScript",
+          "HTML5"
+        ],
+        "github": "https://github.com/sanjayGL2006/image-to-text-converter",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 106,
+        "title": "Cyber Security Incident Response Platform",
+        "category": "Tools, Systems & Utilities",
+        "tagline": "Full-stack platform for tracking & resolving security incidents.",
+        "description": "Full-stack web application for tracking, managing, and resolving cybersecurity incident tickets with real-time severity triage.",
+        "tech": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "CSS3"
+        ],
+        "github": "https://github.com/sanjayGL2006/cyber-response-platform",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 107,
+        "title": "Student HTR Studio",
+        "category": "AI & Machine Learning",
+        "tagline": "Classroom-scale Handwritten Text Recognition pipeline with TrOCR & OpenCV.",
+        "description": "Classroom-scale Handwritten Text Recognition (HTR) pipeline using TrOCR, OpenCV line segmentation, NLP grammar correction, and interactive React Flow node canvas.",
+        "tech": [
+          "Python",
+          "TrOCR",
+          "OpenCV",
+          "PyTorch",
+          "React",
+          "React Flow",
+          "FastAPI"
+        ],
+        "github": "https://github.com/sanjayGL2006/student-htr-studio",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 108,
+        "title": "Malicious URL Detector",
+        "category": "AI & Machine Learning",
+        "tagline": "Random Forest ML model classifying malicious vs benign URLs.",
+        "description": "Lightweight Flask web application that extracts lexical features from URLs and uses a Random Forest ML model to classify them as malicious or benign.",
+        "tech": [
+          "Python",
+          "Flask",
+          "Scikit-learn",
+          "Random Forest",
+          "Pandas",
+          "JavaScript"
+        ],
+        "github": "https://github.com/sanjayGL2006/malicious-url-detector",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 109,
+        "title": "Smart Voice Notes AI",
+        "category": "AI & Machine Learning",
+        "tagline": "Voice note transcription & summary using Whisper & Claude.",
+        "description": "Full-stack web app that transcribes voice notes using OpenAI Whisper and generates summaries, tags, and action items using Claude via FastAPI and React.",
+        "tech": [
+          "React",
+          "FastAPI",
+          "Whisper",
+          "Claude API",
+          "Python",
+          "JavaScript"
+        ],
+        "github": "https://github.com/sanjayGL2006/smart-voice-notes",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 110,
+        "title": "Smart Parking Detection System",
+        "category": "AI & Machine Learning",
+        "tagline": "Computer vision parking slot availability tracker using OpenCV.",
+        "description": "Full-stack computer vision application to detect available parking slots using OpenCV, Python, and React with live status overlays.",
+        "tech": [
+          "Python",
+          "OpenCV",
+          "Flask",
+          "React",
+          "NumPy",
+          "JavaScript"
+        ],
+        "github": "https://github.com/sanjayGL2006/smart-parking-system",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 111,
+        "title": "AI Research Paper Analyzer",
+        "category": "AI & Machine Learning",
+        "tagline": "Analyze, summarize, and chat with academic research papers.",
+        "description": "Full-stack web app that uses AI to analyze, summarize, and chat with academic research papers. Built with React, FastAPI, and Claude.",
+        "tech": [
+          "React",
+          "FastAPI",
+          "Claude API",
+          "PyPDF",
+          "Python",
+          "JavaScript"
+        ],
+        "github": "https://github.com/sanjayGL2006/ai-paper-analyzer",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 112,
+        "title": "SPVM\u00b3 Secure Anti-Cheat Quiz App",
+        "category": "Web Applications & Portals",
+        "tagline": "Anti-cheat window focus monitoring quiz platform.",
+        "description": "Secure, timed quiz application that monitors window focus and tab switching to prevent cheating. Built with React, Flask, and SQLite.",
+        "tech": [
+          "React",
+          "Flask",
+          "SQLite",
+          "Python",
+          "JavaScript",
+          "CSS3"
+        ],
+        "github": "https://github.com/sanjayGL2006/spvm3-quiz-app",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 113,
+        "title": "SPVM\u00b3 Placement Hub v2",
+        "category": "Management & Enterprise Systems",
+        "tagline": "Full-stack campus placement & recruitment management suite.",
+        "description": "Full-stack placement management system streamlining student registrations, company drives, ATS scoring, and interview scheduling.",
+        "tech": [
+          "TypeScript",
+          "React",
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "Tailwind CSS"
+        ],
+        "github": "https://github.com/sanjayGL2006/SPVM3-placement-hub-v2",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 114,
+        "title": "Placement Pro SPVM\u00b3",
+        "category": "Management & Enterprise Systems",
+        "tagline": "Campus Recruitment & Placement System with Docker & Kubernetes.",
+        "description": "Smart College Placement & Campus Recruitment Management System built with Python Flask, PHP, Docker, Kubernetes & Vercel.",
+        "tech": [
+          "Python",
+          "Flask",
+          "PHP",
+          "Docker",
+          "Kubernetes",
+          "MySQL"
+        ],
+        "github": "https://github.com/sanjayGL2006/placement-pro-SPVM3",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 115,
+        "title": "OTP Email Authentication Module",
+        "category": "Tools, Systems & Utilities",
+        "tagline": "Flask signup with email OTP verification & secure auth.",
+        "description": "Flask app with user signup, email OTP verification, and login \u2014 built with SQLite, Jinja2, and secure credential hashing.",
+        "tech": [
+          "Python",
+          "Flask",
+          "SQLite",
+          "SMTP Email",
+          "Jinja2",
+          "HTML5"
+        ],
+        "github": "https://github.com/sanjayGL2006/otp-signup",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 116,
+        "title": "SPVM\u00b3 Code & Tech Notes Hub",
+        "category": "Web Applications & Portals",
+        "tagline": "Interactive computer science guides for 20+ technologies.",
+        "description": "Comprehensive Computer Science & Programming Notes Hub featuring interactive guides for 20+ technologies, code references, and an integrated certificate verification system.",
+        "tech": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Markdown",
+          "JSON"
+        ],
+        "github": "https://github.com/sanjayGL2006/SPVM3-code-notes",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 117,
+        "title": "Browser-Based Antivirus File Scanner",
+        "category": "Tools, Systems & Utilities",
+        "tagline": "Client-side signature matching & static heuristic file analysis.",
+        "description": "Self-contained, browser-based file scanner combining hash-signature matching and static heuristics (double extensions, suspicious script patterns, entropy checks) to flag threat files.",
+        "tech": [
+          "HTML5",
+          "JavaScript",
+          "CryptoJS",
+          "CSS3",
+          "Web Workers"
+        ],
+        "github": "https://github.com/sanjayGL2006/scanner-files-",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 118,
+        "title": "SPVM\u00b3 Real-Time WebSocket Chat",
+        "category": "Web Applications & Portals",
+        "tagline": "High-performance real-time messaging with WebSockets & FastAPI.",
+        "description": "SPVM3 Chat: A high-performance real-time chat app featuring instant messaging, multiple chat rooms, typing indicators, and live user presence powered by WebSockets and FastAPI.",
+        "tech": [
+          "JavaScript",
+          "FastAPI",
+          "WebSockets",
+          "Python",
+          "React",
+          "CSS3"
+        ],
+        "github": "https://github.com/sanjayGL2006/spvm3-chat",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 119,
+        "title": "PulseBoard \u2014 Social Analytics Dashboard",
+        "category": "Management & Enterprise Systems",
+        "tagline": "Modern social media analytics dashboard built with React & Recharts.",
+        "description": "PulseBoard: A modern social media analytics dashboard built with React, FastAPI, and Recharts. Features follower growth tracking, engagement metrics, and recent post feeds.",
+        "tech": [
+          "React",
+          "FastAPI",
+          "Recharts",
+          "JavaScript",
+          "Tailwind CSS"
+        ],
+        "github": "https://github.com/sanjayGL2006/social-analytics-ui",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 120,
+        "title": "ReelFind \u2014 Movie & TV Discovery App",
+        "category": "Web Applications & Portals",
+        "tagline": "Full-stack movie discovery platform with React & FastAPI.",
+        "description": "A full-stack movie and TV show discovery app built with React and FastAPI, integrating TMDB APIs, rating filters, and trailer modal previews.",
+        "tech": [
+          "React",
+          "FastAPI",
+          "Python",
+          "JavaScript",
+          "TMDB API"
+        ],
+        "github": "https://github.com/sanjayGL2006/-SPVM3-reelfind-react-fastapi",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 121,
+        "title": "SPVM\u00b3 Kanban Task Manager",
+        "category": "Tools, Systems & Utilities",
+        "tagline": "Interactive drag-and-drop Kanban task app with FastAPI backend.",
+        "description": "SPVM\u00b3 Task App \u2014 A sleek, intuitive Kanban task manager featuring interactive drag-and-drop columns, priority indicators, and REST API integration with FastAPI & React.",
+        "tech": [
+          "React",
+          "FastAPI",
+          "Python",
+          "JavaScript",
+          "HTML5 Drag & Drop"
+        ],
+        "github": "https://github.com/sanjayGL2006/spvm3-task-app",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 122,
+        "title": "Sentry Cyber Intel Platform",
+        "category": "AI & Machine Learning",
+        "tagline": "Multi-agent AI cybersecurity intelligence with CrewAI & Groq.",
+        "description": "Multi-agent AI cybersecurity intelligence platform powered by CrewAI, Groq & Exa for automated threat intelligence research, CVE triage, and risk assessment.",
+        "tech": [
+          "Python",
+          "CrewAI",
+          "Groq API",
+          "Exa API",
+          "Flask",
+          "React"
+        ],
+        "github": "https://github.com/sanjayGL2006/sentry-cyber-intel",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 123,
+        "title": "SPVM\u00b3 Desktop IDE Engine",
+        "category": "Tools, Systems & Utilities",
+        "tagline": "Local-first desktop IDE built on Electron, React & Monaco Editor.",
+        "description": "Modular, local-first desktop IDE built on Electron, React & Monaco. Features multi-language runners (Python, Java, C/C++), A-Z file support, and Extensions Marketplace.",
+        "tech": [
+          "Electron",
+          "React",
+          "Monaco Editor",
+          "Node.js",
+          "JavaScript"
+        ],
+        "github": "https://github.com/sanjayGL2006/spvm3-code-editor",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 124,
+        "title": "Smart Attendance System (YOLOv8)",
+        "category": "AI & Machine Learning",
+        "tagline": "Automated classroom attendance tracker using custom YOLOv8.",
+        "description": "Real-time automated classroom attendance tracker powered by custom YOLOv8 computer vision, Flask REST API, MySQL, and an interactive React teacher dashboard.",
+        "tech": [
+          "Python",
+          "YOLOv8",
+          "OpenCV",
+          "Flask",
+          "MySQL",
+          "React"
+        ],
+        "github": "https://github.com/sanjayGL2006/smart-attendance-yolo",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 125,
+        "title": "SPVM\u00b3 Campus Placement AI Suite",
+        "category": "Management & Enterprise Systems",
+        "tagline": "AI placement suite with ATS resume scoring & career intelligence.",
+        "description": "AI-powered campus placement & career intelligence suite: automated ATS resume analysis, skills gap roadmaps, safe AI natural language queries, and department analytics.",
+        "tech": [
+          "Python",
+          "Flask",
+          "Gemini API",
+          "React",
+          "MySQL",
+          "Tailwind CSS"
+        ],
+        "github": "https://github.com/sanjayGL2006/spvm3-campus-placement",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 126,
+        "title": "SPVM\u00b3 2D Physics Racing Game",
+        "category": "Games",
+        "tagline": "200-level physics racing game with Web Audio & Python telemetry.",
+        "description": "Action-packed 2D physics racing game featuring 200-level stage progression, 60+ customizable vehicles, multi-layer parallax scenery, real-time audio synthesis, and companion Python server.",
+        "tech": [
+          "HTML5 Canvas",
+          "JavaScript",
+          "Python",
+          "Web Audio API",
+          "CSS3"
+        ],
+        "github": "https://github.com/sanjayGL2006/spvm3-car-game",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 127,
+        "title": "Text2Img AI Studio",
+        "category": "AI & Machine Learning",
+        "tagline": "Stable Diffusion text-to-image studio with generation history.",
+        "description": "Full-stack Flask web app for AI text-to-image generation powered by Stable Diffusion with built-in MySQL/SQLite generation history tracking.",
+        "tech": [
+          "Python",
+          "Flask",
+          "Stable Diffusion API",
+          "MySQL",
+          "HTML5",
+          "CSS3"
+        ],
+        "github": "https://github.com/sanjayGL2006/text2img-studio",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 128,
+        "title": "Website Carbon Intelligence Auditor",
+        "category": "Tools, Systems & Utilities",
+        "tagline": "Web app & API for auditing website carbon footprint & energy telemetry.",
+        "description": "SANJAY GL Website Carbon Intelligence \u2014 A real-time web application and developer API to audit website carbon footprints, HTTP page payload telemetry, energy consumption (SWD v4), and green hosting checks.",
+        "tech": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Node.js",
+          "SWD v4 API"
+        ],
+        "github": "https://github.com/sanjayGL2006/sanjay-gl-website-carbon-intelligence",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 129,
+        "title": "AI Resume & Skill Gap Analyzer",
+        "category": "AI & Machine Learning",
+        "tagline": "TF-IDF vector matching for resume ATS scoring against job descriptions.",
+        "description": "AI-powered resume match & skill gap analyzer built with Flask and MySQL. Uses TF-IDF vectorization to score resumes against job descriptions, highlight missing skills, and persist analysis results.",
+        "tech": [
+          "Python",
+          "Flask",
+          "Scikit-learn",
+          "TF-IDF",
+          "MySQL",
+          "HTML5"
+        ],
+        "github": "https://github.com/sanjayGL2006/resume-analyzer",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 130,
+        "title": "Image to Vector SVG Converter",
+        "category": "Tools, Systems & Utilities",
+        "tagline": "Client-side image to vector SVG converter with Bezier smoothing.",
+        "description": "Blazingly fast, client-side tool to convert JPG, PNG, and WEBP images into clean, scalable SVG vector graphics with K-means color quantization and Bezier curve smoothing.",
+        "tech": [
+          "JavaScript",
+          "HTML5 Canvas",
+          "K-Means",
+          "SVG",
+          "CSS3"
+        ],
+        "github": "https://github.com/sanjayGL2006/image-to-svg-converter",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 131,
+        "title": "Paperless Office Document Workspace",
+        "category": "Management & Enterprise Systems",
+        "tagline": "Privacy-first digital document workspace with drag & drop storage.",
+        "description": "Paperless Office System is a modern, privacy-first digital document workspace. Eliminate paper waste, organize files with drag-and-drop local storage, and search records in real time.",
+        "tech": [
+          "JavaScript",
+          "HTML5",
+          "IndexedDB",
+          "CSS3",
+          "Bootstrap"
+        ],
+        "github": "https://github.com/sanjayGL2006/Paperless-Office-System",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 132,
+        "title": "Traffic & License Plate Detection (YOLOv8)",
+        "category": "AI & Machine Learning",
+        "tagline": "Real-time webcam traffic monitoring & vehicle recognition.",
+        "description": "Real-time object detection web app built with Flask, OpenCV (MobileNet-SSD), and YOLOv8. Features live webcam video streaming, vehicle and license plate recognition, and automated detection logging.",
+        "tech": [
+          "Python",
+          "YOLOv8",
+          "OpenCV",
+          "Flask",
+          "MySQL"
+        ],
+        "github": "https://github.com/sanjayGL2006/Traffic-Vehicle-Object-Detection-with-YOLOv8",
+        "year": 2026,
+        "status": "Completed"
+      },
+      {
+        "id": 134,
+        "title": "Accident Risk Prediction Model",
+        "category": "AI & Machine Learning",
+        "tagline": "Machine Learning based traffic accident risk prediction.",
+        "description": "Machine Learning web application that predicts traffic accident risks using road conditions, weather, traffic volume, and historical accident patterns.",
+        "tech": [
+          "Python",
+          "Flask",
+          "Scikit-learn",
+          "Pandas",
+          "SQLite"
+        ],
+        "github": "https://github.com/sanjayGL2006/accident-risk-prediction",
+        "year": 2026,
+        "status": "Completed"
       }
     ]
   },
   "certificates": {
-    "total_count": "87+",
+    "total_count": 169,
     "named_count": 6,
     "drive_count": 96,
     "highlights": [
@@ -366,6 +951,1191 @@
       "HackerRank Frontend Developer (React), JavaScript, SQL, Python, Problem Solving",
       "Microsoft Azure & Microsoft Copilot Certifications",
       "Infosys Springboard, IBM SkillsBuild, freeCodeCamp, NPTEL Swayam"
+    ],
+    "list": [
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1-m18gxAuZmMmSi3tlUDfjp76Ap4Epwji",
+        "verifyLink": "https://drive.google.com/file/d/1-m18gxAuZmMmSi3tlUDfjp76Ap4Epwji/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "10_qMVirZpBU_fkpDu3ZTse2UcrC0O49k",
+        "verifyLink": "https://drive.google.com/file/d/10_qMVirZpBU_fkpDu3ZTse2UcrC0O49k/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "12fxzv0UYjcXfNJBL-_UwNyRO2LWxixHE",
+        "verifyLink": "https://drive.google.com/file/d/12fxzv0UYjcXfNJBL-_UwNyRO2LWxixHE/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "150WtDjOhK-ZdaNad3iXX5MH62EjcI1Ve",
+        "verifyLink": "https://drive.google.com/file/d/150WtDjOhK-ZdaNad3iXX5MH62EjcI1Ve/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "181QXQoWwynMMDtD-cUSNPweymxJxLXF0",
+        "verifyLink": "https://drive.google.com/file/d/181QXQoWwynMMDtD-cUSNPweymxJxLXF0/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1AH53tyVgebEXXOSGRk6PCNfXkdHjiEPh",
+        "verifyLink": "https://drive.google.com/file/d/1AH53tyVgebEXXOSGRk6PCNfXkdHjiEPh/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1Mv5mdlw_yPIcItPPqRvJfj0stOW42dws",
+        "verifyLink": "https://drive.google.com/file/d/1Mv5mdlw_yPIcItPPqRvJfj0stOW42dws/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1UGvXfaGaV7ldRQ0S1pcA_aFrfP6FMQkI",
+        "verifyLink": "https://drive.google.com/file/d/1UGvXfaGaV7ldRQ0S1pcA_aFrfP6FMQkI/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1Y9crAWlRGX-jzWjqt8UekERZWZI9--lm",
+        "verifyLink": "https://drive.google.com/file/d/1Y9crAWlRGX-jzWjqt8UekERZWZI9--lm/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1ZF99SYduwWwm-sIbOKzgkXUe2lHyZNcU",
+        "verifyLink": "https://drive.google.com/file/d/1ZF99SYduwWwm-sIbOKzgkXUe2lHyZNcU/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1cQZyEKs1375YbMFtBwBS4qpbAE-rt1Yl",
+        "verifyLink": "https://drive.google.com/file/d/1cQZyEKs1375YbMFtBwBS4qpbAE-rt1Yl/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1gDcj2fiWl9OsfjnpQns90K2spx5ZJ6YQ",
+        "verifyLink": "https://drive.google.com/file/d/1gDcj2fiWl9OsfjnpQns90K2spx5ZJ6YQ/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1gFPiHNC4QlDTiVYcx_uIl89eauIHZ8ew",
+        "verifyLink": "https://drive.google.com/file/d/1gFPiHNC4QlDTiVYcx_uIl89eauIHZ8ew/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1lJH1fPwwS1gx08HPeimjEjh-7OSHFSho",
+        "verifyLink": "https://drive.google.com/file/d/1lJH1fPwwS1gx08HPeimjEjh-7OSHFSho/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1wGawL5aBjFO7trAH7rJYV5lJu7oiCyuj",
+        "verifyLink": "https://drive.google.com/file/d/1wGawL5aBjFO7trAH7rJYV5lJu7oiCyuj/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1zozlLqA8JBH-3nwKOuZmLeaVs2b6dfP-",
+        "verifyLink": "https://drive.google.com/file/d/1zozlLqA8JBH-3nwKOuZmLeaVs2b6dfP-/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1-a-UzpDJJjb--mw61CH72a4A7RSsc8_5",
+        "verifyLink": "https://drive.google.com/file/d/1-a-UzpDJJjb--mw61CH72a4A7RSsc8_5/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "11Mf67ksZ_9ytcbeZZatkgVAxUn2rkAco",
+        "verifyLink": "https://drive.google.com/file/d/11Mf67ksZ_9ytcbeZZatkgVAxUn2rkAco/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1Dif_LGwJI_frq2UTfu8tfJ8iHxvRC8by",
+        "verifyLink": "https://drive.google.com/file/d/1Dif_LGwJI_frq2UTfu8tfJ8iHxvRC8by/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1EFk83Ro6Xbe3R3XlfCAOpgpdQrCaCQRM",
+        "verifyLink": "https://drive.google.com/file/d/1EFk83Ro6Xbe3R3XlfCAOpgpdQrCaCQRM/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1H4ObK2ruKAWDk9AtZVH8f6dlLARdzWXq",
+        "verifyLink": "https://drive.google.com/file/d/1H4ObK2ruKAWDk9AtZVH8f6dlLARdzWXq/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1M2C2-yGWV6Lz9A6rexvWekv_rbsugDUC",
+        "verifyLink": "https://drive.google.com/file/d/1M2C2-yGWV6Lz9A6rexvWekv_rbsugDUC/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1MS4nKuB1ZU6zY3y7TiwywUNvzYNDhdtP",
+        "verifyLink": "https://drive.google.com/file/d/1MS4nKuB1ZU6zY3y7TiwywUNvzYNDhdtP/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1VVWLBTxh2X5ZWkmia8d8jYFOBd4WqvcB",
+        "verifyLink": "https://drive.google.com/file/d/1VVWLBTxh2X5ZWkmia8d8jYFOBd4WqvcB/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1YVoHEq_RMDbTHqGQ4TDXtgoJdM2WT8GA",
+        "verifyLink": "https://drive.google.com/file/d/1YVoHEq_RMDbTHqGQ4TDXtgoJdM2WT8GA/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1_Tn5L4bQ3LX78wXBgDweU5zAOI8qWsGU",
+        "verifyLink": "https://drive.google.com/file/d/1_Tn5L4bQ3LX78wXBgDweU5zAOI8qWsGU/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1ekaEje-JHXr0ctb74c-wJZ65uMCAa_BX",
+        "verifyLink": "https://drive.google.com/file/d/1ekaEje-JHXr0ctb74c-wJZ65uMCAa_BX/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1fSPjTUXM5ZQur1bhj9IcOGctFOKH65eq",
+        "verifyLink": "https://drive.google.com/file/d/1fSPjTUXM5ZQur1bhj9IcOGctFOKH65eq/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1ftFVAh-nquyhvzmAKKyli-H0RUvsQnsV",
+        "verifyLink": "https://drive.google.com/file/d/1ftFVAh-nquyhvzmAKKyli-H0RUvsQnsV/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1gjd2Z7pj_Onkwk_6zEXTKcseQ61JgQ69",
+        "verifyLink": "https://drive.google.com/file/d/1gjd2Z7pj_Onkwk_6zEXTKcseQ61JgQ69/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1hrqP8JVL0EM7Tyw8-FvTsasfcji_ukn3",
+        "verifyLink": "https://drive.google.com/file/d/1hrqP8JVL0EM7Tyw8-FvTsasfcji_ukn3/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1lFfvYWNq5l5XPKUy7K2TjXmke4BgiDgn",
+        "verifyLink": "https://drive.google.com/file/d/1lFfvYWNq5l5XPKUy7K2TjXmke4BgiDgn/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1lrlvYaedPMZGHqVkhEiPfF6aIhJz8Xqs",
+        "verifyLink": "https://drive.google.com/file/d/1lrlvYaedPMZGHqVkhEiPfF6aIhJz8Xqs/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1nRH7_cOM4deHugPpzazCApVW0c0F4-jL",
+        "verifyLink": "https://drive.google.com/file/d/1nRH7_cOM4deHugPpzazCApVW0c0F4-jL/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1oUhXMN8sQLyBp396qdkvFi_w7ovKkAe4",
+        "verifyLink": "https://drive.google.com/file/d/1oUhXMN8sQLyBp396qdkvFi_w7ovKkAe4/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1otxA2FxJ4MYAUx3PqZ1uS1clfnAaTpiQ",
+        "verifyLink": "https://drive.google.com/file/d/1otxA2FxJ4MYAUx3PqZ1uS1clfnAaTpiQ/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1rvBnc4__stabF0g2c4uVXW0qzWCeWeI4",
+        "verifyLink": "https://drive.google.com/file/d/1rvBnc4__stabF0g2c4uVXW0qzWCeWeI4/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1s8rhVaz7kH9jCu9sPxKxBrUmxRwQpRC1",
+        "verifyLink": "https://drive.google.com/file/d/1s8rhVaz7kH9jCu9sPxKxBrUmxRwQpRC1/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1sVP0RvyF8YU-g7IzWc92Y8-RYTeKgDi-",
+        "verifyLink": "https://drive.google.com/file/d/1sVP0RvyF8YU-g7IzWc92Y8-RYTeKgDi-/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1ud82Oy8AQxsMKLucLfOCs1IiFe4YpdXA",
+        "verifyLink": "https://drive.google.com/file/d/1ud82Oy8AQxsMKLucLfOCs1IiFe4YpdXA/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1HL6AqgZ59cAapNllvMgCkseO-8ZkjWqA",
+        "verifyLink": "https://drive.google.com/file/d/1HL6AqgZ59cAapNllvMgCkseO-8ZkjWqA/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1-9WHvzovaXE7Bm_vSMJaTauO15fiNFn6",
+        "verifyLink": "https://drive.google.com/file/d/1-9WHvzovaXE7Bm_vSMJaTauO15fiNFn6/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "114rvZ_i6HrauXYtLt702yi35-Uo8HUU8",
+        "verifyLink": "https://drive.google.com/file/d/114rvZ_i6HrauXYtLt702yi35-Uo8HUU8/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "11AUMxWS3Uasrek8Z6q46-v2xFUkSTv8Y",
+        "verifyLink": "https://drive.google.com/file/d/11AUMxWS3Uasrek8Z6q46-v2xFUkSTv8Y/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "11H58F_d2FXl2ij7rgy5RfIdd1igQZ838",
+        "verifyLink": "https://drive.google.com/file/d/11H58F_d2FXl2ij7rgy5RfIdd1igQZ838/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "11ishlFxU6fHlTQQL9bTidNdo6sd17Erh",
+        "verifyLink": "https://drive.google.com/file/d/11ishlFxU6fHlTQQL9bTidNdo6sd17Erh/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "11vA5gGSydt4bW5b5409vV2bXC67igusc",
+        "verifyLink": "https://drive.google.com/file/d/11vA5gGSydt4bW5b5409vV2bXC67igusc/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "12R3sXmNbNGGKOkigbvydBoV2vbguUpOO",
+        "verifyLink": "https://drive.google.com/file/d/12R3sXmNbNGGKOkigbvydBoV2vbguUpOO/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "12bNABXkIJGZbfV8P5EOZ59lIMY0M9rAN",
+        "verifyLink": "https://drive.google.com/file/d/12bNABXkIJGZbfV8P5EOZ59lIMY0M9rAN/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "13LGnGsoBFk_rX46KOgQ_MDD6QdD_8adr",
+        "verifyLink": "https://drive.google.com/file/d/13LGnGsoBFk_rX46KOgQ_MDD6QdD_8adr/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "13b1mxC7UluMOmXt13nCmWYm9RsIP3KyJ",
+        "verifyLink": "https://drive.google.com/file/d/13b1mxC7UluMOmXt13nCmWYm9RsIP3KyJ/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "14GdbvNTpO3tMsqrgZchRRh1FDNmczCdR",
+        "verifyLink": "https://drive.google.com/file/d/14GdbvNTpO3tMsqrgZchRRh1FDNmczCdR/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "15NoMn9GN76qj9DkGtEY5x67JD5jZYbcD",
+        "verifyLink": "https://drive.google.com/file/d/15NoMn9GN76qj9DkGtEY5x67JD5jZYbcD/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "15XdUEDRLK16AgcXHPrXvev9UL8fBMfUI",
+        "verifyLink": "https://drive.google.com/file/d/15XdUEDRLK16AgcXHPrXvev9UL8fBMfUI/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "16BisAFI6StGzLsFJh2Ef_a0EoxLub5HA",
+        "verifyLink": "https://drive.google.com/file/d/16BisAFI6StGzLsFJh2Ef_a0EoxLub5HA/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "16GIhv_fbofon_i4Ze9KPlxvx05lZ6sPI",
+        "verifyLink": "https://drive.google.com/file/d/16GIhv_fbofon_i4Ze9KPlxvx05lZ6sPI/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "17QyCMHpWF8leCuQ306CxgczB-QbznAXz",
+        "verifyLink": "https://drive.google.com/file/d/17QyCMHpWF8leCuQ306CxgczB-QbznAXz/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "17TiZ9B7r2j3bzzoAziflEjfy3bXo3E-T",
+        "verifyLink": "https://drive.google.com/file/d/17TiZ9B7r2j3bzzoAziflEjfy3bXo3E-T/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "18HUZP0VmwnOc1bP7IW_ANccqLDYQC0D0",
+        "verifyLink": "https://drive.google.com/file/d/18HUZP0VmwnOc1bP7IW_ANccqLDYQC0D0/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "191JiLGxgWo5g1mJNHKzoG_kxjJxE34lh",
+        "verifyLink": "https://drive.google.com/file/d/191JiLGxgWo5g1mJNHKzoG_kxjJxE34lh/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "19JI3ZB56Mcf74L_K0i7ROLGPX8IIRfAu",
+        "verifyLink": "https://drive.google.com/file/d/19JI3ZB56Mcf74L_K0i7ROLGPX8IIRfAu/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1AKubfUdg0ITbRpcUaFNPCrIoihNakN8o",
+        "verifyLink": "https://drive.google.com/file/d/1AKubfUdg0ITbRpcUaFNPCrIoihNakN8o/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1AT5ss0Zh9aUkp_3Th44RLabf8ph5BuP9",
+        "verifyLink": "https://drive.google.com/file/d/1AT5ss0Zh9aUkp_3Th44RLabf8ph5BuP9/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1B54eMTad9qdemREGm0hxJSabt7iKxbXT",
+        "verifyLink": "https://drive.google.com/file/d/1B54eMTad9qdemREGm0hxJSabt7iKxbXT/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1BN5Kwa8fQV6nRyqQaTskFKMBVNHNo6TD",
+        "verifyLink": "https://drive.google.com/file/d/1BN5Kwa8fQV6nRyqQaTskFKMBVNHNo6TD/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1BkNZIRzSaUhEbLgSeRckW3zcjx9F8MHZ",
+        "verifyLink": "https://drive.google.com/file/d/1BkNZIRzSaUhEbLgSeRckW3zcjx9F8MHZ/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1C5WB6MK8YchzNX4WnyzQylwh-MfLPMoc",
+        "verifyLink": "https://drive.google.com/file/d/1C5WB6MK8YchzNX4WnyzQylwh-MfLPMoc/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1CZQpPF5crnEK812BAQBKbMfuigt-WToY",
+        "verifyLink": "https://drive.google.com/file/d/1CZQpPF5crnEK812BAQBKbMfuigt-WToY/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1D0fvfuog6L2IIFpSwv8qlEGIxEy4x0V0",
+        "verifyLink": "https://drive.google.com/file/d/1D0fvfuog6L2IIFpSwv8qlEGIxEy4x0V0/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1E-5KQ6vMaYEToyNqVz7_Fz-KtwgCqejb",
+        "verifyLink": "https://drive.google.com/file/d/1E-5KQ6vMaYEToyNqVz7_Fz-KtwgCqejb/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1EO0OPiYBnyHkR8Wkyi9_jXKDg_iQW9c1",
+        "verifyLink": "https://drive.google.com/file/d/1EO0OPiYBnyHkR8Wkyi9_jXKDg_iQW9c1/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1EU0GJVJpf2OvJ3A9SbWSxB5ZBQc17pdn",
+        "verifyLink": "https://drive.google.com/file/d/1EU0GJVJpf2OvJ3A9SbWSxB5ZBQc17pdn/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1EhdbuIekh66NTF2_hbq3OJc-4Jiki-lx",
+        "verifyLink": "https://drive.google.com/file/d/1EhdbuIekh66NTF2_hbq3OJc-4Jiki-lx/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1Es8Vppv888ilN0x51BlxbQWFKPdimhp2",
+        "verifyLink": "https://drive.google.com/file/d/1Es8Vppv888ilN0x51BlxbQWFKPdimhp2/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1G_wTkr4NPEHkB8PPCyqWTlWFK2OzJh7h",
+        "verifyLink": "https://drive.google.com/file/d/1G_wTkr4NPEHkB8PPCyqWTlWFK2OzJh7h/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1IFvSph-B05avBT1uYv7LNBIg324tFVN7",
+        "verifyLink": "https://drive.google.com/file/d/1IFvSph-B05avBT1uYv7LNBIg324tFVN7/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1IxInGmobZUIL0epICbEmCtnMuLiYCuI1",
+        "verifyLink": "https://drive.google.com/file/d/1IxInGmobZUIL0epICbEmCtnMuLiYCuI1/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1JEhzjfoA1Ux7FzMtLuvGZR6KIRXChKls",
+        "verifyLink": "https://drive.google.com/file/d/1JEhzjfoA1Ux7FzMtLuvGZR6KIRXChKls/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1KZXl9hjtIZKc25-n8cyUhIiS6Dh4g_rK",
+        "verifyLink": "https://drive.google.com/file/d/1KZXl9hjtIZKc25-n8cyUhIiS6Dh4g_rK/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1KhwAB4oHRz1rPaxaIivtch71hMI1tiZw",
+        "verifyLink": "https://drive.google.com/file/d/1KhwAB4oHRz1rPaxaIivtch71hMI1tiZw/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1Km_24RHjCLgTdHT2JA7XE2fqPFAyxzne",
+        "verifyLink": "https://drive.google.com/file/d/1Km_24RHjCLgTdHT2JA7XE2fqPFAyxzne/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1L4pYZ_Yp7zMildCqhJzVt-nj0lQsAjk-",
+        "verifyLink": "https://drive.google.com/file/d/1L4pYZ_Yp7zMildCqhJzVt-nj0lQsAjk-/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1LEuxNotYW4YJZkrHPyD8vJUFtQIk91p1",
+        "verifyLink": "https://drive.google.com/file/d/1LEuxNotYW4YJZkrHPyD8vJUFtQIk91p1/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1LFECJnZV7bbS5a1b7BhXcTmPJap6zhF-",
+        "verifyLink": "https://drive.google.com/file/d/1LFECJnZV7bbS5a1b7BhXcTmPJap6zhF-/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1LJo1MsYqysco-v7QwLOvovssnfoubZ1Y",
+        "verifyLink": "https://drive.google.com/file/d/1LJo1MsYqysco-v7QwLOvovssnfoubZ1Y/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1LJz9n-2plhJgxP3CMaJcv9EFouF3ZzY3",
+        "verifyLink": "https://drive.google.com/file/d/1LJz9n-2plhJgxP3CMaJcv9EFouF3ZzY3/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1LPWdVzvkIoaBdLEPUr2Xl-tcgUPjhntl",
+        "verifyLink": "https://drive.google.com/file/d/1LPWdVzvkIoaBdLEPUr2Xl-tcgUPjhntl/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1LeZ3xuZifK4pTdu4xkxKeq939KiCq_Y9",
+        "verifyLink": "https://drive.google.com/file/d/1LeZ3xuZifK4pTdu4xkxKeq939KiCq_Y9/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1MpmkNc3MdYgbLVVThuZ-Y0U3Ut5W3Hgl",
+        "verifyLink": "https://drive.google.com/file/d/1MpmkNc3MdYgbLVVThuZ-Y0U3Ut5W3Hgl/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1N5RB2iu9W1obGemp2qK_wvnlHgPkrSnc",
+        "verifyLink": "https://drive.google.com/file/d/1N5RB2iu9W1obGemp2qK_wvnlHgPkrSnc/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1NXvNy5Suu3GrYkMMP48DMP5GVCtdPpAq",
+        "verifyLink": "https://drive.google.com/file/d/1NXvNy5Suu3GrYkMMP48DMP5GVCtdPpAq/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1O99OwOVmPJBHJmgp5b8kyne6FSAjnuDb",
+        "verifyLink": "https://drive.google.com/file/d/1O99OwOVmPJBHJmgp5b8kyne6FSAjnuDb/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1PDcXMHOrwIfzLp_aeLeyg4b7vTeypSmN",
+        "verifyLink": "https://drive.google.com/file/d/1PDcXMHOrwIfzLp_aeLeyg4b7vTeypSmN/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1PLetf6hzJq2wYnqG1Uhvi8EuWALG6kZY",
+        "verifyLink": "https://drive.google.com/file/d/1PLetf6hzJq2wYnqG1Uhvi8EuWALG6kZY/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1PTvu-HOzfFomnR9U8tfWnjq7A7co39VK",
+        "verifyLink": "https://drive.google.com/file/d/1PTvu-HOzfFomnR9U8tfWnjq7A7co39VK/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1PZoa1-45tUumA3UfwdTHwhiAXAUm-9JD",
+        "verifyLink": "https://drive.google.com/file/d/1PZoa1-45tUumA3UfwdTHwhiAXAUm-9JD/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1PahHRVZdxwZY3yA4brmt0kbNcbLALcOE",
+        "verifyLink": "https://drive.google.com/file/d/1PahHRVZdxwZY3yA4brmt0kbNcbLALcOE/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1Q2Dcp6fwYfk2nKJy_pe3fYD7fOaZfJst",
+        "verifyLink": "https://drive.google.com/file/d/1Q2Dcp6fwYfk2nKJy_pe3fYD7fOaZfJst/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1QCEDkYyM-8vUpFtKrCTTcEO4p5ZN0s4b",
+        "verifyLink": "https://drive.google.com/file/d/1QCEDkYyM-8vUpFtKrCTTcEO4p5ZN0s4b/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1QRm5pvwvw804yx9Dd8TSPmbpbE7Iv4NI",
+        "verifyLink": "https://drive.google.com/file/d/1QRm5pvwvw804yx9Dd8TSPmbpbE7Iv4NI/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1R1Kp6l-YNtYK273MsWmHEpPzcEhSDh1f",
+        "verifyLink": "https://drive.google.com/file/d/1R1Kp6l-YNtYK273MsWmHEpPzcEhSDh1f/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1R3v4g5NLk-2sbwtC2IZU7KcbgnMdUxjg",
+        "verifyLink": "https://drive.google.com/file/d/1R3v4g5NLk-2sbwtC2IZU7KcbgnMdUxjg/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1RZOG8Fa-4YwpggdPw3vjqOxNDGgeOVLz",
+        "verifyLink": "https://drive.google.com/file/d/1RZOG8Fa-4YwpggdPw3vjqOxNDGgeOVLz/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1SI37VLPh414Vikthbwm_OhGsMte2tY5w",
+        "verifyLink": "https://drive.google.com/file/d/1SI37VLPh414Vikthbwm_OhGsMte2tY5w/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1Seqm0rAWo7wrBD3XR9yl9gpJXUaxIMeF",
+        "verifyLink": "https://drive.google.com/file/d/1Seqm0rAWo7wrBD3XR9yl9gpJXUaxIMeF/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1Sroa5zcLFosAq1RprPobmClTllZB8PtC",
+        "verifyLink": "https://drive.google.com/file/d/1Sroa5zcLFosAq1RprPobmClTllZB8PtC/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1TAO23u4ZVYsD2eM3e77wDyXC3qLxMEpJ",
+        "verifyLink": "https://drive.google.com/file/d/1TAO23u4ZVYsD2eM3e77wDyXC3qLxMEpJ/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1TQoeXRnuoVXQp0CcwSfcR9i1D-7l2IrK",
+        "verifyLink": "https://drive.google.com/file/d/1TQoeXRnuoVXQp0CcwSfcR9i1D-7l2IrK/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1UnafE_VAf2mxHwlkgnZoUOyymw4M3J1A",
+        "verifyLink": "https://drive.google.com/file/d/1UnafE_VAf2mxHwlkgnZoUOyymw4M3J1A/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1V73ZF-tcFCDab6Fg7onBDroGCN045u-h",
+        "verifyLink": "https://drive.google.com/file/d/1V73ZF-tcFCDab6Fg7onBDroGCN045u-h/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1WlU3abs2JKLMd3q-1Iw-wafXppgBIMDE",
+        "verifyLink": "https://drive.google.com/file/d/1WlU3abs2JKLMd3q-1Iw-wafXppgBIMDE/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1XClTC7v7G_P6iXT8c0gzF_BI3XEUxjPD",
+        "verifyLink": "https://drive.google.com/file/d/1XClTC7v7G_P6iXT8c0gzF_BI3XEUxjPD/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1XKbi-YXOrQIgxoV1FKONgwKhEFUa72HU",
+        "verifyLink": "https://drive.google.com/file/d/1XKbi-YXOrQIgxoV1FKONgwKhEFUa72HU/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1XTINueBrR7V5xrEH-Z3zEQ7PY2JQ60db",
+        "verifyLink": "https://drive.google.com/file/d/1XTINueBrR7V5xrEH-Z3zEQ7PY2JQ60db/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1XVphMygdaVr-pquf4mkCpJ9bZVhkFqZw",
+        "verifyLink": "https://drive.google.com/file/d/1XVphMygdaVr-pquf4mkCpJ9bZVhkFqZw/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1XcKeNcMvXhVTd3qk55ChNSqJba-Buihw",
+        "verifyLink": "https://drive.google.com/file/d/1XcKeNcMvXhVTd3qk55ChNSqJba-Buihw/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1Xno5xzSp5vvZLRf_bIS9fZ4eqdNEVOIR",
+        "verifyLink": "https://drive.google.com/file/d/1Xno5xzSp5vvZLRf_bIS9fZ4eqdNEVOIR/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1Xtr4iK6S6WuyA1XpH7jJWFDC2MAIi86V",
+        "verifyLink": "https://drive.google.com/file/d/1Xtr4iK6S6WuyA1XpH7jJWFDC2MAIi86V/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1YBwoFYwRUVtZTgVfn1a-zPWhGZS0Swki",
+        "verifyLink": "https://drive.google.com/file/d/1YBwoFYwRUVtZTgVfn1a-zPWhGZS0Swki/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1YMd3kjcF9tfud-uJEiJ0Ds5qPpADEmWs",
+        "verifyLink": "https://drive.google.com/file/d/1YMd3kjcF9tfud-uJEiJ0Ds5qPpADEmWs/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1ZRYcN56aUnEjJaJ3Xxxu05-K-f6NpaKJ",
+        "verifyLink": "https://drive.google.com/file/d/1ZRYcN56aUnEjJaJ3Xxxu05-K-f6NpaKJ/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1_z7J0rn-Y4N5AF_X1EtdUJ8_RnIxevKL",
+        "verifyLink": "https://drive.google.com/file/d/1_z7J0rn-Y4N5AF_X1EtdUJ8_RnIxevKL/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1aRHEACllXhO3tTAWw2qNhrYROwWDXQRY",
+        "verifyLink": "https://drive.google.com/file/d/1aRHEACllXhO3tTAWw2qNhrYROwWDXQRY/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1b10zaCVQiqmAyL2p9gC2MG51dTtkg4Et",
+        "verifyLink": "https://drive.google.com/file/d/1b10zaCVQiqmAyL2p9gC2MG51dTtkg4Et/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1c38bSxJlzEb3iSG_a3-_oegtDQWZDLNS",
+        "verifyLink": "https://drive.google.com/file/d/1c38bSxJlzEb3iSG_a3-_oegtDQWZDLNS/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1c8yyja693Z24n8geqte2IdRT0IIEtZeb",
+        "verifyLink": "https://drive.google.com/file/d/1c8yyja693Z24n8geqte2IdRT0IIEtZeb/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1cz_3lUOPQASrQjG6S-ON_U4SB6FJYD00",
+        "verifyLink": "https://drive.google.com/file/d/1cz_3lUOPQASrQjG6S-ON_U4SB6FJYD00/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1d4mtwjTA8oLyx20CXXcnUm1pNUjr02lF",
+        "verifyLink": "https://drive.google.com/file/d/1d4mtwjTA8oLyx20CXXcnUm1pNUjr02lF/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1dDrAPAB5fWYZquPg0VkszdEOMyJoS57P",
+        "verifyLink": "https://drive.google.com/file/d/1dDrAPAB5fWYZquPg0VkszdEOMyJoS57P/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1epAjTxxs_SpqHwCTLjQu9IEvLs8FGFUi",
+        "verifyLink": "https://drive.google.com/file/d/1epAjTxxs_SpqHwCTLjQu9IEvLs8FGFUi/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1f6oWfLt0CUshekcQYiGKU1qS2Tb_u7nF",
+        "verifyLink": "https://drive.google.com/file/d/1f6oWfLt0CUshekcQYiGKU1qS2Tb_u7nF/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1fLUFzJLTfD3adJwUhvcAsMwkF5ijjqry",
+        "verifyLink": "https://drive.google.com/file/d/1fLUFzJLTfD3adJwUhvcAsMwkF5ijjqry/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1fXbC_FqcsDRh60w-Po82xyg5nKSUeQz-",
+        "verifyLink": "https://drive.google.com/file/d/1fXbC_FqcsDRh60w-Po82xyg5nKSUeQz-/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1g-WVOMt4__AWaWBylu6T7jRk1dr-jLf5",
+        "verifyLink": "https://drive.google.com/file/d/1g-WVOMt4__AWaWBylu6T7jRk1dr-jLf5/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1gYtM5pLZpFkgewtdWiPgjzl4-x43cSrH",
+        "verifyLink": "https://drive.google.com/file/d/1gYtM5pLZpFkgewtdWiPgjzl4-x43cSrH/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1gfZGSf_9mujL1O_ywlkC5gYtM6XbtDpI",
+        "verifyLink": "https://drive.google.com/file/d/1gfZGSf_9mujL1O_ywlkC5gYtM6XbtDpI/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1h0cazLuPJpZfuMS1uf11Zb2p-3S5dUA0",
+        "verifyLink": "https://drive.google.com/file/d/1h0cazLuPJpZfuMS1uf11Zb2p-3S5dUA0/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1i5EIhWV1_jMktBhxIkCat9SYdDK4-qMy",
+        "verifyLink": "https://drive.google.com/file/d/1i5EIhWV1_jMktBhxIkCat9SYdDK4-qMy/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1iPaWXTG6bDskNq3zyfZ0GbFrEjWFbSlr",
+        "verifyLink": "https://drive.google.com/file/d/1iPaWXTG6bDskNq3zyfZ0GbFrEjWFbSlr/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1iVgQqInATmm5vdwT6QVZC4FWDmTBMPsd",
+        "verifyLink": "https://drive.google.com/file/d/1iVgQqInATmm5vdwT6QVZC4FWDmTBMPsd/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1iYNx1SKrxGpWJhQjmSY263embAO1tnHk",
+        "verifyLink": "https://drive.google.com/file/d/1iYNx1SKrxGpWJhQjmSY263embAO1tnHk/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1jJm44WLfgm3OHSM1Kty_-GS6jIZX0Xt_",
+        "verifyLink": "https://drive.google.com/file/d/1jJm44WLfgm3OHSM1Kty_-GS6jIZX0Xt_/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1jhnB6eNELsziHIV85SzXsyUBtJ6b3txg",
+        "verifyLink": "https://drive.google.com/file/d/1jhnB6eNELsziHIV85SzXsyUBtJ6b3txg/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1kXwJMT8b8mTfPMruMATVBqETW-sjT2K1",
+        "verifyLink": "https://drive.google.com/file/d/1kXwJMT8b8mTfPMruMATVBqETW-sjT2K1/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1kcgzWwM5DkW7J2lhjmAoy_xWuvv45ZS-",
+        "verifyLink": "https://drive.google.com/file/d/1kcgzWwM5DkW7J2lhjmAoy_xWuvv45ZS-/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1kpnLj90dbnf9LdI0cewkeeRM0h4Jc1XS",
+        "verifyLink": "https://drive.google.com/file/d/1kpnLj90dbnf9LdI0cewkeeRM0h4Jc1XS/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1lCkaon9Uuh577D-mU58IBlxA6wcE6q8b",
+        "verifyLink": "https://drive.google.com/file/d/1lCkaon9Uuh577D-mU58IBlxA6wcE6q8b/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1lJ05misKCaM_91jJ-ISYsABHNG0ekSYM",
+        "verifyLink": "https://drive.google.com/file/d/1lJ05misKCaM_91jJ-ISYsABHNG0ekSYM/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1m8oaW8yJQYkQXK1soVh7Ov_xBdX6hf5P",
+        "verifyLink": "https://drive.google.com/file/d/1m8oaW8yJQYkQXK1soVh7Ov_xBdX6hf5P/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1mbbOmFfP1m6B0KfcM55BFYhjULHZC10Z",
+        "verifyLink": "https://drive.google.com/file/d/1mbbOmFfP1m6B0KfcM55BFYhjULHZC10Z/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1oDX7rGyY9qvQryO5RSMxeXsFdU6FVDB6",
+        "verifyLink": "https://drive.google.com/file/d/1oDX7rGyY9qvQryO5RSMxeXsFdU6FVDB6/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1oNrUF3POokSI8i2k3zOKucQV1VxWQkRH",
+        "verifyLink": "https://drive.google.com/file/d/1oNrUF3POokSI8i2k3zOKucQV1VxWQkRH/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1pUNf3eLPHgB5256ye9mN4dJthy-mwl_o",
+        "verifyLink": "https://drive.google.com/file/d/1pUNf3eLPHgB5256ye9mN4dJthy-mwl_o/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1pV6BlK_PLhe5cu1YHbK0UItoCzLLTah6",
+        "verifyLink": "https://drive.google.com/file/d/1pV6BlK_PLhe5cu1YHbK0UItoCzLLTah6/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1q3NmMR5_ZJ6xSUFBnlE9QMZ5J9OtBpWP",
+        "verifyLink": "https://drive.google.com/file/d/1q3NmMR5_ZJ6xSUFBnlE9QMZ5J9OtBpWP/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1q3wQ9l_6Rsi5nrGBbVXSAAjo_dfRPPGM",
+        "verifyLink": "https://drive.google.com/file/d/1q3wQ9l_6Rsi5nrGBbVXSAAjo_dfRPPGM/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1rFabzhwokYKRB0E78fflooLNDWkWzrJ5",
+        "verifyLink": "https://drive.google.com/file/d/1rFabzhwokYKRB0E78fflooLNDWkWzrJ5/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1sc8qIXzH9NDTl4mO08TfZrW_Abj3G9Nw",
+        "verifyLink": "https://drive.google.com/file/d/1sc8qIXzH9NDTl4mO08TfZrW_Abj3G9Nw/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1shVGzjgNzEA5JyFHF4rNjQKN72LFqhDv",
+        "verifyLink": "https://drive.google.com/file/d/1shVGzjgNzEA5JyFHF4rNjQKN72LFqhDv/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1tDkOLSt9rQfsIIWeYAkVPcByQP6_6nWv",
+        "verifyLink": "https://drive.google.com/file/d/1tDkOLSt9rQfsIIWeYAkVPcByQP6_6nWv/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1tZxm7TO1whu7th1T8rGpeOiFbtAYC9Jx",
+        "verifyLink": "https://drive.google.com/file/d/1tZxm7TO1whu7th1T8rGpeOiFbtAYC9Jx/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1unDX0wU5JQEiuMGP44AUUINEuSIwx5qB",
+        "verifyLink": "https://drive.google.com/file/d/1unDX0wU5JQEiuMGP44AUUINEuSIwx5qB/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1vPP1VgYEJbQryHYEsHTbwhaZCVJSQx5Y",
+        "verifyLink": "https://drive.google.com/file/d/1vPP1VgYEJbQryHYEsHTbwhaZCVJSQx5Y/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1vgxKyUpgCv4_ydP4PznZaYTFg07s7Olg",
+        "verifyLink": "https://drive.google.com/file/d/1vgxKyUpgCv4_ydP4PznZaYTFg07s7Olg/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1vkGtGvlKqi1Mg9oqxjmb1wdLv5_89I_F",
+        "verifyLink": "https://drive.google.com/file/d/1vkGtGvlKqi1Mg9oqxjmb1wdLv5_89I_F/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1vzKjdwncP02hAERD7i1vD1TL6pIHl_IK",
+        "verifyLink": "https://drive.google.com/file/d/1vzKjdwncP02hAERD7i1vD1TL6pIHl_IK/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1xBuYfPrrBdTjGYHOwxPr-vysNzWEKIri",
+        "verifyLink": "https://drive.google.com/file/d/1xBuYfPrrBdTjGYHOwxPr-vysNzWEKIri/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1za772OoM-xPllviSgUp1eszqtCn4a8ra",
+        "verifyLink": "https://drive.google.com/file/d/1za772OoM-xPllviSgUp1eszqtCn4a8ra/view?usp=sharing"
+      },
+      {
+        "title": "Verified Technical Credential",
+        "org": "Verified Institution",
+        "year": 2026,
+        "driveId": "1zvv6bmS_EYKdRAnzjOONsNd7NArmcQjF",
+        "verifyLink": "https://drive.google.com/file/d/1zvv6bmS_EYKdRAnzjOONsNd7NArmcQjF/view?usp=sharing"
+      }
     ]
   },
   "volunteer": [
@@ -1462,8 +3232,8 @@
     {
       "category": "General",
       "question": "Do you have social media or GitHub?",
-      "answer": "Yes \u2014 GitHub: github.com/sanjayGL2006, LinkedIn: linkedin.com/in/sanjaygl3006, Instagram: @me__sanjaygl8123, and YouTube: @code_catalyst_collective.",
-      "keywords": ""
+      "answer": "Yes — GitHub: github.com/sanjayGL2006, SPVM 3 Tech Instagram: @spvm3techsolution, YouTube: @spvm3techsolution, and LinkedIn: SPVM 3 Tech Solution.",
+      "keywords": "spvm3tech,instagram,youtube,linkedin"
     },
     {
       "category": "General",

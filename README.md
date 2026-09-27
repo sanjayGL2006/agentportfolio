@@ -131,8 +131,7 @@ portfolio/
 4. **Run the Flask application**:
    ```bash
    python app.py
-   ```
-
+   ``` 
 5. **Open in browser**:
    Navigate to `http://localhost:5000`
 
@@ -231,15 +230,16 @@ For a step-by-step tutorial on Kubernetes architecture, object definitions, `kub
 
 ---
 
-## 👨‍💻 Author & Connect
+## 👨‍💻 Author & Connect & SPVM 3 Tech Solution
 
 **Sanjay G. L. (Sanju)**  
 *Full Stack AI Developer & BCA Student*  
 - **Portfolio**: [sanjaygl30ai.vercel.app](https://sanjaygl30ai.vercel.app/)  
 - **Email**: [sanjaygl2006@gmail.com](mailto:sanjaygl2006@gmail.com)  
 - **GitHub**: [@sanjayGL2006](https://github.com/sanjayGL2006)  
-- **LinkedIn**: [linkedin.com/in/sanjaygl3006](https://www.linkedin.com/in/sanjaygl3006/)  
-- **Instagram**: [@me__sanjaygl8123](https://www.instagram.com/me__sanjaygl8123)
+- **SPVM 3 Tech Solution - Instagram**: [@spvm3techsolution](https://www.instagram.com/spvm3techsolution)  
+- **SPVM 3 Tech Solution - YouTube**: [@spvm3techsolution](https://www.youtube.com/@spvm3techsolution)  
+- **SPVM 3 Tech Solution - LinkedIn**: [spvm3-tech-solution](https://www.linkedin.com/in/spvm3-tech-solution-solution-096bb8436)
 
 ---
 

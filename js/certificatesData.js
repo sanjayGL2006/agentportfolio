@@ -1674,5 +1674,4737 @@ const CERTIFICATES_DATA = [
     image: "https://drive.google.com/thumbnail?id=1yG2keR1_LVSuBxQqjoN5es3uj1m9IHTb&sz=w800",
     emoji: "🏆",
     featured: false
-  }
+  },
+{
+    "id": "cert-new-101",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #101",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-1-M18GXA",
+    "driveId": "1-m18gxAuZmMmSi3tlUDfjp76Ap4Epwji",
+    "verifyLink": "https://drive.google.com/file/d/1-m18gxAuZmMmSi3tlUDfjp76Ap4Epwji/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1-m18gxAuZmMmSi3tlUDfjp76Ap4Epwji&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-102",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #102",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-10_QMVIR",
+    "driveId": "10_qMVirZpBU_fkpDu3ZTse2UcrC0O49k",
+    "verifyLink": "https://drive.google.com/file/d/10_qMVirZpBU_fkpDu3ZTse2UcrC0O49k/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=10_qMVirZpBU_fkpDu3ZTse2UcrC0O49k&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-103",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #103",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-12FXZV0U",
+    "driveId": "12fxzv0UYjcXfNJBL-_UwNyRO2LWxixHE",
+    "verifyLink": "https://drive.google.com/file/d/12fxzv0UYjcXfNJBL-_UwNyRO2LWxixHE/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=12fxzv0UYjcXfNJBL-_UwNyRO2LWxixHE&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-104",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #104",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-150WTDJO",
+    "driveId": "150WtDjOhK-ZdaNad3iXX5MH62EjcI1Ve",
+    "verifyLink": "https://drive.google.com/file/d/150WtDjOhK-ZdaNad3iXX5MH62EjcI1Ve/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=150WtDjOhK-ZdaNad3iXX5MH62EjcI1Ve&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-105",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #105",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-181QXQOW",
+    "driveId": "181QXQoWwynMMDtD-cUSNPweymxJxLXF0",
+    "verifyLink": "https://drive.google.com/file/d/181QXQoWwynMMDtD-cUSNPweymxJxLXF0/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=181QXQoWwynMMDtD-cUSNPweymxJxLXF0&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-106",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #106",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-1AH53TYV",
+    "driveId": "1AH53tyVgebEXXOSGRk6PCNfXkdHjiEPh",
+    "verifyLink": "https://drive.google.com/file/d/1AH53tyVgebEXXOSGRk6PCNfXkdHjiEPh/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1AH53tyVgebEXXOSGRk6PCNfXkdHjiEPh&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-107",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #107",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-1MV5MDLW",
+    "driveId": "1Mv5mdlw_yPIcItPPqRvJfj0stOW42dws",
+    "verifyLink": "https://drive.google.com/file/d/1Mv5mdlw_yPIcItPPqRvJfj0stOW42dws/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1Mv5mdlw_yPIcItPPqRvJfj0stOW42dws&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-108",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #108",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-1UGVXFAG",
+    "driveId": "1UGvXfaGaV7ldRQ0S1pcA_aFrfP6FMQkI",
+    "verifyLink": "https://drive.google.com/file/d/1UGvXfaGaV7ldRQ0S1pcA_aFrfP6FMQkI/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1UGvXfaGaV7ldRQ0S1pcA_aFrfP6FMQkI&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-109",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #109",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-1Y9CRAWL",
+    "driveId": "1Y9crAWlRGX-jzWjqt8UekERZWZI9--lm",
+    "verifyLink": "https://drive.google.com/file/d/1Y9crAWlRGX-jzWjqt8UekERZWZI9--lm/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1Y9crAWlRGX-jzWjqt8UekERZWZI9--lm&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-110",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #110",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-1ZF99SYD",
+    "driveId": "1ZF99SYduwWwm-sIbOKzgkXUe2lHyZNcU",
+    "verifyLink": "https://drive.google.com/file/d/1ZF99SYduwWwm-sIbOKzgkXUe2lHyZNcU/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1ZF99SYduwWwm-sIbOKzgkXUe2lHyZNcU&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-111",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #111",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-1CQZYEKS",
+    "driveId": "1cQZyEKs1375YbMFtBwBS4qpbAE-rt1Yl",
+    "verifyLink": "https://drive.google.com/file/d/1cQZyEKs1375YbMFtBwBS4qpbAE-rt1Yl/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1cQZyEKs1375YbMFtBwBS4qpbAE-rt1Yl&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-112",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #112",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-1GDCJ2FI",
+    "driveId": "1gDcj2fiWl9OsfjnpQns90K2spx5ZJ6YQ",
+    "verifyLink": "https://drive.google.com/file/d/1gDcj2fiWl9OsfjnpQns90K2spx5ZJ6YQ/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1gDcj2fiWl9OsfjnpQns90K2spx5ZJ6YQ&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-113",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #113",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-1GFPIHNC",
+    "driveId": "1gFPiHNC4QlDTiVYcx_uIl89eauIHZ8ew",
+    "verifyLink": "https://drive.google.com/file/d/1gFPiHNC4QlDTiVYcx_uIl89eauIHZ8ew/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1gFPiHNC4QlDTiVYcx_uIl89eauIHZ8ew&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-114",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #114",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-1LJH1FPW",
+    "driveId": "1lJH1fPwwS1gx08HPeimjEjh-7OSHFSho",
+    "verifyLink": "https://drive.google.com/file/d/1lJH1fPwwS1gx08HPeimjEjh-7OSHFSho/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1lJH1fPwwS1gx08HPeimjEjh-7OSHFSho&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-115",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #115",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-1WGAWL5A",
+    "driveId": "1wGawL5aBjFO7trAH7rJYV5lJu7oiCyuj",
+    "verifyLink": "https://drive.google.com/file/d/1wGawL5aBjFO7trAH7rJYV5lJu7oiCyuj/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1wGawL5aBjFO7trAH7rJYV5lJu7oiCyuj&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-new-116",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Professional Certification #116",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-DRIVE-1ZOZLLQA",
+    "driveId": "1zozlLqA8JBH-3nwKOuZmLeaVs2b6dfP-",
+    "verifyLink": "https://drive.google.com/file/d/1zozlLqA8JBH-3nwKOuZmLeaVs2b6dfP-/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1zozlLqA8JBH-3nwKOuZmLeaVs2b6dfP-&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": true
+},
+{
+    "id": "cert-batch-25",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #25",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1-A-UZPD",
+    "driveId": "1-a-UzpDJJjb--mw61CH72a4A7RSsc8_5",
+    "verifyLink": "https://drive.google.com/file/d/1-a-UzpDJJjb--mw61CH72a4A7RSsc8_5/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1-a-UzpDJJjb--mw61CH72a4A7RSsc8_5&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-26",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #26",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-11MF67KS",
+    "driveId": "11Mf67ksZ_9ytcbeZZatkgVAxUn2rkAco",
+    "verifyLink": "https://drive.google.com/file/d/11Mf67ksZ_9ytcbeZZatkgVAxUn2rkAco/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=11Mf67ksZ_9ytcbeZZatkgVAxUn2rkAco&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-27",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #27",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1DIF_LGW",
+    "driveId": "1Dif_LGwJI_frq2UTfu8tfJ8iHxvRC8by",
+    "verifyLink": "https://drive.google.com/file/d/1Dif_LGwJI_frq2UTfu8tfJ8iHxvRC8by/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1Dif_LGwJI_frq2UTfu8tfJ8iHxvRC8by&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-28",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #28",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1EFK83RO",
+    "driveId": "1EFk83Ro6Xbe3R3XlfCAOpgpdQrCaCQRM",
+    "verifyLink": "https://drive.google.com/file/d/1EFk83Ro6Xbe3R3XlfCAOpgpdQrCaCQRM/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1EFk83Ro6Xbe3R3XlfCAOpgpdQrCaCQRM&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-29",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #29",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1H4OBK2R",
+    "driveId": "1H4ObK2ruKAWDk9AtZVH8f6dlLARdzWXq",
+    "verifyLink": "https://drive.google.com/file/d/1H4ObK2ruKAWDk9AtZVH8f6dlLARdzWXq/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1H4ObK2ruKAWDk9AtZVH8f6dlLARdzWXq&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-30",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #30",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1M2C2-YG",
+    "driveId": "1M2C2-yGWV6Lz9A6rexvWekv_rbsugDUC",
+    "verifyLink": "https://drive.google.com/file/d/1M2C2-yGWV6Lz9A6rexvWekv_rbsugDUC/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1M2C2-yGWV6Lz9A6rexvWekv_rbsugDUC&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-31",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #31",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1MS4NKUB",
+    "driveId": "1MS4nKuB1ZU6zY3y7TiwywUNvzYNDhdtP",
+    "verifyLink": "https://drive.google.com/file/d/1MS4nKuB1ZU6zY3y7TiwywUNvzYNDhdtP/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1MS4nKuB1ZU6zY3y7TiwywUNvzYNDhdtP&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-32",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #32",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1VVWLBTX",
+    "driveId": "1VVWLBTxh2X5ZWkmia8d8jYFOBd4WqvcB",
+    "verifyLink": "https://drive.google.com/file/d/1VVWLBTxh2X5ZWkmia8d8jYFOBd4WqvcB/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1VVWLBTxh2X5ZWkmia8d8jYFOBd4WqvcB&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-33",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #33",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1YVOHEQ_",
+    "driveId": "1YVoHEq_RMDbTHqGQ4TDXtgoJdM2WT8GA",
+    "verifyLink": "https://drive.google.com/file/d/1YVoHEq_RMDbTHqGQ4TDXtgoJdM2WT8GA/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1YVoHEq_RMDbTHqGQ4TDXtgoJdM2WT8GA&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-34",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #34",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1_TN5L4B",
+    "driveId": "1_Tn5L4bQ3LX78wXBgDweU5zAOI8qWsGU",
+    "verifyLink": "https://drive.google.com/file/d/1_Tn5L4bQ3LX78wXBgDweU5zAOI8qWsGU/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1_Tn5L4bQ3LX78wXBgDweU5zAOI8qWsGU&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-35",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #35",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1EKAEJE-",
+    "driveId": "1ekaEje-JHXr0ctb74c-wJZ65uMCAa_BX",
+    "verifyLink": "https://drive.google.com/file/d/1ekaEje-JHXr0ctb74c-wJZ65uMCAa_BX/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1ekaEje-JHXr0ctb74c-wJZ65uMCAa_BX&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-36",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #36",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1FSPJTUX",
+    "driveId": "1fSPjTUXM5ZQur1bhj9IcOGctFOKH65eq",
+    "verifyLink": "https://drive.google.com/file/d/1fSPjTUXM5ZQur1bhj9IcOGctFOKH65eq/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1fSPjTUXM5ZQur1bhj9IcOGctFOKH65eq&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-37",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #37",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1FTFVAH-",
+    "driveId": "1ftFVAh-nquyhvzmAKKyli-H0RUvsQnsV",
+    "verifyLink": "https://drive.google.com/file/d/1ftFVAh-nquyhvzmAKKyli-H0RUvsQnsV/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1ftFVAh-nquyhvzmAKKyli-H0RUvsQnsV&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-38",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #38",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1GJD2Z7P",
+    "driveId": "1gjd2Z7pj_Onkwk_6zEXTKcseQ61JgQ69",
+    "verifyLink": "https://drive.google.com/file/d/1gjd2Z7pj_Onkwk_6zEXTKcseQ61JgQ69/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1gjd2Z7pj_Onkwk_6zEXTKcseQ61JgQ69&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-39",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #39",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1HRQP8JV",
+    "driveId": "1hrqP8JVL0EM7Tyw8-FvTsasfcji_ukn3",
+    "verifyLink": "https://drive.google.com/file/d/1hrqP8JVL0EM7Tyw8-FvTsasfcji_ukn3/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1hrqP8JVL0EM7Tyw8-FvTsasfcji_ukn3&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-40",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #40",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1LFFVYWN",
+    "driveId": "1lFfvYWNq5l5XPKUy7K2TjXmke4BgiDgn",
+    "verifyLink": "https://drive.google.com/file/d/1lFfvYWNq5l5XPKUy7K2TjXmke4BgiDgn/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1lFfvYWNq5l5XPKUy7K2TjXmke4BgiDgn&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-41",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #41",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1LRLVYAE",
+    "driveId": "1lrlvYaedPMZGHqVkhEiPfF6aIhJz8Xqs",
+    "verifyLink": "https://drive.google.com/file/d/1lrlvYaedPMZGHqVkhEiPfF6aIhJz8Xqs/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1lrlvYaedPMZGHqVkhEiPfF6aIhJz8Xqs&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-42",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #42",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1NRH7_CO",
+    "driveId": "1nRH7_cOM4deHugPpzazCApVW0c0F4-jL",
+    "verifyLink": "https://drive.google.com/file/d/1nRH7_cOM4deHugPpzazCApVW0c0F4-jL/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1nRH7_cOM4deHugPpzazCApVW0c0F4-jL&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-43",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #43",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1OUHXMN8",
+    "driveId": "1oUhXMN8sQLyBp396qdkvFi_w7ovKkAe4",
+    "verifyLink": "https://drive.google.com/file/d/1oUhXMN8sQLyBp396qdkvFi_w7ovKkAe4/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1oUhXMN8sQLyBp396qdkvFi_w7ovKkAe4&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-44",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #44",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1OTXA2FX",
+    "driveId": "1otxA2FxJ4MYAUx3PqZ1uS1clfnAaTpiQ",
+    "verifyLink": "https://drive.google.com/file/d/1otxA2FxJ4MYAUx3PqZ1uS1clfnAaTpiQ/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1otxA2FxJ4MYAUx3PqZ1uS1clfnAaTpiQ&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-45",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #45",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1RVBNC4_",
+    "driveId": "1rvBnc4__stabF0g2c4uVXW0qzWCeWeI4",
+    "verifyLink": "https://drive.google.com/file/d/1rvBnc4__stabF0g2c4uVXW0qzWCeWeI4/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1rvBnc4__stabF0g2c4uVXW0qzWCeWeI4&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-46",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #46",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1S8RHVAZ",
+    "driveId": "1s8rhVaz7kH9jCu9sPxKxBrUmxRwQpRC1",
+    "verifyLink": "https://drive.google.com/file/d/1s8rhVaz7kH9jCu9sPxKxBrUmxRwQpRC1/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1s8rhVaz7kH9jCu9sPxKxBrUmxRwQpRC1&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-47",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #47",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1SVP0RVY",
+    "driveId": "1sVP0RvyF8YU-g7IzWc92Y8-RYTeKgDi-",
+    "verifyLink": "https://drive.google.com/file/d/1sVP0RvyF8YU-g7IzWc92Y8-RYTeKgDi-/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1sVP0RvyF8YU-g7IzWc92Y8-RYTeKgDi-&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-48",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #48",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1UD82OY8",
+    "driveId": "1ud82Oy8AQxsMKLucLfOCs1IiFe4YpdXA",
+    "verifyLink": "https://drive.google.com/file/d/1ud82Oy8AQxsMKLucLfOCs1IiFe4YpdXA/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1ud82Oy8AQxsMKLucLfOCs1IiFe4YpdXA&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-49",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #49",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1HL6AQGZ",
+    "driveId": "1HL6AqgZ59cAapNllvMgCkseO-8ZkjWqA",
+    "verifyLink": "https://drive.google.com/file/d/1HL6AqgZ59cAapNllvMgCkseO-8ZkjWqA/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1HL6AqgZ59cAapNllvMgCkseO-8ZkjWqA&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-50",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #50",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1-9WHVZO",
+    "driveId": "1-9WHvzovaXE7Bm_vSMJaTauO15fiNFn6",
+    "verifyLink": "https://drive.google.com/file/d/1-9WHvzovaXE7Bm_vSMJaTauO15fiNFn6/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1-9WHvzovaXE7Bm_vSMJaTauO15fiNFn6&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-51",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #51",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-114RVZ_I",
+    "driveId": "114rvZ_i6HrauXYtLt702yi35-Uo8HUU8",
+    "verifyLink": "https://drive.google.com/file/d/114rvZ_i6HrauXYtLt702yi35-Uo8HUU8/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=114rvZ_i6HrauXYtLt702yi35-Uo8HUU8&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-52",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #52",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-11AUMXWS",
+    "driveId": "11AUMxWS3Uasrek8Z6q46-v2xFUkSTv8Y",
+    "verifyLink": "https://drive.google.com/file/d/11AUMxWS3Uasrek8Z6q46-v2xFUkSTv8Y/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=11AUMxWS3Uasrek8Z6q46-v2xFUkSTv8Y&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-53",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #53",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-11H58F_D",
+    "driveId": "11H58F_d2FXl2ij7rgy5RfIdd1igQZ838",
+    "verifyLink": "https://drive.google.com/file/d/11H58F_d2FXl2ij7rgy5RfIdd1igQZ838/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=11H58F_d2FXl2ij7rgy5RfIdd1igQZ838&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-54",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #54",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-11ISHLFX",
+    "driveId": "11ishlFxU6fHlTQQL9bTidNdo6sd17Erh",
+    "verifyLink": "https://drive.google.com/file/d/11ishlFxU6fHlTQQL9bTidNdo6sd17Erh/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=11ishlFxU6fHlTQQL9bTidNdo6sd17Erh&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-55",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #55",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-11VA5GGS",
+    "driveId": "11vA5gGSydt4bW5b5409vV2bXC67igusc",
+    "verifyLink": "https://drive.google.com/file/d/11vA5gGSydt4bW5b5409vV2bXC67igusc/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=11vA5gGSydt4bW5b5409vV2bXC67igusc&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-56",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #56",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-12R3SXMN",
+    "driveId": "12R3sXmNbNGGKOkigbvydBoV2vbguUpOO",
+    "verifyLink": "https://drive.google.com/file/d/12R3sXmNbNGGKOkigbvydBoV2vbguUpOO/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=12R3sXmNbNGGKOkigbvydBoV2vbguUpOO&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-57",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #57",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-12BNABXK",
+    "driveId": "12bNABXkIJGZbfV8P5EOZ59lIMY0M9rAN",
+    "verifyLink": "https://drive.google.com/file/d/12bNABXkIJGZbfV8P5EOZ59lIMY0M9rAN/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=12bNABXkIJGZbfV8P5EOZ59lIMY0M9rAN&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-58",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #58",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-13LGNGSO",
+    "driveId": "13LGnGsoBFk_rX46KOgQ_MDD6QdD_8adr",
+    "verifyLink": "https://drive.google.com/file/d/13LGnGsoBFk_rX46KOgQ_MDD6QdD_8adr/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=13LGnGsoBFk_rX46KOgQ_MDD6QdD_8adr&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-59",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #59",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-13B1MXC7",
+    "driveId": "13b1mxC7UluMOmXt13nCmWYm9RsIP3KyJ",
+    "verifyLink": "https://drive.google.com/file/d/13b1mxC7UluMOmXt13nCmWYm9RsIP3KyJ/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=13b1mxC7UluMOmXt13nCmWYm9RsIP3KyJ&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-60",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #60",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-14GDBVNT",
+    "driveId": "14GdbvNTpO3tMsqrgZchRRh1FDNmczCdR",
+    "verifyLink": "https://drive.google.com/file/d/14GdbvNTpO3tMsqrgZchRRh1FDNmczCdR/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=14GdbvNTpO3tMsqrgZchRRh1FDNmczCdR&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-61",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #61",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-15NOMN9G",
+    "driveId": "15NoMn9GN76qj9DkGtEY5x67JD5jZYbcD",
+    "verifyLink": "https://drive.google.com/file/d/15NoMn9GN76qj9DkGtEY5x67JD5jZYbcD/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=15NoMn9GN76qj9DkGtEY5x67JD5jZYbcD&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-62",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #62",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-15XDUEDR",
+    "driveId": "15XdUEDRLK16AgcXHPrXvev9UL8fBMfUI",
+    "verifyLink": "https://drive.google.com/file/d/15XdUEDRLK16AgcXHPrXvev9UL8fBMfUI/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=15XdUEDRLK16AgcXHPrXvev9UL8fBMfUI&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-63",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #63",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-16BISAFI",
+    "driveId": "16BisAFI6StGzLsFJh2Ef_a0EoxLub5HA",
+    "verifyLink": "https://drive.google.com/file/d/16BisAFI6StGzLsFJh2Ef_a0EoxLub5HA/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=16BisAFI6StGzLsFJh2Ef_a0EoxLub5HA&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-64",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #64",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-16GIHV_F",
+    "driveId": "16GIhv_fbofon_i4Ze9KPlxvx05lZ6sPI",
+    "verifyLink": "https://drive.google.com/file/d/16GIhv_fbofon_i4Ze9KPlxvx05lZ6sPI/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=16GIhv_fbofon_i4Ze9KPlxvx05lZ6sPI&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-65",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #65",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-17QYCMHP",
+    "driveId": "17QyCMHpWF8leCuQ306CxgczB-QbznAXz",
+    "verifyLink": "https://drive.google.com/file/d/17QyCMHpWF8leCuQ306CxgczB-QbznAXz/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=17QyCMHpWF8leCuQ306CxgczB-QbznAXz&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-66",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #66",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-17TIZ9B7",
+    "driveId": "17TiZ9B7r2j3bzzoAziflEjfy3bXo3E-T",
+    "verifyLink": "https://drive.google.com/file/d/17TiZ9B7r2j3bzzoAziflEjfy3bXo3E-T/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=17TiZ9B7r2j3bzzoAziflEjfy3bXo3E-T&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-67",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #67",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-18HUZP0V",
+    "driveId": "18HUZP0VmwnOc1bP7IW_ANccqLDYQC0D0",
+    "verifyLink": "https://drive.google.com/file/d/18HUZP0VmwnOc1bP7IW_ANccqLDYQC0D0/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=18HUZP0VmwnOc1bP7IW_ANccqLDYQC0D0&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-68",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #68",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-191JILGX",
+    "driveId": "191JiLGxgWo5g1mJNHKzoG_kxjJxE34lh",
+    "verifyLink": "https://drive.google.com/file/d/191JiLGxgWo5g1mJNHKzoG_kxjJxE34lh/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=191JiLGxgWo5g1mJNHKzoG_kxjJxE34lh&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-69",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #69",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-19JI3ZB5",
+    "driveId": "19JI3ZB56Mcf74L_K0i7ROLGPX8IIRfAu",
+    "verifyLink": "https://drive.google.com/file/d/19JI3ZB56Mcf74L_K0i7ROLGPX8IIRfAu/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=19JI3ZB56Mcf74L_K0i7ROLGPX8IIRfAu&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-70",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #70",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1AKUBFUD",
+    "driveId": "1AKubfUdg0ITbRpcUaFNPCrIoihNakN8o",
+    "verifyLink": "https://drive.google.com/file/d/1AKubfUdg0ITbRpcUaFNPCrIoihNakN8o/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1AKubfUdg0ITbRpcUaFNPCrIoihNakN8o&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-71",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #71",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1AT5SS0Z",
+    "driveId": "1AT5ss0Zh9aUkp_3Th44RLabf8ph5BuP9",
+    "verifyLink": "https://drive.google.com/file/d/1AT5ss0Zh9aUkp_3Th44RLabf8ph5BuP9/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1AT5ss0Zh9aUkp_3Th44RLabf8ph5BuP9&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-72",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #72",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1B54EMTA",
+    "driveId": "1B54eMTad9qdemREGm0hxJSabt7iKxbXT",
+    "verifyLink": "https://drive.google.com/file/d/1B54eMTad9qdemREGm0hxJSabt7iKxbXT/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1B54eMTad9qdemREGm0hxJSabt7iKxbXT&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-73",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #73",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1BN5KWA8",
+    "driveId": "1BN5Kwa8fQV6nRyqQaTskFKMBVNHNo6TD",
+    "verifyLink": "https://drive.google.com/file/d/1BN5Kwa8fQV6nRyqQaTskFKMBVNHNo6TD/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1BN5Kwa8fQV6nRyqQaTskFKMBVNHNo6TD&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-74",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #74",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1BKNZIRZ",
+    "driveId": "1BkNZIRzSaUhEbLgSeRckW3zcjx9F8MHZ",
+    "verifyLink": "https://drive.google.com/file/d/1BkNZIRzSaUhEbLgSeRckW3zcjx9F8MHZ/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1BkNZIRzSaUhEbLgSeRckW3zcjx9F8MHZ&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-75",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #75",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1C5WB6MK",
+    "driveId": "1C5WB6MK8YchzNX4WnyzQylwh-MfLPMoc",
+    "verifyLink": "https://drive.google.com/file/d/1C5WB6MK8YchzNX4WnyzQylwh-MfLPMoc/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1C5WB6MK8YchzNX4WnyzQylwh-MfLPMoc&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-76",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #76",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1CZQPPF5",
+    "driveId": "1CZQpPF5crnEK812BAQBKbMfuigt-WToY",
+    "verifyLink": "https://drive.google.com/file/d/1CZQpPF5crnEK812BAQBKbMfuigt-WToY/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1CZQpPF5crnEK812BAQBKbMfuigt-WToY&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-77",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #77",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1D0FVFUO",
+    "driveId": "1D0fvfuog6L2IIFpSwv8qlEGIxEy4x0V0",
+    "verifyLink": "https://drive.google.com/file/d/1D0fvfuog6L2IIFpSwv8qlEGIxEy4x0V0/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1D0fvfuog6L2IIFpSwv8qlEGIxEy4x0V0&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-78",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #78",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1E-5KQ6V",
+    "driveId": "1E-5KQ6vMaYEToyNqVz7_Fz-KtwgCqejb",
+    "verifyLink": "https://drive.google.com/file/d/1E-5KQ6vMaYEToyNqVz7_Fz-KtwgCqejb/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1E-5KQ6vMaYEToyNqVz7_Fz-KtwgCqejb&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-79",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #79",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1EO0OPIY",
+    "driveId": "1EO0OPiYBnyHkR8Wkyi9_jXKDg_iQW9c1",
+    "verifyLink": "https://drive.google.com/file/d/1EO0OPiYBnyHkR8Wkyi9_jXKDg_iQW9c1/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1EO0OPiYBnyHkR8Wkyi9_jXKDg_iQW9c1&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-80",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #80",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1EU0GJVJ",
+    "driveId": "1EU0GJVJpf2OvJ3A9SbWSxB5ZBQc17pdn",
+    "verifyLink": "https://drive.google.com/file/d/1EU0GJVJpf2OvJ3A9SbWSxB5ZBQc17pdn/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1EU0GJVJpf2OvJ3A9SbWSxB5ZBQc17pdn&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-81",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #81",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1EHDBUIE",
+    "driveId": "1EhdbuIekh66NTF2_hbq3OJc-4Jiki-lx",
+    "verifyLink": "https://drive.google.com/file/d/1EhdbuIekh66NTF2_hbq3OJc-4Jiki-lx/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1EhdbuIekh66NTF2_hbq3OJc-4Jiki-lx&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-82",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #82",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1ES8VPPV",
+    "driveId": "1Es8Vppv888ilN0x51BlxbQWFKPdimhp2",
+    "verifyLink": "https://drive.google.com/file/d/1Es8Vppv888ilN0x51BlxbQWFKPdimhp2/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1Es8Vppv888ilN0x51BlxbQWFKPdimhp2&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-83",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #83",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1G_WTKR4",
+    "driveId": "1G_wTkr4NPEHkB8PPCyqWTlWFK2OzJh7h",
+    "verifyLink": "https://drive.google.com/file/d/1G_wTkr4NPEHkB8PPCyqWTlWFK2OzJh7h/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1G_wTkr4NPEHkB8PPCyqWTlWFK2OzJh7h&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-84",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #84",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1IFVSPH-",
+    "driveId": "1IFvSph-B05avBT1uYv7LNBIg324tFVN7",
+    "verifyLink": "https://drive.google.com/file/d/1IFvSph-B05avBT1uYv7LNBIg324tFVN7/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1IFvSph-B05avBT1uYv7LNBIg324tFVN7&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-85",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #85",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1IXINGMO",
+    "driveId": "1IxInGmobZUIL0epICbEmCtnMuLiYCuI1",
+    "verifyLink": "https://drive.google.com/file/d/1IxInGmobZUIL0epICbEmCtnMuLiYCuI1/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1IxInGmobZUIL0epICbEmCtnMuLiYCuI1&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-86",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #86",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1JEHZJFO",
+    "driveId": "1JEhzjfoA1Ux7FzMtLuvGZR6KIRXChKls",
+    "verifyLink": "https://drive.google.com/file/d/1JEhzjfoA1Ux7FzMtLuvGZR6KIRXChKls/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1JEhzjfoA1Ux7FzMtLuvGZR6KIRXChKls&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-87",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #87",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1KZXL9HJ",
+    "driveId": "1KZXl9hjtIZKc25-n8cyUhIiS6Dh4g_rK",
+    "verifyLink": "https://drive.google.com/file/d/1KZXl9hjtIZKc25-n8cyUhIiS6Dh4g_rK/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1KZXl9hjtIZKc25-n8cyUhIiS6Dh4g_rK&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-88",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #88",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1KHWAB4O",
+    "driveId": "1KhwAB4oHRz1rPaxaIivtch71hMI1tiZw",
+    "verifyLink": "https://drive.google.com/file/d/1KhwAB4oHRz1rPaxaIivtch71hMI1tiZw/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1KhwAB4oHRz1rPaxaIivtch71hMI1tiZw&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-89",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #89",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1KM_24RH",
+    "driveId": "1Km_24RHjCLgTdHT2JA7XE2fqPFAyxzne",
+    "verifyLink": "https://drive.google.com/file/d/1Km_24RHjCLgTdHT2JA7XE2fqPFAyxzne/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1Km_24RHjCLgTdHT2JA7XE2fqPFAyxzne&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-90",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #90",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1L4PYZ_Y",
+    "driveId": "1L4pYZ_Yp7zMildCqhJzVt-nj0lQsAjk-",
+    "verifyLink": "https://drive.google.com/file/d/1L4pYZ_Yp7zMildCqhJzVt-nj0lQsAjk-/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1L4pYZ_Yp7zMildCqhJzVt-nj0lQsAjk-&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-91",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #91",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1LEUXNOT",
+    "driveId": "1LEuxNotYW4YJZkrHPyD8vJUFtQIk91p1",
+    "verifyLink": "https://drive.google.com/file/d/1LEuxNotYW4YJZkrHPyD8vJUFtQIk91p1/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1LEuxNotYW4YJZkrHPyD8vJUFtQIk91p1&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-92",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #92",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1LFECJNZ",
+    "driveId": "1LFECJnZV7bbS5a1b7BhXcTmPJap6zhF-",
+    "verifyLink": "https://drive.google.com/file/d/1LFECJnZV7bbS5a1b7BhXcTmPJap6zhF-/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1LFECJnZV7bbS5a1b7BhXcTmPJap6zhF-&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-93",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #93",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1LJO1MSY",
+    "driveId": "1LJo1MsYqysco-v7QwLOvovssnfoubZ1Y",
+    "verifyLink": "https://drive.google.com/file/d/1LJo1MsYqysco-v7QwLOvovssnfoubZ1Y/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1LJo1MsYqysco-v7QwLOvovssnfoubZ1Y&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-94",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #94",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1LJZ9N-2",
+    "driveId": "1LJz9n-2plhJgxP3CMaJcv9EFouF3ZzY3",
+    "verifyLink": "https://drive.google.com/file/d/1LJz9n-2plhJgxP3CMaJcv9EFouF3ZzY3/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1LJz9n-2plhJgxP3CMaJcv9EFouF3ZzY3&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-95",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #95",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1LPWDVZV",
+    "driveId": "1LPWdVzvkIoaBdLEPUr2Xl-tcgUPjhntl",
+    "verifyLink": "https://drive.google.com/file/d/1LPWdVzvkIoaBdLEPUr2Xl-tcgUPjhntl/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1LPWdVzvkIoaBdLEPUr2Xl-tcgUPjhntl&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-96",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #96",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1LEZ3XUZ",
+    "driveId": "1LeZ3xuZifK4pTdu4xkxKeq939KiCq_Y9",
+    "verifyLink": "https://drive.google.com/file/d/1LeZ3xuZifK4pTdu4xkxKeq939KiCq_Y9/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1LeZ3xuZifK4pTdu4xkxKeq939KiCq_Y9&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-97",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #97",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1MPMKNC3",
+    "driveId": "1MpmkNc3MdYgbLVVThuZ-Y0U3Ut5W3Hgl",
+    "verifyLink": "https://drive.google.com/file/d/1MpmkNc3MdYgbLVVThuZ-Y0U3Ut5W3Hgl/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1MpmkNc3MdYgbLVVThuZ-Y0U3Ut5W3Hgl&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-98",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #98",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1N5RB2IU",
+    "driveId": "1N5RB2iu9W1obGemp2qK_wvnlHgPkrSnc",
+    "verifyLink": "https://drive.google.com/file/d/1N5RB2iu9W1obGemp2qK_wvnlHgPkrSnc/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1N5RB2iu9W1obGemp2qK_wvnlHgPkrSnc&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-99",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #99",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1NXVNY5S",
+    "driveId": "1NXvNy5Suu3GrYkMMP48DMP5GVCtdPpAq",
+    "verifyLink": "https://drive.google.com/file/d/1NXvNy5Suu3GrYkMMP48DMP5GVCtdPpAq/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1NXvNy5Suu3GrYkMMP48DMP5GVCtdPpAq&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-100",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #100",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1O99OWOV",
+    "driveId": "1O99OwOVmPJBHJmgp5b8kyne6FSAjnuDb",
+    "verifyLink": "https://drive.google.com/file/d/1O99OwOVmPJBHJmgp5b8kyne6FSAjnuDb/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1O99OwOVmPJBHJmgp5b8kyne6FSAjnuDb&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-101",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #101",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1PDCXMHO",
+    "driveId": "1PDcXMHOrwIfzLp_aeLeyg4b7vTeypSmN",
+    "verifyLink": "https://drive.google.com/file/d/1PDcXMHOrwIfzLp_aeLeyg4b7vTeypSmN/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1PDcXMHOrwIfzLp_aeLeyg4b7vTeypSmN&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-102",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #102",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1PLETF6H",
+    "driveId": "1PLetf6hzJq2wYnqG1Uhvi8EuWALG6kZY",
+    "verifyLink": "https://drive.google.com/file/d/1PLetf6hzJq2wYnqG1Uhvi8EuWALG6kZY/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1PLetf6hzJq2wYnqG1Uhvi8EuWALG6kZY&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-103",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #103",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1PTVU-HO",
+    "driveId": "1PTvu-HOzfFomnR9U8tfWnjq7A7co39VK",
+    "verifyLink": "https://drive.google.com/file/d/1PTvu-HOzfFomnR9U8tfWnjq7A7co39VK/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1PTvu-HOzfFomnR9U8tfWnjq7A7co39VK&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-104",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #104",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1PZOA1-4",
+    "driveId": "1PZoa1-45tUumA3UfwdTHwhiAXAUm-9JD",
+    "verifyLink": "https://drive.google.com/file/d/1PZoa1-45tUumA3UfwdTHwhiAXAUm-9JD/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1PZoa1-45tUumA3UfwdTHwhiAXAUm-9JD&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-105",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #105",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1PAHHRVZ",
+    "driveId": "1PahHRVZdxwZY3yA4brmt0kbNcbLALcOE",
+    "verifyLink": "https://drive.google.com/file/d/1PahHRVZdxwZY3yA4brmt0kbNcbLALcOE/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1PahHRVZdxwZY3yA4brmt0kbNcbLALcOE&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-106",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #106",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1Q2DCP6F",
+    "driveId": "1Q2Dcp6fwYfk2nKJy_pe3fYD7fOaZfJst",
+    "verifyLink": "https://drive.google.com/file/d/1Q2Dcp6fwYfk2nKJy_pe3fYD7fOaZfJst/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1Q2Dcp6fwYfk2nKJy_pe3fYD7fOaZfJst&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-107",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #107",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1QCEDKYY",
+    "driveId": "1QCEDkYyM-8vUpFtKrCTTcEO4p5ZN0s4b",
+    "verifyLink": "https://drive.google.com/file/d/1QCEDkYyM-8vUpFtKrCTTcEO4p5ZN0s4b/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1QCEDkYyM-8vUpFtKrCTTcEO4p5ZN0s4b&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-108",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #108",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1QRM5PVW",
+    "driveId": "1QRm5pvwvw804yx9Dd8TSPmbpbE7Iv4NI",
+    "verifyLink": "https://drive.google.com/file/d/1QRm5pvwvw804yx9Dd8TSPmbpbE7Iv4NI/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1QRm5pvwvw804yx9Dd8TSPmbpbE7Iv4NI&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-109",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #109",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1R1KP6L-",
+    "driveId": "1R1Kp6l-YNtYK273MsWmHEpPzcEhSDh1f",
+    "verifyLink": "https://drive.google.com/file/d/1R1Kp6l-YNtYK273MsWmHEpPzcEhSDh1f/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1R1Kp6l-YNtYK273MsWmHEpPzcEhSDh1f&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-110",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #110",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1R3V4G5N",
+    "driveId": "1R3v4g5NLk-2sbwtC2IZU7KcbgnMdUxjg",
+    "verifyLink": "https://drive.google.com/file/d/1R3v4g5NLk-2sbwtC2IZU7KcbgnMdUxjg/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1R3v4g5NLk-2sbwtC2IZU7KcbgnMdUxjg&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-111",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #111",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1RZOG8FA",
+    "driveId": "1RZOG8Fa-4YwpggdPw3vjqOxNDGgeOVLz",
+    "verifyLink": "https://drive.google.com/file/d/1RZOG8Fa-4YwpggdPw3vjqOxNDGgeOVLz/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1RZOG8Fa-4YwpggdPw3vjqOxNDGgeOVLz&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-112",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #112",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1SI37VLP",
+    "driveId": "1SI37VLPh414Vikthbwm_OhGsMte2tY5w",
+    "verifyLink": "https://drive.google.com/file/d/1SI37VLPh414Vikthbwm_OhGsMte2tY5w/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1SI37VLPh414Vikthbwm_OhGsMte2tY5w&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-113",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #113",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1SEQM0RA",
+    "driveId": "1Seqm0rAWo7wrBD3XR9yl9gpJXUaxIMeF",
+    "verifyLink": "https://drive.google.com/file/d/1Seqm0rAWo7wrBD3XR9yl9gpJXUaxIMeF/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1Seqm0rAWo7wrBD3XR9yl9gpJXUaxIMeF&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-114",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #114",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1SROA5ZC",
+    "driveId": "1Sroa5zcLFosAq1RprPobmClTllZB8PtC",
+    "verifyLink": "https://drive.google.com/file/d/1Sroa5zcLFosAq1RprPobmClTllZB8PtC/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1Sroa5zcLFosAq1RprPobmClTllZB8PtC&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-115",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #115",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1TAO23U4",
+    "driveId": "1TAO23u4ZVYsD2eM3e77wDyXC3qLxMEpJ",
+    "verifyLink": "https://drive.google.com/file/d/1TAO23u4ZVYsD2eM3e77wDyXC3qLxMEpJ/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1TAO23u4ZVYsD2eM3e77wDyXC3qLxMEpJ&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-116",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #116",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1TQOEXRN",
+    "driveId": "1TQoeXRnuoVXQp0CcwSfcR9i1D-7l2IrK",
+    "verifyLink": "https://drive.google.com/file/d/1TQoeXRnuoVXQp0CcwSfcR9i1D-7l2IrK/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1TQoeXRnuoVXQp0CcwSfcR9i1D-7l2IrK&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-117",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #117",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1UNAFE_V",
+    "driveId": "1UnafE_VAf2mxHwlkgnZoUOyymw4M3J1A",
+    "verifyLink": "https://drive.google.com/file/d/1UnafE_VAf2mxHwlkgnZoUOyymw4M3J1A/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1UnafE_VAf2mxHwlkgnZoUOyymw4M3J1A&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-118",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #118",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1V73ZF-T",
+    "driveId": "1V73ZF-tcFCDab6Fg7onBDroGCN045u-h",
+    "verifyLink": "https://drive.google.com/file/d/1V73ZF-tcFCDab6Fg7onBDroGCN045u-h/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1V73ZF-tcFCDab6Fg7onBDroGCN045u-h&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-119",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #119",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1WLU3ABS",
+    "driveId": "1WlU3abs2JKLMd3q-1Iw-wafXppgBIMDE",
+    "verifyLink": "https://drive.google.com/file/d/1WlU3abs2JKLMd3q-1Iw-wafXppgBIMDE/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1WlU3abs2JKLMd3q-1Iw-wafXppgBIMDE&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-120",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #120",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1XCLTC7V",
+    "driveId": "1XClTC7v7G_P6iXT8c0gzF_BI3XEUxjPD",
+    "verifyLink": "https://drive.google.com/file/d/1XClTC7v7G_P6iXT8c0gzF_BI3XEUxjPD/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1XClTC7v7G_P6iXT8c0gzF_BI3XEUxjPD&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-121",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #121",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1XKBI-YX",
+    "driveId": "1XKbi-YXOrQIgxoV1FKONgwKhEFUa72HU",
+    "verifyLink": "https://drive.google.com/file/d/1XKbi-YXOrQIgxoV1FKONgwKhEFUa72HU/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1XKbi-YXOrQIgxoV1FKONgwKhEFUa72HU&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-122",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #122",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1XTINUEB",
+    "driveId": "1XTINueBrR7V5xrEH-Z3zEQ7PY2JQ60db",
+    "verifyLink": "https://drive.google.com/file/d/1XTINueBrR7V5xrEH-Z3zEQ7PY2JQ60db/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1XTINueBrR7V5xrEH-Z3zEQ7PY2JQ60db&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-123",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #123",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1XVPHMYG",
+    "driveId": "1XVphMygdaVr-pquf4mkCpJ9bZVhkFqZw",
+    "verifyLink": "https://drive.google.com/file/d/1XVphMygdaVr-pquf4mkCpJ9bZVhkFqZw/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1XVphMygdaVr-pquf4mkCpJ9bZVhkFqZw&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-124",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #124",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1XCKENCM",
+    "driveId": "1XcKeNcMvXhVTd3qk55ChNSqJba-Buihw",
+    "verifyLink": "https://drive.google.com/file/d/1XcKeNcMvXhVTd3qk55ChNSqJba-Buihw/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1XcKeNcMvXhVTd3qk55ChNSqJba-Buihw&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-125",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #125",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1XNO5XZS",
+    "driveId": "1Xno5xzSp5vvZLRf_bIS9fZ4eqdNEVOIR",
+    "verifyLink": "https://drive.google.com/file/d/1Xno5xzSp5vvZLRf_bIS9fZ4eqdNEVOIR/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1Xno5xzSp5vvZLRf_bIS9fZ4eqdNEVOIR&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-126",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #126",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1XTR4IK6",
+    "driveId": "1Xtr4iK6S6WuyA1XpH7jJWFDC2MAIi86V",
+    "verifyLink": "https://drive.google.com/file/d/1Xtr4iK6S6WuyA1XpH7jJWFDC2MAIi86V/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1Xtr4iK6S6WuyA1XpH7jJWFDC2MAIi86V&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-127",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #127",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1YBWOFYW",
+    "driveId": "1YBwoFYwRUVtZTgVfn1a-zPWhGZS0Swki",
+    "verifyLink": "https://drive.google.com/file/d/1YBwoFYwRUVtZTgVfn1a-zPWhGZS0Swki/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1YBwoFYwRUVtZTgVfn1a-zPWhGZS0Swki&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-128",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #128",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1YMD3KJC",
+    "driveId": "1YMd3kjcF9tfud-uJEiJ0Ds5qPpADEmWs",
+    "verifyLink": "https://drive.google.com/file/d/1YMd3kjcF9tfud-uJEiJ0Ds5qPpADEmWs/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1YMd3kjcF9tfud-uJEiJ0Ds5qPpADEmWs&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-129",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #129",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1ZRYCN56",
+    "driveId": "1ZRYcN56aUnEjJaJ3Xxxu05-K-f6NpaKJ",
+    "verifyLink": "https://drive.google.com/file/d/1ZRYcN56aUnEjJaJ3Xxxu05-K-f6NpaKJ/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1ZRYcN56aUnEjJaJ3Xxxu05-K-f6NpaKJ&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-130",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #130",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1_Z7J0RN",
+    "driveId": "1_z7J0rn-Y4N5AF_X1EtdUJ8_RnIxevKL",
+    "verifyLink": "https://drive.google.com/file/d/1_z7J0rn-Y4N5AF_X1EtdUJ8_RnIxevKL/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1_z7J0rn-Y4N5AF_X1EtdUJ8_RnIxevKL&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-131",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #131",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1ARHEACL",
+    "driveId": "1aRHEACllXhO3tTAWw2qNhrYROwWDXQRY",
+    "verifyLink": "https://drive.google.com/file/d/1aRHEACllXhO3tTAWw2qNhrYROwWDXQRY/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1aRHEACllXhO3tTAWw2qNhrYROwWDXQRY&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-132",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #132",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1B10ZACV",
+    "driveId": "1b10zaCVQiqmAyL2p9gC2MG51dTtkg4Et",
+    "verifyLink": "https://drive.google.com/file/d/1b10zaCVQiqmAyL2p9gC2MG51dTtkg4Et/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1b10zaCVQiqmAyL2p9gC2MG51dTtkg4Et&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-133",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #133",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1C38BSXJ",
+    "driveId": "1c38bSxJlzEb3iSG_a3-_oegtDQWZDLNS",
+    "verifyLink": "https://drive.google.com/file/d/1c38bSxJlzEb3iSG_a3-_oegtDQWZDLNS/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1c38bSxJlzEb3iSG_a3-_oegtDQWZDLNS&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-134",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #134",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1C8YYJA6",
+    "driveId": "1c8yyja693Z24n8geqte2IdRT0IIEtZeb",
+    "verifyLink": "https://drive.google.com/file/d/1c8yyja693Z24n8geqte2IdRT0IIEtZeb/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1c8yyja693Z24n8geqte2IdRT0IIEtZeb&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-135",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #135",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1CZ_3LUO",
+    "driveId": "1cz_3lUOPQASrQjG6S-ON_U4SB6FJYD00",
+    "verifyLink": "https://drive.google.com/file/d/1cz_3lUOPQASrQjG6S-ON_U4SB6FJYD00/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1cz_3lUOPQASrQjG6S-ON_U4SB6FJYD00&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-136",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #136",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1D4MTWJT",
+    "driveId": "1d4mtwjTA8oLyx20CXXcnUm1pNUjr02lF",
+    "verifyLink": "https://drive.google.com/file/d/1d4mtwjTA8oLyx20CXXcnUm1pNUjr02lF/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1d4mtwjTA8oLyx20CXXcnUm1pNUjr02lF&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-137",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #137",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1DDRAPAB",
+    "driveId": "1dDrAPAB5fWYZquPg0VkszdEOMyJoS57P",
+    "verifyLink": "https://drive.google.com/file/d/1dDrAPAB5fWYZquPg0VkszdEOMyJoS57P/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1dDrAPAB5fWYZquPg0VkszdEOMyJoS57P&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-138",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #138",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1EPAJTXX",
+    "driveId": "1epAjTxxs_SpqHwCTLjQu9IEvLs8FGFUi",
+    "verifyLink": "https://drive.google.com/file/d/1epAjTxxs_SpqHwCTLjQu9IEvLs8FGFUi/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1epAjTxxs_SpqHwCTLjQu9IEvLs8FGFUi&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-139",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #139",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1F6OWFLT",
+    "driveId": "1f6oWfLt0CUshekcQYiGKU1qS2Tb_u7nF",
+    "verifyLink": "https://drive.google.com/file/d/1f6oWfLt0CUshekcQYiGKU1qS2Tb_u7nF/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1f6oWfLt0CUshekcQYiGKU1qS2Tb_u7nF&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-140",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #140",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1FLUFZJL",
+    "driveId": "1fLUFzJLTfD3adJwUhvcAsMwkF5ijjqry",
+    "verifyLink": "https://drive.google.com/file/d/1fLUFzJLTfD3adJwUhvcAsMwkF5ijjqry/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1fLUFzJLTfD3adJwUhvcAsMwkF5ijjqry&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-141",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #141",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1FXBC_FQ",
+    "driveId": "1fXbC_FqcsDRh60w-Po82xyg5nKSUeQz-",
+    "verifyLink": "https://drive.google.com/file/d/1fXbC_FqcsDRh60w-Po82xyg5nKSUeQz-/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1fXbC_FqcsDRh60w-Po82xyg5nKSUeQz-&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-142",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #142",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1G-WVOMT",
+    "driveId": "1g-WVOMt4__AWaWBylu6T7jRk1dr-jLf5",
+    "verifyLink": "https://drive.google.com/file/d/1g-WVOMt4__AWaWBylu6T7jRk1dr-jLf5/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1g-WVOMt4__AWaWBylu6T7jRk1dr-jLf5&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-143",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #143",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1GYTM5PL",
+    "driveId": "1gYtM5pLZpFkgewtdWiPgjzl4-x43cSrH",
+    "verifyLink": "https://drive.google.com/file/d/1gYtM5pLZpFkgewtdWiPgjzl4-x43cSrH/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1gYtM5pLZpFkgewtdWiPgjzl4-x43cSrH&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-144",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #144",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1GFZGSF_",
+    "driveId": "1gfZGSf_9mujL1O_ywlkC5gYtM6XbtDpI",
+    "verifyLink": "https://drive.google.com/file/d/1gfZGSf_9mujL1O_ywlkC5gYtM6XbtDpI/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1gfZGSf_9mujL1O_ywlkC5gYtM6XbtDpI&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-145",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #145",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1H0CAZLU",
+    "driveId": "1h0cazLuPJpZfuMS1uf11Zb2p-3S5dUA0",
+    "verifyLink": "https://drive.google.com/file/d/1h0cazLuPJpZfuMS1uf11Zb2p-3S5dUA0/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1h0cazLuPJpZfuMS1uf11Zb2p-3S5dUA0&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-146",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #146",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1I5EIHWV",
+    "driveId": "1i5EIhWV1_jMktBhxIkCat9SYdDK4-qMy",
+    "verifyLink": "https://drive.google.com/file/d/1i5EIhWV1_jMktBhxIkCat9SYdDK4-qMy/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1i5EIhWV1_jMktBhxIkCat9SYdDK4-qMy&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-147",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #147",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1IPAWXTG",
+    "driveId": "1iPaWXTG6bDskNq3zyfZ0GbFrEjWFbSlr",
+    "verifyLink": "https://drive.google.com/file/d/1iPaWXTG6bDskNq3zyfZ0GbFrEjWFbSlr/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1iPaWXTG6bDskNq3zyfZ0GbFrEjWFbSlr&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-148",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #148",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1IVGQQIN",
+    "driveId": "1iVgQqInATmm5vdwT6QVZC4FWDmTBMPsd",
+    "verifyLink": "https://drive.google.com/file/d/1iVgQqInATmm5vdwT6QVZC4FWDmTBMPsd/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1iVgQqInATmm5vdwT6QVZC4FWDmTBMPsd&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-149",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #149",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1IYNX1SK",
+    "driveId": "1iYNx1SKrxGpWJhQjmSY263embAO1tnHk",
+    "verifyLink": "https://drive.google.com/file/d/1iYNx1SKrxGpWJhQjmSY263embAO1tnHk/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1iYNx1SKrxGpWJhQjmSY263embAO1tnHk&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-150",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #150",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1JJM44WL",
+    "driveId": "1jJm44WLfgm3OHSM1Kty_-GS6jIZX0Xt_",
+    "verifyLink": "https://drive.google.com/file/d/1jJm44WLfgm3OHSM1Kty_-GS6jIZX0Xt_/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1jJm44WLfgm3OHSM1Kty_-GS6jIZX0Xt_&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-151",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #151",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1JHNB6EN",
+    "driveId": "1jhnB6eNELsziHIV85SzXsyUBtJ6b3txg",
+    "verifyLink": "https://drive.google.com/file/d/1jhnB6eNELsziHIV85SzXsyUBtJ6b3txg/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1jhnB6eNELsziHIV85SzXsyUBtJ6b3txg&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-152",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #152",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1KXWJMT8",
+    "driveId": "1kXwJMT8b8mTfPMruMATVBqETW-sjT2K1",
+    "verifyLink": "https://drive.google.com/file/d/1kXwJMT8b8mTfPMruMATVBqETW-sjT2K1/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1kXwJMT8b8mTfPMruMATVBqETW-sjT2K1&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-153",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #153",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1KCGZWWM",
+    "driveId": "1kcgzWwM5DkW7J2lhjmAoy_xWuvv45ZS-",
+    "verifyLink": "https://drive.google.com/file/d/1kcgzWwM5DkW7J2lhjmAoy_xWuvv45ZS-/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1kcgzWwM5DkW7J2lhjmAoy_xWuvv45ZS-&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-154",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #154",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1KPNLJ90",
+    "driveId": "1kpnLj90dbnf9LdI0cewkeeRM0h4Jc1XS",
+    "verifyLink": "https://drive.google.com/file/d/1kpnLj90dbnf9LdI0cewkeeRM0h4Jc1XS/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1kpnLj90dbnf9LdI0cewkeeRM0h4Jc1XS&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-155",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #155",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1LCKAON9",
+    "driveId": "1lCkaon9Uuh577D-mU58IBlxA6wcE6q8b",
+    "verifyLink": "https://drive.google.com/file/d/1lCkaon9Uuh577D-mU58IBlxA6wcE6q8b/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1lCkaon9Uuh577D-mU58IBlxA6wcE6q8b&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-156",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #156",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1LJ05MIS",
+    "driveId": "1lJ05misKCaM_91jJ-ISYsABHNG0ekSYM",
+    "verifyLink": "https://drive.google.com/file/d/1lJ05misKCaM_91jJ-ISYsABHNG0ekSYM/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1lJ05misKCaM_91jJ-ISYsABHNG0ekSYM&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-157",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #157",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1M8OAW8Y",
+    "driveId": "1m8oaW8yJQYkQXK1soVh7Ov_xBdX6hf5P",
+    "verifyLink": "https://drive.google.com/file/d/1m8oaW8yJQYkQXK1soVh7Ov_xBdX6hf5P/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1m8oaW8yJQYkQXK1soVh7Ov_xBdX6hf5P&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-158",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #158",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1MBBOMFF",
+    "driveId": "1mbbOmFfP1m6B0KfcM55BFYhjULHZC10Z",
+    "verifyLink": "https://drive.google.com/file/d/1mbbOmFfP1m6B0KfcM55BFYhjULHZC10Z/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1mbbOmFfP1m6B0KfcM55BFYhjULHZC10Z&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-159",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #159",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1ODX7RGY",
+    "driveId": "1oDX7rGyY9qvQryO5RSMxeXsFdU6FVDB6",
+    "verifyLink": "https://drive.google.com/file/d/1oDX7rGyY9qvQryO5RSMxeXsFdU6FVDB6/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1oDX7rGyY9qvQryO5RSMxeXsFdU6FVDB6&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-160",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #160",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1ONRUF3P",
+    "driveId": "1oNrUF3POokSI8i2k3zOKucQV1VxWQkRH",
+    "verifyLink": "https://drive.google.com/file/d/1oNrUF3POokSI8i2k3zOKucQV1VxWQkRH/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1oNrUF3POokSI8i2k3zOKucQV1VxWQkRH&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-161",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #161",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1PUNF3EL",
+    "driveId": "1pUNf3eLPHgB5256ye9mN4dJthy-mwl_o",
+    "verifyLink": "https://drive.google.com/file/d/1pUNf3eLPHgB5256ye9mN4dJthy-mwl_o/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1pUNf3eLPHgB5256ye9mN4dJthy-mwl_o&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-162",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #162",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1PV6BLK_",
+    "driveId": "1pV6BlK_PLhe5cu1YHbK0UItoCzLLTah6",
+    "verifyLink": "https://drive.google.com/file/d/1pV6BlK_PLhe5cu1YHbK0UItoCzLLTah6/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1pV6BlK_PLhe5cu1YHbK0UItoCzLLTah6&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-163",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #163",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1Q3NMMR5",
+    "driveId": "1q3NmMR5_ZJ6xSUFBnlE9QMZ5J9OtBpWP",
+    "verifyLink": "https://drive.google.com/file/d/1q3NmMR5_ZJ6xSUFBnlE9QMZ5J9OtBpWP/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1q3NmMR5_ZJ6xSUFBnlE9QMZ5J9OtBpWP&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-164",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #164",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1Q3WQ9L_",
+    "driveId": "1q3wQ9l_6Rsi5nrGBbVXSAAjo_dfRPPGM",
+    "verifyLink": "https://drive.google.com/file/d/1q3wQ9l_6Rsi5nrGBbVXSAAjo_dfRPPGM/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1q3wQ9l_6Rsi5nrGBbVXSAAjo_dfRPPGM&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-165",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #165",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1RFABZHW",
+    "driveId": "1rFabzhwokYKRB0E78fflooLNDWkWzrJ5",
+    "verifyLink": "https://drive.google.com/file/d/1rFabzhwokYKRB0E78fflooLNDWkWzrJ5/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1rFabzhwokYKRB0E78fflooLNDWkWzrJ5&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-166",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #166",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1SC8QIXZ",
+    "driveId": "1sc8qIXzH9NDTl4mO08TfZrW_Abj3G9Nw",
+    "verifyLink": "https://drive.google.com/file/d/1sc8qIXzH9NDTl4mO08TfZrW_Abj3G9Nw/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1sc8qIXzH9NDTl4mO08TfZrW_Abj3G9Nw&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-167",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #167",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1SHVGZJG",
+    "driveId": "1shVGzjgNzEA5JyFHF4rNjQKN72LFqhDv",
+    "verifyLink": "https://drive.google.com/file/d/1shVGzjgNzEA5JyFHF4rNjQKN72LFqhDv/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1shVGzjgNzEA5JyFHF4rNjQKN72LFqhDv&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-168",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #168",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1TDKOLST",
+    "driveId": "1tDkOLSt9rQfsIIWeYAkVPcByQP6_6nWv",
+    "verifyLink": "https://drive.google.com/file/d/1tDkOLSt9rQfsIIWeYAkVPcByQP6_6nWv/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1tDkOLSt9rQfsIIWeYAkVPcByQP6_6nWv&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-169",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #169",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1TZXM7TO",
+    "driveId": "1tZxm7TO1whu7th1T8rGpeOiFbtAYC9Jx",
+    "verifyLink": "https://drive.google.com/file/d/1tZxm7TO1whu7th1T8rGpeOiFbtAYC9Jx/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1tZxm7TO1whu7th1T8rGpeOiFbtAYC9Jx&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-170",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #170",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1UNDX0WU",
+    "driveId": "1unDX0wU5JQEiuMGP44AUUINEuSIwx5qB",
+    "verifyLink": "https://drive.google.com/file/d/1unDX0wU5JQEiuMGP44AUUINEuSIwx5qB/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1unDX0wU5JQEiuMGP44AUUINEuSIwx5qB&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-171",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #171",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1VPP1VGY",
+    "driveId": "1vPP1VgYEJbQryHYEsHTbwhaZCVJSQx5Y",
+    "verifyLink": "https://drive.google.com/file/d/1vPP1VgYEJbQryHYEsHTbwhaZCVJSQx5Y/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1vPP1VgYEJbQryHYEsHTbwhaZCVJSQx5Y&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-172",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #172",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1VGXKYUP",
+    "driveId": "1vgxKyUpgCv4_ydP4PznZaYTFg07s7Olg",
+    "verifyLink": "https://drive.google.com/file/d/1vgxKyUpgCv4_ydP4PznZaYTFg07s7Olg/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1vgxKyUpgCv4_ydP4PznZaYTFg07s7Olg&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-173",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #173",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1VKGTGVL",
+    "driveId": "1vkGtGvlKqi1Mg9oqxjmb1wdLv5_89I_F",
+    "verifyLink": "https://drive.google.com/file/d/1vkGtGvlKqi1Mg9oqxjmb1wdLv5_89I_F/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1vkGtGvlKqi1Mg9oqxjmb1wdLv5_89I_F&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-174",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #174",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1VZKJDWN",
+    "driveId": "1vzKjdwncP02hAERD7i1vD1TL6pIHl_IK",
+    "verifyLink": "https://drive.google.com/file/d/1vzKjdwncP02hAERD7i1vD1TL6pIHl_IK/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1vzKjdwncP02hAERD7i1vD1TL6pIHl_IK&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-175",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #175",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1XBUYFPR",
+    "driveId": "1xBuYfPrrBdTjGYHOwxPr-vysNzWEKIri",
+    "verifyLink": "https://drive.google.com/file/d/1xBuYfPrrBdTjGYHOwxPr-vysNzWEKIri/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1xBuYfPrrBdTjGYHOwxPr-vysNzWEKIri&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-176",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #176",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1ZA772OO",
+    "driveId": "1za772OoM-xPllviSgUp1eszqtCn4a8ra",
+    "verifyLink": "https://drive.google.com/file/d/1za772OoM-xPllviSgUp1eszqtCn4a8ra/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1za772OoM-xPllviSgUp1eszqtCn4a8ra&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+},
+{
+    "id": "cert-batch-177",
+    "type": "named",
+    "category": "tech",
+    "title": "Verified Technical Credential #177",
+    "org": "Sanjay G. L. Credential Archive",
+    "date": "2026",
+    "month": "September",
+    "year": 2026,
+    "duration": "Certification",
+    "desc": "Verified technical credential issued for technology competency, programming development, or system architecture completion.",
+    "tags": [
+        "Verified Credential",
+        "Professional Certification",
+        "2026"
+    ],
+    "skillsLearned": [
+        "Technical Competency",
+        "Software Development",
+        "System Engineering"
+    ],
+    "credentialId": "CERT-1ZVV6BMS",
+    "driveId": "1zvv6bmS_EYKdRAnzjOONsNd7NArmcQjF",
+    "verifyLink": "https://drive.google.com/file/d/1zvv6bmS_EYKdRAnzjOONsNd7NArmcQjF/view?usp=sharing",
+    "image": "https://drive.google.com/thumbnail?id=1zvv6bmS_EYKdRAnzjOONsNd7NArmcQjF&sz=w800",
+    "emoji": "\ud83d\udcdc",
+    "featured": false
+}
 ];
