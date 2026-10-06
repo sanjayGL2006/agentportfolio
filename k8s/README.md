@@ -23,8 +23,8 @@ Each file in the [`k8s/`](file:///d:/portfolio/k8s) folder represents a specific
 | File | Kubernetes Resource | Learning Purpose |
 |---|---|---|
 | [`k8s/namespace.yaml`](file:///d:/portfolio/k8s/namespace.yaml) | `Namespace` | Creates an isolated logical workspace named `portfolio` inside the cluster. |
-| [`k8s/configmap.yaml`](file:///d:/portfolio/k8s/configmap.yaml) | `ConfigMap` | Stores non-sensitive environment variables (`PORT`, `FLASK_ENV`, `SUPABASE_URL`). |
-| [`k8s/secret.yaml`](file:///d:/portfolio/k8s/secret.yaml) | `Secret` | Stores sensitive API keys (`GEMINI_API_KEY`, `SUPABASE_KEY`, `SUPABASE_SECRET_KEY`). |
+| [`k8s/configmap.yaml`](file:///d:/portfolio/k8s/configmap.yaml) | `ConfigMap` | Stores non-sensitive environment variables (`PORT`, `FLASK_ENV`). |
+| [`k8s/secret.yaml`](file:///d:/portfolio/k8s/secret.yaml) | `Secret` | Stores sensitive API keys (`GEMINI_API_KEY`). |
 | [`k8s/pvc.yaml`](file:///d:/portfolio/k8s/pvc.yaml) | `PersistentVolumeClaim` | Requests 1Gi persistent disk storage for saving SQLite database data across container restarts. |
 | [`k8s/deployment.yaml`](file:///d:/portfolio/k8s/deployment.yaml) | `Deployment` | Defines the container image, 2 replica pods, CPU/RAM limits, non-root security rules, and `/health` probes. |
 | [`k8s/service.yaml`](file:///d:/portfolio/k8s/service.yaml) | `Service` | Creates an internal cluster IP load balancer mapping port `80` to backend port `5000`. |

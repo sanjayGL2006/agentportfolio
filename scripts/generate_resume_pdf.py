@@ -164,7 +164,7 @@ def create_resume(output_path):
     # Education
     story.append(Paragraph("EDUCATION", style_section_heading))
     edu1_table = Table([
-        [Paragraph("Bachelor of Computer Applications (BCA) &nbsp;|&nbsp; 3rd Year, 5th Semester", style_item_title), Paragraph("2023 – 2026 (Expected)", style_item_date)]
+        [Paragraph("Bachelor of Computer Applications (BCA) &nbsp;|&nbsp; 3rd Year, 5th Semester", style_item_title), Paragraph("2024 – 2026", style_item_date)]
     ], colWidths=[412, 140])
     edu1_table.setStyle(TableStyle([('LEFTPADDING', (0,0), (-1,-1), 0), ('RIGHTPADDING', (0,0), (-1,-1), 0)]))
     story.append(edu1_table)
@@ -172,7 +172,7 @@ def create_resume(output_path):
     story.append(Spacer(1, 3))
 
     edu2_table = Table([
-        [Paragraph("Pre-University Course (PCMCs / Science)", style_item_title), Paragraph("Completed 2023", style_item_date)]
+        [Paragraph("Pre-University Course (PCMCs / Science)", style_item_title), Paragraph("Completed 2024", style_item_date)]
     ], colWidths=[412, 140])
     edu2_table.setStyle(TableStyle([('LEFTPADDING', (0,0), (-1,-1), 0), ('RIGHTPADDING', (0,0), (-1,-1), 0)]))
     story.append(edu2_table)
@@ -280,13 +280,9 @@ def create_resume(output_path):
     story.append(Paragraph("KEY CERTIFICATIONS", style_section_heading))
     certs_list = [
         "• AICTE Web Development Internship — Oasis Infobyte (Star Performer) · 2026",
-        "• Python (Basic & Advanced) — HackerRank · Udemy · Coursera · 2025–2026",
         "• JavaScript (Basic), SQL (Basic & Intermediate), Java (Basic), CSS — HackerRank · 2025",
-        "• Blockchain Technology & Applications — NPTEL · 2025",
-        "• Database Management Systems — NPTEL / IIT Madras · 2025",
         "• Cybersecurity Fundamentals — Cisco Networking Academy · 2025",
         "• Microsoft Azure Fundamentals (AZ-900) — Microsoft · 2025",
-        "• Introduction to Cloud Computing — IBM / Coursera · 2025",
         "• AI and Machine Learning Essentials — DeepLearning.AI · 2025",
         "• Data Structures and Algorithms in Java — Coding Ninjas · 2025",
         "• React.js & Frontend Development — Scrimba · Simplilearn · 2025",

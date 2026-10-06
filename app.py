@@ -28,18 +28,7 @@ from dotenv import load_dotenv
 load_dotenv()
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Initialize Supabase Client
-try:
-    # pyrefly: ignore [missing-import]
-    from supabase import create_client, Client
-    supabase_url = os.environ.get("SUPABASE_URL", "https://mglzwnampheswtjzrcbf.supabase.co")
-    supabase_key = os.environ.get("SUPABASE_KEY") or os.environ.get("SUPABASE_PUBLISHABLE_KEY", "sb_publishable_vuV_ZmS859v1QUhQHISoqg_nkN-DWFl")
-    supabase: Client = create_client(supabase_url, supabase_key)
-    print("[SUPABASE] Client Initialized Successfully.")
-except Exception as _se_err:
-    supabase = None
-    print(f"[SUPABASE] Warning: Could not initialize client: {_se_err}")
-
+# Supabase client has been removed
 # Auto-copy generated cover assets from conversation brain directory if missing
 def check_and_copy_assets():
     try:
@@ -180,24 +169,24 @@ def compile_certificates_data():
                 with open(abs_path, "r", encoding="utf-8") as f:
                     content = f.read()
                     
-                content = content.replace("0 certificates", "87+ certificates")
-                content = content.replace("Certificates (0)", "Certificates (87+)")
-                content = content.replace("Certificates & Achievements (0)", "Certificates & Achievements (87+)")
-                content = content.replace("0 Credentials", "87+ Credentials")
-                content = content.replace("0 verified credentials", "87+ verified credentials")
-                content = content.replace("0 verified certificates", "87+ verified certificates")
-                content = content.replace("0 verified", "87+ verified")
-                content = content.replace("repository of 0 certifications", "repository of 87+ certifications")
-                content = content.replace("Explore 0 technical", "Explore 87+ technical")
-                content = content.replace('data-count="0" data-suffix="">0</div>', 'data-count="87" data-suffix="+">87+</div>')
+                content = content.replace("0 certificates", "222+ certificates")
+                content = content.replace("Certificates (0)", "Certificates (222+)")
+                content = content.replace("Certificates & Achievements (0)", "Certificates & Achievements (222+)")
+                content = content.replace("0 Credentials", "222+ Credentials")
+                content = content.replace("0 verified credentials", "222+ verified credentials")
+                content = content.replace("0 verified certificates", "222+ verified certificates")
+                content = content.replace("0 verified", "222+ verified")
+                content = content.replace("repository of 0 certifications", "repository of 222+ certifications")
+                content = content.replace("Explore 0 technical", "Explore 222+ technical")
+                content = content.replace('data-count="0" data-suffix="">0</div>', 'data-count="87" data-suffix="+">222+</div>')
                 content = content.replace('data-count="0"', 'data-count="87"')
-                content = content.replace('0</strong> certificates', '87+</strong> certificates')
-                content = content.replace('"certificates_count": "0"', '"certificates_count": "87+"')
-                content = content.replace('"total_count": "0"', '"total_count": "87+"')
+                content = content.replace('0</strong> certificates', '222+</strong> certificates')
+                content = content.replace('"certificates_count": "0"', '"certificates_count": "222+"')
+                content = content.replace('"total_count": "0"', '"total_count": "222+"')
                 
                 with open(abs_path, "w", encoding="utf-8") as f:
                     f.write(content)
-                print(f"[AUTO-COUNT] Synced 87+ counts in {file_path}")
+                print(f"[AUTO-COUNT] Synced 222+ counts in {file_path}")
             except Exception as fe:
                 print(f"[AUTO-COUNT] Skipping write for {file_path}: {fe}")
     except Exception as e:
@@ -577,15 +566,15 @@ KNOWLEDGE_BASE = {
     "career goals": "My goal is to work as a Software Development Engineer or Security Analyst where I can design robust, high-performance web systems, integrate intelligent AI automations, and safeguard digital infrastructure.",
     "who are you": "I am Sanjay's personal AI Portfolio Assistant! I can answer questions about Sanjay G. L.'s skills, projects, certificates, and background.",
     "tell me about yourself": "Sanjay G. L. is a BCA student at PES Institute of Advanced Management Studies, Shivamogga, Karnataka. He is a Full Stack Developer, AI/ML Intern at Milano Infotech, and NSS Volunteer who builds scalable React web applications and AI tools.",
-    "skills": "Sanjay's skills: HTML5/CSS3, JavaScript (ES6+), React.js, TypeScript, Python (Flask/FastAPI), SQL, SQLite, MySQL, Git & GitHub, AI Productivity Tools, Supabase Vector DB, Lovable AI, Base44, TryHackMe Labs, Bash Scripting, Docker, and C/C++.",
+    "skills": "Sanjay's skills: HTML5/CSS3, JavaScript (ES6+), React.js, TypeScript, Python (Flask/FastAPI), SQL, SQLite, MySQL, Git & GitHub, AI Productivity Tools, Lovable AI, Base44, TryHackMe Labs, Bash Scripting, Docker, and C/C++.",
     "programming languages": "Sanjay works with C, C++, Java, Python, JavaScript, TypeScript, Bash Scripting, SQL, PL/SQL, and MySQL.",
     "future goals": "Sanjay aims to excel as a Senior Full Stack Engineer & AI Developer, focusing on React, Full-Stack Architecture, Machine Learning, Agentic AI, Cyber Security (TryHackMe), and System Design.",
-    "technologies": "Sanjay's tech stack includes React, HTML5, CSS3, JavaScript, TypeScript, Python, Flask, FastAPI, Bash, C/C++, Java, SQL, MySQL, Supabase, Lovable AI, Base44, TryHackMe, Git, GitHub, VS Code, Google AI Studio, Figma, Replit, Antigravity, and AI Productivity tools.",
+    "technologies": "Sanjay's tech stack includes React, HTML5, CSS3, JavaScript, TypeScript, Python, Flask, FastAPI, Bash, C/C++, Java, SQL, MySQL, Lovable AI, Base44, TryHackMe, Git, GitHub, VS Code, Google AI Studio, Figma, Replit, Antigravity, and AI Productivity tools.",
     "freelance": "Yes! Sanjay is open to freelance web development, AI workflow integration, and software projects, as well as full-time internships.",
     "spvm3tech": "SPVM 3 Tech Solution is a modern tech ecosystem dedicated to building web application operations and teaching core programming languages (Python, JavaScript, C/C++, Java, SQL). Official channels: Instagram (@spvm3techsolution), YouTube (@spvm3techsolution), and LinkedIn (SPVM 3 Tech Solution).",
     "contact": "You can contact Sanjay directly via email at sanjaygl2006@gmail.com, phone at +91 81239 81877, or connect on Instagram (@spvm3techsolution), YouTube (@spvm3techsolution), and LinkedIn (spvm3-tech-solution).",
     "from": "Sanjay is from Shivamogga, Karnataka, India.",
-    "why hire": "Sanjay brings strong problem-solving skills, hands-on experience in React & full-stack web and AI development, 87+ certifications, a passion for clean code, and a proven track record of building production-ready projects."
+    "why hire": "Sanjay brings strong problem-solving skills, hands-on experience in React & full-stack web and AI development, 222+ certifications, a passion for clean code, and a proven track record of building production-ready projects."
 }
 
 def get_fallback_reply(message, proj_count, cert_count):
@@ -602,7 +591,7 @@ def get_fallback_reply(message, proj_count, cert_count):
             "Sanjay applied CNN models in <strong>DermAI</strong> (94% lesion screening accuracy), <strong>Traffic & Vehicle Detection (YOLOv8)</strong>, and <strong>Indian Traffic Sign Classifier</strong>!"
         )
     if "rag" in msg or "retrieval augmented" in msg:
-        return "<strong>Retrieval-Augmented Generation (RAG)</strong> combines vector database retrieval (FAISS, Supabase) with Large Language Models (LLMs) to ground responses in verified external documents, eliminating hallucinations without retraining model weights."
+        return "<strong>Retrieval-Augmented Generation (RAG)</strong> combines vector database retrieval (FAISS, PostgreSQL pgvector) with Large Language Models (LLMs) to ground responses in verified external documents, eliminating hallucinations without retraining model weights."
     if "agent" in msg or "ai agent" in msg:
         return "An <strong>AI Agent</strong> perceives its environment, formulates multi-step plans, calls dynamic tools (APIs, calculators, SQL DBs), observes results, and iterates autonomously toward a user-defined goal."
     if "oop" in msg or "object oriented" in msg:
@@ -616,7 +605,7 @@ def get_fallback_reply(message, proj_count, cert_count):
     if "certif" in msg:
         return f"Sanjay has earned exactly {cert_count} verified certificates across Microsoft, SAP, Google Developers, HackerRank, Simplilearn, and Infosys. View them on the <a href='certificates.html' style='color:var(--emerald-primary)'>Certificates Page</a>!"
     if "skills" in msg or "know" in msg or "tool" in msg:
-        return "Sanjay's core technical stack: React, JavaScript, HTML5/CSS3, Python (Flask/FastAPI), SQL, MySQL, SQLite, Supabase Vector DB, Docker, Git/GitHub, Cybersecurity (TryHackMe), and AI/ML (Agentic AI, CNN, TensorFlow, Scikit-learn)."
+        return "Sanjay's core technical stack: React, JavaScript, HTML5/CSS3, Python (Flask/FastAPI), SQL, MySQL, SQLite, Docker, Git/GitHub, Cybersecurity (TryHackMe), and AI/ML (Agentic AI, CNN, TensorFlow, Scikit-learn)."
     if "contact" in msg or "email" in msg or "phone" in msg:
         return "Contact Sanjay directly via email at <a href='mailto:sanjaygl2006@gmail.com' style='color:var(--emerald-primary)'>sanjaygl2006@gmail.com</a> or phone at +91 81239 81877."
     return "I am Sanjay AIOS v2.5. You can ask me any question about Sanjay's portfolio, background, or technical interview questions across Python, AI/ML, CNN, Full-Stack, Cybersecurity, and SQL!"
@@ -725,6 +714,85 @@ def index():
 def serve_sitemap():
     return send_from_directory(BASE_DIR, "sitemap.xml", mimetype="application/xml")
 
+@app.route("/projects/<slug>")
+def project_detail(slug):
+    try:
+        # Load projects data to find the one matching the slug
+        import json
+        projects_file = os.path.join(BASE_DIR, 'js', 'projectsData.js')
+        with open(projects_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+            # simple extraction since it's a JS object array
+            import re
+            json_str = re.search(r'const\s+projectsData\s*=\s*(\[.*\]);', content, re.DOTALL)
+            if json_str:
+                projects = json.loads(json_str.group(1))
+            else:
+                return "Project not found", 404
+        
+        project = next((p for p in projects if p.get('id') == slug or str(p.get('id')).lower().replace(' ', '-') == slug.lower()), None)
+        if not project:
+            return "Project not found", 404
+            
+        # Create a simple SEO-friendly HTML string for the project
+        title = project.get('title', 'Project')
+        desc = project.get('desc', '')
+        tech = ", ".join(project.get('tech', []))
+        image = project.get('image', '')
+        github = project.get('github', '')
+        live = project.get('live', '')
+        
+        html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} | Sanjay G L Projects</title>
+    <meta name="description" content="{desc}">
+    <meta property="og:title" content="{title}">
+    <meta property="og:description" content="{desc}">
+    <meta property="og:image" content="{image}">
+    <link rel="canonical" href="https://sanjaygl30ai.vercel.app/projects/{slug}">
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "{title}",
+      "description": "{desc}",
+      "programmingLanguage": "{tech}",
+      "codeRepository": "{github}",
+      "url": "{live}",
+      "author": {{
+        "@type": "Person",
+        "name": "Sanjay G L"
+      }}
+    }}
+    </script>
+    <style>
+        body {{ font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }}
+        img {{ max-width: 100%; border-radius: 8px; }}
+        a {{ color: #0070f3; text-decoration: none; }}
+        .tech {{ display: inline-block; background: #eee; padding: 4px 8px; border-radius: 4px; margin: 4px; font-size: 0.9em; }}
+    </style>
+</head>
+<body>
+    <a href="/projects">← Back to Projects</a>
+    <h1>{title}</h1>
+    <p>{desc}</p>
+    <div>
+        {"".join([f'<span class="tech">{t}</span>' for t in project.get('tech', [])])}
+    </div>
+    <div style="margin-top: 20px;">
+        {f'<a href="{github}" target="_blank" rel="noopener noreferrer">View Source on GitHub</a> | ' if github and github != '#' else ''}
+        {f'<a href="{live}" target="_blank" rel="noopener noreferrer">View Live Demo</a>' if live and live != '#' else ''}
+    </div>
+</body>
+</html>"""
+        return html, 200
+    except Exception as e:
+        print(f"Error serving project details: {{e}}")
+        return "Internal Server Error", 500
+
 @app.route("/robots.txt")
 def serve_robots():
     return send_from_directory(BASE_DIR, "robots.txt", mimetype="text/plain")
@@ -757,6 +825,11 @@ def serve_static(path):
             return "Not Found", 404
 
         # Fallback to index.html for SPA routing
+        if path in ['projects', 'certificates', 'privacy']:
+            html_candidate = os.path.join(BASE_DIR, path + ".html")
+            if os.path.isfile(html_candidate):
+                return send_from_directory(BASE_DIR, path + ".html")
+
         index_path = os.path.join(BASE_DIR, "index.html")
         if os.path.isfile(index_path):
             return send_from_directory(BASE_DIR, "index.html")
@@ -1159,7 +1232,7 @@ OFFICIAL CONNECT CHANNELS:
 - Email: sanjaygl2006@gmail.com | Phone: +91 81239 81877
 - Portfolio Web App: https://sanjaygl30ai.vercel.app/
 - GitHub: https://github.com/sanjayGL2006
-- LinkedIn: https://www.linkedin.com/in/sanjaygl3006/
+- LinkedIn: https://www.linkedin.com/in/sanjay-gl-b86631336/
 
 LIVE PROJECTS CONTEXT:
 {proj_context}
@@ -1221,17 +1294,7 @@ RESPONSE RULES:
         db.session.rollback()
         print(f"Database error saving conversation: {e}")
 
-    # Log to Supabase for continuous deep learning & auto-training
-    if supabase:
-        try:
-            supabase.table('aios_chat_logs').insert({
-                'session_id': session_id,
-                'user_query': message[:1000],
-                'agent_response': reply_text
-            }).execute()
-            print("[SUPABASE] Chat logged successfully to aios_chat_logs table.")
-        except Exception as supa_err:
-            print(f"[SUPABASE LOG ERROR] {supa_err}")
+    # Logging removed
 
     return jsonify({"reply": reply_text})
 

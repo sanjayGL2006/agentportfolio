@@ -8,8 +8,47 @@
   ],
   "routes": [
     {
+      "src": "/index.html",
+      "headers": { "Location": "/" },
+      "status": 301
+    },
+    {
+      "src": "/projects.html",
+      "headers": { "Location": "/projects" },
+      "status": 301
+    },
+    {
+      "src": "/certificates.html",
+      "headers": { "Location": "/certificates" },
+      "status": 301
+    },
+    {
+      "src": "/privacy.html",
+      "headers": { "Location": "/privacy" },
+      "status": 301
+    },
+    {
       "src": "/(.*)",
       "dest": "api/index.py"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains; preload" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://*;" }
+      ]
+    },
+    {
+      "source": "/(js|css|assets)/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
     }
   ]
 }

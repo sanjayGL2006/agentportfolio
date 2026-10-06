@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <button class="btn btn-primary btn-sm ripple-btn" onclick="openPremiumProjectModal(${p.id})" style="flex:1; font-weight:700; height:38px;">
                 <i class="fa-solid fa-book-open"></i> Read More
               </button>
-              ${p.live ? `<a href="${p.live}" target="_blank" rel="noopener" class="btn btn-outline btn-sm ripple-btn" style="width:38px; height:38px; display:flex; align-items:center; justify-content:center;"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>` : ''}
+
               <a href="${p.github}" target="_blank" rel="noopener" class="btn btn-outline btn-sm ripple-btn" style="width:38px; height:38px; display:flex; align-items:center; justify-content:center;"><i class="fa-brands fa-github"></i></a>
             </div>
           </div>
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
               <div class="project-links-row" style="gap:6px;">
                 <button onclick="openPremiumProjectModal(${p.id})" class="btn btn-outline btn-sm ripple-btn" style="flex:1;"><i class="fa-solid fa-book-open"></i> Read More</button>
-                ${p.live ? `<a href="${p.live}" target="_blank" rel="noopener" class="btn btn-primary btn-sm ripple-btn" style="width:38px; height:38px; display:flex; align-items:center; justify-content:center;"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>` : ''}
+
                 <a href="${p.github}" target="_blank" rel="noopener" class="btn btn-outline btn-sm ripple-btn" style="width:38px; height:38px; display:flex; align-items:center; justify-content:center;"><i class="fa-brands fa-github"></i></a>
               </div>
             </div>
@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', () => {
               `).join('')}
             </div>
             <div style="display:flex; gap:12px; margin-top:12px;">
-              ${p.live ? `<a href="${p.live}" target="_blank" rel="noopener" class="btn btn-primary ripple-btn" style="flex:1; text-align:center; display:flex; align-items:center; justify-content:center; gap:6px;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>` : ''}
+
               <a href="${p.github}" target="_blank" rel="noopener" class="btn btn-outline ripple-btn" style="flex:1; text-align:center; display:flex; align-items:center; justify-content:center; gap:6px;"><i class="fa-brands fa-github"></i> GitHub</a>
             </div>
           </div>

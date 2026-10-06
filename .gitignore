@@ -14,3 +14,5 @@ portfolio.db
 .agents/
 .gemini/
 scratch/
+debug_output/
+sample.png

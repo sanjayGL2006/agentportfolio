@@ -1,0 +1,234 @@
+{
+  "_meta": {
+    "source": "https://sanjaygl30ai.vercel.app/ (home page content)",
+    "rule": "Agent may use ONLY facts in this file. Fields set to null or listed in _todo are unknown: the agent must say it does not have that detail.",
+    "last_updated": "2026-10-06"
+  },
+
+  "identity": {
+    "display_name": "Sanjay G L",
+    "alternate_names": ["Sanjay G. L.", "Sanju", "Sanjay GL"],
+    "handles": {
+      "github": "sanjayGL2006",
+      "site": "sanjaygl30ai",
+      "linkedin_personal_slug": "sanjaygl3006",
+      "other_handles_to_confirm": ["sanjaygl2006", "sanjaygl200630", "sanjaygl"]
+    },
+    "headline": "Full Stack AI Developer | BCA Student | Python, Web, AI/ML",
+    "greeting": "Good day, Tech Visionary!",
+    "status": "Student",
+    "open_to": "Internships and opportunities",
+    "work_mode": "Offline (Shivamogga)",
+    "location": {
+      "city": "Shivamogga",
+      "state": "Karnataka",
+      "country": "India"
+    },
+    "domain": ["AI", "ML", "Python Development"],
+    "current_internship": "Milano Infotech"
+  },
+
+  "professional_summary": "A highly motivated BCA student and NSS & YFS volunteer at PES Institute of Advanced Management Studies, Shivamogga. Proficient in HTML, CSS and JavaScript, with a strong interest in server management and database architecture using SQL and PL/SQL. A disciplined learner who documents AI workflows daily to optimise coding efficiency, and is eager to apply intermediate skills in C, Java and Python to a professional role delivering high-quality, impactful results.",
+
+  "about": {
+    "tagline": "Engineering solutions with passion and precision",
+    "short_bio": "Sanjay G L is a BCA student at PES IAMS, Shivamogga, building intelligent web applications, AI systems, data-driven platforms and practical software, bridging frontend design, machine learning and secure backend APIs.",
+    "long_bio": [
+      "Sanjay is a dedicated BCA student at PES Institute of Advanced Management Studies, Shivamogga, currently in his 3rd year, 5th semester. He has a deep passion for frontend development, modern AI architectures and building smart tech solutions that solve real-world problems.",
+      "As a disciplined learner, he documents AI workflows daily to optimise coding efficiency. His interests span server management, database architecture using SQL and PL/SQL, and exploring cybersecurity fundamentals through Kali Linux in virtual environments.",
+      "Outside the screen, he is an active NSS volunteer, aquarium hobbyist, trekker and history enthusiast. These experiences sharpen his teamwork, empathy and problem-solving instincts."
+    ],
+    "currently_active_goal": "Apply skills in C, Java, Python, HTML/CSS and AI workflows in a professional role where he can deliver high-quality, impactful results.",
+    "currently_exploring": [
+      "Kali Linux",
+      "Server Creation",
+      "AI Productivity",
+      "Cybersecurity",
+      "CNN / Deep Learning",
+      "Full-Stack Development"
+    ]
+  },
+
+  "education": [
+    {
+      "level": "Bachelor of Computer Applications (BCA)",
+      "institution": "PES Institute of Advanced Management Studies (PES IAMS)",
+      "location": "Shivamogga, Karnataka",
+      "period": "2023 - Present",
+      "status": "Current: 3rd year, 5th semester"
+    },
+    {
+      "level": "Pre-University Course (PUC)",
+      "institution": "PES PU College",
+      "location": "Shivamogga, Karnataka",
+      "status": "Completed March 2023"
+    },
+    {
+      "level": "SSLC",
+      "institution": "Cambridge International Public School",
+      "location": "Shivamogga, Karnataka",
+      "status": "Completed April 2021"
+    }
+  ],
+
+  "volunteering": [
+    {
+      "role": "NSS Volunteer",
+      "organization": "National Service Scheme, PES IAMS Shivamogga",
+      "period": "2023 - Present",
+      "summary": "Took part in community service, literacy, hygiene awareness, environmental sustainability and social awareness programs across the Shivamogga region, building teamwork, discipline and leadership."
+    },
+    {
+      "role": "YFS Volunteer (Mera Yuva Bharat)",
+      "organization": "Youth for Seva, Ministry of Youth Affairs & Sports, Govt. of India",
+      "period": "2024 - Present",
+      "summary": "Engaged in national youth-led initiatives, civic engagement programs and Viksit Bharat campaigns.",
+      "recognition": "Certificate of Recognition from the Ministry of Youth Affairs & Sports"
+    }
+  ],
+
+  "languages_spoken": [
+    { "language": "Kannada", "level": "Native / Primary" },
+    { "language": "English", "level": "Professional" },
+    { "language": "Tamil", "level": "Native / Fluent" }
+  ],
+
+  "soft_skills": [
+    "Community Leadership (NSS/YFS)",
+    "Rapid Learning",
+    "Technical Documentation",
+    "Teamwork",
+    "Discipline"
+  ],
+
+  "personal_interests": [
+    "Cybersecurity",
+    "Computer Networking",
+    "Fish keeping and aquarium care",
+    "Trekking",
+    "Historical travel",
+    "Electronics and components",
+    "AI and automation"
+  ],
+
+  "learning_now": [
+    { "topic": "Artificial Intelligence", "progress_percent": 50 },
+    { "topic": "Machine Learning", "progress_percent": 40 },
+    { "topic": "Docker", "progress_percent": 35 },
+    { "topic": "Electron.js", "progress_percent": 25 },
+    { "topic": "Kali Linux", "progress_percent": 30 },
+    { "topic": "GitHub Actions", "progress_percent": null, "note": "Active" },
+    { "topic": "Prompt Engineering", "progress_percent": null, "note": "Active" }
+  ],
+
+  "future_goals": [
+    "Cyber Security",
+    "Machine Learning",
+    "Artificial Intelligence",
+    "React and Web Dev",
+    "Docker",
+    "DevOps Pipelines",
+    "System Design",
+    "Full Stack Development",
+    "AI Engineering"
+  ],
+
+  "coding_journey": [
+    "Started programming with C and Python logic building and basic algorithm problems",
+    "Learned HTML and CSS: responsive layouts and animations",
+    "Learned JavaScript and DOM manipulation: calculators, interactive utilities, API fetch apps",
+    "Learned React and TypeScript: single-page apps with modular components and Tailwind CSS",
+    "Built autonomous AI projects using Google AI Studio APIs, deployed on Google Cloud Run",
+    "Current step: learning Docker and cloud DevOps",
+    "Future goal: Full Stack AI Engineer"
+  ],
+
+  "business_brand": {
+    "name": "SPVM 3 Tech Solution",
+    "what": "A tech ecosystem and education hub for building software applications and teaching programming languages, web development and technical solutions.",
+    "focus": ["Full-stack app development", "Coding tutorials", "Python and AI", "JavaScript / React", "SQL and databases", "Technical solutions"],
+    "channels": {
+      "youtube": "https://www.youtube.com/@spvm3techsolution",
+      "instagram": "https://www.instagram.com/spvm3techsolution"
+    }
+  },
+
+  "contact": {
+    "email": "sanjaygl2006@gmail.com",
+    "phone_public": "+91 8123981877",
+    "phone_share_policy": "DECISION NEEDED: share only if the owner approves. Safer default: share email and LinkedIn, mention phone only in the site's contact section.",
+    "response_time": "Typically within 24 hours (as stated on the site)",
+    "contact_form_topics": [
+      "Internship & Job Opportunity",
+      "Freelance Web Development",
+      "AI Workflow & Integration",
+      "General Discussion & Networking"
+    ]
+  },
+
+  "links": {
+    "site": "https://sanjaygl30ai.vercel.app/",
+    "github": "https://github.com/sanjayGL2006",
+    "linkedin_current_on_site": "https://www.linkedin.com/in/spvm3-tech-solution-solution-096bb8436",
+    "linkedin_personal_to_confirm": "https://www.linkedin.com/in/sanjaygl3006",
+    "telegram": "https://t.me/Sanjaygl30",
+    "youtube": "https://www.youtube.com/@spvm3techsolution",
+    "instagram": "https://www.instagram.com/spvm3techsolution",
+    "salesforce_trailblazer": "https://www.salesforce.com/trailblazer/tm0wiwy350c51segjm",
+    "resume_pdf": "https://sanjaygl30ai.vercel.app/assets/Sanjay_GL_Resume.pdf"
+  },
+
+  "faq_seed": [
+    {
+      "q": "Who is Sanjay G L?",
+      "a": "Sanjay G L (Sanju) is a BCA student at PES IAMS, Shivamogga, Karnataka, building AI, Python and full-stack web projects. He is open to internships and opportunities."
+    },
+    {
+      "q": "What does Sanjay study and where?",
+      "a": "He is pursuing a Bachelor of Computer Applications at PES Institute of Advanced Management Studies, Shivamogga, currently in the 3rd year, 5th semester (2023 to present)."
+    },
+    {
+      "q": "Is Sanjay open to work?",
+      "a": "Yes. He is open to internships and opportunities, working offline in Shivamogga. His current internship is with Milano Infotech."
+    },
+    {
+      "q": "What is Sanjay learning now?",
+      "a": "AI (about 50%), Machine Learning (40%), Docker (35%), Kali Linux (30%) and Electron.js (25%), plus GitHub Actions and prompt engineering."
+    },
+    {
+      "q": "What languages does Sanjay speak?",
+      "a": "Kannada (native), Tamil (native/fluent) and English (professional)."
+    },
+    {
+      "q": "What does Sanjay do outside coding?",
+      "a": "He is an NSS and YFS volunteer, and enjoys aquarium keeping, trekking, historical travel, electronics, networking and cybersecurity."
+    },
+    {
+      "q": "How can I contact Sanjay?",
+      "a": "Email sanjaygl2006@gmail.com or use the contact form on the site. He typically replies within 24 hours."
+    },
+    {
+      "q": "What is SPVM 3 Tech Solution?",
+      "a": "Sanjay's tech and education brand for building software applications and teaching programming, web development and technical solutions, with YouTube and Instagram channels."
+    }
+  ],
+
+  "cannot_answer": [
+    "Salary or compensation expectations",
+    "Home address, family or other private details",
+    "Grades, CGPA or marks",
+    "Exact internship duration, role or tasks at Milano Infotech",
+    "Anything not stated in this knowledge base"
+  ],
+
+  "_todo": [
+    "Fix the conflicting numbers on the site (projects: 69+ vs 62+ vs 29 shown; AI projects: stat says 5, page lists 6) and add the real values here",
+    "Confirm which LinkedIn URL is your personal profile and which is the company page; remove the other from linkedin_* fields",
+    "Add Milano Infotech details: role, start date, duration, tasks, tech used",
+    "Add CGPA or percentage only if you want the agent to share it",
+    "Decide whether the agent may share the phone number",
+    "Add availability: preferred roles, start date, relocation, remote or offline, working hours",
+    "Add a short 'why hire me' and honest strengths/weaknesses answer",
+    "Skill levels conflict (Docker: Intermediate in Skills vs 35% in Learning; React: Intermediate vs 'learning'); resolve in skills.json"
+  ]
+}

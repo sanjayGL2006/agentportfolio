@@ -514,7 +514,7 @@ function renderHomeFeaturedProjects() {
           <a href="projects.html?id=${p.id}" class="btn btn-primary btn-sm ripple-btn" style="flex:1; font-weight:700; height:38px; display:flex; align-items:center; justify-content:center; gap:6px;">
             <i class="fa-solid fa-book-open"></i> Read More
           </a>
-          ${p.live ? `<a href="${p.live}" target="_blank" rel="noopener" class="btn btn-outline btn-sm ripple-btn" style="width:38px; height:38px; display:flex; align-items:center; justify-content:center;"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>` : ''}
+
           <a href="${p.github}" target="_blank" rel="noopener" class="btn btn-outline btn-sm ripple-btn" style="width:38px; height:38px; display:flex; align-items:center; justify-content:center;"><i class="fa-brands fa-github"></i></a>
         </div>
       </div>

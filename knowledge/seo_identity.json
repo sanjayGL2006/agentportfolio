@@ -1,0 +1,32 @@
+{
+  "personal_identity": {
+    "full_name": "Sanjay G L",
+    "short_name": "Sanjay GL",
+    "nickname": "Sanju",
+    "primary_username": "sanjaygl30ai",
+    "alternative_username": "sanjaygl2006",
+    "other_identity": "sanjaygl200630"
+  },
+  "digital_profiles": {
+    "linkedin": "www.linkedin.com/in/sanjaygl3006",
+    "github": "github.com/sanjayGL2006",
+    "website": "sanjaygl30ai.vercel.app"
+  },
+  "professional_identity": {
+    "focus": ["AI", "Technology", "Web Development"],
+    "digital_brand": "Sanjay G L / SanjayGL30AI",
+    "personal_brand_keywords": ["AI", "Technology", "Web Development", "Software", "Digital Solutions"]
+  },
+  "seo_identity": {
+    "primary_search_name": "Sanjay G L",
+    "search_variations": ["Sanjay GL", "Sanjaygl", "Sanjaygl2006", "Sanjaygl200630", "Sanju", "sanjaygl30ai"],
+    "brand_consistency": "Sanjay G L → SanjayGL30AI",
+    "identity_linking": "Website ↔ LinkedIn ↔ GitHub"
+  },
+  "online_presence": {
+    "personal_website": "sanjaygl30ai.vercel.app",
+    "professional_network": "LinkedIn",
+    "developer_profile": "GitHub",
+    "ai_technology_brand": "SanjayGL30AI"
+  }
+}

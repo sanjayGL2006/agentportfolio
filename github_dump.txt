@@ -1,0 +1,280 @@
+Sanjay G L
+sanjayGL2006 · he/him
+
+Full-Stack Developer & BCA undergrad. Building clean web apps, exploring cybersecurity & Android dev. Always learning. 🚀
+ 4 followers · 3 following
+
+shimoga
+
+sanjaygl2006@gmail.com
+
+https://sanjaygl30ai.vercel.app/
+
+https://www.linkedin.com/in/sanjay-gl-b86631336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+
+https://www.instagram.com/me__sanjaygl8123?igsh=YThxY3NzbGw1Y2kw
+
+@SanjayGL8123456
+
+SPVM3-placement-hub Public
+Enterprise AI Academic & College Placement Management System for modern universities, featuring student registration, placement drives, analytics, and RBAC governance.
+ TypeScript Updated yesterday
+
+smart-library-assistant Public
+OLMS AI is an intelligent Online Library Management System that uses RAG and Vector Embeddings (ChromaDB) to transform digital notes and PDFs into a fully searchable AI knowledge engine and persona…
+ Python Updated yesterday
+
+Sanjay-OS Private
+Peacock OS: A unified Electron-based desktop runtime with a cyber-security simulation environment, embedded IDEs, multilingual command lexer, and local Python system services.
+ JavaScript Updated yesterday
+
+phishguard-ai Public
+PhishGuard is a real-time website phishing detection system built with Django and scikit-learn. It extracts 19 lexical URL features and evaluates multi-model machine learning algorithms (Logistic R…
+ Python Updated 4 days ago
+
+SPVM3-Learning-Platform Private
+A modern Learning Management System (LMS) featuring role-based access control, Supabase RLS, automated course stage progression, and FastAPI backend services.
+ Python Updated 4 days ago
+
+photo-recovery-tool Private
+Lightweight digital forensics file carver for raw drives and disk images. Recovers photos across sector boundaries with built-in preview, metadata viewer, and raw hex inspector.
+ Python Updated 5 days ago
+
+cyber-intel-agent Private
+Autonomous AI multi-agent threat intelligence system powered by CrewAI, Groq, and FastAPI for real-time cybersecurity risk assessment and incident response playbooks.
+ Python Updated last week
+
+python-internship-projects Public
+Python Internship Projects Portfolio: A collection of 5 practical applications including an AI Voice Assistant, GUI BMI Calculator with SQLite, Secure Password Generator, Live Weather Application, …
+ Python Updated last week
+
+photo-to-doc-desktop Private
+Standalone desktop OCR application for extracting text from images and screenshots without cloud APIs or servers. Features interactive cropping, SQLite storage, and Word/PDF export.
+ Python Updated last week
+
+disk-recovery-forensics-tool Private
+Advanced digital forensics & file recovery workstation built with Electron and Python Flask. Features bit-for-bit disk imaging, magic-byte signature carving, SHA-256 integrity verification, and aut…
+ Python Updated last week
+
+agentportfolio Public
+ JavaScript Updated last week
+
+spvm3-chat Public
+A self-destructing, no-signup real-time chat app built with Flask, Socket.IO, Neon Serverless Postgres, and Vanilla JS. Features ID-based room joining, self-destruct timers, file & media sharing, a…
+ HTML MIT License Updated last week
+
+spvm3-spend-tracker Public
+Fast, responsive finance and expense management dashboard built with React, Recharts, and FastAPI for SPVM³ Tech Solution.
+ JavaScript Updated last week
+
+SPVM3-Blog Public
+Full-stack React & FastAPI engine showcasing real-world engineering logs on real-time chat, anti-cheat mechanisms, and AI prompt engineering. Includes load-more pagination, clean CSS tokens, and in…
+ Python Updated last week
+
+spvm3-player Public
+Full-stack modern music player built with React 18, Vite, and FastAPI. Features automatic local library sync, ID3 metadata & album art extraction, sleek glassmorphic UI, audio visualizer, and HTTP …
+ JavaScript Updated last week
+
+sanjayGL2006 Public
+My personal GitHub profile README. Full-Stack Web Developer, AI Enthusiast, and BCA Student.
+Updated 2 weeks ago
+
+spvm3-api-platform Public
+SPVM3 API Platform: A multi-user Flask & MySQL backend for managing API keys and serving programming knowledge via REST APIs. Includes a built-in user dashboard and admin panel.
+ Python Updated 2 weeks ago
+
+cyber-response-platform Public
+A full-stack web application for tracking, managing, and resolving cybersecurity incidents.
+ JavaScript Updated 2 weeks ago
+
+student-htr-studio Public
+Classroom-scale Handwritten Text Recognition (HTR) pipeline using TrOCR, OpenCV line segmentation, NLP grammar correction, and interactive React Flow node canvas with multi-format export.
+ Python Updated 2 weeks ago
+
+malicious-url-detector Public
+A lightweight Flask web application that extracts lexical features from URLs and uses a Random Forest ML model to classify them as malicious or benign.
+ Python Updated 2 weeks ago
+
+smart-voice-notes Public
+A full-stack web app that transcribes voice notes using Whisper and generates summaries, tags, and action items using Claude via FastAPI and React.
+ JavaScript Updated 2 weeks ago
+
+smart-parking-system Public
+A full-stack computer vision application to detect available parking slots using OpenCV, Python, and React.
+ Python Updated 2 weeks ago
+
+ai-paper-analyzer Public
+A full-stack web app that uses AI to analyze, summarize, and chat with academic research papers. Built with React, FastAPI, and Claude.
+ Python Updated 2 weeks ago
+
+spvm3-quiz-app Public
+A secure, timed quiz application that monitors window focus to prevent cheating. Built with React, Flask, and SQLite.
+ JavaScript Updated 2 weeks ago
+
+SPVM3-tech-solution Public
+ Python Updated 3 weeks ago
+
+placement-pro-SPVM3 Public
+Smart College Placement & Campus Recruitment Management System built with Python Flask, PHP, Docker, Kubernetes & Vercel. Developed by SPVM3 Tech Solution by Sanjay G L.
+ HTML Updated last month
+
+otp-signup Public
+Flask app with user signup, email OTP verification, and login — built with SQLite, Jinja2, and secure credential handling. Python rewrite of a classic PHP tutorial.
+ Python Updated last month
+
+SPVM3-code-notes Public
+Comprehensive Computer Science & Programming Notes Hub featuring interactive guides for 20+ technologies, code references, and an integrated certificate verification system.
+ HTML Updated last month
+
+scanner-files- Public
+A self-contained, browser-based file scanner. Combines hash-signature matching and static heuristics (double extensions, suspicious script patterns, entropy checks, macro detection) to flag potenti…
+ HTML Updated last month
+
+social-analytics-ui Public
+PulseBoard: A modern social media analytics dashboard built with React, FastAPI, and Recharts. Features follower growth tracking, engagement metrics, and a recent posts feed.
+ JavaScript Updated on Sep 6
+
+-SPVM3-reelfind-react-fastapi Public
+A full-stack movie and TV show discovery app built with React and FastAPI.
+ JavaScript Updated on Sep 6
+
+fastapi-react-todo Public
+Full-stack interactive to-do app built with React (Vite) and FastAPI featuring priorities, inline editing, and status filtering.
+ JavaScript Updated on Sep 6
+
+spvm3-task-app Public
+SPVM³ Task App — A sleek, intuitive Kanban task manager featuring interactive drag-and-drop columns, priority indicators, and REST API integration with FastAPI & React.
+ JavaScript Updated on Sep 6
+
+Milano-infotech-internship Public
+ Python Updated on Sep 5
+
+spvm3-code-editor Public
+Modular, local-first desktop IDE built on Electron, React & Monaco. Features multi-language runners (Python, Java, C/C++, C#), A-Z file support, Extensions Marketplace, multi-version Python selecto…
+ JavaScript Updated on Sep 4
+
+smart-attendance-yolo Public
+Real-time automated classroom attendance tracker powered by custom YOLOv8 computer vision, Flask REST API, MySQL, and an interactive React teacher dashboard.
+ Python Updated on Sep 4
+
+spvm3-campus-placement Public
+An AI-powered campus placement & career intelligence suite: automated ATS resume analysis, skills gap roadmaps, safe AI natural language queries, and department-isolated analytics dashboards. Built…
+ Python Updated on Sep 4
+
+spvm3-car-game Public
+Action-packed 2D physics racing game featuring 200-level stage progression, 60+ customizable vehicles, multi-layer parallax scenery, real-time audio synthesis, companion Python telemetry server, an…
+ HTML Updated on Aug 31
+
+AIML-course-and-Practical Public
+ Jupyter Notebook Updated on Aug 31
+
+text2img-studio Private
+A full-stack Flask web app for AI text-to-image generation powered by Stable Diffusion with built-in MySQL/SQLite generation history tracking.
+ Python Updated on Aug 31
+
+DermAI-AI-Powered-Skincare-Diagnosis-App Public
+ Python Updated on Aug 30
+
+small-project Public
+A collection of small web projects, templates, and frontend experiments built with HTML, CSS, and JavaScript.
+ HTML Updated on Aug 30
+
+SPVM3-tech-solution-websites Public
+ HTML Updated on Aug 30
+
+sanjay-gl-website-carbon-intelligence Public
+SANJAY GL Website Carbon Intelligence — A real-time web application and developer API to audit website carbon footprints, HTTP page payload telemetry, energy consumption (SWD v4), and green hosting…
+ HTML Updated on Aug 25
+
+resume-analyzer Public
+AI-powered resume match & skill gap analyzer built with Flask and MySQL. Uses TF-IDF vectorization to score resumes against job descriptions, highlight missing skills, and persist analysis results.
+ HTML Updated on Aug 25
+
+image-to-svg-converter Public
+A blazingly fast, client-side web & desktop tool to convert JPG, PNG, and WEBP images into clean, scalable SVG vector graphics with K-means color quantization, Bezier smoothing, and zero server upl…
+ JavaScript Updated on Aug 25
+
+Paperless-Office-System Public
+Paperless Office System is a modern, privacy-first digital document workspace. Eliminate paper waste, organize files with drag-and-drop local storage, search & filter records, and track real-time …
+ JavaScript Updated on Aug 24
+
+bluetooth-chat- Public
+ Dart Updated on Aug 24
+
+DataGauge-Dataset-Quality-Monitoring-System Public
+Full-stack dataset quality monitoring system built with FastAPI, React, and Pandas. Automatically computes 0-100 quality scores, flags data issues, provides guided cleaning, interactive dashboards,…
+ Python Updated on Aug 21
+
+chess-game Public
+Updated on Aug 14
+
+accident-risk-prediction Public
+ Python Updated on Aug 5
+
+prop-manager-dash-95721 Private
+ TypeScript Updated on Aug 3
+
+portfolio Public
+ HTML Updated on Jul 7
+
+expense-tracker Public
+ HTML Updated on Jul 1
+
+-Handcrafted-with-Love-Pure-Weaves Public
+ HTML Updated on Jun 17
+
+Surya-chatbot Public
+ JavaScript Updated on Jun 16
+
+AI-Agent-used-google-api Public
+ Python MIT License Updated on Jun 13
+
+pixel-perfect Public
+ TypeScript Updated on May 15
+
+srimariyammatemple-ad2fd3a5 Private
+ TypeScript Updated on Apr 7
+
+bmi_calculator Public
+ HTML Updated on Apr 7
+
+ pizza-shop-website Public
+Simple pizza shop landing page
+ HTML Updated on Mar 14
+
+maya-angelou-tribute Public
+Tribute webpage project
+ HTML Updated on Mar 14
+
+vault-secure-auth Public
+Secure login/register dashboard UI
+ HTML Updated on Mar 14
+
+daily-task-nexus Public
+A minimalist, locally-persistent Daily Task manager built with HTML5, CSS3 (Custom Animations & Gradients), and Vanilla JavaScript. Features dynamic filtering, task lifecycle management, and a resp…
+ HTML Updated on Mar 14
+
+web-calculator-js Public
+sleek, responsive web-based calculator built with HTML5, CSS3, and Vanilla JavaScript. Features include basic arithmetic, square root calculations, percentage support, and a history display.
+ HTML Updated on Mar 14
+
+temp-convert-web-app Public
+A clean, mobile-responsive temperature converter built with HTML, CSS, and Vanilla JavaScript, featuring high-precision Celsius and Fahrenheit conversions.
+ HTML Updated on Mar 14
+
+vpn-landing-page1 Public
+A clone of a professional VPN landing page."
+ HTML Updated on Mar 14
+
+srimariyammatemple Private
+ TypeScript Updated on Mar 8
+
+Pure-Weaves Public
+Gemini said Pure Weaves is a PHP/MySQL e-commerce platform for artisan sarees. It features a heritage-inspired UI, AJAX-powered cart, and a secure seller dashboard. Key highlights include real-time…
+ HTML Updated on Mar 2
+
+Registration-form Public
+ HTML  1 Updated on Feb 7
+
+digital-board-duel Private
+ TypeScript Updated on Dec 13, 2025

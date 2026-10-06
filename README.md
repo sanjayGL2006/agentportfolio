@@ -2,7 +2,6 @@
 
 [![Live Site](https://img.shields.io/badge/Live_Site-sanjaygl30ai.vercel.app-10b981?style=for-the-badge&logo=vercel)](https://sanjaygl30ai.vercel.app/)
 [![Python](https://img.shields.io/badge/Backend-Flask_3.0-3776AB?style=for-the-badge&logo=python)](https://flask.palletsprojects.com/)
-[![Supabase](https://img.shields.io/badge/Database-Supabase_pgvector-3ECF8E?style=for-the-badge&logo=supabase)](https://supabase.com/)
 [![Docker](https://img.shields.io/badge/Container-Docker-2496ED?style=for-the-badge&logo=docker)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
@@ -12,42 +11,16 @@ Official AI-powered developer portfolio, operating system, and interactive techn
 
 ## 🌟 Key Highlights & Statistical Reality
 
-- **28+ Production & Showcase Projects**: Full-stack web applications, AI agents, e-commerce platforms, security scanners, utilities, and games.
-- **86+ Verified Certifications**: Comprehensive credential archive covering Cisco Networking Academy, Oasis Infobyte AICTE Internship, HackerRank Skill Certifications, Microsoft Azure, MeitY AI Ethics, and NPTEL.
+- **98+ Production & Showcase Projects**: Full-stack web applications, AI agents, e-commerce platforms, security scanners, utilities, and games.
+- **222+ Verified Certifications**: Comprehensive credential archive covering Cisco Networking Academy, Oasis Infobyte AICTE Internship, HackerRank Skill Certifications, Microsoft Azure, MeitY AI Ethics, and NPTEL.
 - **Sanjay AIOS v2.5 (Deep Learning Edition)**: Neural portfolio co-pilot powered by Gemini API, trained on real datasets, technical interview question bank, and personal project roadmaps.
-- **Supabase Cloud Memory & Continuous Deep Learning**: Integrated Supabase database with `aios_chat_logs` table, Row Level Security (RLS), and `pgvector` embeddings for storing user queries and auto-training the AI co-pilot.
-- **SEO & Social Optimization**: 100% standardized canonical URLs (`sanjaygl30ai.vercel.app`), 1200×630px Open Graph PNG social banner, Schema.org `Person` JSON-LD structured data, and `<noscript>` static fallback lists for search engine indexing.
+
+- **SEO & Digital Identity Optimization**: 100% standardized canonical clean URLs (`sanjaygl30ai.vercel.app`), dynamic project routing (`/projects/<slug>`), Schema.org `Person` and `SoftwareSourceCode` JSON-LD structured data, strict security headers (CSP, HSTS), and `data/identity.json` consolidation for consistent search engine indexing.
+- **Next.js SEO Analyzer Dashboard**: Custom built internal React/Tailwind application (`/seo-analyzer`) used to analyze cross-platform personal brand identity, search keyword matches, and profile health.
 
 ---
 
-## ⚡ Supabase & Deep Learning Architecture
 
-### 1. Database Schema (`supabase_schema.sql`)
-```sql
--- Enable vector & uuid extensions for neural embeddings & chat logging
-CREATE EXTENSION IF NOT EXISTS vector;
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
-
-CREATE TABLE IF NOT EXISTS aios_chat_logs (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    session_id VARCHAR(255),
-    user_query TEXT NOT NULL,
-    agent_response TEXT NOT NULL,
-    query_embedding vector(1536),
-    created_at TIMESTAMPTZ DEFAULT NOW()
-);
-
-ALTER TABLE aios_chat_logs ENABLE ROW LEVEL SECURITY;
-```
-
-### 2. Environment Configuration (`.env`)
-```env
-SUPABASE_URL=https://mglzwnampheswtjzrcbf.supabase.co
-SUPABASE_KEY=sb_publishable_vuV_ZmS859v1QUhQHISoqg_nkN-DWFl
-SUPABASE_SECRET_KEY=your_supabase_secret_key_here
-```
-
----
 
 ## 🚀 Active Technical Roadmaps (Sanjay AIOS v2.5)
 
@@ -83,15 +56,15 @@ portfolio/
 ├── css/                     # Glassmorphic CSS design system (styles.css)
 ├── js/                      # Frontend modules & datasets
 │   ├── aiAssistant.js       # Sanjay AIOS v2.5 Floating Chat Widget
-│   ├── projectsData.js      # 28 Projects dataset
-│   ├── certificatesData.js  # 86 Certificates dataset
+│   ├── projectsData.js      # 98 Projects dataset
+│   ├── certificatesData.js  # 222 Certificates dataset
 │   ├── home.js              # Home page animations & stats
 │   ├── projectsPage.js      # 3D Flip cards & filter logic
 │   └── certificatesPage.js  # Gallery grid, timeline & Drive preview modal
 ├── app.py                   # Flask backend server & Gemini AI endpoint
 ├── index.html               # Main homepage & interactive OS view
-├── projects.html            # Projects showcase page (28 projects)
-├── certificates.html        # Verified credentials page (86 certificates)
+├── projects.html            # Projects showcase page (98+ projects)
+├── certificates.html        # Verified credentials page (222+ certificates)
 ├── Dockerfile               # Production Docker container definition
 ├── docker-compose.yml       # One-command local Docker environment
 ├── .dockerignore            # Container build exclusions
@@ -223,8 +196,8 @@ For a step-by-step tutorial on Kubernetes architecture, object definitions, `kub
 | `GET /` | `GET` | Main Portfolio Homepage |
 | `GET /health` | `GET` | Health Check Endpoint for Docker & Kubernetes Probes |
 | `GET /api/stats` | `GET` | Returns live statistical counters (Projects, Certificates, Visits) |
-| `GET /api/projects` | `GET` | Returns JSON dataset of all 28 projects |
-| `GET /api/certificates` | `GET` | Returns JSON dataset of all 86 verified certificates |
+| `GET /api/projects` | `GET` | Returns JSON dataset of all 98 projects |
+| `GET /api/certificates` | `GET` | Returns JSON dataset of all 222 verified certificates |
 | `POST /chat` | `POST` | Interacts with Sanjay AIOS v2.5 assistant (`{"message": "..."}`) |
 | `POST /api/contact` | `POST` | Submits user contact form messages |
 
@@ -239,7 +212,8 @@ For a step-by-step tutorial on Kubernetes architecture, object definitions, `kub
 - **GitHub**: [@sanjayGL2006](https://github.com/sanjayGL2006)  
 - **SPVM 3 Tech Solution - Instagram**: [@spvm3techsolution](https://www.instagram.com/spvm3techsolution)  
 - **SPVM 3 Tech Solution - YouTube**: [@spvm3techsolution](https://www.youtube.com/@spvm3techsolution)  
-- **SPVM 3 Tech Solution - LinkedIn**: [spvm3-tech-solution](https://www.linkedin.com/in/spvm3-tech-solution-solution-096bb8436)
+- **Personal LinkedIn**: [sanjay-gl-b86631336](https://www.linkedin.com/in/sanjay-gl-b86631336)
+- **SPVM 3 Tech Solution - LinkedIn**: [spvm3-tech-solution](https://www.linkedin.com/company/spvm3-tech-solution)
 
 ---
 
